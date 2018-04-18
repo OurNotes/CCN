@@ -6,7 +6,8 @@
 
 ----------
 
-#<span id="1">目录变成Git可以管理的仓库</span>
+# <span id="1">目录变成Git可以管理的仓库</span>
+
 ```
 git init
 ```
