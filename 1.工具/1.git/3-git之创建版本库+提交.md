@@ -33,4 +33,4 @@ git add readme.txt
 git commit -m "wrote a readme file"
 ```
 效果展现：
-![image](image\3-2.png)
+![image](image/3-2.png)
