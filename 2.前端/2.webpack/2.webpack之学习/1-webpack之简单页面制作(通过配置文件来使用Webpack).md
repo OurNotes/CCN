@@ -30,7 +30,7 @@ Greeter.js-- 放在app文件夹中;
 main.js-- 放在app文件夹中;
 webpack.config.js--放在根目录文件夹中
 ```
-###1、index.html代码
+### 1、index.html代码
 ```
 <!-- index.html -->
 <!DOCTYPE html>
@@ -46,17 +46,17 @@ webpack.config.js--放在根目录文件夹中
   </body>
 </html>
 ```
-###2、Greeter.js代码
+### 2、Greeter.js代码
 ```
 // Greeter.js
 module.exports = "It works from Greeter.js.";
 ```
-###3、main.js代码
+### 3、main.js代码
 ```
 //main.js
 document.write(require("./Greeter.js"));
 ```
-###4、webpack.config.js代码
+### 4、webpack.config.js代码
 ```
 module.exports = {
   entry:  __dirname + "/app/main.js",//已多次提及的唯一入口文件
