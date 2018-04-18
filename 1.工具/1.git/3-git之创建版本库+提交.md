@@ -1,12 +1,12 @@
 操作总流程：
 - 1、创建文件夹
-- 2、[目录变成Git可以管理的仓库](#index-1)
-- 3、[文件添加到仓库](#index-2)
-- 4、[把文件提交到仓库](#index-3)
+- 2、目录变成Git可以管理的仓库
+- 3、文件添加到仓库
+- 4、把文件提交到仓库
 
 ----------
 
-# <span id="index-1">目录变成Git可以管理的仓库</span>
+# 目录变成Git可以管理的仓库
 ```
 git init
 ```
@@ -14,7 +14,7 @@ git init
 
 效果展现：
 ![](image/3-1.png)
-# <span id="index-2">文件添加到仓库</span>
+# 文件添加到仓库
 创建learngit目录，
 创建readme.txt文件，添加内容如下
 ```
@@ -28,7 +28,7 @@ git add readme.txt
 ```
 `注:进入到存放文件的地方执行命令`
 
-# <span id="index-3">把文件提交到仓库</span>
+# 把文件提交到仓库
 ```
 git commit -m "wrote a readme file"
 ```
