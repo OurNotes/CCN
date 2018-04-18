@@ -25,7 +25,6 @@ git reset --hard (commit id)
 ```
 commit id:
 ![](image/5-1.png)
-
 # 查看每一次命令
 语法：
 ```
