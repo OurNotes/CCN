@@ -22,7 +22,6 @@ Git is free software.
 Git is a distributed version control system.
 Git is free software.
 ```
-
 # git status命令看仓库当前的状态
 效果展现：
 ![](image/4-2.png)
