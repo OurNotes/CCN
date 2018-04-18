@@ -7,6 +7,7 @@
 - 7、看效果；
 
 ----------
+
 # 谷歌浏览器安装插件
 [插件下载](https://pan.baidu.com/s/1D5XPzfVFZL3HBKYYbDku0g)
 ![](image/2-1.png)
