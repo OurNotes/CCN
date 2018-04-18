@@ -6,7 +6,7 @@
 
 ----------
 
-#<span id="#1">目录变成Git可以管理的仓库</span>
+#<span id="1">目录变成Git可以管理的仓库</span>
 ```
 git init
 ```
@@ -14,7 +14,7 @@ git init
 
 效果展现：
 ![](image/3-1.png)
-#<span id="#2">文件添加到仓库</span>
+#<span id="2">文件添加到仓库</span>
 创建learngit目录，
 创建readme.txt文件，添加内容如下
 ```
@@ -28,7 +28,7 @@ git add readme.txt
 ```
 `注:进入到存放文件的地方执行命令`
 
-#<span id="#3">把文件提交到仓库</span>
+#<span id="3">把文件提交到仓库</span>
 ```
 git commit -m "wrote a readme file"
 ```
