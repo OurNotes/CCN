@@ -1,5 +1,5 @@
 效果展现：
-![title](leanote://file/getImage?fileId=592c3224ab64411fae001ad3)
+![](image/12.png)
 
 语法：
 ```
