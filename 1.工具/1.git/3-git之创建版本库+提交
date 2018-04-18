@@ -14,7 +14,7 @@ git init
 
 效果展现：
 
-![](image\3-1.png)
+![ ](.\image\3-1.png)
 
 - 文件添加到仓库
 创建learngit目录，
@@ -35,4 +35,4 @@ git add readme.txt
 git commit -m "wrote a readme file"
 ```
 效果展现：
-![](image\3-2.png)
+![ ](.\image\3-2.png)
