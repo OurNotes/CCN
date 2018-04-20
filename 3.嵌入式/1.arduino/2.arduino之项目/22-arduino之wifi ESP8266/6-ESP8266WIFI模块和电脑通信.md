@@ -1,0 +1,29 @@
+[参考文献](https://jingyan.baidu.com/article/c45ad29c346837051753e2e6.html)
+
+总操作流程：
+- 1、串口设置:输入命令；
+- 2、pc链接路由wifi,网络设置：配置ip，端口；
+- 3、测试
+
+***
+# 串口设置:输入命令
+![](image/6-1.png)
+```
+AT  #测试是否链接成功，成功返回OK
+
+AT+CWMODE=3  #设置WiFi应用模式为AP+station 共存模式
+
+AT+CWLAP #显示无线列表
+
+AT+CWJAP="WiFi名字","WiFi密码" #加入路由的WiFi
+
+AT+CIPMUX=1 #开启多连接模式
+
+```
+# pc链接路由wifi,网络设置：配置ip，端口
+```
+AT+CIPSTART=2,"TCP","192.168.0.104",8080 #连接服务器
+```
+![](image/6-2.png)
+
+
