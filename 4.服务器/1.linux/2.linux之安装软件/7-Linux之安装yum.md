@@ -1,4 +1,5 @@
 [参考文献](https://blog.csdn.net/m0_37886429/article/details/75009382)
+
 总操作流程：
 - 1、删除原来的yum；
 - 2、下载安装；
