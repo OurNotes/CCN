@@ -9,8 +9,9 @@
 `注意：操作要断开网络`
 
 # 1、下载文件
-[exe](https://pan.baidu.com/s/1kWe9AIV)
-[破解文件](https://pan.baidu.com/s/1dG003Xv)
+
+- [exe](https://pan.baidu.com/s/1kWe9AIV)
+- [破解文件](https://pan.baidu.com/s/1dG003Xv)
 # 2、破解
 dos命令进入界面
 ```
