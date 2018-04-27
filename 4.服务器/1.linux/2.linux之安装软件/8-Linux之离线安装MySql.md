@@ -50,7 +50,6 @@ service mysqld start #启动MySQL服务器
 
 service mysqld status #检查MySQL服务器的状态
 
-mysql_secure_installation #确保MySQL安装
 ```
 # 修改mysql密码
 ```
