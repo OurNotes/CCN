@@ -3,7 +3,8 @@
 总操作流程：
 - 1、删除原来的yum；
 - 2、下载安装；
-- 3、检查；
+- 3、配置；
+- 4、检查；
 
 ----------
 
@@ -27,6 +28,15 @@ wget http://mirror.centos.org/centos/6/os/x86_64/Packages/yum-plugin-fastestmirr
 
 rpm -ivh yum-*     #安装
 
+```
+# 配置
+### 1、vi  /etc/yum/pluginconf.d/fastestmirror.conf
+```
+enabled=0  //把1改为0 
+```
+### 2、vi /etc/yum.conf
+```
+plugins=1                 #将plugins的值修改为0
 ```
 # 检查
 ```
