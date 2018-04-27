@@ -57,8 +57,8 @@ grep 'temporary password' /var/log/mysqld.log # 获取临时密码
 
 mysql -u root -p # 使用临时密码登录
 
-#修改root账户的密码，密码：MyNewPass4!
-mysql > ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+#修改root账户的密码，密码：DKLi123456!
+mysql > ALTER USER 'root'@'localhost' IDENTIFIED BY 'DKLi123456!';
 mysql > flush privileges;
 mysql > quit;
 
