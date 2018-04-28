@@ -22,6 +22,7 @@ wget http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c
 ```
 
 # 设置环境变量
+vi /etc/profile
 ```
 #set java environment
 JAVA_HOME=/usr/local/java/jdk1.8.0_144
