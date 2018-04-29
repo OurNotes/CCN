@@ -11,9 +11,12 @@
 
 ----------
 - 项目目录结构
+
 ![](image/3-1.png)
 - 代码结构
+
 ![](image/3-2.png)
+
 # 创建数据库
 ```
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`ssm` /*!40100 DEFAULT CHARACTER SET latin1 */;
