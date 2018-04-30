@@ -49,6 +49,7 @@ vi server.xml #编辑文件
 /usr/local/tomcat/bin/startup.sh
 ```
 # 打包,上传项目
+[项目源码](https://github.com/lidekai/idea-Interface.git)
 ### 1、打包maven项目
 ![](image/1-1.png)
 
