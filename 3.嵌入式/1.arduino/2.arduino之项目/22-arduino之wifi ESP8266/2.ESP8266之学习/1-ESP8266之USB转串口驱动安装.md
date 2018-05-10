@@ -4,6 +4,18 @@
 - 3、测试
 
 ----------
+
+'esp8266引脚说明：'
+| pin | 名称 | 注释 |
+| :-: | :-: | :-: |
+| 1 | 3V3| 供电3.3V |
+| 2 | RX | UART |
+| 3 | IO16 | 这个脚还有一个名称叫RESET |
+| 4 | IO0 | GPIO0 |
+| 4 | EN | 又名CHIP_EN/CH_PD |
+| 4 | IO2 | GPIO2 |
+| 4 | TX | UART |
+| 4 | GND | 接地，电源负极 |
 #驱动下载安装
 将USB 转串口插到电脑上，下载安装驱动[CH341SER.EXE](https://pan.baidu.com/s/1bPLiDqTQ5e6CPCk1NYWfDQ)
 `安装成功标志：`
