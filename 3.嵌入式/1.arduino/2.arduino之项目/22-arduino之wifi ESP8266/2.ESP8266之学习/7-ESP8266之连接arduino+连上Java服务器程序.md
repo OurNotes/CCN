@@ -11,100 +11,175 @@
 # 各器件链接;
 ![](image/3-1.png)
 # 用Java写服务器程序
+### 1、Server
 ```
-package test.ss;
+package test;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- * Created by DK_Li on 2018/5/4.
+/*
+ * 基于TCP协议的Socket通信，实现用户登陆
+ * 服务器端
  */
-public class Service {
+public class Server {
+	public static void main(String[] args) {
+		try {
+			//1.创建一个服务器端Socket，即ServerSocket，指定绑定的端口，并监听此端口
+			ServerSocket serverSocket=new ServerSocket(8888);
+			Socket socket=null;
+			//记录客户端的数量
+			int count=0;
+			System.out.println("***服务器即将启动，等待客户端的连接***");
+			//循环监听等待客户端的连接
+			while(true){
+				//调用accept()方法开始监听，等待客户端的连接
+				socket=serverSocket.accept();
+				//创建一个新的线程
+				ServerThread serverThread=new ServerThread(socket);
+				//启动线程
+				serverThread.start();
 
-    public static void main(String[] args) throws Exception {
-        // 创建服务端，指定端口为10012
-        ServerSocket server = new ServerSocket(10012);
-        byte[] msg = new byte[50];
-        System.out.println("服务器准备就绪.......");
-        // 接收连接该服务端的客户端对象
-        Socket client = server.accept();
-        InetAddress address=client.getInetAddress();
-        System.out.println("当前客户端的IP："+address.getHostAddress());
+				count++;//统计客户端的数量
+				System.out.println("客户端的数量："+count);
+				InetAddress address=socket.getInetAddress();
+				System.out.println("当前客户端的IP："+address.getHostAddress());
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
 
-        //定义一个数据输入流，接收8266发送过来的消息
-        InputStream in = new DataInputStream(client.getInputStream());
-        OutputStream out = new DataOutputStream(client.getOutputStream());
-        //设置成死循环，可以无限接收8266发送的数据
-        boolean accept = true;
-        while (accept) {
-            //输入流读取数据
-            in.read(msg);
+```
+### 2、ServerThread
+```
+package test;
 
-            System.out.println(new String(msg));
-            out.write(msg);
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
 
-        }
-        in.close();
-        out.close();
-        client.close();
-        server.close();
-    }
+/*
+ * 服务器线程处理类
+ */
+public class ServerThread extends Thread {
+	// 和本线程相关的Socket
+	Socket socket = null;
+
+	public ServerThread(Socket socket) {
+		this.socket = socket;
+	}
+
+	//线程执行的操作，响应客户端的请求
+	public void run(){
+		InputStream is=null;
+		InputStreamReader isr=null;
+		BufferedReader br=null;
+		OutputStream os=null;
+		PrintWriter pw=null;
+		try {
+			//获取输入流，并读取客户端信息
+			is = socket.getInputStream();
+			isr = new InputStreamReader(is);
+			br = new BufferedReader(isr);
+			String info=null;
+
+			//获取输出流，响应客户端的请求
+			os = socket.getOutputStream();
+			pw = new PrintWriter(os);
+
+			while((info=br.readLine())!=null){//循环读取客户端的信息
+				System.out.println("我是服务器，客户端说："+info);
 
 
+				Scanner sc=new Scanner(System.in);
+				System.out.println("我是服务器，我对客户端说：");
+				String s1=sc.nextLine();
+				pw.write(s1);
+				pw.flush();//调用flush()方法将缓冲输出
+			}
+			socket.shutdownInput();//关闭输入流
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			//关闭资源
+			try {
+				if(pw!=null)
+					pw.close();
+				if(os!=null)
+					os.close();
+				if(br!=null)
+					br.close();
+				if(isr!=null)
+					isr.close();
+				if(is!=null)
+					is.close();
+				if(socket!=null)
+					socket.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }
 
 ```
 运行：
-
-![](image/7-2.png)
-
-![](image/7-3.gif)
-
+![](image/7-1.gif)
 # arduino写程序
 ```
 #include <SoftwareSerial.h>  
-SoftwareSerial softSerial(1, 0);//RX=1 TX=2 
+
+String setCWMODE="AT+CWMODE=1\r\n";
+String setRST="AT+RST\r\n";
+String setCWJAP="AT+CWJAP=\"WE-178\",\"AbCe@163.com~*~\"\r\n";
+String setCIPMUX="AT+CIPMUX=0\r\n";
+String setCIPSTART="AT+CIPSTART=\"TCP\",\"192.168.0.103\",8888\r\n";//这个端口就不能给你们看了
+String setCIPMODE="AT+CIPMODE=1\r\n";
+String setCIPSEND="AT+CIPSEND\r\n";
+String setString="Connection Successful\r\n";
+String setEnd="+++";
  /**
  * 写AT命令，连接服务器
  */
   void setAT(){
-  String setCWMODE="AT+CWMODE=1\r\n";
-  String setRST="AT+RST\r\n";
-  String setCWJAP="AT+CWJAP=\"骞歌繍178\",\"AbCe@163.com~*~\"\r\n";
-  String setCIPMUX="AT+CIPMUX=1\r\n";
-  String setCIPSERVER="AT+CIPSERVER=1\r\n";
-  String setCIPSTART="AT+CIPSTART=0,\"TCP\",\"192.168.0.103\",10012\r\n";//这个端口就不能给你们看了  
-  String setCIPSEND="AT+CIPSEND=0,8\r\n";
-  String setString=" LayneYao\r\n";
-  
-  softSerial.print(setCWMODE);//将8266设置为STA模式 
+  SoftwareSerial softSerial(1, 0);//RX=1 TX=2
+  softSerial.begin(115200);
+  softSerial.print(setCWMODE);//将8266设置为STA模式
   delay(3000);
   softSerial.print(setRST);//设置完之后重启
   delay(3000);
   softSerial.print(setCWJAP);//8266连接路由器发出的WiFi
-  delay(3000);  
+  delay(3000);
   softSerial.print(setCIPMUX);//启动多连接
-  delay(3000);  
-  softSerial.print(setCIPSERVER);//建立server
-  delay(3000);  
+  delay(3000);
   softSerial.print(setCIPSTART);//通过协议、IP和端口连接服务器
-  delay(3000);  
-  softSerial.print(setCIPSEND);//发送数据的长度 
+  delay(3000);
+  softSerial.print(setCIPMODE);//发送进入透传模式指令
+  delay(3000);
+  softSerial.print(setCIPSEND);//发送进入透传发送模式指令
   delay(3000);
   softSerial.print(setString);//发送数据
   delay(3000);
-
-  
+  softSerial.print(setEnd);//退出透传发送模式
+  delay(3000);
  }
- 
+
 void setup() {
-  softSerial.begin(115200);
   setAT();
   Serial.begin(115200);
 }
@@ -114,4 +189,4 @@ void loop() {
 }
 ```
 # 测试
-![](image/7-4.gif)
+![](image/7-2.gif)
