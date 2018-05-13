@@ -139,7 +139,7 @@ public class ServerThread extends Thread {
 
 ```
 运行：
-![](image/7-1.gif)
+![](image/4-1.gif)
 # arduino写程序
 ```
 #include <SoftwareSerial.h>  
@@ -189,4 +189,4 @@ void loop() {
 }
 ```
 # 测试
-![](image/7-2.gif)
+![](image/4-2.gif)
