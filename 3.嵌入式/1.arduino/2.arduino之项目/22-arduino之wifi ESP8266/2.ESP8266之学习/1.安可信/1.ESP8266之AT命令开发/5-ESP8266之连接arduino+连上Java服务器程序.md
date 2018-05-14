@@ -142,44 +142,35 @@ public class ServerThread extends Thread {
 ![](image/5-1.gif)
 # arduino写程序
 ```
-#include <SoftwareSerial.h>  
+#include <SoftwareSerial.h>
+SoftwareSerial softSerial(1, 0);//RX=1 TX=2
 
-String setCWMODE="AT+CWMODE=1\r\n";
-String setRST="AT+RST\r\n";
-String setCWJAP="AT+CWJAP=\"WE-178\",\"AbCe@163.com~*~\"\r\n";
-String setCIPMUX="AT+CIPMUX=0\r\n";
-String setCIPSTART="AT+CIPSTART=\"TCP\",\"192.168.0.103\",8888\r\n";//这个端口就不能给你们看了
-String setCIPMODE="AT+CIPMODE=1\r\n";
-String setCIPSEND="AT+CIPSEND\r\n";
-String setString="Connection Successful\r\n";
-String setEnd="+++";
  /**
  * 写AT命令，连接服务器
  */
   void setAT(){
-  SoftwareSerial softSerial(1, 0);//RX=1 TX=2
-  softSerial.begin(115200);
-  softSerial.print(setCWMODE);//将8266设置为STA模式
+  softSerial.println("AT+CWMODE=1");//将8266设置为STA模式
   delay(3000);
-  softSerial.print(setRST);//设置完之后重启
+  softSerial.println("AT+RST");//设置完之后重启
   delay(3000);
-  softSerial.print(setCWJAP);//8266连接路由器发出的WiFi
+  softSerial.println("AT+CWJAP=\"WE-178\",\"AbCe@163.com~*~");//8266连接路由器发出的WiFi
   delay(3000);
-  softSerial.print(setCIPMUX);//启动多连接
+  softSerial.println("AT+CIPMUX=0");//启动多连接
   delay(3000);
-  softSerial.print(setCIPSTART);//通过协议、IP和端口连接服务器
+  softSerial.println("AT+CIPSTART=\"TCP\",\"192.168.0.103\",8888");//通过协议、IP和端口连接服务器
   delay(3000);
-  softSerial.print(setCIPMODE);//发送进入透传模式指令
+  softSerial.println("AT+CIPMODE=1");//设置透传
   delay(3000);
-  softSerial.print(setCIPSEND);//发送进入透传发送模式指令
+  softSerial.println("AT+CIPSEND");//启动发送
   delay(3000);
-  softSerial.print(setString);//发送数据
+  softSerial.println("Connection Successful");//发送数据
   delay(3000);
-  softSerial.print(setEnd);//退出透传发送模式
+  softSerial.print("+++");//退出
   delay(3000);
  }
 
 void setup() {
+  softSerial.begin(115200);
   setAT();
   Serial.begin(115200);
 }
