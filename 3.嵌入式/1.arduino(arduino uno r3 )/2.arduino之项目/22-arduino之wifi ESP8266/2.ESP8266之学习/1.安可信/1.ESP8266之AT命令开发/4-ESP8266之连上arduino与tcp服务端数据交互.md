@@ -34,11 +34,11 @@ void getAT(){
   delay(3000);
   getData.println("AT+RST");//设置完之后重启
   delay(3000);
-  getData.println("AT+CWJAP=\"WE-178\",\"AbCe@163.com~*~");//8266连接路由器发出的WiFi
+  getData.println("AT+CWJAP_DEF=\"WE-178\",\"123456789o\"");//8266连接路由器发出的WiFi
   delay(3000);
   getData.println("AT+CIPMUX=0");//启动多连接
   delay(3000);
-  getData.println("AT+CIPSTART=\"TCP\",\"192.168.0.103\",8080");//通过协议、IP和端口连接服务器
+  getData.println("AT+CIPSTART=\"TCP\",\"192.168.0.90\",8234");//通过协议、IP和端口连接服务器
   delay(3000);
   getData.println("AT+CIPMODE=1");//设置透传
   delay(3000);
@@ -83,11 +83,11 @@ void sendAT(){
   delay(3000);
   sendData.println("AT+RST");//设置完之后重启
   delay(3000);
-  sendData.println("AT+CWJAP=\"WE-178\",\"AbCe@163.com~*~");//8266连接路由器发出的WiFi
+  sendData.println("AT+CWJAP_DEF=\"WE-178\",\"123456789o\"");//8266连接路由器发出的WiFi
   delay(3000);
   sendData.println("AT+CIPMUX=0");//启动多连接
   delay(3000);
-  sendData.println("AT+CIPSTART=\"TCP\",\"192.168.0.103\",8080");//通过协议、IP和端口连接服务器
+  sendData.println("AT+CIPSTART=\"TCP\",\"192.168.0.90\",8234");//通过协议、IP和端口连接服务器
   delay(3000);
   sendData.println("AT+CIPMODE=1");//设置透传
   delay(3000);
