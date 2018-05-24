@@ -5,6 +5,8 @@
 - 4、烧录；
 - 5、测试；
 
+[安可信工具](http://wiki.ai-thinker.com/tools)
+
 ----------
 # 下载固件
 [ESP8266 最新SDK发布](http://wiki.ai-thinker.com/esp8266/sdk#esp8266_%E6%9C%80%E6%96%B0sdk%E5%8F%91%E5%B8%83)
