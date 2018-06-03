@@ -6,7 +6,9 @@
 - 5、修改html的js；
 
 ***
-
+- 项目结构
+![](image/3-1.png)
+![](image/3-2.png)
 # 创建model、sql、dao、xml,service
 ### 1、创建model
 ```
