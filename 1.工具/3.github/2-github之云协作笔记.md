@@ -16,6 +16,7 @@
 ![](image/2-2.png)
 
 # 开发软件安装markdown插件（WebStorm做例子）
+建议下载2017.1版本，因为保证可以破解链接能激活
 [WebStorm下载破解](https://github.com/OurNotes/CCN/blob/master/2.%E5%89%8D%E7%AB%AF/1.%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/1-WebStorm%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85.md)
 
 ![](image/2-3.png)
