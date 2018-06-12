@@ -12,7 +12,7 @@ https://www.jetbrains.com/webstorm/download/previous.html
 # 安装配置破解
 ![](image/1.png)
 ```
-http://idea.iteblog.com/key.php
+http://idea.liyang.io/
 ```
 # 添加插件
 ```
