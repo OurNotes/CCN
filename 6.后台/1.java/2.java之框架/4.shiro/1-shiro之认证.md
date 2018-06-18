@@ -57,7 +57,7 @@ public class AuthenticationTest {
 
     @Before
     public void addUser(){
-        simpleAccountRealm.addAccount("Mark","123456");
+        simpleAccountRealm.addAccount("Mark","123456");//用户名，密码
     }
 
     @Test
@@ -69,8 +69,12 @@ public class AuthenticationTest {
         SecurityUtils.setSecurityManager(defaultSecurityManager);
         Subject subject = SecurityUtils.getSubject();
 
-        UsernamePasswordToken token = new UsernamePasswordToken("Mark","123456");
+        UsernamePasswordToken token = new UsernamePasswordToken("Mark","123456");//用户名，密码
         subject.login(token);
+        System.out.println("是否认证："+subject.isAuthenticated());
+    }
+}
+      subject.login(token);
         System.out.println("是否认证："+subject.isAuthenticated());
     }
 }
