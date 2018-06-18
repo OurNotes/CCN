@@ -37,21 +37,22 @@
  # 创建文件
  - java
 ```
+package net.person.shiro;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.mgt.DefaultSecurityManager;
-import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.subject.Subject;
 import org.junit.Test;
 
 /**
  *eated by admin on 2018/6/18.
  */
-public class AuthenticationTest {
+public class IniRealm {
 
     @Test
-    public void TestAuthentication(){
-        IniRealm iniRealm=new IniRealm("classpath:use.ini");
+    public void TestIniRealm(){
+        org.apache.shiro.realm.text.IniRealm iniRealm=new org.apache.shiro.realm.text.IniRealm("classpath:use.ini");
         //1、创建SecurityManager环境
         DefaultSecurityManager defaultSecurityManager=new DefaultSecurityManager();
         defaultSecurityManager.setRealm(iniRealm);
@@ -62,8 +63,12 @@ public class AuthenticationTest {
         UsernamePasswordToken token = new UsernamePasswordToken("Mark","123456");//用户名，密码
         subject.login(token);
         System.out.println("是否认证："+subject.isAuthenticated());
+
+        subject.checkRole("admin");
+        subject.checkPermission("user:delete");
     }
 }
+
 
 ```
 - log4j.properties
