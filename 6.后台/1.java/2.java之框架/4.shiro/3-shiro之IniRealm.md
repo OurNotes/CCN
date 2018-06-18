@@ -37,22 +37,21 @@
  # 创建文件
  - java
 ```
-package net.person.shiro;
-
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.mgt.DefaultSecurityManager;
+import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.subject.Subject;
 import org.junit.Test;
 
 /**
  *eated by admin on 2018/6/18.
  */
-public class IniRealm {
+public class JdbcRealm {
 
     @Test
     public void TestIniRealm(){
-        org.apache.shiro.realm.text.IniRealm iniRealm=new org.apache.shiro.realm.text.IniRealm("classpath:use.ini");
+        IniRealm iniRealm=new IniRealm("classpath:use.ini");
         //1、创建SecurityManager环境
         DefaultSecurityManager defaultSecurityManager=new DefaultSecurityManager();
         defaultSecurityManager.setRealm(iniRealm);
@@ -68,8 +67,6 @@ public class IniRealm {
         subject.checkPermission("user:delete");
     }
 }
-
-
 ```
 - log4j.properties
 ```
