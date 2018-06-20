@@ -122,7 +122,7 @@ public class CustomRealm extends AuthorizingRealm {
         if(password==null){
             return null;
         }
-        SimpleAuthenticationInfo authenticationInfo=new SimpleAuthenticationInfo("Mark","123456","customRealm");
+        SimpleAuthenticationInfo authenticationInfo=new SimpleAuthenticationInfo("Mark",password,"customRealm");
 
 
         return authenticationInfo;
