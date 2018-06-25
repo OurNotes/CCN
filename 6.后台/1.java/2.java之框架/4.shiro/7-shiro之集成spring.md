@@ -17,42 +17,54 @@
 
 # pom.xml引用包
 ```
+ <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>4.11</junit.version>
+    <spring.version>5.0.6.RELEASE</spring.version>
+    <shiro.version>1.3.2</shiro.version>
+  </properties>
+
+  <dependencies>
+    <!--====================================junit==========================================-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-
+    <!--====================================spring==========================================-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>5.0.6.RELEASE</version>
+      <version>${spring.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>5.0.6.RELEASE</version>
+      <version>${spring.version}</version>
     </dependency>
 
+    <!--====================================shiro==========================================-->
     <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-core</artifactId>
-      <version>1.3.2</version>
+      <version>${shiro.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-spring</artifactId>
-      <version>1.3.2</version>
+      <version>${shiro.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-web</artifactId>
-      <version>1.3.2</version>
+      <version>${shiro.version}</version>
     </dependency>
+
+  </dependencies>
 ```
 # 创建文件
 ### 1、login.html
