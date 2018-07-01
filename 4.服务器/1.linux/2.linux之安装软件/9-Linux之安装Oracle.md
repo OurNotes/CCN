@@ -138,7 +138,9 @@ export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK #设置Oracle客户端字符集，必�
 ```
 source /home/oracle/.bash_profile
 ```
-### 12、将安装包移动到/usr/local/src路径下
+
+# 下载安装
+### 1、下载
 [下载](https://www.oracle.com/downloads/index.html#database)
 
 ![](image/9-3.png)
@@ -153,12 +155,10 @@ cd /usr/local/src
 chmod  0777 /usr/local/src #给目录写权限
 ```
 ![](image/9-2.png)
-
-### 13、重启系统，确保所有设置生效
 ```
-reboot
+reboot  #重启系统，确保所有设置生效
 ```
-# 下载安装
+### 2、安装
 ```
 su oracle
 
