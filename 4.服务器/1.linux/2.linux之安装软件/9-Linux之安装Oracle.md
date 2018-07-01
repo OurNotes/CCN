@@ -121,6 +121,7 @@ vi /home/oracle/.bash_profile
 - 修改内容是：
 最后添加
 ```
+# oracle的环境变量
 export ORACLE_BASE=/opt/oracle/install #oracle数据库安装目录
 export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1 #oracle数据库路径
 export ORACLE_SID=orcl #oracle启动数据库实例名
