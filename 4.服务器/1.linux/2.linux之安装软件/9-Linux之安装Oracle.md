@@ -201,6 +201,12 @@ cd /usr/local/src/database/
 
 # 测试
 ```
+su root
+
+cd /usr/local/src
+
+rm -rf database
+
 su oracle
 
 sqlplus / as sysdba  #登陆oracle
