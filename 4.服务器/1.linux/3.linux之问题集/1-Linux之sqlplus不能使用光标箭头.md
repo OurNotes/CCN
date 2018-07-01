@@ -29,22 +29,31 @@ cd rlwrap-0.42
 make  #编译
 
 make install  #安装
+
 ```
 # 修改配置文件
-- 切换到oracle用户，编辑bash_profile文件
+### 1、切换到oracle用户，编辑bash_profile文件
 ```
 su oracle
 
 cd ~
 
+which rlwrap  #查看其路径，复制后设置成环境变量的路径
+
 vi .bash_profile
 ```
-- 添加内容
+### 2、添加内容
 ```
+# rlwrap的环境变量
+PATH=$PATH:/usr/local/rlwrap/bin/rlwrap
 alias sqlplus='rlwrap sqlplus'
 alias rman='rlwrap rman'
 ```
-- 是修改生效
+### 3、 是修改生效
 ```
 source .bash_profile
+```
+### 4、查看是否安装成功
+```
+rlwrap -v
 ```
