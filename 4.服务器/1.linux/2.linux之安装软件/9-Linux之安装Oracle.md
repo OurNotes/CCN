@@ -7,6 +7,7 @@
 - 4、测试。
 
 ***
+`注意：安装要在虚拟机下进行，不能在远程工具上操作`
 
 # 安装的硬件要求
 
@@ -171,9 +172,7 @@ unzip linux.x64_11gR2_database_2of2.zip -d /data/database/
 su root
 
 chown -R oracle:oinstall /data/database/database/
-```
-- 这步要重启远程工具xshell，重新连接linux
-```
+
 su oracle
 
 cd /data/database/database/
