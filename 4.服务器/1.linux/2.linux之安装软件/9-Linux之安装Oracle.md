@@ -7,7 +7,7 @@
 - 4、测试。
 
 ***
-`注意：安装要在虚拟机下进行，不能在远程工具上操作`
+`注意：建议安装要在虚拟机下进行`
 
 # 安装的硬件要求
 
@@ -32,21 +32,18 @@ id oracle # 查看新建的oracle用户
 ```
 cd /.        #进入根目录
 
-mkdir -p /data/oracle　　#oracle数据库安装目录
+mkdir -p /opt/oracle/install　　#oracle数据库安装目录
 
-mkdir -p /data/oraInventory　　#oracle数据库配置文件目录
+mkdir -p /opt/oracle/configuration　　#oracle数据库配置文件目录
 
-mkdir -p /data/database　　#oracle数据库软件包解压目录
-
-cd /data
+cd /opt/oracle
 
 ls　　#创建完毕检查一下（强迫症）
 
-chown -R oracle:oinstall /data/oracle　　#设置目录所有者为oinstall用户组的oracle用户
+chown -R oracle:oinstall /opt/oracle/install　　#设置目录所有者为oinstall用户组的oracle用户
 
-chown -R oracle:oinstall /data/oraInventory
+chown -R oracle:oinstall /opt/oracle/configuration
 
-chown -R oracle:oinstall /data/database
 ```
 ### 3、修改OS系统标识（oracle默认不支持CentOS系统安装，但是centos其实就是redhat）
 ```
@@ -124,7 +121,7 @@ vi /home/oracle/.bash_profile
 - 修改内容是：
 最后添加
 ```
-export ORACLE_BASE=/data/oracle #oracle数据库安装目录
+export ORACLE_BASE=/opt/oracle/install #oracle数据库安装目录
 export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1 #oracle数据库路径
 export ORACLE_SID=orcl #oracle启动数据库实例名
 export ORACLE_UNQNAME=orcl
@@ -164,18 +161,21 @@ su oracle
 
 cd /usr/local/src
 
-#解压软件包至/data/database/目录下
+#解压软件包
 
-unzip linux.x64_11gR2_database_1of2.zip -d /data/database/
-unzip linux.x64_11gR2_database_2of2.zip -d /data/database/
+unzip linux.x64_11gR2_database_1of2.zip
+unzip linux.x64_11gR2_database_2of2.zip
+
+rm -rf linux.x64_11gR2_database_1of2.zip
+rm -rf linux.x64_11gR2_database_2of2.zip
 
 su root
 
-chown -R oracle:oinstall /data/database/database/
+chown -R oracle:oinstall /usr/local/src/database/
 
 su oracle
 
-cd /data/database/database/
+cd /usr/local/src/database/
 
 ./runInstaller
 ```
