@@ -38,14 +38,14 @@ su oracle
 
 cd ~
 
-which rlwrap  #查看其路径，复制后设置成环境变量的路径
+which rlwrap  #查看其路径，复制bin前的路径后设置成环境变量的路径
 
 vi .bash_profile
 ```
 ### 2、添加内容
 ```
 # rlwrap的环境变量
-PATH=$PATH:/usr/local/rlwrap/bin/rlwrap
+PATH=$PATH:/usr/local/rlwrap/bin
 alias sqlplus='rlwrap sqlplus'
 alias rman='rlwrap rman'
 ```
