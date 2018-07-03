@@ -131,6 +131,7 @@ export PATH=$ORACLE_HOME/bin:/usr/sbin:$PATH #添加系统环境变量
 export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib #添加系统环境变量
 export LANG=C #防止安装过程出现乱码
 export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK #设置Oracle客户端字符集，必须与Oracle安装时设置的字符集保持一致
+
 ```
 ### 11、使用户的环境变量配置立即生效
 ```
@@ -199,6 +200,26 @@ cd /usr/local/src/database/
 ![](image/9-13.png)
 
 ![](image/9-14.png)
+
+### 3、修改监听文件
+```
+vi /opt/oracle/install/product/11.2.0/db_1/network/admin/listener.ora
+```
+- 添加内容：
+```
+SID_LIST_LISTENER=
+  (SID_LIST=
+      (SID_DESC=
+         (GLOBAL_DBNAME=orcl)
+         (SID_NAME=orcl)
+         (ORACLE_HOME=/opt/oracle/install/product/11.2.0/db_1/)
+         (PRESPAWN_MAX=20)
+         (PRESPAWN_LIST=
+          (PRESPAWN_DESC=(PROTOCOL=tcp)(POOL_SIZE=2)(TIMEOUT=1))
+         )
+       )
+  )
+```
 
 # 测试
 ```
