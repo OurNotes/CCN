@@ -203,26 +203,24 @@ cd /usr/local/src/database/
 
 ### 3、修改监听文件
 ```
-lsnrctl status #查看listener.ora的路径
-```
-![](image/9-15.png)
-```
+pwd #查看listener.ora的路径
+
 vi /opt/oracle/install/product/11.2.0/db_1/network/admin/listener.ora
 ```
 - 添加内容：
 ```
 SID_LIST_LISTENER=
-  (SID_LIST=
-      (SID_DESC=
-         (GLOBAL_DBNAME=orcl)
-         (SID_NAME=orcl)
-         (ORACLE_HOME=/opt/oracle/install/product/11.2.0/db_1/)
-         (PRESPAWN_MAX=20)
-         (PRESPAWN_LIST=
-          (PRESPAWN_DESC=(PROTOCOL=tcp)(POOL_SIZE=2)(TIMEOUT=1))
-         )
-       )
-  )
+     (SID_LIST=
+         (SID_DESC=
+            (GLOBAL_DBNAME=orcl)
+            (SID_NAME=orcl)
+            (ORACLE_HOME=/opt/oracle/install/product/11.2.0/db_1/)
+            (PRESPAWN_MAX=20)
+            (PRESPAWN_LIST=
+             (PRESPAWN_DESC=(PROTOCOL=tcp)(POOL_SIZE=2)(TIMEOUT=1))
+            )
+          )
+     )
 ```
 
 # 测试
