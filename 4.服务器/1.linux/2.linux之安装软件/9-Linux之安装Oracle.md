@@ -203,6 +203,10 @@ cd /usr/local/src/database/
 
 ### 3、修改监听文件
 ```
+lsnrctl status #查看listener.ora的路径
+```
+![](image/9-15.png)
+```
 vi /opt/oracle/install/product/11.2.0/db_1/network/admin/listener.ora
 ```
 - 添加内容：
