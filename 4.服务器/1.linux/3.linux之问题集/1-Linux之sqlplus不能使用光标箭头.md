@@ -6,7 +6,7 @@
 
 # 下载安装
 ### 1、下载
-[下载](https://pan.baidu.com/s/1XEg3UF5Eh124khS06pYbhg)
+[下载](https://pan.baidu.com/s/1vvpB1VV7MNh42Wj5XnDESA)
 ```
 cd /usr/local/src
 chmod  0777 /usr/local/src #给目录写权限
@@ -18,11 +18,11 @@ chmod  0777 /usr/local/src #给目录写权限
 # 安装readline
 yum install readline*
 
-tar -xzvf rlwrap-0.42.tar.gz  #解压
+tar -xzvf rlwrap-0.43.tar.gz  #解压
 
-rm -rf rlwrap-0.42.tar.gz #删除包
+rm -rf rlwrap-0.43.tar.gz #删除包
 
-cd rlwrap-0.42
+cd rlwrap-0.43
 
 ./configure --prefix=/usr/local/rlwrap # 配置
 
