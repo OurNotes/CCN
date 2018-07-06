@@ -21,12 +21,6 @@ su           #切换到root
 groupadd oinstall　　#创建用户组oinstall
 
 groupadd dba　　#创建用户组dba
-
-useradd -g oinstall -g dba -m oracle　　#创建oracle用户，并加入到oinstall和dba用户组
-
-passwd oracle　　#设置用户oracle的登陆密码，不设置密码，在CentOS的图形登陆界面没法登陆
-
-id oracle # 查看新建的oracle用户
 ```
 ### 2、创建oracle数据库安装目录
 ```
@@ -38,11 +32,9 @@ mkdir -p /opt/oracle/configuration　　#oracle数据库配置文件目录
 
 cd /opt/oracle
 
-ls　　#创建完毕检查一下（强迫症）
+chown -R dk:oinstall /opt/oracle/install　　#设置目录所有者为oinstall用户组的dk用户
 
-chown -R oracle:oinstall /opt/oracle/install　　#设置目录所有者为oinstall用户组的oracle用户
-
-chown -R oracle:oinstall /opt/oracle/configuration
+chown -R dk:oinstall /opt/oracle/configuration
 
 ```
 ### 3、修改OS系统标识（oracle默认不支持CentOS系统安装，但是centos其实就是redhat）
@@ -116,7 +108,7 @@ oracle hard nofile 65536
 ```
 ### 10、配置用户的环境变量（斜体部分为添加代码）
 ```
-vi /home/oracle/.bash_profile
+vi /home/dk/.bash_profile
 ```
 - 修改内容是：
 最后添加
@@ -135,7 +127,9 @@ export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK #设置Oracle客户端字符集，必�
 ```
 ### 11、使用户的环境变量配置立即生效
 ```
-source /home/oracle/.bash_profile
+source /home/dk/.bash_profile
+
+reboot #重启系统
 ```
 
 # 下载安装
@@ -154,12 +148,9 @@ cd /usr/local/src
 chmod  0777 /usr/local/src #给目录写权限
 ```
 ![](image/9-2.png)
-```
-reboot  #重启系统，确保所有设置生效
-```
 ### 2、安装
 ```
-su oracle
+su dk
 
 cd /usr/local/src
 
@@ -173,9 +164,9 @@ rm -rf linux.x64_11gR2_database_2of2.zip
 
 su root
 
-chown -R oracle:oinstall /usr/local/src/database/
+chown -R dk:oinstall /usr/local/src/database/
 
-su oracle
+su dk
 
 cd /usr/local/src/database/
 
@@ -201,31 +192,8 @@ cd /usr/local/src/database/
 
 ![](image/9-14.png)
 
-### 3、修改监听文件
-```
-pwd #查看listener.ora的路径
-
-vi /opt/oracle/install/product/11.2.0/db_1/network/admin/listener.ora
-```
-- 添加内容：
-```
-SID_LIST_LISTENER=
-     (SID_LIST=
-         (SID_DESC=
-            (GLOBAL_DBNAME=orcl)
-            (SID_NAME=orcl)
-            (ORACLE_HOME=/opt/oracle/install/product/11.2.0/db_1/)
-            (PRESPAWN_MAX=20)
-            (PRESPAWN_LIST=
-             (PRESPAWN_DESC=(PROTOCOL=tcp)(POOL_SIZE=2)(TIMEOUT=1))
-            )
-          )
-     )
-```
-
 # 测试
 ```
-su root
 
 cd /usr/local/src
 
