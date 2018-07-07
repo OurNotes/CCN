@@ -30,6 +30,10 @@ make  #编译
 
 make install  #安装
 
+cd /usr/local/src
+
+rm -rf rlwrap-0.43
+
 ```
 # 修改配置文件
 ### 1、切换到oracle用户，编辑bash_profile文件
