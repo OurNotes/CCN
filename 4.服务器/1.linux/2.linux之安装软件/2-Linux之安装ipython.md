@@ -16,11 +16,13 @@ rm -rf ipython-3.0.0.tar.gz #删除安装包
 
 cd ipython-3.0.0 #进入文件夹里
 
-rm -rf ipython-3.0.0
-
 /usr/local/python2.7/bin/python2.7 setup.py build #编译(路径是python的安装路径）
 
 /usr/local/python2.7/bin/python2.7 setup.py install #安装(路径是python的安装路径）
+
+cd .. #返回上一级
+
+rm -rf ipython-3.0.0 #删除文件夹
 ```
 # 做软链接
 ```
