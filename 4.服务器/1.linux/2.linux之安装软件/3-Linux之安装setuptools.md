@@ -17,6 +17,8 @@ python2.7 setup.py build #编译
 
 python2.7 setup.py install #安装
 
+cd .. #返回上一级
+
 rm -rf setuptools-1.4.2 #删除文件夹
 ```
 
