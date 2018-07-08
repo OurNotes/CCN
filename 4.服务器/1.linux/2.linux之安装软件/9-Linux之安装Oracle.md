@@ -116,7 +116,7 @@ vi /home/dk/.bash_profile
 # oracle的环境变量
 export ORACLE_BASE=/opt/oracle/install #oracle数据库安装目录
 export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1 #oracle数据库路径
-export ORACLE_SID=orcl #oracle启动数据库实例名
+export ORACLE_SID=orcl:my #oracle启动数据库实例名
 export ORACLE_UNQNAME=orcl
 export ORACLE_TERM=xterm #xterm窗口模式安装
 export PATH=$ORACLE_HOME/bin:/usr/sbin:$PATH #添加系统环境变量
