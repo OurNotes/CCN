@@ -12,11 +12,17 @@ wget https://pypi.python.org/packages/source/p/pip/pip-1.3.1.tar.gz --no-check-c
 
 tar -xzvf pip-1.3.1.tar.gz #解压
 
+rm -rf pip-1.3.1.tar.gz #删除安装包
+
 cd pip-1.3.1 #进入文件夹
 
 python setup.py build #编译
 
 python setup.py install #安装
+
+cd .. #返回上一级
+
+rm -rf pip-1.3.1 #删除文件夹
 ```
 
 # 做软链接
