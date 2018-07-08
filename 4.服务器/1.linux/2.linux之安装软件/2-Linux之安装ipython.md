@@ -12,7 +12,11 @@ wget -c http://www.dwhd.org/script/tar_gz_bz2/ipython-3.0.0.tar.gz #下载
 
 tar xf ipython-3.0.0.tar.gz #解压
 
+rm -rf ipython-3.0.0.tar.gz #删除安装包
+
 cd ipython-3.0.0 #进入文件夹里
+
+rm -rf ipython-3.0.0
 
 /usr/local/python2.7/bin/python2.7 setup.py build #编译(路径是python的安装路径）
 
