@@ -29,6 +29,8 @@ wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz #下载
 
 tar -xvzf Python-2.7.11.tgz #解压
 
+rm -rf Python-2.7.11.tgz #删除安装包
+
 cd Python-2.7.11 #进入文件夹里
 
 ./configure --prefix=/usr/local/python2.7 #配置
@@ -36,6 +38,10 @@ cd Python-2.7.11 #进入文件夹里
 make #编译
 
 make install #安装
+
+cd .. #返回上一级目录
+
+rm -rf Python-2.7.11 #删除文件夹
 ```
 
 # 修改python软链接指向
@@ -72,8 +78,8 @@ vi /etc/profile
 
 ### 在最尾部添加
 ```
-PATH=$PATH:/usr/local/python2.7/bin #添加到环境变量中
-export PATH 
+PATH=$PATH:/usr/local/python2.7/bin
+export PATH
 ```
 
 ```
