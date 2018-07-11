@@ -1,4 +1,6 @@
 [参考文献](https://www.3d66.com/softhtml/softsetup_350.html)
+[![](https://img.shields.io/badge/参考文献-3dmax--2017-gold.svg "参考文献 3dmax-2017")](https://www.3d66.com/softhtml/softsetup_350.html)
+
 总操作流程：
 - 1、下载安装；
 - 2、破解；
@@ -6,6 +8,7 @@
 ***
 
 # 下载安装
+
 [ 3dmax2017含注册机](https://pan.baidu.com/s/1exd-ur8lnKpvhZCH6gIXxg)
 # 破解
 ![](image/1-1.png)
