@@ -6,7 +6,7 @@
 ***
 
 # 下载安装
-[![](https://img.shields.io/badge/官网下载-liquibase-green.svg "官网下载 liquibase")](http://www.liquibase.org/download/index.html)
+[![](https://img.shields.io/badge/官网-liquibase-green.svg "官网 liquibase")](http://www.liquibase.org/download/index.html)
 # 配置
 ### 1、配置环境变量
 新建：
