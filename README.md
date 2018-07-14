@@ -9,7 +9,7 @@
 # Octotree的安装
 
 ### 下载
-[下载](https://pan.baidu.com/s/1D5XPzfVFZL3HBKYYbDku0g)
+[![](https://img.shields.io/badge/Octotree-2.1.0-green.svg "Octotree 2.1.0")](https://pan.baidu.com/s/1D5XPzfVFZL3HBKYYbDku0g)
 
 ### 安装
 ![](image/1-2.png)
