@@ -6,12 +6,11 @@
 ----------
 
 # 电脑安装linux
-下载原版Linux CentOS-6.9版教程：http://jingyan.baidu.com/article/6dad5075cd4e6ca123e36e31.html
+[![](https://img.shields.io/badge/参考文献-下载原版Linux-yellow.svg "参考文献 下载原版Linux")](http://jingyan.baidu.com/article/6dad5075cd4e6ca123e36e31.html)
+[![](https://img.shields.io/badge/参考文献-Linux系统写入到U盘-yellow.svg "参考文献 Linux系统写入到U盘")](http://www.xitongzhijia.net/xtjc/20140721/24235.html)
+[![](https://img.shields.io/badge/软碟通-UltraISO-green.svg "软碟通 UltraISO")](http://pan.baidu.com/s/1eRJj1vG)
+[![](https://img.shields.io/badge/参考文献-安装Linux系统-yellow.svg "参考文献 安装Linux系统")](http://www.osyunwei.com/archives/2307.html)
 
-将Linux系统刻录到u盘里的教程：http://www.xitongzhijia.net/xtjc/20140721/24235.html
-UltraISO PE（软碟通）软件--要以管理员身份运行：http://pan.baidu.com/s/1eRJj1vG
-
-安装Linux系统教程：http://www.osyunwei.com/archives/2307.html
 
 ----------
 
@@ -23,15 +22,15 @@ UltraISO PE（软碟通）软件--要以管理员身份运行：http://pan.baidu
 
 ----------
 - 下载安装虚拟机教程
-[下载地址](http://www.vmware.com/products/workstation/)
+[![](https://img.shields.io/badge/官网-虚拟机-red.svg "官网 虚拟机")](http://www.vmware.com/products/workstation/)
+
 ![](image/2-1.png)
+
 百度找秘钥
 
-- 下载linux系统教程
-http://jingyan.baidu.com/article/6dad5075cd4e6ca123e36e31.html
 
 - 在虚拟机上安装linux系统的教程
-http://jingyan.baidu.com/article/a948d651484fba0a2dcd2e15.html
+[![](https://img.shields.io/badge/参考文献-虚拟机上安装linux系统-yellow.svg "参考文献 虚拟机上安装linux系统")](http://jingyan.baidu.com/article/a948d651484fba0a2dcd2e15.html)
 
 `注：主机安装的话用记事本打开这个文件syslinux\syslinux.cfg，把第一行 default vesamenu.c32 替换为default linux timeout 600 label linux kernel vmlinuz append initrd=initrd.img这样修改之后`
 

@@ -9,6 +9,7 @@
 su
 ```
 成功标准：
+
 ![](image/11-1.png)
 
 # 编辑修改配置文件
@@ -25,5 +26,4 @@ dk    ALL=(ALL)       ALL
 ```
 su dk
 ```
-
-[参考资料](http://blog.csdn.net/tropicofcancer9/article/details/53926920)
+[![](https://img.shields.io/badge/参考文献-用户获得root权限-yellow.svg "参考文献 用户获得root权限")](http://blog.csdn.net/tropicofcancer9/article/details/53926920)
