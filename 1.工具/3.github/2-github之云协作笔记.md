@@ -35,7 +35,7 @@
 ![](image/2-6.png)
 
 ### 1、git
-[![](https://img.shields.io/badge/官网-git-red.svg "官网 git")](https://git-scm.com/downltoad/win)
+[![](https://img.shields.io/badge/官网-git-red.svg "官网 git")](https://git-scm.com/)
 
 
 ![](image/2-7.png)
