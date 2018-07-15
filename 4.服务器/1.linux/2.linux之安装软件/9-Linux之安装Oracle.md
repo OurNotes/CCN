@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/参考文献-下安装Oracle11g r2-yellow.svg "参考文献 下安装Oracle11g r2")](https://www.cnblogs.com/muhehe/p/7816808.html)
+[![](https://img.shields.io/badge/参考文献-下安装Oracle11gr2-yellow.svg "参考文献 下安装Oracle11g r2")](https://www.cnblogs.com/muhehe/p/7816808.html)
 
 
 操作总流程：
