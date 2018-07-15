@@ -10,12 +10,12 @@
 ----------
 
 # 创建分支
-语法：
+- 语法：
 ```
 git checkout -b dev
 ```
 # 查看分支情况
-语法：
+- 语法：
 ```
 git branch
 ```
@@ -25,16 +25,18 @@ git add readme.txt
 git commit -m "branch test"
 ```
 # 切换回主分支
-语法:git checkout master
+- 语法:git checkout master
 ```
 git checkout master
 ```
 # 合并分支
-语法：
+- 语法：
 ```
 git merge 选项 dev
 ```
+
 选项：
+
 --no-ff：可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并
 
 # 删除分支

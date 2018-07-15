@@ -13,7 +13,7 @@
 ```
 git checkout -b feature1 #创建分支
 ```
-修改readme.txt文件:
+- 修改readme.txt文件:
 ```
 Creating a new branch is quick AND simple.
 ```
@@ -25,7 +25,7 @@ git commit -m "AND simple" #提交
 ```
 git checkout master #切换到主分支
 ```
-修改readme.txt文件:
+- 修改readme.txt文件:
 ```
 Creating a new branch is quick & simple.
 ```

@@ -17,19 +17,16 @@
 ![](image/4-1.png)
 
 - 改前：
-
 ```
 Git is a version control system.
 Git is free software.
 ```
 
 - 改后：
-
 ```
 Git is a distributed version control system.
 Git is free software.
 ```
-
 # git status命令看仓库当前的状态
 
 - 效果展现：
@@ -37,7 +34,6 @@ Git is free software.
 ![](image/4-2.png)
 
 - 语法：
-
 ```
 git status
 ```
@@ -48,7 +44,6 @@ git status
 ![](image/4-3.png)
 
 - 语法：
-
 ```
 git diff readme.txt
 ```
@@ -56,7 +51,6 @@ git diff readme.txt
 # git add命令提交修改文件
 
 - 语法：
-
 ```
 git add readme.txt
 ```
@@ -67,7 +61,6 @@ git add readme.txt
 ![](image/4-4.png)
 
 - 语法：
-
 ```
 git status
 ```
@@ -78,7 +71,6 @@ git status
 ![](image/4-5.png)
 
 - 语法：
-
 ```
 git commit -m "add distributed"
 ```
@@ -89,7 +81,6 @@ git commit -m "add distributed"
 ![](image/4-6.png)
 
 - 语法：
-
 ```
 git status
 ```
