@@ -9,20 +9,25 @@
 # 删除初始化的一些文件
 ![](image/3-1.png)
 
-项目结构：
+- 项目结构：
+
 ![](image/3-2.png)
 
-代码结构：
+- 代码结构：
+
 ![](image/3-3.png)
 
 # 创建两个vue文件
-index.vue
+
+- index.vue
+
 ```
 <template>
   <div>index page</div>
 </template>
 ```
-content.vue
+- content.vue
+
 ```
 <template>
   <div>content page</div>

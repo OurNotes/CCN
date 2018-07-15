@@ -9,14 +9,24 @@
 
 ----------
 # 创建文件夹
+
 ![](image/7-1.png)
+
 # 下载vue.js文件
-vue.js的下载：
+- vue.js的下载：
+
 ![](image/7-2.png)
-vue-resource.js下载地址：
-http://www.bootcdn.cn/vue-resource/
+
+- vue-resource.js下载地址：
+[![](https://img.shields.io/badge/官网-vue--resource-red.svg "官网 vue-resource")](http://www.bootcdn.cn/vue-resource/)
+
+
 ![](image/7-3.gif)
+
 # 创建js，html引用
+
 ![](image/7-4.png)
+
 # 测试
+
 ![](image/7-5.png)

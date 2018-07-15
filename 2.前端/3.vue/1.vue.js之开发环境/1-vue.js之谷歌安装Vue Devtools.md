@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/参考文献-vue--devtools-yellow.svg "参考文献 vue-devtools")](https://github.com/vuejs/vue-devtools#vue-devtools)
+
 总操作流程：
 - 1、下载devtools源码；
 - 2、下载依赖，编译源程序；
@@ -5,13 +7,10 @@
 - 4、将插件安装到浏览器
 - 5、调整项目的webpack.config.js
 
-参考资料:https://www.cnblogs.com/tanyongli/p/7554045.html
-
 ----------
 # 下载devtools源码
-```
-下载地址：https://github.com/vuejs/vue-devtools#vue-devtools
-```
+[![](https://img.shields.io/badge/官方-vue--devtools.svg "源代码 vue--devtools")](https://github.com/vuejs/vue-devtools#vue-devtools)
+
 ![](image/1.png)
 
 # 下载依赖，编译源程序
