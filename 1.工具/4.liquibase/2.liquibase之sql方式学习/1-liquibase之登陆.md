@@ -77,8 +77,6 @@ outputChangeLogFile=src/main/resources/liquibase/outputChangeLogFile/changelog_o
           <artifactId>liquibase-maven-plugin</artifactId>
           <version>3.5.3</version>
           <configuration>
-            <!--共享的LiquiBase配置 -->
-            <propertyFileWillOverride>true</propertyFileWillOverride>
             <!--连接数据库的配置文件路径-->
             <propertyFile>${basedir}/src/main/resources/properties/jdbc.properties</propertyFile>
             <!--输出文件的编码 -->
