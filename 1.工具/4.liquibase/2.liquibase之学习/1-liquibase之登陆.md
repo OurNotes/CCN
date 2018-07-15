@@ -85,8 +85,9 @@ outputChangeLogFile=src/main/resources/liquibase/outputChangeLogFile/changelog_o
         </plugin>
 ```
 # 测试看效果
+- 命令：
 ```
 mvn liquibase:generateChangeLog
 ```
-成功标志
+- 成功标志：
 ![](image/1-2.gif)
