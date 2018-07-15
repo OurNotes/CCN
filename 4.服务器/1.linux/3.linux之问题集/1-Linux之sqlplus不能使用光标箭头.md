@@ -6,12 +6,14 @@
 
 # 下载安装
 ### 1、下载
-[下载](https://pan.baidu.com/s/1vvpB1VV7MNh42Wj5XnDESA)
+[![](https://img.shields.io/badge/rlwrap-0.43-green.svg "rlwrap 0.43")](https://pan.baidu.com/s/1vvpB1VV7MNh42Wj5XnDESA)
+
 ```
 cd /usr/local/src
 chmod  0777 /usr/local/src #给目录写权限
 ```
 - 上传
+
 ![](image/1-1.png)
 ### 2、安装
 ```
