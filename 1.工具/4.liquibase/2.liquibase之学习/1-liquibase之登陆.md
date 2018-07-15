@@ -7,7 +7,8 @@
 - 3、修改pom.xml;
 - 4、测试看效果;
 
-[![](https://img.shields.io/badge/源码-tesSQL-green.svg "源码 tesSQL")](https://github.com/lidekai/tesSQL.git)
+[![](https://img.shields.io/badge/源码-tesSQL-blue.svg "源码 tesSQL")](https://github.com/lidekai/tesSQL.git)
+
 ***
 
 # 创建maven项目
