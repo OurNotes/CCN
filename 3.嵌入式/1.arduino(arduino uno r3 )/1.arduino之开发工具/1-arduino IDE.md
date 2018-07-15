@@ -5,10 +5,12 @@
 
 ----------
 # 下载安装
-[1、官网最新版](https://www.arduino.cc/)
+[![](https://img.shields.io/badge/官网-arduino-red.svg "官网 arduino")](https://www.arduino.cc/)
+
 ![](image/1-1.png)
+
 ![](image/1-2.png)
 
-[2、arduino-1.0.5-windows.exe](https://pan.baidu.com/s/1ht7hsuK)
+[![](https://img.shields.io/badge/arduino-1.0.5-green.svg "arduino 1.0.5")](https://pan.baidu.com/s/1ht7hsuK)
 
-[安装库](https://www.arduino.cc/en/Guide/Libraries)
+[![](https://img.shields.io/badge/官网-安装库-red.svg "官网 安装库")](https://www.arduino.cc/en/Guide/Libraries)
