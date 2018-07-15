@@ -1,4 +1,5 @@
-[参考文献](https://blog.csdn.net/m0_37886429/article/details/75009382)
+[![](https://img.shields.io/badge/参考文献-yum的卸载与重新安装-yellow.svg "参考文献 yum的卸载与重新安装")](https://blog.csdn.net/m0_37886429/article/details/75009382)
+
 
 总操作流程：
 - 1、删除原来的yum；
@@ -17,7 +18,8 @@ rpm -qa | grep yum | xargs rpm -e --nodeps  #将所有的组件卸载掉
 rpm -qa yum #查查是否卸载成功
 ```
 # 下载安装CentOS 6
-[各版本](https://blog.csdn.net/weicaijiang/article/details/78699206)
+[![](https://img.shields.io/badge/参考文献-各版本-yellow.svg "参考文献 各版本")](https://blog.csdn.net/weicaijiang/article/details/78699206)
+
 ```
 uname -r #查看系统版本
 

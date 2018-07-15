@@ -1,4 +1,5 @@
-[参考文献](https://dev.mysql.com/doc/mysql-repo-excerpt/5.6/en/linux-installation-yum-repo.html)
+[![](https://img.shields.io/badge/官网-离线安装-red.svg "参考文献 离线安装")](https://dev.mysql.com/doc/mysql-repo-excerpt/5.6/en/linux-installation-yum-repo.html)
+
 
 总操作流程：
 - 1、删除系统自带的mysql；
@@ -15,7 +16,8 @@ rpm -qa | grep mysql | xargs rpm -e --nodeps 文件名 #卸载mysql
 ```
 # 下载安装mysql(CentOS 6)
 ### 1、下载
-[下载地址](https://dev.mysql.com/downloads/repo/yum/)
+[![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/repo/yum/)
+
 ```
 uname -r #查看系统版本
 ```
