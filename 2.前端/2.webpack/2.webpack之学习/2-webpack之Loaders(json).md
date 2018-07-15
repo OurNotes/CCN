@@ -4,7 +4,7 @@
 - 3、修改Greeter.js文件
 - 4、修改main.js文件
 
-[源码](https://github.com/lidekai/WebpackProjects-Loaders-json.git)
+[![](https://img.shields.io/badge/源代码-WebpackProjects--Loaders--json-blue.svg "源代码 WebpackProjects-Loaders-json")](https://github.com/lidekai/WebpackProjects-Loaders-json.git)
 
 ----------
 
@@ -42,5 +42,7 @@ document.write(greeter());
 `
 注：件由于webpack3.*/webpack2.*已经内置可处理JSON文件，这里我们无需再添加webpack1.*需要的json-loader。
 `
+
 不需要加
+
 ![](image/2-2.png)

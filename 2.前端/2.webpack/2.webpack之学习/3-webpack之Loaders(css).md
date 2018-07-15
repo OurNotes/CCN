@@ -3,7 +3,7 @@
 - 2、在app文件夹添加css文件
 - 3、修改main.js文件
 
-[源码](https://github.com/lidekai/WebpackProjects-Loaders-css.git)
+[![](https://img.shields.io/badge/源代码-WebpackProjects--Loaders--css-blue.svg "源代码 WebpackProjects-Loaders-css")](https://github.com/lidekai/WebpackProjects-Loaders-css.git)
 
 ----------
 

@@ -5,18 +5,22 @@
 - 4、打包
 - 5、测试
 
-[源代码](https://github.com/lidekai/WebpackProjects-SimpleHtml.git)
+[![](https://img.shields.io/badge/源代码-WebpackProjects--SimpleHtml-blue.svg "源代码 WebpackProjects-SimpleHtml")](https://github.com/lidekai/WebpackProjects-SimpleHtml.git)
 
 ----------
 
-代码结构
+- 代码结构
+
 ![](image/1-1.png)
 
 
 # 创建三个文件夹
 1、WebpackProjects
+
 2、app
+
 3、public
+
 ![](image/1-2.png)
 
 # 初始化(cmd进入文件夹初始化)
