@@ -18,4 +18,5 @@ service iptables restart #重启
 ```
 # 测试
 浏览器输入ip：192.168.23.131
+
 ![](image/2-1.png)

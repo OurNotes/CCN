@@ -1,4 +1,6 @@
-[参考文献](http://www.runoob.com/linux/nginx-install-setup.html)
+[![](https://img.shields.io/badge/参考文献-Nginx安装配置-yellow.svg "参考文献 Nginx 安装配置")](http://www.runoob.com/linux/nginx-install-setup.html)
+
+
 总操作流程：
 - 1、安装编译工具及库文件；
 - 2、首先要安装 PCRE；
@@ -144,4 +146,5 @@ http
 ```
 # 测试
 用浏览器ip
+
 ![](image/1-1.png)
