@@ -9,7 +9,7 @@
 
 ----------
 # 下载devtools源码
-[![](https://img.shields.io/badge/官方-vue--devtools.svg "源代码 vue--devtools")](https://github.com/vuejs/vue-devtools#vue-devtools)
+[![](https://img.shields.io/badge/官方-vue--devtools-blue.svg "源代码 vue--devtools")](https://github.com/vuejs/vue-devtools#vue-devtools)
 
 ![](image/1.png)
 

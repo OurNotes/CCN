@@ -4,7 +4,8 @@
 - 5、创建业务js，html引用js文件
 - 6、测试
 
-[源码](https://github.com/lidekai/eclipse-vue.git)
+[![](https://img.shields.io/badge/源码-eclipse--vue-blue.svg "源代码 eclipse-vue")](https://github.com/lidekai/eclipse-vue.git)
+
 `注：下载代码要安装vue才能运行`
 
 ----------

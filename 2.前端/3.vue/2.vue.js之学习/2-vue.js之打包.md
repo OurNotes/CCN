@@ -3,7 +3,7 @@
 - 2、打包
 - 3、修改inde.html文件
 
-[![](https://img.shields.io/badge/源码-vue.svg "源代码 vue")](https://github.com/lidekai/vue.git)
+[![](https://img.shields.io/badge/源码-vue-blue.svg "源代码 vue")](https://github.com/lidekai/vue.git)
 
 ----------
 # 1、修改vue文件
