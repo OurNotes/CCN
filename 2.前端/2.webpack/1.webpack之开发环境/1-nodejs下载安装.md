@@ -8,9 +8,8 @@
 
 ----------
 # 下载安装node.js
-```
-下载地址：https://nodejs.org/en/
-```
+[![](https://img.shields.io/badge/官网-Node.js-red.svg "官网 Node.js")](https://nodejs.org/en/)
+
 # 配置node.js环境
 在path添加node.js的路径：D:\nodejs
 # 在doc下测试node.js是否成功
