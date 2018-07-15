@@ -19,4 +19,4 @@ File -> settings -> Plugins 即可调出设置中的插件选项。
 ```
 - 参考：
 
-[![](https://img.shields.io/badge/参考文献-插件.svg "参考文献 插件")](https://www.zhihu.com/question/22437385)
+[![](https://img.shields.io/badge/参考文献-插件-yellow.svg "参考文献 插件")](https://www.zhihu.com/question/22437385)
