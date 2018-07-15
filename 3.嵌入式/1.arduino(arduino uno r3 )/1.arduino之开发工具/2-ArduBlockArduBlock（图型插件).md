@@ -1,4 +1,6 @@
-[参考教程](https://jingyan.baidu.com/article/f96699bbb64fd5894e3c1b1a.html)
+[![](https://img.shields.io/badge/参考文献-Arduino安装ArduBlock-yellow.svg "参考文献 Arduino安装ArduBlock")](https://jingyan.baidu.com/article/f96699bbb64fd5894e3c1b1a.html)
+
+
 总操作流程：
 - 1、下载
 - 2、jar放到文件夹里
