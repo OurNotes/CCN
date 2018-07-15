@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/官网-maven的配置-red.svg "官网 maven的配置")](http://www.liquibase.org/documentation/maven/)
+[![](https://img.shields.io/badge/官网-liquibase的maven配置-red.svg "官网 liquibase的maven配置")](http://www.liquibase.org/documentation/maven/)
 
 
 总操作流程：
