@@ -1,4 +1,6 @@
-[参考教程](http://www.51hei.com/bbs/dpj-41337-1.html)
+[![](https://img.shields.io/badge/参考文献-LED神灯闪烁-yellow.svg "参考文献 LED神灯闪烁")](http://www.51hei.com/bbs/dpj-41337-1.html)
+
+
 总操流程：
 - 1、各器件链接
 - 2、写入程序

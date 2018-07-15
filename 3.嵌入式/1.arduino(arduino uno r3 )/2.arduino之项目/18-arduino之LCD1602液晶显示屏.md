@@ -1,4 +1,6 @@
-[参考文献](https://www.cnblogs.com/liujw2114/p/6011214.html)
+[![](https://img.shields.io/badge/参考文献-LCD1602-yellow.svg "参考文献 LCD1602")](https://www.cnblogs.com/liujw2114/p/6011214.html)
+
+
 总操流程：
 - 1、各器件链接
 - 2、写入程序
@@ -7,6 +9,7 @@
 ----------
 # 各器件链接
 `LCD1602液晶引脚说明`
+
 | pin | 名称 | 注释 |
 | :-: | :-: | :-: |
 | 1 | VSS| 电源地 |

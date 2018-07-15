@@ -1,4 +1,6 @@
-[参考资料](http://www.51hei.com/bbs/dpj-41338-1.html)
+[![](https://img.shields.io/badge/参考文献-LED神灯亮度渐变-yellow.svg "参考文献 LED神灯亮度渐变")](http://www.51hei.com/bbs/dpj-41338-1.html)
+
+
 总操流程：
 - 1、各器件链接
 - 2、写入程序

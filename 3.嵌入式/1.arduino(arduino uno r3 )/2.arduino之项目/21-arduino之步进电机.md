@@ -1,4 +1,5 @@
-[参考文献](http://blog.sina.com.cn/s/blog_8043e91a0102wiar.html)
+[![](https://img.shields.io/badge/参考文献-48步进电机-yellow.svg "参考文献 48步进电机")](http://blog.sina.com.cn/s/blog_8043e91a0102wiar.html)
+
 
 总操流程：
 - 1、各器件链接
