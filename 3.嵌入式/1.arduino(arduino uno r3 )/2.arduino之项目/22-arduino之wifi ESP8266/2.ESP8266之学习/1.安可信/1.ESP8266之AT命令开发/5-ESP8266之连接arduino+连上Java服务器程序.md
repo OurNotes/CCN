@@ -1,4 +1,6 @@
-[参考文献](https://blog.csdn.net/Jsagacity/article/details/79591807)
+[参考文献]()
+[![](https://img.shields.io/badge/参考文献-ESP8266作为客户端通过路由器连接服务器的简单实现-yellow.svg "参考文献 ESP8266作为客户端通过路由器连接服务器的简单实现")](https://blog.csdn.net/Jsagacity/article/details/79591807)
+
 
 总操做流程：
 - 1、各器件链接;
@@ -139,7 +141,9 @@ public class ServerThread extends Thread {
 
 ```
 运行：
+
 ![](image/5-1.gif)
+
 # arduino写程序
 ```
 #include <SoftwareSerial.h>
