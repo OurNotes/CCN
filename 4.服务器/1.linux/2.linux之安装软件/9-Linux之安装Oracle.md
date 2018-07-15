@@ -135,7 +135,7 @@ reboot #重启系统
 
 # 下载安装
 ### 1、下载
-[下载](https://www.oracle.com/downloads/index.html#database)
+[![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://www.oracle.com/downloads/index.html#database)
 
 ![](image/9-3.png)
 
