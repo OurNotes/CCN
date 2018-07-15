@@ -2,7 +2,8 @@
 
 ![](image/1.jpeg)
 
-参考资料资料：http://note.youdao.com/iyoudao/?p=2411&vendor=unsilent14
+[![](https://img.shields.io/badge/参考文献-Markdown指南-yellow.svg "参考文献 Markdown指南")](http://note.youdao.com/iyoudao/?p=2411&vendor=unsilent14)
+
 
 # 学习思路
 - Markdown是什么？
