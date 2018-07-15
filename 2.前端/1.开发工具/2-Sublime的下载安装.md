@@ -6,25 +6,27 @@
 ----------
 
 # 下载安装
+[![](https://img.shields.io/badge/官网-sublimetext3-red.svg "官网 sublimetext3")](http://www.sublimetext.com/3)
 
-http://www.sublimetext.com/3
-
-http://download.csdn.net/download/vtq113/10025232
 ![](image/2-1.png)
 
 # 打开Package Control，安装插件
-操作如下：
+- 操作如下：
+
 ![](image/2-2.gif)
 
 # 配置环境变量
 在path添加它的安装路径所在D:\SublimeText3
 
 ## 插件:
-[实用插件参考](http://blog.csdn.net/jianhua0902/article/details/43761899)
+[![](https://img.shields.io/badge/参考文献-实用插件-yellow.svg "参考文献 实用插件")](http://blog.csdn.net/jianhua0902/article/details/43761899)
+
 ###  1、localization:菜单栏中文化
 ###  2、View In Browser：快捷键浏览器打开html
-设置：
+- 设置：
+
 ![](image/2-3.png)
+
 ```
 	{
 		"keys": ["ctrl+alt+f"],
@@ -34,7 +36,8 @@ http://download.csdn.net/download/vtq113/10025232
 ### 3、sublimeREPL：执行命令行脚本
 ![](image/2-4.gif)
 ### 4、Alignment：快捷键”=”号对齐
-[设置](https://blog.csdn.net/sugang_ximi/article/details/48464253)：
+[![](https://img.shields.io/badge/参考文献-设置-yellow.svg "参考文献 设置")](https://blog.csdn.net/sugang_ximi/article/details/48464253)
+
 ![](image/2-5.png)
 ```
 	{
