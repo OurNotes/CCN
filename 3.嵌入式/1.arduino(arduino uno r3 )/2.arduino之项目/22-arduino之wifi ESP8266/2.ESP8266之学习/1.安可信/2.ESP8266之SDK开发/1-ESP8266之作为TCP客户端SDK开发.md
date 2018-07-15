@@ -6,8 +6,9 @@
 
 ***
 # 下载固件
-[官网下载](http://wiki.ai-thinker.com/esp8266/sdk)
-[百度云](https://pan.baidu.com/s/14-dBFkHdL4dD7zroFm6BjQ)
+[![](https://img.shields.io/badge/官网-最新SDK发布-red.svg "官网 最新SDK发布")](http://wiki.ai-thinker.com/esp8266/sdk)
+[![](https://img.shields.io/badge/esp8266_nonos_sdk_tcpclient-2.2.0-green.svg "esp8266_nonos_sdk_tcpclient_2.2.0")](https://pan.baidu.com/s/14-dBFkHdL4dD7zroFm6BjQ)
+
 
 ![](image/1-1.png)
 
