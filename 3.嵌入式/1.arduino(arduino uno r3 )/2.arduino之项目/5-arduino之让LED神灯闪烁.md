@@ -29,7 +29,7 @@ void loop() {
     delay(1000); //设定延时时间，1000 = 1秒
 }
 ```
-###另外一种方式（ardublock图形编程）
+### 另外一种方式（ardublock图形编程）
 
 ![](image/5-2.png)
 # 测试
