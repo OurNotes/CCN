@@ -8,58 +8,88 @@
 - 7、git status看当前仓库的状态
 
 ----------
+
 `注：要进入文件存放文件夹里进行命令`
+
 # 修改readme.txt文件内容
-操作过程：
+### 操作过程：
+
 ![](image/4-1.png)
-改前：
+
+- 改前：
+
 ```
 Git is a version control system.
 Git is free software.
 ```
-改后：
+
+- 改后：
+
 ```
 Git is a distributed version control system.
 Git is free software.
 ```
+
 # git status命令看仓库当前的状态
-效果展现：
+
+- 效果展现：
+
 ![](image/4-2.png)
 
-语法：
+- 语法：
+
 ```
 git status
 ```
+
 # git diff命令看修改了什么内容
-效果展现：
+- 效果展现：
+
 ![](image/4-3.png)
-语法：
+
+- 语法：
+
 ```
 git diff readme.txt
 ```
+
 # git add命令提交修改文件
-语法：
+
+- 语法：
+
 ```
 git add readme.txt
 ```
+
 # git status看当前仓库的状态
-效果展现：
+- 效果展现：
+
 ![](image/4-4.png)
-语法：
+
+- 语法：
+
 ```
 git status
 ```
+
 # git commit命令提交
-效果展现：
+- 效果展现：
+
 ![](image/4-5.png)
-语法：
+
+- 语法：
+
 ```
 git commit -m "add distributed"
 ```
+
 # git status看当前仓库的状态
-效果展现：
+- 效果展现：
+
 ![](image/4-6.png)
-语法：
+
+- 语法：
+
 ```
 git status
 ```
