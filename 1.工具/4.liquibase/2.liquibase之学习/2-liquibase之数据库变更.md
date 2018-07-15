@@ -17,6 +17,7 @@
         - changeLogFile
 ### 2、修改文件
 - jdbc.properties
+
 ![](image/2-2.png)
 
 ```
