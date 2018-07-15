@@ -1,5 +1,3 @@
-[参考文献](http://www.geek-workshop.com/thread-27930-1-1.html)
-
 总操作流程：
 - 1、烧写程序；
 - 2、测试；
@@ -50,6 +48,7 @@ void loop() {
 
 }
 ```
+
 ![](image/2-1.png)
 # 测试
 ![](image/2-2.gif)
