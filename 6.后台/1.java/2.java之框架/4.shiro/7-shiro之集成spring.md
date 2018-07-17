@@ -1,14 +1,17 @@
-[参考文献](https://www.imooc.com/video/16959/0)
+[![](https://img.shields.io/badge/参考文献-Shiro集成Spring-yellow.svg "参考文献 Shiro集成Spring")](https://www.imooc.com/video/16959/0)
+
 
 总操作流程：
 - 1、pom.xml引用包；
 - 2、创建文件；
 - 3、测试；
 
-[源码](https://github.com/lidekai/shiro.git)
+[![](https://img.shields.io/badge/源码-shiro-blue.svg "源码 shiro")](https://github.com/lidekai/shiro.git)
+
 ***
 
 - 代码结构
+
 ![](image/7-1.png)
 
 - 项目目录

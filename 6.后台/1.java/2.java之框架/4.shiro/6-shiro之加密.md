@@ -1,4 +1,5 @@
-[参考文献](https://www.imooc.com/video/16955)
+[![](https://img.shields.io/badge/参考文献-Shiro加密-yellow.svg "参考文献 Shiro加密")](https://www.imooc.com/video/16955)
+
 
 总操作流程：
 - 1、pom.xml引用包；

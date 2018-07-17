@@ -1,11 +1,12 @@
-[参考文献](https://www.imooc.com/video/16960)
+[![](https://img.shields.io/badge/参考文献-Shiro集成Spring--从数据库获取数据-yellow.svg "参考文献 Shiro集成Spring-从数据库获取数据")](https://www.imooc.com/video/16959/0)
+
 
 总操作流程：
 - 1、pom.xml引用包；
 - 2、创建文件；
 - 3、测试；
 
-[源码](https://github.com/lidekai/shiro-mysql.git)
+[![](https://img.shields.io/badge/源码-shiro--mysql-blue.svg "源码 shiro-mysql")](https://github.com/lidekai/shiro-mysql.git)
 
 ***
 - 代码结构

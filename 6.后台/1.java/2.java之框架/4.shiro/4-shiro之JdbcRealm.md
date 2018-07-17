@@ -1,4 +1,5 @@
-[参考文献](https://www.imooc.com/video/16957)
+[![](https://img.shields.io/badge/参考文献-JdbcRealm讲解-yellow.svg "参考文献 JdbcRealm讲解")](https://www.imooc.com/video/16957)
+
 
 总操作流程：
 - 1、pom.xml引用包；

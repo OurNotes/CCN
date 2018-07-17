@@ -1,4 +1,5 @@
-[参考文献](https://www.imooc.com/video/16954)
+[![](https://img.shields.io/badge/参考文献-Shiro授权-yellow.svg "参考文献 Shiro授权")](https://www.imooc.com/video/16954)
+
 
 总操作流程：
 - 1、pom.xml引用包；
@@ -8,6 +9,7 @@
 ***
 
 - 工作原理
+
 ![](image/2-1.png)
 
 # pom.xml引用包

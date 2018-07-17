@@ -1,4 +1,5 @@
-[参考文献](https://www.imooc.com/video/16961)
+[![](https://img.shields.io/badge/参考文献-通过注解配置授权-yellow.svg "参考文献 通过注解配置授权")](https://www.imooc.com/video/16959/0)
+
 
 总操作流程：
 - 1、pom.xml引用包；
@@ -7,7 +8,7 @@
 
 ***
 
-使用这个[源码](https://github.com/lidekai/shiro-mysql.git)在其基础上修改
+使用这个[![](https://img.shields.io/badge/源码-shiro--mysql-blue.svg "源码 shiro-mysql")](https://github.com/lidekai/shiro-mysql.git)在其基础上修改
 
 # pom.xml引用包
 添加
