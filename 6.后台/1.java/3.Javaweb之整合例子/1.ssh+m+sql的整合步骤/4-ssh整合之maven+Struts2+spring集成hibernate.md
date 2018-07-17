@@ -6,7 +6,7 @@
 - 5、修改web.xml文件
 - 6、修改model，dao，service，jsp文件
 
-[源代码](https://github.com/lidekai/maven-structs2-spring-hibernate.git)
+[![](https://img.shields.io/badge/源码-maven--structs2--spring--hibernate-blue.svg "源码 maven-structs2-spring-hibernate")](https://github.com/lidekai/maven-structs2-spring-hibernate.git)
 
 ----------
 # 创建数据库

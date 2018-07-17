@@ -5,7 +5,7 @@
 - 4、创建struts.xml文件
 - 5、创建Java文件
 
-[源代码](https://github.com/lidekai/maven-structs2)
+[![](https://img.shields.io/badge/源码-maven--structs2-blue.svg "源码 maven-structs2")](https://github.com/lidekai/maven-structs2)
 
 ----------
 # 在pom.xml配置需要的架包
@@ -119,7 +119,8 @@
 </html>
 ```
 # 创建struts.xml文件
-![](image/2-2.png)
+![](image/2-2.png)\
+
 ```
 <?xml version="1.0" encoding="UTF-8" ?>  
 <!DOCTYPE struts PUBLIC  
@@ -138,7 +139,8 @@
 </struts>
 ```
 # 创建Java文件
-![title](https://leanote.com/api/file/getImage?fileId=59e9515cab6441026f00096e)
+![](image/2-3.png)
+
 ```
 package com.person.controller;
 

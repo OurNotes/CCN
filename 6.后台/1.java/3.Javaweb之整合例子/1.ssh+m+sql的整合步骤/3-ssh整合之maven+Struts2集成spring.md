@@ -6,11 +6,14 @@
 - 6、修改web.xml配置文件
 - 5、修改show.jsp文件
 
-[源码](https://github.com/lidekai/maven-structs2-spring.git)
+[![](https://img.shields.io/badge/源码-maven--structs2--spring-blue.svg "源码 maven-structs2-spring")](https://github.com/lidekai/maven-structs2-spring.git)
+
 
 ----------
 # 在pom.xml配置spring的架包+structs-spring集成的架包
+
 `在原来的基础上添加`
+
 ```
   	<!-- struts2-spring-plugin -->
   	<struts2-spring-plugin.version>2.5.13</struts2-spring-plugin.version>
@@ -84,6 +87,7 @@ public class UserModel {
 ```
 # 修改UserControl类
 ![](image/3-2.png)
+
 ```
 package com.person.controller;
 import java.util.List;
@@ -129,6 +133,7 @@ public class UserController extends ActionSupport{
 
 # 创建applicationContext.xml文件
 ![](image/3-3.png)
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
