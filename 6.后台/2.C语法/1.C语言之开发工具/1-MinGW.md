@@ -7,7 +7,7 @@
 ***
 
 # 1、下载
-[下载](http://www.mingw.org/)
+[![](https://img.shields.io/badge/官网-mingw-red.svg "官网 mingw")](http://www.mingw.org/)
 
 ![](image/1-1.png)
 
