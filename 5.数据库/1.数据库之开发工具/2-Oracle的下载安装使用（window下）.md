@@ -8,7 +8,7 @@
 
 # 下载安装
 ### 1、下载
-[下载](https://pan.baidu.com/s/1EBKkDBTzpgWdY68etnZrWw)
+[![](https://img.shields.io/badge/Oracle_win64-11gR2-green.svg "Oracle_win64 11gR2")](https://pan.baidu.com/s/1EBKkDBTzpgWdY68etnZrWw)
 
 ### 2、安装
 解压点击exe文件安装
@@ -35,7 +35,9 @@
 
 # 配置Oracle
 ### 1、修改listener.ora文件
+
 ![](image/2-10.png)
+
 ```
 	(SID_DESC =
 		(SID_NAME=ORCL)
@@ -44,10 +46,7 @@
 ```
 
 ```
-	  (CONNECT_DATA=
-				(SERVER=DEDICATED)
-				(SID=myOracle)
-	  )
+	  (CONNECT_DATA=(SERVER=DEDICATED)(SID=myOracle))
 ```
 ### 2、启动Oracle服务
 
@@ -56,4 +55,5 @@
 ![](image/2-11.png)
 
 # 在navicat上使用
+
 ![](image/2-12.png)
