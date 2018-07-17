@@ -6,7 +6,9 @@
 
 ***
 - 项目目录结构
+
 ![](image/3-1.png)
+
 # pom.xml添加包
 ```
 <javaxWebsocketApi.version>1.0</javaxWebsocketApi.version>
@@ -19,7 +21,8 @@
     </dependency>
 ```
 # 添加sockjs和修改js、html
-[下载sockjs.min.js](https://pan.baidu.com/s/13IPH-lSyGgKSQA1ZG4TviA)
+[![](https://img.shields.io/badge/下载-sockjs.min.js-green.svg "下载 sockjs.min.js")](https://pan.baidu.com/s/13IPH-lSyGgKSQA1ZG4TviA)
+
 ### 修改html
 ```
 <script src="/statics/js/common/sockjs.min.js"></script>
@@ -247,6 +250,7 @@ public class HttpSessionConfigurator extends ServerEndpointConfig.Configurator  
 ```
 
 其它的类调用：
+
 ```
 WebsocketConfig websocketConfig=new WebsocketConfig();
 websocketConfig.allSend(xxxxx);
