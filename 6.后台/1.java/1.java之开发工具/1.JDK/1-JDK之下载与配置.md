@@ -5,9 +5,11 @@
 
 ----------
 # 下载
-[下载地址](http://download.csdn.net/download/liulei3666825/9539509)
+[![](https://img.shields.io/badge/JDK-1.8.0_91-green.svg "JDK 1.8.0_91")](https://pan.baidu.com/s/1zGjYRJ-6E3LIYHrhH0XGeQ)
+
 
 `注：安装时jdk和jre安装路径要分开，如图：`
+
 ![](image/1-1.png)
 
 # 配置

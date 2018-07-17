@@ -6,7 +6,9 @@
 ----------
 
 # 下载tomcat7：
-[下载地址](http://tomcat.apache.org/download-70.cgi)
+[![](https://img.shields.io/badge/官网-tomcat-red.svg "官网 tomcat")](http://tomcat.apache.org/download-70.cgi)
+
+
 ![](image/1-1.png)
 # 配置tomcat：
 环境变量加：

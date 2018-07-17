@@ -9,13 +9,16 @@
 
 
 # 在pom.xml添加需要的jar的配置
-（http://www.mvnrepository.com/search?q=servlet这里找）
 
 ![](image/4-1.png)
+
 ![](image/4-2.png)
+
 ![](image/4-3.png)
+
 # 新建一个Servlet
 ![](image/4-4.png)
+
 ```
 package servlet;
 

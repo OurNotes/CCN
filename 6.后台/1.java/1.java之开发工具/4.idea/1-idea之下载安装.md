@@ -6,17 +6,19 @@
 ----------
 
 # 下载安装
-```
-https://www.jetbrains.com/idea/download/previous.html
-```
+[![](https://img.shields.io/badge/官网-idea-red.svg "官网 idea")](https://www.jetbrains.com/idea/download/previous.html)
+
 
 # 破解
-![](image/1-1.png)
-```
-http://idea.iteblog.com/key.php
-另外一种方式：
-http://blog.csdn.net/tengxing007/article/details/58603449
-```
 
-# 插件下载
-参考：http://blog.csdn.net/sujun10/article/details/72852939
+![](image/1-1.png)
+
+- 破解：
+在激活界面的License server输入：`http://idea.liyang.io/`
+# 添加插件
+```
+File -> settings -> Plugins 即可调出设置中的插件选项。
+```
+- 参考：
+
+[![](https://img.shields.io/badge/参考文献-插件-yellow.svg "参考文献 插件")](https://www.zhihu.com/question/22437385)
