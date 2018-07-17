@@ -7,12 +7,14 @@
 - 6、创建test.html文件
 - 7、修改index.html文件
 
-[源码](https://github.com/lidekai/idea-maven-spring-springMVC.git)
+[![](https://img.shields.io/badge/源码-idea--maven--spring--springMVC-blue.svg "源码 idea-maven-spring-springMVC")](https://github.com/lidekai/idea-maven-spring-springMVC.git)
+
 
 ----------
 - 项目目录结构
 
 ![](image/2-1.png)
+
 - 代码结构
 
 ![](image/2-2.png)

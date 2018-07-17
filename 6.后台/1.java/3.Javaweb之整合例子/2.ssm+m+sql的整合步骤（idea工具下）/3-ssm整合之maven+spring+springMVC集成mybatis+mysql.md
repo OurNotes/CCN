@@ -7,12 +7,14 @@
 - 6、修改web.xml文件 
 - 7、修改model，dao，service，html文件
 
-[源码](https://github.com/lidekai/idea-maven-spring-springMVC-mybatis-mysql.git)
+[![](https://img.shields.io/badge/源码-idea--maven--spring--springMVC--mybatis--mysql-blue.svg "源码 idea-maven-spring-springMVC-mybatis-mysql")](https://github.com/lidekai/idea-maven-spring-springMVC-mybatis-mysql.git)
+
 
 ----------
 - 项目目录结构
 
 ![](image/3-1.png)
+
 - 代码结构
 
 ![](image/3-2.png)
