@@ -5,16 +5,18 @@
 - 4、创建bean配置
 
 ----------
-项目结构：
+- 项目结构：
 ![](image/2-1.png)
+
 ![](image/2-2.png)
 
 下载地址：链接：http://pan.baidu.com/s/1i504qrF 密码：khuq
 
-代码结构： 
+- 代码结构：
 
 ![](image/2-3.png)
-工作原理：
+
+- 工作原理：
 
 ![](image/2-4.png)
 # 接口代码实现
@@ -68,5 +70,6 @@ public class TestT {
 	<bean id="TestOnce" class="com.persion.test.TestOnceImpl"></bean>
 </beans>
 ```
-成功标识：
+- 成功标识：
+
 ![](image/2-5.png)

@@ -7,12 +7,14 @@
 - 6、添加依赖
 
 ----------
-项目结构图
+- 项目结构图
 
 ![](image/3-1.png)
-代码结构
+
+- 代码结构
 
 ![](image/3-2.png)
+
 # 创建Dao接口：onceTest
 ```
 package com.persion.action;

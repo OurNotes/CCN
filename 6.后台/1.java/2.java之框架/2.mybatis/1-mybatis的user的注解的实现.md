@@ -9,7 +9,9 @@
 ----------
 
 ![](image/1-1.png)
+
 ![](image/1-2.png)
+
 # 数据库连接：jdbc.properties
 ```
 #mysql
