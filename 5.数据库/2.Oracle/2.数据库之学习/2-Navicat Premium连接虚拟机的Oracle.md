@@ -10,7 +10,7 @@
 ```
 lsnrctl status #查看监听器的状态
 ```
-![](image/2-1.png)
+![](image/1-1.png)
 
 # 创建一个远程用户，并赋予权限
 ### 1、创建用户，并赋予权限
@@ -36,16 +36,16 @@ dbca
 ```
 - Oracle图形界面选项展现关键步骤其他的默认
 
-![](image/2-2.png)
+![](image/1-2.png)
 
-![](image/2-3.png)
+![](image/1-3.png)
 
-![](image/2-4.png)
+![](image/1-4.png)
 ### 3、给数据库实例外连接设置
 ```
 netmgr
 ```
-![](image/2-5.png)
+![](image/1-5.png)
 ### 4、切换到MyOracle数据库实例名
 ```
 export ORACLE_SID=MyOracle
@@ -81,4 +81,4 @@ vi  /etc/sysconfig/iptables #打开防火墙配置文件
 service  iptables restart #重启防火墙
 ```
 # 测试
-![](image/2-6.png)
+![](image/1-6.png)
