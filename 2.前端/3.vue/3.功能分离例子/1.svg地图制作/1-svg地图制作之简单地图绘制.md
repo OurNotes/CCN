@@ -1,6 +1,11 @@
 总操作流程：
-- 1、获取地图边界
-- 2、创建html，js制作出地图页面
+- 1、[获取地图边界](#svg-01)
+- 2、[创建html，js制作出地图页面](#svg-02)
+    - 2.[1、html](#svg-02-01)
+    - 2.[2、js](#svg-02-02)
+        - 2.2.[1、map-data.js](#svg-02-02-01)
+        - 2.2.[2、map-service.js](#svg-02-02-02)
+    - 2.[3、css](#svg-02-03)
 
 [![](https://img.shields.io/badge/源码-svg--map01-blue.svg "源代码 svg-map01")](https://github.com/lidekai/svg-map01.git)
 
@@ -18,7 +23,7 @@
 
 ![](image/1-3.png)
 
-# 获取地图边界
+# <a name="vue.js-01" href="#" >获取地图边界</a>
 
 ![](image/1-4.png)
 
@@ -29,8 +34,8 @@
 [![](https://img.shields.io/badge/参考文献-工具-yellow.svg "参考文献 工具")](https://c.runoob.com/more/svgeditor/)
 
 
-# 创建html，js，css制作出地图页面
-### 1、html
+# <a name="vue.js-02" href="#" >创建html，js，css制作出地图页面</a>
+### <a name="vue.js-02-01" href="#" >1、html</a>
 ```
 <!DOCTYPE html>
 <html>
@@ -120,8 +125,8 @@
 </html>
 
 ```
-### 2、js
-#### 1)、map-data.js
+### 2、<a name="vue.js-02-02" href="#" >js</a>
+#### <a name="vue.js-02-02-01" href="#" >1、map-data.js</a>
 ```
 var map  = {
  		"province": {
@@ -217,7 +222,7 @@ var map  = {
  					}
  	}
 ```
-#### 2)、map-service.js
+#### <a name="vue.js-02-02-02" href="#" >2、map-service.js</a>
 ```
 $(document).ready(function(){
 	/*数据回填*/
@@ -244,7 +249,7 @@ $(document).ready(function(){
 
 })
 ```
-### 3、css
+### <a name="vue.js-02-03" href="#" >3、css</a>
 ```
 /**
  * 省份
