@@ -49,11 +49,11 @@
 
 ![](image/2-9.png)
 # <a name="github-05" href="#" >下拉，上传项目</a>
-### <a name="github-05" href="#" >1、下拉</q>
+### <a name="github-05-01" href="#" >1、下拉</q>
 ![](image/2-10.png)
 
 ![](image/2-11.png)
-### <a name="github-05" href="#" >2、上传</q>
+### <a name="github-05-02" href="#" >2、上传</q>
 ![](image/2-12.png)
 
 ![](image/2-13.png)
