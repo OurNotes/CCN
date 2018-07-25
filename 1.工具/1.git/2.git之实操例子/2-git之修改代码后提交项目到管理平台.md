@@ -1,33 +1,33 @@
 操作总流程：
-- 1、查看状态；
-- 2、添加修改的文件到索引
-- 3、commit 文件
-- 4、远程连接
-- 5、提交项目
-- 6、断开远程仓库连接
+- 1、[查看状态](#git-01)
+- 2、[添加修改的文件到索引](#git-02)
+- 3、[commit 文件](#git-03)
+- 4、[远程连接](#git-04)
+- 5、[提交项目](#git-05)
+- 6、[断开远程仓库连接](#git-06)
 
 ----------
-# 查看状态；
+# <a name="git-01" href="#" >查看状态</a>
 ```
 git status
 ```
-# 添加修改的文件到索引
+# <a name="git-02" href="#" >添加修改的文件到索引</a>
 ```
 git add *
 ```
-# commit 文件
+# <a name="git-03" href="#" >commit 文件</a>
 ```
 git commit -m "修改备注"
 ```
-# 远程连接
+# <a name="git-04" href="#" >远程连接</a>
 ```
 git remote add origin https://git.oschina.net/5333/TrainingBuildingManagementSystem.git
 ```
-# 提交项目
+# <a name="git-05" href="#" >提交项目</a>
 ```
 git push -u origin master
 ```
-# 断开远程仓库连接
+# <a name="git-06" href="#" >断开远程仓库连接</a>
 ```
 git remote rm origin
 ```
