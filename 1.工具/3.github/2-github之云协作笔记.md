@@ -3,8 +3,12 @@
 - 2、[开发软件安装markdown插件](#github-02)
 - 3、[github创建团队开发项目](#github-03)
 - 4、[配置git，github](#github-04)
-- 6、[下拉，上传项目](#github-05)
-- 7、[看效果](#github-06)
+    - 4.[1、git](#github-04-01)
+    - 4.[2、github](#github-04-02)
+- 5、[下拉，上传项目](#github-05)
+    - 5.[1、下拉](#github-05-01)
+    - 5.[2、上传](#github-05-02)
+- 6、[看效果](#github-06)
 
 ----------
 
@@ -34,22 +38,22 @@
 # <a name="github-04" href="#" >配置git，github</a>
 ![](image/2-6.png)
 
-### 1、git
+### <a name="github-04-01" href="#" >1、git</a>
 [![](https://img.shields.io/badge/官网-git-red.svg "官网 git")](https://git-scm.com/)
 
 
 ![](image/2-7.png)
 
-### 2、github
+### <a name="github-04-02" href="#" >2、github</a>
 ![](image/2-8.png)
 
 ![](image/2-9.png)
 # <a name="github-05" href="#" >下拉，上传项目</a>
-### 1、下拉
+### <a name="github-05" href="#" >1、下拉</q>
 ![](image/2-10.png)
 
 ![](image/2-11.png)
-### 2、上传代码
+### <a name="github-05" href="#" >2、上传</q>
 ![](image/2-12.png)
 
 ![](image/2-13.png)
