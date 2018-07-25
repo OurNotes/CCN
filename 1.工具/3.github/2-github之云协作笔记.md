@@ -3,7 +3,7 @@
 - 2、开发软件安装markdown插件；
 - 3、github创建团队开发项目；
 - 4、配置git，github；
-- 6、[下拉，上传项目](#index)；
+- 6、[下拉，上传项目](#jump)；
 - 7、看效果；
 
 ----------
@@ -44,7 +44,7 @@
 ![](image/2-8.png)
 
 ![](image/2-9.png)
-# <span id="index">下拉，上传项目</span>
+# <span id = "jump">下拉，上传项目</span>
 ### 1、下拉
 ![](image/2-10.png)
 
