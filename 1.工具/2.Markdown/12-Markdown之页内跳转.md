@@ -8,6 +8,6 @@
 [目录](#index)
 
 跳转到语法：
-<span id="index">内容</span>
+<a name="a01" href="#" >内容</a>
 ```
 
