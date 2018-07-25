@@ -125,7 +125,7 @@
 </html>
 
 ```
-### 2、<a name="svg-02-02" href="#" >js</a>
+### <a name="svg-02-02" href="#" >2、js</a>
 #### <a name="svg-02-02-01" href="#" >1、map-data.js</a>
 ```
 var map  = {
