@@ -1,8 +1,8 @@
 总操作流程：
-- 1、下载安装Loaders
-- 2、在app文件夹创建config.json文件
-- 3、修改Greeter.js文件
-- 4、修改main.js文件
+- 1、[下载安装Loaders](#webpack-01)
+- 2、[在app文件夹创建config.json文件](#webpack-02)
+- 3、[修改Greeter.js文件](#webpack-03)
+- 4、[修改main.js文件](#webpack-04)
 
 [![](https://img.shields.io/badge/源代码-WebpackProjects--Loaders--json-blue.svg "源代码 WebpackProjects-Loaders-json")](https://github.com/lidekai/WebpackProjects-Loaders-json.git)
 
@@ -10,18 +10,18 @@
 
 ![](image/2-1.png)
 
-# 下载安装Loaders
+# <a name="webpack-01" href="#" >下载安装Loaders</a>
 ```
 cnpm install -g --save-dev json-loader
 ```
-# 在app文件夹创建config.json文件
+# <a name="webpack-02" href="#" >在app文件夹创建config.json文件</a>
 ```
 {
     "greetText": "Hi there and greetings from Json!"
 }
 ```
 
-# 修改Greeter.js文件
+# <a name="webpack-03" href="#" >修改Greeter.js文件</a>
 ```
 // Greeter.js
 var config = require('./config.json');
@@ -32,7 +32,7 @@ module.exports = function() {
 };
 ```
 
-# 修改main.js文件
+# <a name="webpack-04" href="#" >修改main.js文件</a>
 ```
 //main.js
 const greeter = require('./Greeter.js');
