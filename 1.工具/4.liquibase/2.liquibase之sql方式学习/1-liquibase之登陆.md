@@ -2,30 +2,34 @@
 
 
 总操作流程：
-- 1、创建maven项目；
-- 2、创建文件夹和文件；
-- 3、修改pom.xml;
-- 4、测试看效果;
+- 1、[创建maven项目](#liquibase-01)
+- 2、[创建文件夹和文件](#liquibase-02)
+    - 2.[1、创建文件夹](#liquibase-02-01)
+    - 2.[2、创建文件](#liquibase-02-02)
+- 3、[修改pom.xml](#liquibase-03)
+    - 3.[1、添加包](#liquibase-03-01)
+    - 3.[2、添加liquibase配置](#liquibase-03-02)
+- 4、[测试看效果](#liquibase-04)
 
 [![](https://img.shields.io/badge/源码-tesSQL-blue.svg "源码 tesSQL")](https://github.com/lidekai/tesSQL.git)
 
 ***
 
-# 创建maven项目
+# <a name="liquibase-01" href="#" >创建maven项目</a>
 
 [![](https://img.shields.io/badge/参考文献-用idea创建maven项目-yellow.svg "参考文献 用idea创建maven项目")](https://github.com/OurNotes/CCN/blob/master/6.%E5%90%8E%E5%8F%B0/1.java/3.Javaweb%E4%B9%8B%E6%95%B4%E5%90%88%E4%BE%8B%E5%AD%90/2.ssm%2Bm%2Bsql%E7%9A%84%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%EF%BC%88idea%E5%B7%A5%E5%85%B7%E4%B8%8B%EF%BC%89/1-ssm%E6%95%B4%E5%90%88%E4%B9%8B%E7%94%A8maven%E5%88%9B%E5%BB%BAweb%E9%A1%B9%E7%9B%AE.md)
 
-# 创建文件夹和文件
+# <a name="liquibase-02" href="#" >创建文件夹和文件</a>
 - 项目结构
 
 ![](image/1-1.png)
 
-### 1、创建文件夹
+### <a name="liquibase-02-01" href="#" >1、创建文件夹</a>
 - resources
     - liquibase
         - outputChangeLogFile
 
-### 2、创建文件
+### <a name="liquibase-02-02" href="#" >2、创建文件</a>
 - jdbc.properties
 ```
 # 数据库据连接
@@ -36,8 +40,8 @@ password=DKLi123456!
 # 生成文件的路径
 outputChangeLogFile=src/main/resources/liquibase/outputChangeLogFile/changelog_original.xml
 ```
-# 修改pom.xml
-### 1、添加包
+# <a name="liquibase-03" href="#" >修改pom.xml</a>
+### <a name="liquibase-03-01" href="#" >1、添加包</a>
 ```
 <properties>
     <junit.version>4.11</junit.version>
@@ -69,7 +73,7 @@ outputChangeLogFile=src/main/resources/liquibase/outputChangeLogFile/changelog_o
     </dependency>
 </dependencies>
 ```
-### 2、添加liquibase配置
+### <a name="liquibase-03-02" href="#" >2、添加liquibase配置</a>
 ```
        <!--========================================liquibase的配置========================================-->
         <plugin>
@@ -84,7 +88,7 @@ outputChangeLogFile=src/main/resources/liquibase/outputChangeLogFile/changelog_o
           </configuration>
         </plugin>
 ```
-# 测试看效果
+# <a name="liquibase-04" href="#" >测试看效果</a>
 - 命令：
 ```
 mvn liquibase:generateChangeLog
