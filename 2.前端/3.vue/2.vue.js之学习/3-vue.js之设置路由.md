@@ -1,12 +1,12 @@
 总操作流程：
-- 1、删除初始化的一些文件
-- 2、创建两个vue文件
-- 3、修改router.vue文
+- 1、[删除初始化的一些文件](#vue.js-01)
+- 2、[创建两个vue文件](#vue.js-01)
+- 3、[修改router.vue文](#vue.js-01)
 
 
 -------
 
-# 删除初始化的一些文件
+# <a name="vue.js-01" href="#" >删除初始化的一些文件</a>
 ![](image/3-1.png)
 
 - 项目结构：
@@ -17,7 +17,7 @@
 
 ![](image/3-3.png)
 
-# 创建两个vue文件
+# <a name="vue.js-02" href="#" >创建两个vue文件</a>
 
 - index.vue
 
@@ -33,7 +33,7 @@
   <div>content page</div>
 </template>
 ```
-# 修改router.vue文件
+# <a name="vue.js-03" href="#" >修改router.vue文件</a>
 ```
 import Vue from 'vue'
 import Router from 'vue-router'
