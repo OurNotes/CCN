@@ -1,10 +1,10 @@
 总操作流程：
-- 1、[谷歌浏览器安装插件](#github-01)；
-- 2、[开发软件安装markdown插件](#github-02)；
-- 3、[github创建团队开发项目](#github-03)；
-- 4、[配置git，github](#github-04)；
-- 6、[下拉，上传项目](#github-05)；
-- 7、[看效果](#github-06)；
+- 1、[谷歌浏览器安装插件](#github-01)
+- 2、[开发软件安装markdown插件](#github-02)
+- 3、[github创建团队开发项目](#github-03)
+- 4、[配置git，github](#github-04)
+- 6、[下拉，上传项目](#github-05)
+- 7、[看效果](#github-06)
 
 ----------
 
