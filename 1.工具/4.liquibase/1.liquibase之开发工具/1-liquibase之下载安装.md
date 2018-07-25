@@ -1,7 +1,7 @@
 总操作流程：
 - 1、[下载安装](#liquibase-01)
 - 2、[配置](#liquibase-02)
-    - 2.[、配置环境变量](#liquibase-02-01)
+    - 2.[1、配置环境变量](#liquibase-02-01)
     - 2.[2、添加包](#liquibase-02-02)
 - 3、[测试](#liquibase-03)
 
