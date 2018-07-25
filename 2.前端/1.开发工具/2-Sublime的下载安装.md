@@ -1,21 +1,21 @@
 操作总流程：
-- 1、 下载安装
-- 2、 打开Package Control，安装插件
-- 3、配置环境变量
+- 1、[下载安装](#Sublime-01)
+- 2、[打开Package Control，安装插件](#Sublime-02)
+- 3、[配置环境变量](#Sublime-03)
 
 ----------
 
-# 下载安装
+# <a name="Sublime-01" href="#" >下载安装</a>
 [![](https://img.shields.io/badge/官网-sublimetext3-red.svg "官网 sublimetext3")](http://www.sublimetext.com/3)
 
 ![](image/2-1.png)
 
-# 打开Package Control，安装插件
+# <a name="Sublime-02" href="#" >打开Package Control，安装插件</a>
 - 操作如下：
 
 ![](image/2-2.gif)
 
-# 配置环境变量
+# <a name="Sublime-03" href="#" >配置环境变量</a>
 在path添加它的安装路径所在D:\SublimeText3
 
 ## 插件:
