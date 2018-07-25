@@ -1,14 +1,14 @@
 总操作流程：
-- 1、谷歌浏览器安装插件；
-- 2、开发软件安装markdown插件；
-- 3、github创建团队开发项目；
-- 4、配置git，github；
-- 6、[下拉，上传项目](#a01)；
-- 7、看效果；
+- 1、[谷歌浏览器安装插件](#github-01)；
+- 2、[开发软件安装markdown插件](#github-02)；
+- 3、[github创建团队开发项目](#github-03)；
+- 4、[配置git，github](#github-04)；
+- 6、[下拉，上传项目](#github-05)；
+- 7、[看效果](#github-06)；
 
 ----------
 
-# 谷歌浏览器安装插件
+# <a name="github-01" href="#" >谷歌浏览器安装插件</a>
 [![](https://img.shields.io/badge/Octotree-2.1.0-green.svg "Octotree 2.1.0")](https://pan.baidu.com/s/1D5XPzfVFZL3HBKYYbDku0g)
 
 
@@ -16,7 +16,7 @@
 
 ![](image/2-2.png)
 
-# 开发软件安装markdown插件（WebStorm做例子）
+# <a name="github-02" href="#" >开发软件安装markdown插件（WebStorm做例子）</a>
 
 建议下载2017.1版本，因为保证可以破解链接能激活
 
@@ -29,9 +29,9 @@
 ![](image/2-5.png)
 
 `重启软件`
-# github创建团队开发项目
+# <a name="github-03" href="#" >github创建团队开发项目</a>
 [![](https://img.shields.io/badge/教程-github创建团队开发项目-yellow.svg "教程 github创建团队开发项目")](https://github.com/OurNotes/CCN/blob/master/1.%E5%B7%A5%E5%85%B7/3.github/1-github%E4%B9%8B%E5%88%9B%E5%BB%BA%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91%E9%A1%B9%E7%9B%AE.md)
-# 配置git，github
+# <a name="github-04" href="#" >配置git，github</a>
 ![](image/2-6.png)
 
 ### 1、git
@@ -44,7 +44,7 @@
 ![](image/2-8.png)
 
 ![](image/2-9.png)
-# <a name="a01" href="#" >下拉，上传项目</a>
+# <a name="github-05" href="#" >下拉，上传项目</a>
 ### 1、下拉
 ![](image/2-10.png)
 
@@ -56,7 +56,7 @@
 
 ![](image/2-14.png)
 
-# 看效果
+# <a name="github-06" href="#" >看效果</a>
 `刷新github`
 ![](image/2-15.png)
 
