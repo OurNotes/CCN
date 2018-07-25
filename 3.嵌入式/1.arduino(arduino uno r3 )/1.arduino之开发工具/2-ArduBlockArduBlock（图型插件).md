@@ -3,15 +3,15 @@
 
 总操作流程：
 - 1、[下载](#ArduBlockArduBlock-01)
-- 2、[jar放到文件夹里](#ArduBlockArduBlock-01)
-- 3、[测试](#ArduBlockArduBlock-01)
+- 2、[jar放到文件夹里](#ArduBlockArduBlock-02)
+- 3、[测试](#ArduBlockArduBlock-03)
 
 ----------
 # <a name="ArduBlockArduBlock-01" href="#" >下载</a>
 [![](https://img.shields.io/badge/ardublock--all-20140702-green.svg "ardublock-all 20140702")](http://sourceforge.net/projects/ardublock/)
 
 
-# <a name="ArduBlockArduBlock-03" href="#" >新建文件夹和将jar放到文件夹里</a>
+# <a name="ArduBlockArduBlock-02" href="#" >新建文件夹和将jar放到文件夹里</a>
 在Sketchbook location下创建文件夹
 
 ![](image/2-1.png)
