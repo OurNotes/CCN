@@ -1,7 +1,7 @@
 总操作流程：
 - 1、[下载安装](#mdk-01)
 - 2、[破解](#mdk-02)
-- 3、[看效果](#mdk-03)
+- 3、[测试](#mdk-03)
 
 ***
 
@@ -30,6 +30,12 @@
 
 ![](image/1-2.png)
 
-# <a name="mdk-03" href="#" >看效果</a>
+# <a name="mdk-03" href="#" >测试</a>
+
+[![](https://img.shields.io/badge/测试代码-实验1跑马灯实验-green.svg "测试代码 实验1跑马灯实验")](https://pan.baidu.com/s/1tkGEg6dG_6bmcwxn2zcHXQ)
+
+`
+解压文件，进入：实验1 跑马灯实验\USER，使用mdk打开TEST.uvprojx文件
+`
 ![](image/1-3.png)
 
