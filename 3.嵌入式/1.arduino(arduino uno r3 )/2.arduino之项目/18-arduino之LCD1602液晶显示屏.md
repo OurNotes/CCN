@@ -2,12 +2,12 @@
 
 
 总操流程：
-- 1、各器件链接
-- 2、写入程序
-- 3、测试
+- 1、[各器件链接](#arduino-01)
+- 2、[写入程序](#arduino-02)
+- 3、[测试](#arduino-03)
 
 ----------
-# 各器件链接
+# <a name="arduino-01" href="#" >各器件链接</a>
 `LCD1602液晶引脚说明`
 
 | pin | 名称 | 注释 |
@@ -30,7 +30,7 @@
 | 4 | BLK | 背光源负极 |
 
 ![](image/18-1.png)
-# 写程序
+# <a name="arduino-02" href="#" >写程序</a>
 ```
 #include<LiquidCrystal.h>
 LiquidCrystal lcd(13,12,2,3,4,5);
@@ -68,5 +68,5 @@ void loop(){
     delay(5000);
 }
 ```
-# 测试
+# <a name="arduino-03" href="#" >测试</a>
 ![](image/14-2.png)

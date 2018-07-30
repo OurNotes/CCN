@@ -1,13 +1,13 @@
 总操流程：
-- 1、各器件链接
-- 2、写入程序
-- 3、测试
+- 1、[各器件链接](#arduino-01)
+- 2、[写入程序](#arduino-02)
+- 3、[测试](#arduino-03)
 
 ----------
-链接各个器件
+# <a name="arduino-01" href="#" >链接各个器件</a>
 
 ![](image/17-1.png)
-# 写程序
+# <a name="arduino-02" href="#" >写程序</a>
 ```
 byte DIGITAL_DISPLAY[10][8] = { //设置0-9数字所对应数组
 
@@ -56,5 +56,5 @@ void loop() {
 
 }
 ```
-# 测试
+# <a name="arduino-03" href="#" >测试</a>
 ![](image/17-2.png)
