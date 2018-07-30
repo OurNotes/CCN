@@ -2,15 +2,15 @@
 
 
 总操流程：
-- 1、各器件链接
-- 2、写入程序
-- 3、测试
+- 1、[各器件链接](#arduino-01)
+- 2、[写入程序](#arduino-02)
+- 3、[测试](#arduino-03)
 
 ----------
-# 各器件链接
+# <a name="arduino-01" href="#" >各器件链接</a>
 
 ![](image/5-1.png)
-# 写入程序
+# <a name="arduino-02" href="#" >写入程序</a>
 ```
 int led = 13; // 定义针脚号，数字类型为整型
 /**
@@ -32,6 +32,6 @@ void loop() {
 ### 另外一种方式（ardublock图形编程）
 
 ![](image/5-2.png)
-# 测试
+# <a name="arduino-03" href="#" >测试</a>
 
 ![](image/5-3.png)
