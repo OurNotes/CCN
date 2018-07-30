@@ -1,10 +1,10 @@
 总操流程：
-- 1、各器件链接
-- 2、使用函数库
-- 3、测试
+- 1、[各器件链接](#arduino-01)
+- 2、[使用函数库](#arduino-02)
+- 3、[测试](#arduino-03)
 
 ----------
-# 各器件链接
+# <a name="arduino-01" href="#" >各器件链接</a>
 `DTH11的引脚说明`
 | pin | 名称 | 注释 |
 | :-: | :-: | :-: |
@@ -14,7 +14,7 @@
 | 4 | GND | 接地，电源负极 |
 
 ![](image/16-1.png)
-# 使用函数库
+# <a name="arduino-02" href="#" >使用函数库</a>
 [![](https://img.shields.io/badge/DHT11-zip-green.svg "DHT11_zip")](https://pan.baidu.com/s/1Av9xuRDThqzDR68GMk1w8Q)
 
 解压复制到
@@ -24,5 +24,5 @@
 使用
 
 ![](image/16-3.png)
-# 测试
+# <a name="arduino-03" href="#" >测试</a>
 ![](image/14-2.png)

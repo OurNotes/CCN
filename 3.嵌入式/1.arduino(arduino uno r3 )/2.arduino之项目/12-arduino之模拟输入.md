@@ -1,14 +1,14 @@
 总操流程：
-- 1、各器件链接
-- 2、写入程序
-- 3、测试
+- 1、[各器件链接](#arduino-01)
+- 2、[写入程序](#arduino-02)
+- 3、[测试](#arduino-03)
 
 ----------
-# 各器件链接
+# <a name="arduino-01" href="#" >各器件链接</a>
 链接各个器件
 
 ![](image/12-1.png)
-# 写程序
+# <a name="arduino-02" href="#" >写程序</a>
 ```
 int analogPin = A0;
 int val = 0 ;
@@ -24,6 +24,6 @@ void loop()
   delay(1000);
 }
 ```
-#测试
+# <a name="arduino-03" href="#" >测试</a>
 `转动电位器可以看到数值变化`
 ![](image/12-2.gif)

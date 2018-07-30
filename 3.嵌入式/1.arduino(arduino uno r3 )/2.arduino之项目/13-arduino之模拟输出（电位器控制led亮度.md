@@ -1,12 +1,12 @@
 总操流程：
-- 1、各器件链接
-- 2、写入程序
-- 3、测试
+- 1、[各器件链接](#arduino-01)
+- 2、[写入程序](#arduino-02)
+- 3、[测试](#arduino-03)
 
 ----------
-# 各器件链接
+# <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/13-1.png)
-# 写程序
+# <a name="arduino-02" href="#" >写程序</a>
 ```
 void setup()
 {
@@ -19,5 +19,5 @@ void loop()
   analogWrite(10,n/4);         //PWM最大取值255  所以将模拟口的取值n除以4
 }
 ```
-# 测试
+# <a name="arduino-03" href="#" >测试</a>
 `转动电位器可以看到led亮度`
