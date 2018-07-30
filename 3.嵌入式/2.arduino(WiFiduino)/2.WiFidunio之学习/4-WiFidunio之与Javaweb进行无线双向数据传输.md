@@ -1,11 +1,11 @@
 总操作流程:
-- 1、烧写函数库的程序；
-- 2、运行Javaweb程序；
-- 3、测试；
+- 1、[烧写函数库的程序](#WiFiduino-01)
+- 2、[运行Javaweb程序](#WiFiduino-02)
+- 3、[测试](#WiFiduino-03)
 
 ***
 
-# 烧写函数库的程序
+# <a name="WiFiduino-01" href="#" >烧写函数库的程序</a>
 ![](image/4-1.png)
 
 `修改文件`
@@ -14,7 +14,7 @@
 
 ![](image/4-3.png)
 
-# 运行Javaweb程序
+# <a name="WiFiduino-02" href="#" >运行Javaweb程序</a>
 
 [![](https://img.shields.io/badge/源码-esp8266--javaweb-blue.svg "源码 esp8266_javaweb")](https://github.com/lidekai/esp8266_javaweb.git)
 
@@ -41,6 +41,6 @@ public class ESP8266Controller {
 ```
 
 ![](image/4-4.png)
-# 测试
+# <a name="WiFiduino-03" href="#" >测试</a>
 
 ![](image/4-5.gif)
