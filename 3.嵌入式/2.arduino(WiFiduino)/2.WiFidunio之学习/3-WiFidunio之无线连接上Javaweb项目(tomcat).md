@@ -1,12 +1,12 @@
 总操作流程：
-- 1、关闭对tomcat的防火墙；
-- 2、运行Javaweb项目；
-- 3、烧录代码到WiFiduino;
-- 4、测试；
+- 1、[关闭对tomcat的防火墙](#WiFiduino-01)
+- 2、[运行Javaweb项目](#WiFiduino-02)
+- 3、[烧录代码到WiFiduino](#WiFiduino-03)
+- 4、[测试](#WiFiduino-04)
 
 ***
 
-# 关闭对tomcat的防火墙
+# <a name="WiFiduino-01" href="#" >关闭对tomcat的防火墙</a>
 ![](image/3-1.png)
 
 ![](image/3-2.png)
@@ -17,10 +17,10 @@
 
 ![](image/3-5.png)
 
-# 运行Javaweb项目
+# <a name="WiFiduino-02" href="#" >运行Javaweb项目</a>
 ![](image/3-6.png)
 
-# 烧录代码到WiFiduino
+# <a name="WiFiduino-03" href="#" >烧录代码到WiFiduino</a>
 ![](image/3-7.png)
 ```
 #include <ESP8266WiFi.h>
@@ -77,5 +77,5 @@ void loop() {
   client.print(postRequest);  // 发送HTTP请求 
 }
 ```
-# 测试
+# <a name="WiFiduino-04" href="#" >测试</a>
 ![](image/3-8.gif)
