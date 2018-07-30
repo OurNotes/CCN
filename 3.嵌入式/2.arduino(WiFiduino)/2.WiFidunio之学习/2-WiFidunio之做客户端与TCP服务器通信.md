@@ -1,9 +1,9 @@
 总操作流程：
-- 1、烧写程序；
-- 2、测试；
+- 1、[烧写程序](#WiFiduino-01)
+- 2、[测试](#WiFiduino-02)
 
 ***
-# 烧写程序
+# <a name="WiFiduino-01" href="#" >烧写程序</a>
 ```
 #include <ESP8266WiFi.h>
 WiFiClient client;
@@ -50,5 +50,5 @@ void loop() {
 ```
 
 ![](image/2-1.png)
-# 测试
+# <a name="WiFiduino-02" href="#" >测试</a>
 ![](image/2-2.gif)
