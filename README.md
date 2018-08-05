@@ -1,3 +1,5 @@
+`假如发现教程或者下载出了问题，请qq联系我：2665252078`
+
 本页目录：
 - [github使用Octotree的效果](#index-01)
 - [Octotree的安装](#index-02)
