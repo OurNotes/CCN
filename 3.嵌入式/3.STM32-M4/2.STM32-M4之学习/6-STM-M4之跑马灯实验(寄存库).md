@@ -5,6 +5,9 @@
     - 2.[2、配置环境](#STM-M4-02-02)
 - 3、[程序下载看效果](#STM-M4-03)
 
+[![](https://img.shields.io/badge/源码-RacingLights--RegisterLibrary-blue.svg "源码 RacingLights-RegisterLibrary")](https://github.com/lidekai/RacingLights-RegisterLibrary.git)
+
+
 ***
 
 # <a name="STM-M4-01" href="#" >下载模板</a>
