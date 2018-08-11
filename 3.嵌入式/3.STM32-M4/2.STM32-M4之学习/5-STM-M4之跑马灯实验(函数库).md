@@ -5,7 +5,6 @@
     - 2.[2、配置环境](#STM-M4-02-02)
 - 3、[程序下载看效果](#STM-M4-03)
 
-[![](https://img.shields.io/badge/源码-RacingLights--FirmwareLibrary-blue.svg "源码 RacingLights-FirmwareLibrary")](https://github.com/lidekai/RacingLights-FirmwareLibrary.git)
 
 ***
 
