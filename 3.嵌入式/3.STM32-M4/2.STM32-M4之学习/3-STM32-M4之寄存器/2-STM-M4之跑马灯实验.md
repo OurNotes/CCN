@@ -39,7 +39,24 @@ void LED_Init(void); //初始化
 void LED_Init(void)
 {
 	RCC->AHB1ENR|=1<<5;//使能 PORTF 时钟
-	GPIO_Set(GPIOF,PIN9|PIN10,GPIO_MODE_OUT,GPIO_OTYPE_PP,GPIO_SPEED_100M,GPIO_PUPD_PU); //PF9,PF10 设置
+	/**
+	* 作用：PF9,PF10 设置
+	* 解释：
+	*      GPIOF:是IO 口。
+	*      PIN9：是引脚编号，定义值是：1<<9。
+	*      PIN10：是引脚编号，定义值是：1<<10。
+	*      GPIO_MODE_OUT：是普通输出模式，定义值是：1。
+	*      GPIO_OTYPE_PP：是推挽输出，定义值是：0。
+	*      GPIO_SPEED_100M：是GPIO 速度 100Mhz，定义值是：3。
+	*      GPIO_PUPD_PU: 是上拉，定义值是：0。
+	*/
+	GPIO_Set(GPIOF,
+					 PIN9|PIN10,
+					 GPIO_MODE_OUT,
+					 GPIO_OTYPE_PP,
+					 GPIO_SPEED_100M,
+					 GPIO_PUPD_PU);
+
 	LED0=1;//LED0 关闭
 	LED1=1;//LED1 关闭
 }
