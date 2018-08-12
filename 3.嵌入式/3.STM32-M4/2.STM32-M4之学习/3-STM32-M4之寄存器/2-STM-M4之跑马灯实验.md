@@ -19,6 +19,18 @@
 - 创建OBJ文件夹
 - 创建HARDWARE文件夹，且其下也创建LED文件夹
 - 在LED文件夹下创建led.c和led.h文件
+- led.h
+```
+#ifndef __LED_H
+#define __LED_H
+#include "sys.h"
+//LED 端口定义
+#define LED0 PFout(9) // DS0
+#define LED1 PFout(10) // DS1
+void LED_Init(void); //初始化
+#endif
+
+```
 - led.c
 ```
 #include "led.h"
@@ -33,18 +45,7 @@ void LED_Init(void)
 }
 
 ```
-- led.h
-```
-#ifndef __LED_H
-#define __LED_H
-#include "sys.h"
-//LED 端口定义
-#define LED0 PFout(9) // DS0
-#define LED1 PFout(10) // DS1
-void LED_Init(void); //初始化
-#endif
 
-```
 - 修改main.c文件内容
 ```
 #include "sys.h"
