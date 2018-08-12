@@ -68,23 +68,23 @@ void LED_Init(void);//初始化
 ### <a name="STM-M4-02-02" href="#" >2、配置环境</a>
 - 导入文件
 
-![](image/5-1.png)
+![](image/2-1.png)
 
 - 设置文件路径
 
 `STM32F40_41xxx,USE_STDPERIPH_DRIVER`
 
-![](image/5-2.png)
+![](image/2-2.png)
 
 
 # <a name="STM-M4-03" href="#" >程序下载看效果</a>
 - 编译
 
-![](image/3-13.png)
+![](image/1-13.png)
 
 - 将程序下载到开发板
 
-![](image/5-3.png)
+![](image/2-3.png)
 
 - 看效果
 
