@@ -15,7 +15,7 @@
 # <a name="STM-M4-02" href="#" >创建修改文件和配置环境</a>
 
 ### <a name="STM-M4-02-01" href="#" >1、创建修改文件夹和文件</a>
-- 将根目录名改成：RacingLights
+- 将根目录名改成：Template
 - 创建OBJ文件夹
 - 创建HARDWARE文件夹，且其下也创建LED文件夹
 - 在LED文件夹下创建led.c和led.h文件
