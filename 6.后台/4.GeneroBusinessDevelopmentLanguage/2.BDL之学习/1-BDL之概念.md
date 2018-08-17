@@ -1,3 +1,6 @@
+[![](https://img.shields.io/badge/電子書-Genero BDL.PDF-yellow.svg "電子書 Genero BDL.PDF")](https://pan.baidu.com/s/1ihUXLqAt2WeE0MakKBomhw)
+
+
 本页目录：
 - 1、[BDL是什么？](#index-01)
 - 2、[BDL做什么的？](#index-02)
