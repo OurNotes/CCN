@@ -1,13 +1,13 @@
 [![](https://img.shields.io/badge/参考文献-generoStudio安装配置-yellow.svg "参考文献 generoStudio安装配置")](https://wenku.baidu.com/view/7894477402768e9951e738a5.html)
 
 總操作流程：
-- 1、下載安裝
-- 2、配置gdc
-- 3、測試
+- 1、[下載安裝](#gbl-01)
+- 2、[配置gdc](#gbl-02)
+- 3、[測試](#gbl-03)
 
 ***
 
-# 下載安裝
+# <a name="gbl-01" href="#" >下載安裝</a>
 
 - 下载安装jdk
 
@@ -27,7 +27,7 @@
 ![](image/1-1.png)
 
 
-# 配置gdc
+# <a name="gbl-02" href="#" >配置gdc</a>
 
 - 设置界面
 
