@@ -9,13 +9,13 @@
 
 `點擊運行erp`
 
-![](image/2-1.png)
+![](image/1-1.png)
 
 # <a name="gbl-02" href="#" >遠程連接</a>
 
 `密碼：tiptop`
 
-![](image/2-2.png)
+![](image/1-2.png)
 
 # <a name="gbl-03" href="#" >debug</a>
 
@@ -25,7 +25,7 @@
 exe2 aoos901  #運行程序
 ```
 
-![](image/2-3.png)
+![](image/1-3.png)
 
 ```
 cd aoo #進入各模組文件夾
@@ -37,7 +37,7 @@ ls #羅列文件
 r.d2+ 文件名（不要後綴名）
 ```
 
-![](image/2-4.gif)
+![](image/1-4.gif)
 
 
 
