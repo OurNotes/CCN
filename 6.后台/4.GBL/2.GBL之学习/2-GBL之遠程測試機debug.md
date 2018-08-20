@@ -1,23 +1,23 @@
 操作流程：
-- 1、開啟erp
-- 2、遠程連接
-- 3、debug
+- 1、[開啟erp](#gbl-01)
+- 2、[遠程連接](#gbl-02)
+- 3、[debug](#gbl-03)
 
 ***
 
-# 開啟erp
+# <a name="gbl-01" href="#" >開啟erp</a>
 
 `點擊運行erp`
 
 ![](image/2-1.png)
 
-# 遠程連接
+# <a name="gbl-02" href="#" >遠程連接</a>
 
 `密碼：tiptop`
 
 ![](image/2-2.png)
 
-# debug
+# <a name="gbl-03" href="#" >debug</a>
 
 ```
 1    #選擇topprod
