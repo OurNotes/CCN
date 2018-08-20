@@ -5,7 +5,7 @@
 
 ***
 
-# 下載安裝
+#  <a name="gbl-01" href="#" >下載安裝</a>
 
 - 下載tora
 
@@ -15,7 +15,30 @@
 
 [![](https://img.shields.io/badge/oracleclient-10.2.0.5-green.svg "oracleclient 10.2.0.5")](https://pan.baidu.com/s/1vSISiF3likaCmLBsYXnixA)
 
-# 配置
+# <a name="gbl-02" href="#" >配置</a>
 
+![](image/3-1.png)
 
+![](image/3-2.png)
 
+# <a name="gbl-03" href="#" >測試</a>
+
+![](image/3-3.png)
+
+```
+Username：system
+
+Password：manager
+
+Host: 10.10.1.105
+
+Port: 1521
+
+Database: topprod
+
+Color Session Identifier:Production
+```
+
+![](image/3-4.png)
+
+![](image/3-5.png)
