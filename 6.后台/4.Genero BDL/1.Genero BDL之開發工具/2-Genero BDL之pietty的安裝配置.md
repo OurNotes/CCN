@@ -11,7 +11,7 @@
 
 # <a name="gbl-02" href="#" >配置</a>
 
-![](image/3-1.png)
+![](image/2-1.png)
 
 # <a name="gbl-03" href="#" >測試</a>
 
@@ -19,4 +19,4 @@
 密碼：tiptop
 ```
 
-![](image/3-2.gif)
+![](image/2-2.gif)

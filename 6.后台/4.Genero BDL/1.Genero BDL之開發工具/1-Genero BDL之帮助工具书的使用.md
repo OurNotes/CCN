@@ -28,17 +28,17 @@
 
 `2.选择 TIPTOP ERP不完全实施开发手册.chm 文件`
 
-![](image/2-1.png)
+![](image/1-1.png)
 
 `3.修改后记得保存设置：crtl+s`
 
-![](image/2-2.png)
+![](image/1-2.png)
 
 ### <a name="gbl-02-02" href="#" >看效果</a>
 
-![](image/2-3.png)
+![](image/1-3.png)
 
-![](image/2-4.png)
+![](image/1-4.png)
 
 # <a name="gbl-03" href="#" >方法二</a>
 
@@ -46,10 +46,10 @@
 
 解藥后直接將.chm文件的名字重新命名為英文的。
 
-![](image/2-5.png)
+![](image/1-5.png)
 
 ### <a name="gbl-03-02" href="#" >看效果</a>
 
 `直接點擊`
 
-![](image/2-6.gif)
+![](image/1-6.gif)
