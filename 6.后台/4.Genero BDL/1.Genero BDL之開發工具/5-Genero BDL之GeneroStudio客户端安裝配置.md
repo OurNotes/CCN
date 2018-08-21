@@ -2,8 +2,6 @@
 
 總操作流程：
 - 1、[下載安裝](#gbl-01)
-- 2、[配置](#gbl-02)
-- 3、[測試](#gbl-03)
 
 ***
 
@@ -18,8 +16,4 @@
 [![](https://img.shields.io/badge/安装包-GeneroStudio-green.svg "安装包 GeneroStudio")](https://pan.baidu.com/s/1IW63S55ZuJHLwoOkouULGw)
 
 ![](image/5-1.png)
-
-# 配置
-
-# 測試
 
