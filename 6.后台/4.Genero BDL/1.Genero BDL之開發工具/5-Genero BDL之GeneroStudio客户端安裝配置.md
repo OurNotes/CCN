@@ -17,12 +17,12 @@
 [![](https://img.shields.io/badge/安装包-GeneroStudio-green.svg "安装包 GeneroStudio")](https://pan.baidu.com/s/1UjRZ1LoLjmjdM4plC2iVzw)
 
 
-# 配置
+# <a name="gbl-02" href="#" >配置</a>
 ![](image/5-1.png)
 
 ![](image/5-2.png)
 
-# 測試
+# <a name="gbl-03" href="#" >測試</a>
 
 `使用工具打開文件`
 
