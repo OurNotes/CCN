@@ -2,7 +2,8 @@
 
 總操作流程：
 - 1、[下載安裝](#gbl-01)
-
+- 2、[配置](#gbl-02)
+- 3、[測試](#gbl-03)
 ***
 
 # <a name="gbl-01" href="#" >下載安裝</a>
@@ -13,7 +14,18 @@
 
 - 下载安装GeneroStudio
 
-[![](https://img.shields.io/badge/安装包-GeneroStudio-green.svg "安装包 GeneroStudio")](https://pan.baidu.com/s/1IW63S55ZuJHLwoOkouULGw)
+[![](https://img.shields.io/badge/安装包-GeneroStudio-green.svg "安装包 GeneroStudio")](https://pan.baidu.com/s/1UjRZ1LoLjmjdM4plC2iVzw)
 
+
+# 配置
 ![](image/5-1.png)
 
+![](image/5-2.png)
+
+# 測試
+
+`使用工具打開文件`
+
+[![](https://img.shields.io/badge/畫面文件-4fd-green.svg "畫面文件 4fd")](https://pan.baidu.com/s/1lHX6KgGgCwjOwDahRVFpsQ)
+
+![](image/5-3.png)
