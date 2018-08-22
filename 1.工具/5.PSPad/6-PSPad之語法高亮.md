@@ -13,8 +13,6 @@
 
 ![](image/6-5.png)
 
-![](image/6-6.png)
-
 - 沒有該該高亮的語言的情況下
 
-![](image/6-7.png)
+![](image/6-6.png)
