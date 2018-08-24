@@ -11,7 +11,7 @@
 
 [![](https://img.shields.io/badge/安装包-gdc-green.svg "安装包 gdc")](https://pan.baidu.com/s/13JRNOMIZwA44vgt_jdUnsg)
 
-`我是选：fjs-gdc-2.40.16-build4635.58-w32vc90进行安装的`
+`我是选：gdc2.11.15解壓版`
 
 # <a name="gbl-02" href="#" >使用登錄erp</a>
 
@@ -68,7 +68,7 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-tiptop-udm-intranet
 
 ![](image/4-12.png)
 
-#### 設置方法二(新版才有的功能)
+#### 設置方法二
 
 ![](image/4-13.png)
 
