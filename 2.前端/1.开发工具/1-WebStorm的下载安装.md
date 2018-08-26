@@ -14,7 +14,7 @@
 ![](image/1.png)
 
 - 破解：
-在激活界面的License server输入：`http://idea.liyang.io/`
+在激活界面的License server输入：`http://idea.wrbugtest.tk/`
 # <a name="WebStorm-03" href="#" >添加插件</a>
 ```
 File -> settings -> Plugins 即可调出设置中的插件选项。
