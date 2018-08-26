@@ -33,6 +33,8 @@
 
 ![](image/4-5-1.png)
 
+`配置完后，自动下载gdc，自动安装的目录是：C:\Program Files (x86)\FourJs`
+
 - 登錄密碼
 
 ![](image/4-6.png)
