@@ -7,7 +7,7 @@
 
 #  <a name="gbl-01" href="#" >下載安裝</a>
 
-[![](https://img.shields.io/badge/pietty-0.4.00-green.svg "pietty 0.4.00")](https://pan.baidu.com/s/1BKqseAqqVBXG_ehmpkrd2w)
+[![](https://img.shields.io/badge/pietty-0.4.00-green.svg "pietty 0.4.00")](https://pan.baidu.com/s/1Zh2SmCSamdwBqemShYmIWg)
 
 # <a name="gbl-02" href="#" >配置</a>
 
