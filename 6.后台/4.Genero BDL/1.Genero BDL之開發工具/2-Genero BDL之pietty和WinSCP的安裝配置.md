@@ -11,7 +11,9 @@
 
 [![](https://img.shields.io/badge/pietty-0.4.00-green.svg "pietty 0.4.00")](https://pan.baidu.com/s/1Zh2SmCSamdwBqemShYmIWg)
 
-`因為公司路由的問題pietty經常會掉線，需要將ip添加到路由：route add 10.10.1.0 mask 255.255.255.0 10.10.2.1 -P`
+`因為公司路由的問題pietty經常會掉線，需要將ip添加到路由：route add 10.10.1.0 mask 255.255.255.0 10.10.2.7 -P`
+
+`刪除的命令：route delete 10.10.1.0 mask 255.255.255.0`
 
 - WinSCP
 
