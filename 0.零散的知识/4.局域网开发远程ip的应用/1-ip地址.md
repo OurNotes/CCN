@@ -10,3 +10,12 @@ ip:\\10.10.2.252
 
 密码：SZLEDTECH
 ```
+
+- wifi的ledtech3密码
+```
+led2877010
+```
+
+- outlook用户名和密码
+
+![](image/1-2.png)
