@@ -7,11 +7,21 @@
 
 #  <a name="gbl-01" href="#" >下載安裝</a>
 
+-  pietty
+
 [![](https://img.shields.io/badge/pietty-0.4.00-green.svg "pietty 0.4.00")](https://pan.baidu.com/s/1Zh2SmCSamdwBqemShYmIWg)
+
+- WinSCP
+
+[![](https://img.shields.io/badge/sourceforge中下載-WinSCP-red.svg "sourceforge中下載 WinSCP")](https://sourceforge.net/projects/winscp/)
+
 
 # <a name="gbl-02" href="#" >配置</a>
 
+-  pietty
+
 ![](image/2-1.png)
+
 
 # <a name="gbl-03" href="#" >測試</a>
 
@@ -20,3 +30,8 @@
 ```
 
 ![](image/2-2.gif)
+
+
+- WinSCP
+
+![](image/2-3.png)
