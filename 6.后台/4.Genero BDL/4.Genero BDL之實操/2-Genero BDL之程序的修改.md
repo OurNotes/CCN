@@ -60,7 +60,7 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 1、從/u1/toptest/topcust/cxm/4gl中複製一份caxmr411.4gl，將名字修改成caxmr413.4gl，程序裡面的caxmr411字符串修改成caxmr413
 
-2、從/u1/toptest/topcust/cxm/4fd中複製一份caxmr411.4fd，將名字修改成caxmr413.4fd
+2、從/u1/toptest/topcust/cxm/4fd中複製一份caxmr411.4fd，將名字修改成caxmr413.4fd,打开4fd的文件修改textGroup的text的名称
 
 - 移動文件
 
@@ -131,7 +131,7 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 - 複製程序
 1、從/u1/tiptest/tiptop/axm/4gl中複製一份axmr610.4gl，將名字修改成cxmr611.4gl
 
-2、從/u1/tiptest/tiptop/axm/4fd中複製一份axmr610.4fd，將名字修改成cxmr611.4fd
+2、從/u1/tiptest/tiptop/axm/4fd中複製一份axmr610.4fd，將名字修改成cxmr611.4fd，打开4fd的文件修改textGroup的text的名称
 
 - 修改程序
 1、修改引用頭文件的路徑:GLOBALS "../../config/top.global"，改成：GLOBALS "../../../tiptop/config/top.global"
