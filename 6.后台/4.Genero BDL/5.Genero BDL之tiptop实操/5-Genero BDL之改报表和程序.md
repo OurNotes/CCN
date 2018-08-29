@@ -21,19 +21,19 @@
 以caxmr411為模板製作出新的一個程序出來caxmr413
 `
 
-![](image/5-1.png)
+![](image/2-1.png)
 
 ### <a name="tiptop-01-02" href="#" >2、erp登錄測試區的測試區</a>
 
 - 使用gdc創建一個進測試區的ERP登錄界面
 
-![](image/5-2.png)
+![](image/2-2.png)
 
 ```
 http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 ```
 
-![](image/5-3.png)
+![](image/2-3.png)
 
 
 
@@ -44,15 +44,15 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 密碼：tiptop
 ```
-![](image/5-4.png)
+![](image/2-4.png)
 
 `選擇對應的系統`
 
-![](image/5-5.png)
+![](image/2-5.png)
 
 - ssh登錄進入測試區的克制區
 
-![](image/5-6.png)
+![](image/2-6.png)
 
 ### <a name="tiptop-01-03" href="#" >3、修改文件，移動文件，執行文件</a>
 
@@ -78,47 +78,47 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 - 給新程序授運行路徑權限
 
-![](image/5-7.png)
+![](image/2-7.png)
 
-![](image/5-8.png)
+![](image/2-8.png)
 
-![](image/5-9.png)
+![](image/2-9.png)
 
 - 給新程序授畫面權限
 
-![](image/5-10.png)
+![](image/2-10.png)
 
-![](image/5-11.png)
+![](image/2-11.png)
 
-![](image/5-12.png)
+![](image/2-12.png)
 
-![](image/5-13.png)
+![](image/2-13.png)
 
-![](image/5-14.png)
+![](image/2-14.png)
 
 - 看畫面設置是否成功
 
-![](image/5-15.png)
+![](image/2-15.png)
 
-![](image/5-16.png)
+![](image/2-16.png)
 
 - 記得更新
 
-![](image/5-17.png)
+![](image/2-17.png)
 
 ### <a name="tiptop-01-05" href="#" >5、看效果</a>
 
 - 方式一
 
-![](image/5-18.gif)
+![](image/2-18.gif)
 
 - 方式二
 
-![](image/5-19.gif)
+![](image/2-19.gif)
 
 - 方式三
 
-![](image/5-20.gif)
+![](image/2-20.gif)
 
 # <a name="tiptop-02" href="#" >模仿標準區中的程序，新建一支程序</a>
 
