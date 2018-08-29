@@ -1,0 +1,7 @@
+- 視頻
+
+[![](https://img.shields.io/badge/参考視頻-4gl变量类型-yellow.svg "参考視頻 程控流程")](https://pan.baidu.com/s/1HYFKG-xKzCDhoEYHS66zaQ)
+
+- 文檔
+
+[![](https://img.shields.io/badge/参考文献-GeneroBDL.PDF的程控流程-yellow.svg "参考文献 GeneroBDL.PDF的程控流程")](https://pan.baidu.com/s/1ZF8Dkm9Bh7ad-U5JhKzWbg)
