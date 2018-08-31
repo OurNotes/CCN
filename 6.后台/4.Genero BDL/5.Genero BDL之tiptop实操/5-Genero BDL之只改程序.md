@@ -107,7 +107,7 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 ![](image/5-19.gif)
 
-- 方式三
+- 方式三 （做開發使用這個，因為可以查看錯誤信息）
 
 ![](image/5-20.gif)
 
