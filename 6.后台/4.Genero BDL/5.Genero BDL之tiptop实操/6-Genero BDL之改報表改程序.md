@@ -54,7 +54,7 @@
 
 # <a name="tiptop-03" href="#" >3、erp給新程序權限</a>
 
-1、給新程序授運行路徑和序授畫面權限是和上一節一樣的
+1、[給新程序授運行路徑和序授畫面權限是和上一節一樣的](https://github.com/OurNotes/CCN/blob/master/6.%E5%90%8E%E5%8F%B0/4.Genero%20BDL/5.Genero%20BDL%E4%B9%8Btiptop%E5%AE%9E%E6%93%8D/5-Genero%20BDL%E4%B9%8B%E5%8F%AA%E6%94%B9%E7%A8%8B%E5%BA%8F.md#tiptop-04)
 
 2、給報表權限
 
