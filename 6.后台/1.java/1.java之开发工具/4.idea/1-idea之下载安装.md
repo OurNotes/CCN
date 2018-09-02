@@ -6,6 +6,9 @@
 ----------
 
 # 下载安装
+
+`建议下载：Version 2016.3的2016.3.8 for Windows ZIP Archive (zip)，为了保证破解有效`
+
 [![](https://img.shields.io/badge/官网-idea-red.svg "官网 idea")](https://www.jetbrains.com/idea/download/previous.html)
 
 
