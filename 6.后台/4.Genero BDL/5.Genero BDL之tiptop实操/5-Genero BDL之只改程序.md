@@ -109,6 +109,8 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 - 方式三 （做開發使用這個，因為可以查看錯誤信息）
 
+`注意：登陆，选择区域后，直接使用cd cxm，进入模块就行，因为内部已经设置好了`
+
 ![](image/5-20.gif)
 
 
