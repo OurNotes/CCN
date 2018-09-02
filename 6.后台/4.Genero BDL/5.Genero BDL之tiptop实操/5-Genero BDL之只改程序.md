@@ -65,7 +65,7 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 2、進入4fd的文件夾執行r.f2 caxmr413
 
-# <a name="tiptop--04" href="#" >4、erp給新程序設置權限</a>
+# <a name="tiptop-04" href="#" >4、erp給新程序設置權限</a>
 
 - 給新程序授運行路徑權限
 
