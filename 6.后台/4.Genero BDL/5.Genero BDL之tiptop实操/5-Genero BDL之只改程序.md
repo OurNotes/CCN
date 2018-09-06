@@ -93,6 +93,10 @@ http://10.10.1.106/cgi-bin/fglccgi/wa/r/gdc-toptest-udm-intranet
 
 ![](image/5-16.png)
 
+- 命令行鏈接畫面
+
+進入4gl的文件夾執行r.l2 caxmr413
+
 - 記得更新
 
 ![](image/5-17.png)
