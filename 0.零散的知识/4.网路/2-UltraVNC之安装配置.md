@@ -10,26 +10,26 @@
 
 - 下载
 
-![](image/1-1.png)
+![](image/2-1.png)
 
-![](image/1-2.png)
+![](image/2-2.png)
 
-![](image/1-3.png)
+![](image/2-3.png)
 
-![](image/1-4.png)
+![](image/2-4.png)
 
 - 安装
 
-![](image/1-5.png)
+![](image/2-5.png)
 
-![](image/1-6.png)
+![](image/2-6.png)
 
 # <a name="UltraVNC-02" href="#" >配置</a>
 
 - UltraVNC Server（被别人链接）
 
-![](image/1-7.png)
+![](image/2-7.png)
 
 - UltraVNC Viewer（链接别人）
 
-![](image/1-8.png)
+![](image/2-8.png)
