@@ -13,9 +13,30 @@ ip:\\10.10.2.252
 密码：SZLEDTECH
 ```
 
-- wifi的ledtech3密码
+- wifi的ledtech03密码
 ```
 led2877010
+```
+- wifi的ledtech02密码
+```
+ledtech2878010
+```
+- wifi的Temp密码
+```
+0758temp
+```
+- wifi的ledtech_acc密碼
+```
+acc@2017
+```
+- wifi的Ledtech_RD
+```
+1770yanfa
+```
+
+- wifi的engineer密碼
+```
+yanfa321
 ```
 
 - outlook用户名和密码
