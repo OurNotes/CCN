@@ -8,4 +8,6 @@
 
 ![](image/2-2.png)
 
+`localization`
+
 ![](image/2-3.png)
