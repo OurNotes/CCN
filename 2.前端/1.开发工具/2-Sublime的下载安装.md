@@ -6,6 +6,7 @@
 ----------
 
 # <a name="Sublime-01" href="#" >下载安装</a>
+
 [![](https://img.shields.io/badge/官网-sublimetext3-red.svg "官网 sublimetext3")](http://www.sublimetext.com/3)
 
 ![](image/2-1.png)
