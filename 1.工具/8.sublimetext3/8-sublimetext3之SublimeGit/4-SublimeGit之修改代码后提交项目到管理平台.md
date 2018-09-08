@@ -7,7 +7,7 @@
 
 ***
 
-# <a name="SublimeGit-01" href="#" >下拉项目/</a>
+# <a name="SublimeGit-01" href="#" >下拉项目</a>
 
 [![](https://img.shields.io/badge/参考文献-git之克隆项目下来-blue.svg "参考文献 git之克隆项目下来")](https://github.com/OurNotes/CCN/blob/master/1.%E5%B7%A5%E5%85%B7/1.git/1.git%E4%B9%8B%E5%AD%A6%E4%B9%A0/10-git%E4%B9%8B%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE%E4%B8%8B%E6%9D%A5.md)
 
