@@ -48,7 +48,6 @@
 `按快捷键：Ctrl+Shift+P,输入：gp 进行提交代码`
 
 ![](image/3-17.png)
-
 # <a name="SublimeGit-04" href="#" >看效果</a>
 
 ![](image/4-9.png)
