@@ -18,7 +18,7 @@
 	{
 		"keys": ["ctrl+alt+f"],
 		"command": "open_in_browser"
-	},	
+	},
 ```
 
 ![](image/3-2.png)
