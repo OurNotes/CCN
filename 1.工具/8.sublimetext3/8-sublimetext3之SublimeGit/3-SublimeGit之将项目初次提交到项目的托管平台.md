@@ -1,17 +1,17 @@
 总操作流程：
-- 1、初始化项目
-- 2、添加项目到索引
-    - 2.1、将不提交的文件进行忽视
-    - 2.2、添加代码到索引
-- 3、提交代码
-    - 3.1、写提交备注
-    - 3.2、连接远程库
-    - 3.3、推送代码
-- 4、看效果
+- 1、[初始化项目](#SublimeGit-01)
+- 2、[添加项目到索引](#SublimeGit-02)
+    - 2.[1、将不提交的文件进行忽视](#SublimeGit-02-01)
+    - 2.[2、添加代码到索引](#SublimeGit-02-02)
+- 3、[提交代码](#SublimeGit-03)
+    - 3.[1、写提交备注](#SublimeGit-03-01)
+    - 3.[2、连接远程库](#SublimeGit-03-02)
+    - 3.[3、推送代码](#SublimeGit-03-03)
+- 4、[看效果](#SublimeGit-04)
 
 ***
 
-# 初始化项目
+# <a name="SublimeGit-01" href="#" >初始化项目,/a>
 
 `按快捷键：Ctrl+Shift+P,输入：gi`
 
@@ -21,13 +21,13 @@
 
 ![](image/3-3.png)
 
-# 添加项目到索引
+# <a name="SublimeGit-02" href="#" >添加项目到索引</a>
 
 `按快捷键：Ctrl+Shift+P,输入：gs`
 
 ![](image/3-4.png)
 
-### 1、将不提交的文件进行忽视
+### <a name="SublimeGit-02-01" href="#" >1、将不提交的文件进行忽视</a>
 
 ![](image/3-5.png)
 
@@ -39,17 +39,17 @@
 
 ![](image/3-8.png)
 
-### 2、添加代码到索引
+### <a name="SublimeGit-02-02" href="#" >2、添加代码到索引</a>
 
 ![](image/3-9.png)
 
 ![](image/3-10.png)
 
-# 提交代码
+# <a name="SublimeGit-03" href="#" >提交代码</a>
 
 `按快捷键：c  进入commit写备注界面
 `
-### 1、写提交备注
+### <a name="SublimeGit-03-01" href="#" >1、写提交备注</a>
 
 ![](image/3-11.png)
 
@@ -57,7 +57,7 @@
 
 ![](image/3-12.png)
 
-### 2、连接远程库
+### <a name="SublimeGit-03-02" href="#" >2、连接远程库</a>
 
 `按快捷键：Ctrl+Shift+P,输入：gar`
 
@@ -69,7 +69,7 @@
 
 ![](image/3-16.png)
 
-### 3、推送代码
+### <a name="SublimeGit-03-03" href="#" >3、推送代码</a>
 
 `按快捷键：Ctrl+Shift+P,输入：gpcb`
 
@@ -81,6 +81,6 @@
 
 ![](image/3-20.png)
 
-# 看效果
+# <a name="SublimeGit-04" href="#" >看效果</a>
 
 ![](image/3-21.png)
