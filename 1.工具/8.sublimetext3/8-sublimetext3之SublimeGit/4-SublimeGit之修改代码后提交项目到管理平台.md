@@ -1,0 +1,55 @@
+总操作流程：
+- 1、[下拉项目](#SublimeGit-01)
+- 2、[修改文件](#SublimeGit-02)
+    - 2.[1、对比文件](#SublimeGit-02-01)
+- 3、[提交代码](#SublimeGit-03)
+- 4、[看效果](#SublimeGit-04)
+
+***
+
+# <a name="SublimeGit-01" href="#" >下拉项目/</a>
+
+[![](https://img.shields.io/badge/参考文献-git之克隆项目下来-blue.svg "参考文献 git之克隆项目下来")](https://github.com/OurNotes/CCN/blob/master/1.%E5%B7%A5%E5%85%B7/1.git/1.git%E4%B9%8B%E5%AD%A6%E4%B9%A0/10-git%E4%B9%8B%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE%E4%B8%8B%E6%9D%A5.md)
+
+# <a name="SublimeGit-02" href="#" >修改文件</a>
+
+![](image/4-1.png)
+
+`按快捷键：Ctrl+Shift+P,输入：gs`
+
+![](image/4-2.png)
+
+### <a name="SublimeGit-02-01" href="#" >1、对比文件</a>
+
+`按快捷键：2 会跳到修改的文件处`
+
+![](image/4-3.png)
+
+`按快捷键：d 会跳到具体修改内容界面`
+
+![](image/4-4.png)
+
+![](image/4-5.png)
+
+# <a name="SublimeGit-03" href="#" >提交代码</a>
+
+`按快捷键：Ctrl+Shift+s`
+
+![](image/4-6.png)
+
+`按快捷键：c 进入提交备注界面`
+
+![](image/4-7.png)
+
+`关闭提交备注界面`
+
+![](image/4-8.png)
+
+`按快捷键：Ctrl+Shift+P,输入：gp 进行提交代码`
+
+![](image/3-17.png)
+
+# <a name="SublimeGit-04" href="#" >看效果</a>
+
+![](image/4-9.png)
+
