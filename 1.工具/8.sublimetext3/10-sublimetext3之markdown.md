@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/参考文献-简书-yellow.svg "参考文献 3dmax-2017")](https://blog.csdn.net/galoa/article/details/79029758)
+[![](https://img.shields.io/badge/参考文献-去除左侧空白+更改主题-yellow.svg "参考文献 去除左侧空白+更改主题")](https://blog.csdn.net/galoa/article/details/79029758)
 
 # 效果
 
@@ -35,11 +35,11 @@
 ```
     // Layout
     "draw_centered": false,  //决定两侧是否留白，默认为true，修改为false去除左侧空白
-    "word_wrap": true, 
+    "word_wrap": true,
     "wrap_width": 120, //决定每行最大字数，这里设定为120
     "rulers": [],
 
-    
+
     // Line
     "line_numbers": true, //显示行号，默认为false
     "highlight_line": false,
