@@ -30,6 +30,17 @@
 
 ![](image/1-5.png)
 
+```
+{
+	"git_executables": {
+        "git": ["D:/Git/bin/git"],
+        "git_flow": ["D:/Git/bin/git","flow"],
+        "legit": ["legit"],
+        "gitk": ["gitk"]
+    },
+}
+```
+
 # 看效果
 
 
