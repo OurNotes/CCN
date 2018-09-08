@@ -71,7 +71,7 @@
 
 ### <a name="SublimeGit-03-03" href="#" >3、推送代码</a>
 
-`按快捷键：Ctrl+Shift+P,输入：gpcb`
+`按快捷键：Ctrl+Shift+P,输入：gp`
 
 ![](image/3-17.png)
 
