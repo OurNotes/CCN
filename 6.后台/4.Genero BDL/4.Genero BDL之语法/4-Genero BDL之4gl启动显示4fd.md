@@ -10,7 +10,7 @@
 
 # 創建4fd
 
-[![](https://img.shields.io/badge/4fd-cxmt177-green.svg "4fd cxmt177")](https://pan.baidu.com/s/17Pwu6ymt7q2lUzOKhrKBGQ)
+[![](https://img.shields.io/badge/4fd-cxmt177-green.svg "4fd cxmt177")](https://pan.baidu.com/s/1NsaDO1NBMeYO2SWS3xbksA)
 
 ![](image/4-1.png)
 
@@ -28,6 +28,28 @@ MAIN
 
   # 定義局域變量，本文函數可以用
   DEFINE p_row,p_col     LIKE type_file.num5
+
+  # 改變一些系統缺省值
+  OPTIONS
+      FORM LINE     FIRST + 2,               #畫面開始的位置
+      MESSAGE LINE  LAST,                    #訊息顯示的位置
+      PROMPT LINE   LAST,                    #提示訊息的位置
+      INPUT NO WRAP                          #輸入的方式: 不打轉
+  DEFER INTERRUPT                            #擷取中斷鍵
+
+  # cl_user( ) 主要在抓取系統中與『個人設定』
+  IF (NOT cl_user()) THEN
+    EXIT PROGRAM
+  END IF
+
+  # 當發生 SQL 錯誤時，系統會CALL cl_err_msg_log( )
+  WHENEVER ERROR CALL cl_err_msg_log
+
+  # cl_setup( ) 主要在抓取系統中與『模組設定』相關的變數值資料，
+  # 如這個模組所必需的全域變數等等
+  IF (NOT cl_setup("CXM")) THEN
+    EXIT PROGRAM
+  END IF
 
   # 命令頁下取值
   LET p_row = ARG_VAL(1)
@@ -62,14 +84,6 @@ FUNCTION t177_menu()
             DISPLAY "insert!"
         ON ACTION query -- 觸發查詢按鈕
             DISPLAY "query!"
-        ON ACTION modify  -- 觸發修改按鈕
-            DISPLAY "modify!"
-        ON ACTION invalid  -- 觸發無效按鈕
-            DISPLAY "invalid!"
-        ON ACTION delete -- 觸發刪除按鈕
-            DISPLAY "delete!"
-       ON ACTION reproduce  -- 觸發打印按鈕
-            DISPLAY "reproduce!"
         ON ACTION exit   -- 觸發離開按鈕
             LET g_action_choice = "exit"
             EXIT MENU
