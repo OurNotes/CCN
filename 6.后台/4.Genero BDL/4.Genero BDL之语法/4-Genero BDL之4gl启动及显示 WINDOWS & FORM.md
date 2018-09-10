@@ -87,5 +87,3 @@ END FUNCTION
 
 ![](image/4-2.gif)
 
-
-
