@@ -85,7 +85,7 @@ END FUNCTION
 
 # 看效果
 
-![](image/4-1.gif)
+![](image/4-2.gif)
 
 
 
