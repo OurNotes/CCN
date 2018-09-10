@@ -6,6 +6,8 @@
 
 ***
 
+`參考aooi010.4gl`
+
 # 創建4fd
 
 [![](https://img.shields.io/badge/4fd-cxmt177-green.svg "4fd cxmt177")](https://pan.baidu.com/s/17Pwu6ymt7q2lUzOKhrKBGQ)
