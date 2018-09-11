@@ -33,5 +33,3 @@
 - UltraVNC Viewer（链接别人）
 
 ![](image/2-8.png)
-
-测试
