@@ -11,9 +11,9 @@
 
 [![](https://img.shields.io/badge/官网-infinity-red.svg "官网 infinity")](https://pan.baidu.com/s/1QLKtSVEGV7tgypvqUdy3_w)
 
-- 安装
-
 ![](image/3-1.png)
+
+- 安装
 
 ![](image/3-2.png)
 
@@ -38,3 +38,5 @@
 ![](image/3-8.png)
 
 # <a name="GoogleChrome-03" href="#" >看效果</a>
+
+`重启浏览器`
