@@ -1,11 +1,11 @@
 总操作流程：
-- 1、下载安装插件
-- 2、配置插件
-- 3、看效果
+- 1、[下载安装插件](#GoogleChrome-01)
+- 2、[配置插件](#GoogleChrome-02)
+- 3、[看效果](#GoogleChrome-03)
 
 ***
 
-# 下载安装插件
+# <a name="GoogleChrome-01" href="#" >下载安装插件</a>
 
 - 下载
 
@@ -19,7 +19,7 @@
 
 ![](image/3-3.png)
 
-# 配置插件
+# <a name="GoogleChrome-02" href="#" >配置插件</a>
 
 - 註冊登陆
 
@@ -37,4 +37,4 @@
 
 ![](image/3-8.png)
 
-# 看效果
+# <a name="GoogleChrome-03" href="#" >看效果</a>
