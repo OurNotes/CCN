@@ -7,6 +7,9 @@
 # 操作
 
 ### 1、安裝插件
+`
+MarkdownEditing
+`
 
 ![](image/10-2.png)
 
