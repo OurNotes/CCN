@@ -1,17 +1,17 @@
 總操作流程:
-- 1、創建4fd
-- 2、寫4gl程序
-- 3、erp給新程序權限
-- 4、看效果
+- 1、[創建4fd](#4gl-01)
+- 2、[寫4gl程序](#4gl-02)
+- 3、[erp給新程序權限](#4gl-03)
+- 4、[看效果](#4gl-04)
 
 ***
 
-# 創建4fd
+# <a name="4gl-01" href="#" >創建4fd</a>
 [![](https://img.shields.io/badge/4fd-cxmt411-green.svg "4fd cxmt411")](https://pan.baidu.com/s/1AN-VD7iMs1b1c8BW5U5t1A)
 
 ![](image/5-1.png)
 
-# 寫4gl程序
+# <a name="4gl-02" href="#" >寫4gl程序</a>
 
 ```
 DATABASE ds  -- 連接數據庫
@@ -185,7 +185,7 @@ END FUNCTION
 
 ```
 
-# erp給新程序權限
+# <a name="4gl-03" href="#" >erp給新程序權限</a>
 
 - 1、[給新程序授運行路徑和序授畫面權限](https://github.com/OurNotes/CCN/blob/master/6.%E5%90%8E%E5%8F%B0/4.Genero%20BDL/3.Genero%20BDL%E4%B9%8Btiptop%E5%BF%AB%E9%80%9F%E7%86%9F%E6%82%89/5-Genero%20BDL%E4%B9%8B%E5%8F%AA%E6%94%B9%E7%A8%8B%E5%BA%8F.md#tiptop-04)
 
@@ -195,6 +195,6 @@ END FUNCTION
 
 ![](image/5-3.png)
 
-# 看效果
+# <a name="4gl-04" href="#" >看效果</a>
 
 ![](image/5-4.gif)
