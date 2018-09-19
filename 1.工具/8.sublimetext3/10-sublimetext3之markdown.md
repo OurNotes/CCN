@@ -36,6 +36,7 @@ MarkdownEditing
 ![](image/10-7.png)
 
 ```
+    "color_scheme": "Packages/Color Scheme - Default/Mariana.tmTheme",
     // Layout
     "draw_centered": false,  //决定两侧是否留白，默认为true，修改为false去除左侧空白
     "word_wrap": true,
