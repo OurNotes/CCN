@@ -1,12 +1,12 @@
 操作总流程：
-- 1、下载安装
-- 2、做软链接
-- 3、测试
+- 1、[下载安装](#Linux-01)
+- 2、[做软链接](#Linux-02)
+- 3、[测试](#Linux-03)
 
 ----------
 
 
-# 下载安装
+# <a name="Linux-01" href="#" >下载安装</a>
 ```
 wget -c http://www.dwhd.org/script/tar_gz_bz2/ipython-3.0.0.tar.gz #下载
 
@@ -24,11 +24,11 @@ cd .. #返回上一级
 
 rm -rf ipython-3.0.0 #删除文件夹
 ```
-# 做软链接
+# <a name="Linux-02" href="#" >做软链接</a>
 ```
 ln -sv /usr/local/python2.7/bin/ipython /usr/bin/
 ```
-# 测试
+# <a name="Linux-03" href="#" >测试</a>
 ```
 ipython -c "print 'hello'"
 ```
