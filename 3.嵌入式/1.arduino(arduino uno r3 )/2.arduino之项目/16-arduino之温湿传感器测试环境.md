@@ -15,7 +15,7 @@
 
 ![](image/16-1.png)
 # <a name="arduino-02" href="#" >使用函数库</a>
-[![](https://img.shields.io/badge/DHT11-zip-green.svg "DHT11_zip")](https://pan.baidu.com/s/1Av9xuRDThqzDR68GMk1w8Q)
+[![](https://img.shields.io/badge/DHT11-zip-green.svg "DHT11_zip")](https://pan.baidu.com/s/1Uzjp4Kph_Ku586kteI7qUg)
 
 解压复制到
 
