@@ -9,7 +9,8 @@
 
 # <a name="liquibase-01" href="#" >下载安装</a>
 
-[![](https://img.shields.io/badge/liquibase-3.6.2-green.svg "liquibase 3.6.2")](https://pan.baidu.com/s/178c2fxtA_UpY9akZpR5adw)
+[![](https://img.shields.io/badge/liquibase-3.6.2-green.svg "liquibase 3.6.2")](https://pan.baidu.com/s/1P30gA3QW7tCZgRuDkjnO1Q)
+
 # <a name="liquibase-02" href="#" >配置</a>
 ### <a name="liquibase-02-01" href="#" >1、配置环境变量</a>
 新建：

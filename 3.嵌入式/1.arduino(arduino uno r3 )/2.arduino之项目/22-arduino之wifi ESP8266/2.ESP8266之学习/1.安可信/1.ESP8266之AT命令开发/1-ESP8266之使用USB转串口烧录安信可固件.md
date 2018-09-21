@@ -26,7 +26,7 @@
 ![](image/1-5.png)
 
 测试工具测试
-[![](https://img.shields.io/badge/aithinker_serial_tool-1.2.3.7-green.svg "aithinker_serial_tool 1.2.3.7")](https://pan.baidu.com/s/1tEXZKgLTKbjnLXQmLuDrFA)
+[![](https://img.shields.io/badge/aithinker_serial_tool-1.2.3.7-green.svg "aithinker_serial_tool 1.2.3.7")](https://pan.baidu.com/s/1apXbkZIP9RVZ1bAYHOBgTA)
 
 
 ![](image/1-6.png)
