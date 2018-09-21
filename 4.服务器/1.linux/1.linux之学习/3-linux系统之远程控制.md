@@ -7,9 +7,9 @@
 
 
 下载putty：
-[![](https://img.shields.io/badge/putty-0.59-green.svg "putty 0.59")](http://pan.baidu.com/s/1qYUAGSO)
+[![](https://img.shields.io/badge/putty-0.59-green.svg "putty 0.59")](https://pan.baidu.com/s/1T4UYILhzdwoWqkfCINvXgQ)
 或者下载Xmanager Enterprise 5：
-[![](https://img.shields.io/badge/Xmanager_Enterprise_5-0436-green.svg "Xmanager Enterprise 5 0436")](http://pan.baidu.com/s/1c1NtBNi)
+[![](https://img.shields.io/badge/Xmanager_Enterprise_5-0436-green.svg "Xmanager Enterprise 5 0436")](https://pan.baidu.com/s/13BdHO9Eev2-15rmthagHJw)
 
 
 获取服务器的ip：

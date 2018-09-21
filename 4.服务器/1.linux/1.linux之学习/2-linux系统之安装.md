@@ -8,7 +8,7 @@
 # 电脑安装linux
 [![](https://img.shields.io/badge/参考文献-下载原版Linux-yellow.svg "参考文献 下载原版Linux")](http://jingyan.baidu.com/article/6dad5075cd4e6ca123e36e31.html)
 [![](https://img.shields.io/badge/参考文献-Linux系统写入到U盘-yellow.svg "参考文献 Linux系统写入到U盘")](http://www.xitongzhijia.net/xtjc/20140721/24235.html)
-[![](https://img.shields.io/badge/软碟通-UltraISO-green.svg "软碟通 UltraISO")](http://pan.baidu.com/s/1eRJj1vG)
+[![](https://img.shields.io/badge/软碟通-UltraISO-green.svg "软碟通 UltraISO")](https://pan.baidu.com/s/1j7yMyQ5vtVECE3FIa90-vA)
 [![](https://img.shields.io/badge/参考文献-安装Linux系统-yellow.svg "参考文献 安装Linux系统")](http://www.osyunwei.com/archives/2307.html)
 
 
