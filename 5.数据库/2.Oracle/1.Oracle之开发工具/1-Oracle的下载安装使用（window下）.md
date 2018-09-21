@@ -1,12 +1,12 @@
 总操作流程：
-- 1、下载安装；
-- 2、创建Oracle数据库；
-- 3、配置Oracle；
-- 4、在navicat上使用；
+- 1、[下载安装](#Oracle-01)
+- 2、[创建Oracle数据库](#Oracle-02)
+- 3、[配置Oracle](#Oracle-03)
+- 4、[在navicat上使用](#Oracle-04)
 
 ***
 
-# 下载安装
+# <a name="Oracle-01" href="#" >下载安装</a>
 ### 1、下载
 [![](https://img.shields.io/badge/Oracle_win64-11gR2-green.svg "Oracle_win64 11gR2")](https://pan.baidu.com/s/1OccUwdzmqwaWqTJEgNMk1w)
 
@@ -22,7 +22,7 @@
 ![](image/1-4.png)
 
 
-# 创建Oracle数据库
+# <a name="Oracle-02" href="#" >创建Oracle数据库</a>
 ![](image/1-5.png)
 
 ![](image/1-6.png)
@@ -33,7 +33,7 @@
 
 ![](image/1-9.png)
 
-# 配置Oracle
+# <a name="Oracle-03" href="#" >配置Oracle</a>
 ### 1、修改listener.ora文件
 
 ![](image/1-10.png)
@@ -54,6 +54,6 @@
 
 ![](image/1-11.png)
 
-# 在navicat上使用
+# <a name="Oracle-04" href="#" >在navicat上使用</a>
 
 ![](image/1-12.png)

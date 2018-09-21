@@ -45,7 +45,9 @@ dbca
 ```
 netmgr
 ```
+
 ![](image/1-5.png)
+
 ### 4、切换到MyOracle数据库实例名
 ```
 export ORACLE_SID=MyOracle
