@@ -1,10 +1,10 @@
 总操作流程：
-- 1、修改配置；
-- 2、测试；
+- 1、[修改配置](#Nginx-01)
+- 2、[测试](#Nginx-02)
 
 ----------
 
-# 修改配置
+# <a name="Nginx-01" href="#" >修改配置</a>
 ```
 vim /etc/sysconfig/iptables
 ```
@@ -16,7 +16,7 @@ vim /etc/sysconfig/iptables
 ```
 service iptables restart #重启
 ```
-# 测试
+# <a name="Nginx-02" href="#" >测试</a>
 浏览器输入ip：192.168.23.131
 
 ![](image/2-1.png)

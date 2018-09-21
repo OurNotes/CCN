@@ -1,18 +1,18 @@
 总操作流程：
-- 1、获取Oracle的端口号；
-- 2、创建一个远程用户，并赋予权限；
-- 3、设置防火墙；
-- 4、测试；
+- 1、[获取Oracle的端口号](#Oracle-01)
+- 2、[创建一个远程用户，并赋予权限](#Oracle-02)
+- 3、[设置防火墙](#Oracle-03)
+- 4、[测试](#Oracle-04)
 
 ***
 
-# 获取Oracle的端口号
+# <a name="Oracle-01" href="#" >获取Oracle的端口号</a>
 ```
 lsnrctl status #查看监听器的状态
 ```
 ![](image/1-1.png)
 
-# 创建一个远程用户，并赋予权限
+# <a name="Oracle-02" href="#" >创建一个远程用户，并赋予权限</a>
 ### 1、创建用户，并赋予权限
 ```
 su dk
@@ -63,7 +63,7 @@ lsnrctl reload  #重启监听
 lsnrctl status #查看监听状态
 
 ```
-# 设置防火墙
+# <a name="Oracle-03" href="#" >设置防火墙</a>
 ```
 su
 
@@ -80,5 +80,6 @@ vi  /etc/sysconfig/iptables #打开防火墙配置文件
 ```
 service  iptables restart #重启防火墙
 ```
-# 测试
+
+# <a name="Oracle-04" href="#" >测试</a>
 ![](image/1-6.png)

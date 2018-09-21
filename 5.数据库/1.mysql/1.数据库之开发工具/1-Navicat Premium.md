@@ -2,18 +2,18 @@
 
 
 总操作流程:
-- 1、下载文件
-- 2、破解
+- 1、[下载文件](#navicat-01)
+- 2、[破解](#navicat-02)
 
 ----------
 
 `注意：操作要断开网络`
 
-# 1、下载文件
-[![](https://img.shields.io/badge/navicat12023_premium_cs-x64-green.svg "navicat12023_premium_cs x64")](https://pan.baidu.com/s/1kWe9AIV)
-[![](https://img.shields.io/badge/Navicat_Premium_12-破解补丁-green.svg "navicat12023_premium_cs 破解补丁")](https://pan.baidu.com/s/1dG003Xv)
+# <a name="navicat-01" href="#" >1、下载文件</a>
+[![](https://img.shields.io/badge/navicat12023_premium_cs-x64-green.svg "navicat12023_premium_cs x64")](https://pan.baidu.com/s/1FMB65oARRSCcOtakx0lRQQ)
+[![](https://img.shields.io/badge/Navicat_Premium_12-破解补丁-green.svg "navicat12023_premium_cs 破解补丁")](https://pan.baidu.com/s/151_6s4z-_DjZRoq-FTDcMA)
 
-# 2、破解
+# <a name="navicat-01" href="#" >2、破解</a>
 dos命令进入界面
 
 ```

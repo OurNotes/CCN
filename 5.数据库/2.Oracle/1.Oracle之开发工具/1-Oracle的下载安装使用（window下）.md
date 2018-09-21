@@ -8,7 +8,7 @@
 
 # 下载安装
 ### 1、下载
-[![](https://img.shields.io/badge/Oracle_win64-11gR2-green.svg "Oracle_win64 11gR2")](https://pan.baidu.com/s/1EBKkDBTzpgWdY68etnZrWw)
+[![](https://img.shields.io/badge/Oracle_win64-11gR2-green.svg "Oracle_win64 11gR2")](https://pan.baidu.com/s/1OccUwdzmqwaWqTJEgNMk1w)
 
 ### 2、安装
 解压点击exe文件安装
