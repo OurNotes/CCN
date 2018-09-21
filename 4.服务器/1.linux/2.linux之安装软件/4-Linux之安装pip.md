@@ -1,12 +1,12 @@
 操作总流程：
-- 1、下载安装
-- 2、做软连接
-- 3、更新
+- 1、[下载安装](#Linux-01)
+- 2、[做软连接](#Linux-02)
+- 3、[更新](#Linux-03)
 
 ----------
 
 
-# 下载安装
+# <a name="Linux-01" href="#" >下载安装</a>
 ```
 wget https://pypi.python.org/packages/source/p/pip/pip-1.3.1.tar.gz --no-check-certificate #下载
 
@@ -25,12 +25,12 @@ cd .. #返回上一级
 rm -rf pip-1.3.1 #删除文件夹
 ```
 
-# 做软链接
+# <a name="Linux-02" href="#" >做软链接</a>
 ```
 ln -s /usr/local/python2.7/bin/pip /usr/bin/
 ```
 
-# 更新
+# <a name="Linux-03" href="#" >更新</a>
 ```
  pip install --upgrade pip
 ```

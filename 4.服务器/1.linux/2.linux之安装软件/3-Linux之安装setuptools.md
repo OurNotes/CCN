@@ -1,9 +1,9 @@
 操作总流程：
-- 1、下载安装
-- 2、测试
+- 1、[下载安装](#Linux-01)
+- 2、[测试](#Linux-02)
 
 ----------
-# 下载安装
+# <a name="Linux-01" href="#" >下载安装</a>
 ```
 wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-1.4.2.tar.gz #下载
 
@@ -22,7 +22,7 @@ cd .. #返回上一级
 rm -rf setuptools-1.4.2 #删除文件夹
 ```
 
-# 测试
+# <a name="Linux-02" href="#" >测试</a>
 ```
 easy_install --help
 ```

@@ -1,18 +1,18 @@
 操作总流程：
-- 1、创建目录
-- 2、下载解压
-- 3、设置环境变量
-- 4、检查
+- 1、[创建目录](#Linux-01)
+- 2、[下载解压](#Linux-02)
+- 3、[设置环境变量](#Linux-03)
+- 4、[检查](#Linux-04)
 
 ----------
-# 创建目录
+# <a name="Linux-01" href="#" >创建目录</a>
 ```
 mkdir /usr/local/java #创建目录
 
 cd /usr/local/java #进入文件夹
 ```
 
-# 下载解压
+# <a name="Linux-02" href="#" >下载解压</a>
 ```
 wget http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz?AuthParam=1501507734_d383060f75863f03e420e46809663ad4 #下载
 
@@ -21,7 +21,7 @@ wget http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c
  tar -zxvf jdk-8u144-linux-x64.tar.gz #解压
 ```
 
-# 设置环境变量
+# <a name="Linux-03" href="#" >设置环境变量</a>
 vi /etc/profile
 ```
 #set java environment
@@ -36,7 +36,7 @@ export JAVA_HOME JRE_HOME CLASS_PATH PATH
 source /etc/profile #让修改生效
 ```
 
-# 检查
+# <a name="Linux-04" href="#" >检查</a>
 ```
 java -version
 ```

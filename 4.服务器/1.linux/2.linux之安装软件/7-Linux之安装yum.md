@@ -2,14 +2,14 @@
 
 
 总操作流程：
-- 1、删除原来的yum；
-- 2、下载安装；
-- 3、配置；
-- 4、检查；
+- 1、[删除原来的yum](#Linux-01)
+- 2、[下载安装](#Linux-01)
+- 3、[配置](#Linux-01)
+- 4、[检查](#Linux-01)
 
 ----------
 
-# 删除原来的yum
+# <a name="Linux-01" href="#" >删除原来的yum</a>
 ```
 rpm -qa yum #查看是否安装过yum
 
@@ -17,7 +17,7 @@ rpm -qa | grep yum | xargs rpm -e --nodeps  #将所有的组件卸载掉
 
 rpm -qa yum #查查是否卸载成功
 ```
-# 下载安装CentOS 6
+# <a name="Linux-02" href="#" >下载安装CentOS 6</a>
 [![](https://img.shields.io/badge/参考文献-各版本-yellow.svg "参考文献 各版本")](https://blog.csdn.net/weicaijiang/article/details/78699206)
 
 ```
@@ -31,7 +31,7 @@ wget http://mirror.centos.org/centos/6/os/x86_64/Packages/yum-plugin-fastestmirr
 rpm -ivh yum-*     #安装
 
 ```
-# 配置
+# <a name="Linux-03" href="#" >配置</a>
 ### 1、vi  /etc/yum/pluginconf.d/fastestmirror.conf
 ```
 enabled=0  //把1改为0 
@@ -40,7 +40,7 @@ enabled=0  //把1改为0
 ```
 plugins=1                 #将plugins的值修改为0
 ```
-# 检查
+# <a name="Linux-04" href="#" >检查</a>
 ```
 rpm -qa yum    #查看是否已经安装上
 ```
