@@ -5,7 +5,7 @@
 ***
 
 # 下载安装
-[![](https://img.shields.io/badge/驱动安装文件-SETUP-green.svg "驱动安装文件 SETUP")](https://pan.baidu.com/s/1whZRQqU3hIr3B3A2NhiRuQ)
+[![](https://img.shields.io/badge/驱动安装文件-SETUP-green.svg "驱动安装文件 SETUP")](https://pan.baidu.com/s/1QWpbNo5BD8dMs9mlstFpFg)
 
 # 看效果
 `
