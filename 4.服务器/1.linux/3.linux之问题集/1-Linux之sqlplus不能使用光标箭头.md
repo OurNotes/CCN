@@ -1,10 +1,10 @@
 总操作流程：
-- 1、下载安装；
-- 2、修改配置文件；
+- 1、[下载安装](#Linux-01)
+- 2、[修改配置文件](#Linux-02)
 
 ***
 
-# 下载安装
+# <a name="Linux-01" href="#" >下载安装</a>
 ### 1、下载
 [![](https://img.shields.io/badge/rlwrap-0.43-green.svg "rlwrap 0.43")](https://pan.baidu.com/s/1vvpB1VV7MNh42Wj5XnDESA)
 
@@ -37,7 +37,7 @@ cd /usr/local/src
 rm -rf rlwrap-0.43
 
 ```
-# 修改配置文件
+# <a name="Linux-02" href="#" >修改配置文件</a>
 ### 1、切换到oracle用户，编辑bash_profile文件
 ```
 su dk

@@ -2,19 +2,19 @@
 
 
 操作总流程：
-- 1、安装的硬件要求；
-- 2、安装Oracle前的准备；
-- 3、下载安装；
-- 4、测试。
+- 1、[安装的硬件要求](#Linux-01)
+- 2、[安装Oracle前的准备](#Linux-02)
+- 3、[下载安装](#Linux-03)
+- 4、[测试](#Linux-04)
 
 ***
 `注意：建议安装要在虚拟机下进行`
 
-# 安装的硬件要求
+# <a name="Linux-01" href="#" >安装的硬件要求</a>
 
 ![](image/9-1.png)
 
-# 安装Oracle前的准备
+# <a name="Linux-02" href="#" >安装Oracle前的准备</a>
 ### 1、创建运行oracle数据库的系统用户和用户组
 ```
 su           #切换到root
@@ -133,7 +133,7 @@ source /home/dk/.bash_profile
 reboot #重启系统
 ```
 
-# 下载安装
+# <a name="Linux-03" href="#" >下载安装</a>
 ### 1、下载
 [![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://www.oracle.com/downloads/index.html#database)
 
@@ -193,7 +193,7 @@ cd /usr/local/src/database/
 
 ![](image/9-14.png)
 
-# 测试
+# <a name="Linux-04" href="#" >测试</a>
 ```
 
 cd /usr/local/src

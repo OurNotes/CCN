@@ -2,20 +2,20 @@
 
 
 总操作流程：
-- 1、安装编译工具及库文件；
-- 2、首先要安装 PCRE；
-- 3、安装 Nginx；
-- 4、Nginx 配置；
-- 5、启动 Nginx；
-- 6、访问站点
+- 1、[安装编译工具及库文件](#Nginx-01)
+- 2、[首先要安装 PCRE](#Nginx-02)
+- 3、[安装 Nginx](#Nginx-03)
+- 4、[Nginx 配置](#Nginx-04)
+- 5、[启动 Nginx](#Nginx-05)
+- 6、[访问站点](#Nginx-06)
 
 ----------
 
-# 安装编译工具及库文件
+# <a name="Nginx-01" href="#" >安装编译工具及库文件</a>
 ```
 yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
 ```
-# 首先要安装 PCRE
+# <a name="Nginx-02" href="#" >首先要安装 PCRE</a>
 `注意：安装到/usr/local目录下`
 ```
 #下载
@@ -31,7 +31,7 @@ make && make install
 #查看pcre版本
 pcre-config --version
 ```
-# 安装 Nginx
+# <a name="Nginx-03" href="#" >安装 Nginx</a>
 ```
 #下载 Nginx
 wget http://nginx.org/download/nginx-1.6.2.tar.gz
@@ -52,7 +52,7 @@ make install
 #查看nginx版本
 /usr/local/webserver/nginx/sbin/nginx -v
 ```
-# Nginx 配置
+# <a name="Nginx-04" href="#" >Nginx 配置</a>
 ### 1、创建 Nginx 运行使用的用户 www：
 ```
 /usr/sbin/groupadd www 
@@ -140,11 +140,11 @@ http
 
 }
 ```
-# 启动 Nginx
+# <a name="Nginx-05" href="#" >启动 Nginx</a>
 ```
 /usr/local/webserver/nginx/sbin/nginx
 ```
-# 测试
+# <a name="Nginx-06" href="#" >测试</a>
 用浏览器ip
 
 ![](image/1-1.png)

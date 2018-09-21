@@ -4,7 +4,7 @@
 - 3、[切换到普通用户](#Linux-03)
 
 ----------
-# 切换到root
+# <a name="Linux-01" href="#" >切换到root</a>
 ```
 su
 ```
@@ -12,7 +12,7 @@ su
 
 ![](image/11-1.png)
 
-# 编辑修改配置文件
+# <a name="Linux-02" href="#" >编辑修改配置文件</a>
 ```
 visudo 或者 vi /etc/sudoers
 ```
@@ -22,7 +22,7 @@ visudo 或者 vi /etc/sudoers
 #Give dk a root authority
 dk    ALL=(ALL)       ALL
 ```
-# 切换到普通用户
+# <a name="Linux-03" href="#" >切换到普通用户</a>
 ```
 su dk
 ```

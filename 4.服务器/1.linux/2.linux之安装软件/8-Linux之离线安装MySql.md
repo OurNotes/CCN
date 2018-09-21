@@ -2,19 +2,19 @@
 
 
 总操作流程：
-- 1、删除系统自带的mysql；
-- 2、下载安装mysql；
-- 3、修改mysql密码；
+- 1、[删除系统自带的mysql](#Linux-01)
+- 2、[下载安装mysql](#Linux-02)
+- 3、[修改mysql密码](#Linux-03)
 
 ----------
 
-# 删除系统自带的mysql
+# <a name="Linux-01" href="#" >删除系统自带的mysql</a>
 ```
 rpm -qa mysql #看是否安装过mysql
 
 rpm -qa | grep mysql | xargs rpm -e --nodeps 文件名 #卸载mysql
 ```
-# 下载安装mysql(CentOS 6)
+# <a name="Linux-02" href="#" >下载安装mysql(CentOS 6)</a>
 ### 1、下载
 [![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/repo/yum/)
 
@@ -53,7 +53,7 @@ service mysqld start #启动MySQL服务器
 service mysqld status #检查MySQL服务器的状态
 
 ```
-# 修改mysql密码
+# <a name="Linux-02" href="#" >修改mysql密码</a>
 ```
 grep 'temporary password' /var/log/mysqld.log # 获取临时密码
 
