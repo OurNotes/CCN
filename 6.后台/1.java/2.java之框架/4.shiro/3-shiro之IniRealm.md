@@ -2,13 +2,13 @@
 
 
 总操作流程：
-- 1、pom.xml引用包；
-- 2、创建文件；
-- 3、测试；
+- 1、[pom.xml引用包](#java-01)
+- 2、[创建文件](#java-02)
+- 3、[测试](#java-03)
 
 ***
 
-# pom.xml引用包
+# <a name="java-01" href="#" >pom.xml引用包</a>
 ```
     <dependency>
       <groupId>junit</groupId>
@@ -35,7 +35,9 @@
       <scope>test</scope>
     </dependency>
 ```
- # 创建文件
+
+# <a name="java-02" href="#" >创建文件</a>
+
  - java
 ```
 import org.apache.shiro.SecurityUtils;
@@ -91,5 +93,6 @@ Mark=123456,admin
 [roles]
 admin=user:delete
 ```
-# 测试
+
+# <a name="java-03" href="#" >测试</a>
 ![](image/1-2.png)

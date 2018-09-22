@@ -1,8 +1,8 @@
 操作总流程：
-- 1、创建接口
-- 2、创建实现类
-- 3、创建实例化一个IOC容器
-- 4、创建bean配置
+- 1、[创建接口](#java-01)
+- 2、[创建实现类](#java-02)
+- 3、[创建实例化一个IOC容器](#java-03)
+- 4、[创建bean配置](#java-04)
 
 ----------
 - 项目结构：
@@ -19,7 +19,7 @@
 - 工作原理：
 
 ![](image/2-4.png)
-# 接口代码实现
+# <a name="java-01" href="#" >接口代码实现</a>
 ```
 package com.persion.test;
 
@@ -27,7 +27,7 @@ public interface TestOnce {
 	String once(String once);
 }
 ```
-# 实现类代码
+# <a name="java-02" href="#" >实现类代码</a>
 ```
 package com.persion.test;
 
@@ -41,7 +41,7 @@ public class TestOnceImpl implements TestOnce{
 
 }
 ```
-# 实例化一个IOC容器
+# <a name="java-03" href="#" >实例化一个IOC容器</a>
 ```
 package com.persion.test;
 
@@ -60,7 +60,7 @@ public class TestT {
 	    }
 }
 ```
-# bean配置xml代码
+# <a name="java-04" href="#" >bean配置xml代码</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"

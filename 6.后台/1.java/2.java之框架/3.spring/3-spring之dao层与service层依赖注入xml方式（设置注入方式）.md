@@ -1,10 +1,10 @@
 操作总流程
-- 1、创建Dao接口
-- 2、创建Dao实现类
-- 3、创建service接口
-- 4、创建service实现类
-- 5、创建xml配置文件
-- 6、添加依赖
+- 1、[创建Dao接口](#java-01)
+- 2、[创建Dao实现类](#java-02)
+- 3、[创建service接口](#java-03)
+- 4、[创建service实现类](#java-04)
+- 5、[创建xml配置文件](#java-05)
+- 6、[添加依赖](#java-06)
 
 ----------
 - 项目结构图
@@ -15,7 +15,7 @@
 
 ![](image/3-2.png)
 
-# 创建Dao接口：onceTest
+# <a name="java-01" href="#" >创建Dao接口：onceTest</a>
 ```
 package com.persion.action;
 
@@ -40,7 +40,7 @@ public class onceTest{
 }
 
 ```
-# 创建Dao实现类：onceDao
+# <a name="java-02" href="#" >创建Dao实现类：onceDao</a>
 ```
 package com.persion.dao;
 
@@ -49,7 +49,7 @@ public interface onceDao {
 }
 
 ```
-# 创建service接口：onceDaoImpl
+# <a name="java-03" href="#" >创建service接口：onceDaoImpl</a>
 ```
 package com.persion.dao;
 
@@ -63,7 +63,7 @@ public class onceDaoImpl implements onceDao{
 }
 
 ```
-# 创建service实现类：onceService
+# <a name="java-04" href="#" >创建service实现类：onceService</a>
 ```
 package com.persion.service;
 
@@ -72,7 +72,7 @@ public interface onceService {
 }
 
 ```
-# onceServiceImpl
+# <a name="java-05" href="#" >onceServiceImpl</a>
 ```
 package com.persion.service;
 
@@ -95,7 +95,7 @@ public class onceServiceImpl implements onceService{
 
 }
 ```
-# 创建xml配置文件：spring-once.xml
+# <a name="java-06" href="#" >创建xml配置文件：spring-once.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -110,7 +110,7 @@ public class onceServiceImpl implements onceService{
 
 </beans>
 ```
-# 添加依赖：pom.xml(依赖)
+# <a name="java-07" href="#" >添加依赖：pom.xml(依赖)</a>
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
