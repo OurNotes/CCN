@@ -1,12 +1,12 @@
 总操作流程：
-- 1、获取mysql的端口号；
-- 2、创建一个远程用户，并赋予权限；
-- 3、设置防火墙；
-- 4、修改加密规则；
+- 1、[获取mysql的端口号](#navicat-01)
+- 2、[创建一个远程用户，并赋予权限](#navicat-02)
+- 3、[设置防火墙](#navicat-03)
+- 4、[修改加密规则](#navicat-04)
 
 ----------
 
-# 获取mysql的端口号
+# <a name="navicat-01" href="#" >获取mysql的端口号</a>
 ```
 mysql -u root -p #登陆mysql
 
@@ -14,7 +14,7 @@ mysql> use mysql;
 #查看端口
 mysql> show global variables like 'port'; 
 ```
-# 创建一个远程用户，并赋予权限
+# <a name="navicat-02" href="#" >创建一个远程用户，并赋予权限</a>
 ### 1、创建用户
 ```
 mysql> CREATE USER 'dk'@'%' IDENTIFIED BY 'DKLi123456!';
@@ -30,7 +30,7 @@ mysql> quit;
 
 service mysqld restart #重启mysql
 ```
-# 设置防火墙
+# <a name="navicat-03" href="#" >设置防火墙</a>
 
 ```
 vi  /etc/sysconfig/iptables #打开防火墙配置文件
@@ -47,7 +47,7 @@ vi  /etc/sysconfig/iptables #打开防火墙配置文件
 service  iptables restart #重启防火墙
 ```
 
-# 修改加密规则
+# <a name="navicat-04" href="#" >修改加密规则</a>
 ```
 mysql -u root -p
 
