@@ -1,19 +1,19 @@
 总操作流程：
-- 1、数据库；
-- 2、model的Classes；
-- 3、model的Teacher；
-- 4、工具类Util；
-- 5、ClassMapper.xml；
-- 6、jdbc.properties；
-- 7、log4j.properties；
-- 8、mybatis-conf.xml；
+- 1、[数据库](#java-01)
+- 2、[model的Classes](#java-02)
+- 3、[model的Teacher](#java-03)
+- 4、[工具类Util](#java-04)
+- 5、[ClassMapper.xml](#java-05)
+- 6、[jdbc.properties](#java-06)
+- 7、[log4j.properties](#java-07)
+- 8、[mybatis-conf.xml](#java-08)
 
 ----------
 
 ![](image/4-1.png)
 
 ![](image/4-2.png)
-# 数据库
+# <a name="java-01" href="#" >数据库</a>
 ```
 CREATE TABLE teacher(
 	t_id INT PRIMARY KEY AUTO_INCREMENT, 
@@ -33,7 +33,7 @@ INSERT INTO class(c_name, teacher_id) VALUES('bj_a', 1);
 INSERT INTO class(c_name, teacher_id) VALUES('bj_b', 2);
 
 ```
-# model的Classes
+# <a name="java-02" href="#" >model的Classes</a>
 ```
 package net.person.model;
 
@@ -73,7 +73,7 @@ public class Classes {
 }
 
 ```
-# model的Teacher
+# <a name="java-03" href="#" >model的Teacher</a>
 ```
 package net.person.model;
 
@@ -112,7 +112,7 @@ public class Teacher {
 }
 
 ```
-# 工具类Util
+# <a name="java-04" href="#" >工具类Util</a>
 ```
 package net.person.model;
 
@@ -133,7 +133,7 @@ public class Util {
 }
 
 ```
-# ClassMapper.xml
+# <a name="java-05" href="#" >ClassMapper.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
@@ -157,7 +157,7 @@ public class Util {
 
 </mapper>
 ```
-# jdbc.properties
+# <a name="java-06" href="#" >jdbc.properties</a>
 ```
 #mysql
 jdbc.driver=com.mysql.jdbc.Driver
@@ -165,7 +165,7 @@ jdbc.url=jdbc:mysql://localhost:3306/mybatis
 jdbc.username=root
 jdbc.password=123456
 ```
-# log4j.properties
+# <a name="java-07" href="#" >log4j.properties</a>
 ```
 log4j.rootLogger=CONSOLE,FILE  
 log4j.addivity.org.apache=true  
@@ -244,7 +244,7 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 log4j.logger.java.sql.Statement=DEBUG 
 
 ```
-# mybatis-conf.xml
+# <a name="java-08" href="#" >mybatis-conf.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">

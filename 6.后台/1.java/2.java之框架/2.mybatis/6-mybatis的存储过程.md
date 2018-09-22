@@ -1,17 +1,17 @@
 总操作流程：
-- 1、数据库；
-- 2、TestAll；
-- 3、User；
-- 4、Util；
-- 5、jdbc.properties；
-- 6、log4j.properties；
-- 7、mybatis-conf.xml；
+- 1、[数据库](#java-01)
+- 2、[TestAll](#java-02)
+- 3、[User](#java-03)
+- 4、[Util](#java-04)
+- 5、[jdbc.properties](#java-05)
+- 6、[log4j.properties](#java-06)
+- 7、[mybatis-conf.xml](#java-07)
 
 ----------
 ![](image/6-1.png)
 
 ![](image/6-2.png)
-# 数据库
+# <a name="java-01" href="#" >数据库</a>
 ```
 USE mybatis; 
 CREATE TABLE p_user(    
@@ -46,7 +46,7 @@ SET @user_count = 0;
 CALL mybatis.ges_user_count(1, @user_count);
 SELECT @user_count;
 ```
-# TestAll
+# <a name="java-02" href="#" >TestAll</a>
 ```
 package net.person.model;
 
@@ -83,7 +83,7 @@ public class TestAll {
 }
 
 ```
-# User
+# <a name="java-03" href="#" >User</a>
 ```
 package net.person.model;
 
@@ -126,7 +126,7 @@ public class User {
 }
 
 ```
-# Util
+# <a name="java-04" href="#" >Util</a>
 ```
 package net.person.model;
 
@@ -147,7 +147,7 @@ public class Util {
 }
 
 ```
-# jdbc.properties
+# <a name="java-05" href="#" >jdbc.properties</a>
 ```
 #mysql
 jdbc.driver=com.mysql.jdbc.Driver
@@ -155,7 +155,7 @@ jdbc.url=jdbc:mysql://localhost:3306/mybatis
 jdbc.username=root
 jdbc.password=
 ```
-# log4j.properties
+# <a name="java-06" href="#" >log4j.properties</a>
 ```
 log4j.rootLogger=CONSOLE,FILE  
 log4j.addivity.org.apache=true  
@@ -234,7 +234,7 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 log4j.logger.java.sql.Statement=DEBUG 
 
 ```
-# mybatis-conf.xml
+# <a name="java-07" href="#" >mybatis-conf.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -267,7 +267,7 @@ log4j.logger.java.sql.Statement=DEBUG
 </configuration>
 
 ```
-# userMapper.xml
+# <a name="java-08" href="#" >userMapper.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 

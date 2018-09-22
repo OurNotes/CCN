@@ -1,21 +1,21 @@
 总操操作流程：
-- 1.数据库；
-- 2、model层的Classes；
-- 3、model层的Student；
-- 4、model层的Teacher；
-- 5、测试类TestAll；
-- 6、工具类Util；
-- 7、ClassMapper.xml；
-- 8、jdbc.properties；
-- 9、 log4j.properties；
-- 10、mybatis-conf.xml；
+- 1.[数据库](#java-01)
+- 2、[model层的Classes](#java-02)
+- 3、[model层的Student](#java-03)
+- 4、[model层的Teacher](#java-04)
+- 5、[测试类TestAll](#java-05)
+- 6、[工具类Util](#java-06)
+- 7、[ClassMapper.xml](#java-07)
+- 8、[jdbc.properties](#java-08)
+- 9、[log4j.properties](#java-09)
+- 10、[mybatis-conf.xml](#java-10)
 
 ----------
 
 ![](image/5-1.png)
 
 ![](image/5-2.png)
-# 数据库
+# <a name="java-01" href="#" >数据库</a>
 ```
 CREATE TABLE student(
 	s_id INT PRIMARY KEY AUTO_INCREMENT, 
@@ -47,7 +47,7 @@ INSERT INTO class(c_name, teacher_id) VALUES('bj_b', 2);
 
 ```
 
-# model层的Classes
+# <a name="java-02" href="#" >model层的Classes</a>
 ```
 package net.person.model;
 
@@ -103,7 +103,7 @@ public class Classes {
 }
 
 ```
-# model层的Student
+# <a name="java-03" href="#" >model层的Student</a>
 ```
 package net.person.model;
 
@@ -139,7 +139,7 @@ public class Student {
 }
 
 ```
-# model层的Teacher
+# <a name="java-04" href="#" >model层的Teacher</a>
 ```
 package net.person.model;
 
@@ -178,7 +178,7 @@ public class Teacher {
 }
 
 ```
-# 测试类TestAll
+# <a name="java-05" href="#" >测试类TestAll</a>
 ```
 package net.person.model;
 
@@ -206,7 +206,7 @@ public class TestAll {
 }
 
 ```
-# 工具类Util
+# <a name="java-06" href="#" >工具类Util</a>
 ```
 package net.person.model;
 
@@ -227,7 +227,7 @@ public class Util {
 }
 
 ```
-# ClassMapper.xml
+# <a name="java-07" href="#" >ClassMapper.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
@@ -256,7 +256,7 @@ SELECT * FROM class c, teacher t,student s WHERE c.teacher_id=t.t_id AND c.C_id=
 
 </mapper>
 ```
-# jdbc.properties
+# <a name="java-08" href="#" >jdbc.properties</a>
 ```
 #mysql
 jdbc.driver=com.mysql.jdbc.Driver
@@ -264,7 +264,7 @@ jdbc.url=jdbc:mysql://localhost:3306/mybatis
 jdbc.username=root
 jdbc.password=123456
 ```
-# log4j.properties
+# <a name="java-09" href="#" >log4j.properties</a>
 ```
 log4j.rootLogger=CONSOLE,FILE  
 log4j.addivity.org.apache=true  
@@ -342,7 +342,7 @@ log4j.logger.java.sql.ResultSet=DEBUG
 log4j.logger.java.sql.PreparedStatement=DEBUG
 log4j.logger.java.sql.Statement=DEBUG 
 ```
-# mybatis-conf.xml
+# <a name="java-10" href="#" >mybatis-conf.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">

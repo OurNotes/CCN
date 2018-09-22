@@ -1,10 +1,11 @@
 总操作流程：
-- 1、创建数据库文件jdbc.properties；
-- 2、创建日志文件log4j.properties；
-- 3、创建mybatis-conf.xml文件；
-- 4、创建model层的model；
-- 5、user的注解:UserMapper；
-- 6、测试类:TestAll；
+- 1、[创建数据库文件jdbc.properties](#java-01)
+- 2、[创建日志文件log4j.properties](#java-02)
+- 3、[创建mybatis-conf.xml文件](#java-03)
+- 4、[创建model层的model](#java-04)
+- 5、[user的注解:UserMapper](#java-05)
+- 6、[創建工具类：Util](#java-06)
+- 7、[测试类:TestAll](#java-07)
 
 ----------
 
@@ -12,7 +13,7 @@
 
 ![](image/1-2.png)
 
-# 数据库连接：jdbc.properties
+# <a name="java-01" href="#" >创建数据库文件jdbc.properties</a>
 ```
 #mysql
 jdbc.driver=com.mysql.jdbc.Driver
@@ -20,7 +21,7 @@ jdbc.url=jdbc:mysql://localhost:3306/mybatis
 jdbc.username=root
 jdbc.password=123456
 ```
-# log4j.properties
+# <a name="java-02" href="#" >创建日志文件log4j.properties</a>
 ```
 log4j.rootLogger=CONSOLE,FILE  
 log4j.addivity.org.apache=true  
@@ -99,7 +100,7 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 log4j.logger.java.sql.Statement=DEBUG 
 
 ```
-# mybatis-conf.xml
+# <a name="java-03" href="#" >创建mybatis-conf.xml文件</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -133,7 +134,7 @@ log4j.logger.java.sql.Statement=DEBUG
 
 ```
 
-# model层的model
+# <a name="java-04" href="#" >创建model层的model</a>
 ```
 package net.person.model;
 
@@ -180,7 +181,7 @@ public class User {
 }
 
 ```
-# user的注解:UserMapper
+# <a name="java-05" href="#" >user的注解:UserMapper</a>
 ```
 package net.person.model;
 
@@ -210,7 +211,7 @@ public interface UserMapper {
 }
 
 ```
-# 工具类：Util
+# <a name="java-06" href="#" >創建工具类：Util</a>
 ```
 package net.person.model;
 
@@ -231,7 +232,7 @@ public class Util {
 }
 
 ```
-# 测试类:TestAll
+# <a name="java-07" href="#" >测试类:TestAll</a>
 ```
 package net.person.model;
 

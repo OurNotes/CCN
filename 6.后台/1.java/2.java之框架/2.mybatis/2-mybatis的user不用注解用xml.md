@@ -1,20 +1,21 @@
 总操作流程：
-- 1、数据库创建；
-- 2、 model层：User；
-- 3、映射类：UserMapper；
-- 4、工具类:Util；
-- 5、测试类：TestAll；
-- 6、jdbc.properties；
-- 7、log4j.properties；
-- 8、mybatis-conf.xml；
-- 9、userMapper.xml；
+- 1、[数据库创建](#java-01)
+- 2、[model层：User](#java-02)
+- 3、[映射类：UserMapper](#java-03)
+- 4、[工具类:Util](#java-04)
+- 5、[测试类：TestAll](#java-05)
+- 6、[jdbc.properties](#java-06)
+- 7、[log4j.properties](#java-07)
+- 8、[mybatis-conf.xml](#java-08)
+- 9、[userMapper.xml](#java-09)
 
 ----------
 
 ![](image/2-1.png)
 
 ![](image/2-2.png)
-# 数据库
+
+# <a name="java-01" href="#" >数据库</a>
 ```
 create database mybatis;
 use mybatis;
@@ -23,7 +24,7 @@ INSERT INTO users(NAME, age) VALUES('Tom', 12);
 INSERT INTO users(NAME, age) VALUES('Jack', 11);
 
 ```
-# model层：User
+# <a name="java-02" href="#" >model层：User</a>
 ```
 package net.person.model;
 
@@ -70,7 +71,7 @@ public class User {
 }
 
 ```
-# 映射类：UserMapper
+# <a name="java-03" href="#" >映射类：UserMapper</a>
 ```
 package net.person.model;
 
@@ -100,7 +101,7 @@ public interface UserMapper {
 }
 
 ```
-# 工具类:Util
+# <a name="java-04" href="#" >工具类:Util</a>
 ```
 package net.person.model;
 
@@ -121,7 +122,7 @@ public class Util {
 }
 
 ```
-# 测试类：TestAll
+# <a name="java-05" href="#" >测试类：TestAll</a>
 ```
 package net.person.model;
 
@@ -225,7 +226,7 @@ public class TestAll {
 }
 
 ```
-# jdbc.properties
+# <a name="java-06" href="#" >jdbc.properties</a>
 ```
 #mysql
 jdbc.driver=com.mysql.jdbc.Driver
@@ -233,7 +234,7 @@ jdbc.url=jdbc:mysql://localhost:3306/mybatis
 jdbc.username=root
 jdbc.password=123456
 ```
-# log4j.properties
+# <a name="java-07" href="#" >log4j.properties</a>
 ```
 log4j.rootLogger=CONSOLE,FILE  
 log4j.addivity.org.apache=true  
@@ -312,7 +313,7 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 log4j.logger.java.sql.Statement=DEBUG 
 
 ```
-# mybatis-conf.xml
+# <a name="java-08" href="#" >mybatis-conf.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -345,7 +346,7 @@ log4j.logger.java.sql.Statement=DEBUG
 </configuration>
 
 ```
-# userMapper.xml
+# <a name="java-09" href="#" >userMapper.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
