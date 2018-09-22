@@ -12,13 +12,13 @@
 
 ![](image/1-1.png)
 
-# <a name="java-01" href="#" >配置</a>
+# <a name="java-02" href="#" >配置</a>
 - 环境变量加： 
 ### 1，新建变量名：JAVA_HOME，变量值：C:\Program Files\Java\jdk1.7.0
 ### 2，打开PATH，添加变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin
 ### 3，新建变量名：CLASSPATH，变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
 
-# <a name="java-01" href="#" >测试</a>
+# <a name="java-03" href="#" >测试</a>
 在cmd输入
 ```
 java -version
