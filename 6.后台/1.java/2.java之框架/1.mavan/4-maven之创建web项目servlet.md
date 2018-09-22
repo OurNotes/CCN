@@ -1,14 +1,14 @@
 操作总流程：
-- 1、修改pom.xml文件，添加servlet依赖
-- 2、新建一个Servlet
-- 3、修改Web.xml
-- 4、创建index.jsp
-- 5、创建login.jsp
+- 1、[修改pom.xml文件，添加servlet依赖](#java-01)
+- 2、[新建一个Servlet](#java-02)
+- 3、[修改Web.xml](#java-03)
+- 4、[创建index.jsp](#java-04)
+- 5、[创建login.jsp](#java-05)
 
 ----------
 
 
-# 在pom.xml添加需要的jar的配置
+# <a name="java-01" href="#" >在pom.xml添加需要的jar的配置</a>
 
 ![](image/4-1.png)
 
@@ -16,7 +16,7 @@
 
 ![](image/4-3.png)
 
-# 新建一个Servlet
+# <a name="java-02" href="#" >新建一个Servlet</a>
 ![](image/4-4.png)
 
 ```
@@ -60,7 +60,7 @@ public class Servlet extends HttpServlet {
 }
 
 ```
-# 修改Web.xml
+# <a name="java-03" href="#" >修改Web.xml</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
@@ -77,7 +77,7 @@ public class Servlet extends HttpServlet {
   </servlet-mapping>
 </web-app>
 ```
-# 创建index.jsp
+# <a name="java-04" href="#" >创建index.jsp</a>
 ```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -93,7 +93,7 @@ public class Servlet extends HttpServlet {
 </body>
 </html>
 ```
-# 创建login.jsp
+# <a name="java-05" href="#" >创建login.jsp</a>
 ```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
