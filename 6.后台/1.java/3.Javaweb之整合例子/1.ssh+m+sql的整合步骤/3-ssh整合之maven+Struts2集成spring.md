@@ -1,16 +1,16 @@
 总操作流程：
-- 1、在pom.xml配置spring的架包+structs-spring集成的架包
-- 2、创建model,service,dao类
-- 3、修改UserControl的类
-- 4、创建applicationContext.xml文件
-- 6、修改web.xml配置文件
-- 5、修改show.jsp文件
+- 1、[在pom.xml配置spring的架包+structs-spring集成的架包](#java-01)
+- 2、[创建javabean类](#java-02)
+- 3、[修改UserControl类](#java-03)
+- 4、[创建applicationContext.xml文件](#java-04)
+- 5、[修改web.xml配置文件](#java-05)
+- 6、[修改show.jsp文件](#java-06)
 
 [![](https://img.shields.io/badge/源码-maven--structs2--spring-blue.svg "源码 maven-structs2-spring")](https://github.com/lidekai/maven-structs2-spring.git)
 
 
 ----------
-# 在pom.xml配置spring的架包+structs-spring集成的架包
+# <a name="java-01" href="#" >在pom.xml配置spring的架包+structs-spring集成的架包</a>
 
 `在原来的基础上添加`
 
@@ -54,7 +54,7 @@
        <version>${spring.version}</version>
     </dependency>
 ```
-# 创建javabean类
+# <a name="java-02" href="#" >创建javabean类</a>
 
 ![](image/3-1.png)
 ```
@@ -85,7 +85,7 @@ public class UserModel {
 }
 
 ```
-# 修改UserControl类
+# <a name="java-03" href="#" >修改UserControl类</a>
 ![](image/3-2.png)
 
 ```
@@ -131,7 +131,7 @@ public class UserController extends ActionSupport{
 }
 ```
 
-# 创建applicationContext.xml文件
+# <a name="java-04" href="#" >创建applicationContext.xml文件</a>
 ![](image/3-3.png)
 
 ```
@@ -153,7 +153,7 @@ public class UserController extends ActionSupport{
 
 ```
 
-# 修改web.xml配置文件
+# <a name="java-05" href="#" >修改web.xml配置文件</a>
 ```
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
@@ -187,7 +187,7 @@ public class UserController extends ActionSupport{
     </welcome-file-list>
 </web-app>
 ```
-# 修改show.jsp文件
+# <a name="java-06" href="#" >修改show.jsp文件</a>
 ```
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>

@@ -1,11 +1,11 @@
 总操作流程：
-- 1、在pom.xml配置需要的架包 
-- 2、创建log4j.properties文件
-- 3、创建spring-mvc.xml文件
-- 4、配置web.xml文件
-- 5、创建TestController的Java文件
-- 6、创建test.html文件
-- 7、修改index.html文件
+- 1、[在pom.xml配置需要的架包](#java-01)
+- 2、[创建log4j.properties文件](#java-02)
+- 3、[创建spring-mvc.xml文件](#java-03)
+- 4、[配置web.xml文件](#java-04)
+- 5、[创建TestController的Java文件](#java-05)
+- 6、[创建test.html文件](#java-06)
+- 7、[修改index.html文件](#java-07)
 
 [![](https://img.shields.io/badge/源码-idea--maven--spring--springMVC-blue.svg "源码 idea-maven-spring-springMVC")](https://github.com/lidekai/idea-maven-spring-springMVC.git)
 
@@ -18,7 +18,7 @@
 - 代码结构
 
 ![](image/2-2.png)
-# 在pom.xml配置需要的架包
+# <a name="java-01" href="#" >在pom.xml配置需要的架包</a>
 ```
   <!--
       版本设置
@@ -145,7 +145,7 @@
   </dependencies>
 ```
 
-# 创建log4j.properties文件
+# <a name="java-02" href="#" >创建log4j.properties文件</a>
 ```
 #配置根Logger 后面是若干个Appender
 log4j.rootLogger=DEBUG,A1,R
@@ -164,7 +164,7 @@ log4j.appender.R.MaxBackupIndex=10
 log4j.appender.R.layout=org.apache.log4j.PatternLayout
 log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] [%p] - %m%n
 ```
-# 创建spring-mvc.xml文件
+# <a name="java-03" href="#" >创建spring-mvc.xml文件</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -213,7 +213,7 @@ log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] 
     </bean>
 </beans>
 ```
-# 配置web.xml文件
+# <a name="java-04" href="#" >配置web.xml文件</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -295,7 +295,7 @@ log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] 
   </servlet-mapping>
 </web-app>
 ```
-# 创建TestController的Java文件
+# <a name="java-05" href="#" >创建TestController的Java文件</a>
 ```
 package net.person.controller;
 
@@ -325,7 +325,7 @@ public class TestController {
 }
 
 ```
-# 创建test.html文件
+# <a name="java-06" href="#" >创建test.html文件</a>
 ```
 <!DOCTYPE html>
 <html lang="en">

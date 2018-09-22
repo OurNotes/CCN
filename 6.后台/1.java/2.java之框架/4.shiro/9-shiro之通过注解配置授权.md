@@ -2,15 +2,15 @@
 
 
 总操作流程：
-- 1、pom.xml引用包；
-- 2、修改文件；
-- 3、测试；
+- 1、[pom.xml引用包](#java-01)
+- 2、[修改文件](#java-02)
+- 3、[测试](#java-03)
 
 ***
 
 使用这个[![](https://img.shields.io/badge/源码-shiro--mysql-blue.svg "源码 shiro-mysql")](https://github.com/lidekai/shiro-mysql.git)在其基础上修改
 
-# pom.xml引用包
+# <a name="java-01" href="#" >pom.xml引用包</a>
 添加
 ```
 <aspectjweaver.version>1.9.0</aspectjweaver.version>
@@ -30,7 +30,7 @@
 
 
 ```
-# 修改文件
+# <a name="java-02" href="#" >修改文件</a>
 
 在UserController添加文件
 ```
@@ -41,6 +41,6 @@
         return "testRole success";
     }
 ```
-# 测试
+# <a name="java-03" href="#" >测试</a>
 
 ![](image/9-1.gif)

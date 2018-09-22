@@ -2,9 +2,9 @@
 
 
 总操作流程：
-- 1、pom.xml引用包；
-- 2、创建文件；
-- 3、测试；
+- 1、[pom.xml引用包](#java-01)
+- 2、[创建文件](#java-02)
+- 3、[测试](#java-03)
 
 [![](https://img.shields.io/badge/源码-shiro--mysql-blue.svg "源码 shiro-mysql")](https://github.com/lidekai/shiro-mysql.git)
 
@@ -13,7 +13,7 @@
 
 ![](image/8-1.png)
 
-# pom.xml引用包
+# <a name="java-01" href="#" >pom.xml引用包</a>
 ```
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -84,7 +84,7 @@
 
     </dependencies>
 ```
-# 创建文件
+# <a name="java-02" href="#" >创建文件</a>
 ### 1、UserController
 ```
 @Controller
@@ -468,5 +468,5 @@ db.minEvictableIdleTimeMillis = 3600000
 </web-app>
 
 ```
-# 测试
+# <a name="java-03" href="#" >测试</a>
 ![](image/7-3.gif)

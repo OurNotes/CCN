@@ -1,15 +1,15 @@
 总操作流程：
-- 1、pom.xml添加相应依赖包
-- 2、添加Json的实体类
-- 3、添加json的工具类
-- 4、修改service
-- 5、修改contor类
+- 1、[pom.xml添加相应依赖包](#java-01)
+- 2、[添加Json的实体类](#java-02)
+- 3、[添加json的工具类](#java-03)
+- 4、[修改service](#java-04)
+- 5、[修改contor类](#java-05)
 
 [![](https://img.shields.io/badge/源码-idea--Interface-blue.svg "源码 idea-Interface")](https://github.com/lidekai/idea-Interface.git)
 
 ----------
 
-# pom.xml添加相应依赖包
+# <a name="java-01" href="#" >pom.xml添加相应依赖包</a>
 ```
  版本设置处添加：
     <jackson.version>2.9.2</jackson.version><!-- json -->
@@ -43,7 +43,7 @@
     </dependency>
 ```
 
-# 添加Json的实体类
+# <a name="java-02" href="#" >添加Json的实体类</a>
 ### 1、AbstractJsonObject
 ```
 package net.person.model.json;
@@ -172,7 +172,7 @@ public class StatusObject {
 }
 
 ```
-# 添加json的工具类
+# <a name="java-03" href="#" >添加json的工具类</a>
 ### 1、JackJsonUtils
 ```
 package net.person.utils;
@@ -309,7 +309,7 @@ public class StatusHouse {
 }
 
 ```
-# 修改service
+# <a name="java-04" href="#" >修改service</a>
 ### 1、TestService
 ```
 package net.person.service;
@@ -368,7 +368,7 @@ public class TestServiceImpl implements TestService {
     }
 }
 ```
-# 修改contor类
+# <a name="java-05" href="#" >修改contor类</a>
 ```
 package net.person.controller;
 

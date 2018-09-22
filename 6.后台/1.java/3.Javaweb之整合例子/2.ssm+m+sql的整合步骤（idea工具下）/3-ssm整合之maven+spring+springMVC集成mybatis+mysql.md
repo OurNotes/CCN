@@ -1,11 +1,11 @@
 总操作流程：
-- 1、创建数据库 
-- 2、创建数据库文件(jdbc.properties)
-- 3、修改pom.xml文件 
-- 4、修改spring、mybati的xml文件 
-- 5、修改映射文件
-- 6、修改web.xml文件 
-- 7、修改model，dao，service，html文件
+- 1、[创建数据库](#java-01) 
+- 2、[创建数据库文件(jdbc.properties)](#java-02)
+- 3、[修改pom.xml文件](#java-03)
+- 4、[修改spring、mybati的xml文件](#java-04) 
+- 5、[修改映射文件](#java-05)
+- 6、[修改web.xml文件](#java-06)
+- 7、[修改model，dao，service，html文件](#java-07)
 
 [![](https://img.shields.io/badge/源码-idea--maven--spring--springMVC--mybatis--mysql-blue.svg "源码 idea-maven-spring-springMVC-mybatis-mysql")](https://github.com/lidekai/idea-maven-spring-springMVC-mybatis-mysql.git)
 
@@ -19,7 +19,7 @@
 
 ![](image/3-2.png)
 
-# 创建数据库
+# <a name="java-01" href="#" >创建数据库</a>
 ```
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`ssm` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
@@ -40,7 +40,7 @@ insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('2','2','2'
 insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('3','3','3','3');
 insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('4','4','4','4');
 ```
-# 创建数据库文件(jdbc.properties)
+# <a name="java-02" href="#" >创建数据库文件(jdbc.properties)</a>
 ```
 #dbcp连接池的mysql
 db.driverLocation=/Users/imooc/mysql-connector-java-5.1.6-bin.jar
@@ -58,7 +58,7 @@ db.maxWait = 10
 db.defaultAutoCommit = true
 db.minEvictableIdleTimeMillis = 3600000
 ```
-# 修改pom.xml文件（原来的基础上添加）
+# <a name="java-03" href="#" >修改pom.xml文件（原来的基础上添加）</a>
 ```
 版本设置处添加：
  
@@ -114,7 +114,7 @@ db.minEvictableIdleTimeMillis = 3600000
       <version>${log4j.version}</version>
     </dependency>
 ```
-# 修改spring、mybati的xml文件 
+# <a name="java-04" href="#" >修改spring、mybati的xml文件</a> 
 ### 1、spring-config.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -278,7 +278,7 @@ db.minEvictableIdleTimeMillis = 3600000
     </typeAliases>
 </configuration>
 ```
-# 修改映射文件(TestMapper.xml)
+# <a name="java-05" href="#" >修改映射文件(TestMapper.xml)</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -295,9 +295,9 @@ db.minEvictableIdleTimeMillis = 3600000
     </select>
 </mapper>
 ```
-# 修改web.xml文件
+# <a name="java-06" href="#" >修改web.xml文件</a>
 ![](image/3-3.png)
-# 修改model，dao，service，html文件
+# <a name="java-07" href="#" >修改model，dao，service，html文件</a>
 ### 1、model
 ```
 package net.person.model;

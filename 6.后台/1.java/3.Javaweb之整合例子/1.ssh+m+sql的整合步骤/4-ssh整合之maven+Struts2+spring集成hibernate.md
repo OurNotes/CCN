@@ -1,15 +1,15 @@
 总操作流程：
-- 1、创建数据库
-- 2、创建数据库文件(jdbc.properties)
-- 3、修改pom.xml文件
-- 4、修改applicationContext.xml文件
-- 5、修改web.xml文件
-- 6、修改model，dao，service，jsp文件
+- 1、[创建数据库](#java-01)
+- 2、[创建数据库文件(jdbc.properties)](#java-02)
+- 3、[修改pom.xml文件](#java-03)
+- 4、[修改applicationContext.xml文件](#java-04)
+- 5、[修改web.xml文件](#java-05)
+- 6、[修改model，dao，service，jsp文件](#java-06)
 
 [![](https://img.shields.io/badge/源码-maven--structs2--spring--hibernate-blue.svg "源码 maven-structs2-spring-hibernate")](https://github.com/lidekai/maven-structs2-spring-hibernate.git)
 
 ----------
-# 创建数据库
+# <a name="java-01" href="#" >创建数据库</a>
 ![](image/4-1.png)
 ```
 SET FOREIGN_KEY_CHECKS=0;
@@ -38,7 +38,7 @@ INSERT INTO `usertable` VALUES ('7', '七', '7');
 INSERT INTO `usertable` VALUES ('8', '八', '8');
 
 ```
-# 创建数据库文件(jdbc.properties)
+# <a name="java-02" href="#" >创建数据库文件(jdbc.properties)</a>
 ```
 #c3p0连接池的mysql
 c3p0.driverClass=com.mysql.jdbc.Driver
@@ -54,7 +54,7 @@ c3p0.maxIdleTime=0
 c3p0.acquireIncrement=2
 ```
 
-# 修改pom.xml文件
+# <a name="java-03" href="#" >修改pom.xml文件</a>
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -198,7 +198,7 @@ c3p0.acquireIncrement=2
   </build>
 </project>
 ```
-# 修改applicationContext.xml文件
+# <a name="java-04" href="#" >修改applicationContext.xml文件</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -263,7 +263,7 @@ c3p0.acquireIncrement=2
 </beans>
 
 ```
-# 修改web.xml文件
+# <a name="java-05" href="#" >修改web.xml文件</a>
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
@@ -328,7 +328,7 @@ c3p0.acquireIncrement=2
     </welcome-file-list>
 </web-app>
 ```
-# 修改model，dao，service，jsp文件
+# <a name="java-06" href="#" >修改model，dao，service，jsp文件</a>
 ### 1、model
 ```
 package com.person.model;

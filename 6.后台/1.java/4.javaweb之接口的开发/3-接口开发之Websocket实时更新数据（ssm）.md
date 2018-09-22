@@ -1,15 +1,15 @@
 总操作流程：
-- 1、pom.xml添加包；
-- 2、添加sockjs和修改js、html；
-- 3、创建Websocket；
-- 4、测试；
+- 1、[pom.xml添加包](#java-01)
+- 2、[添加sockjs和修改js、html](#java-02)
+- 3、[创建Websocket](#java-03)
+- 4、[测试](#java-04)
 
 ***
 - 项目目录结构
 
 ![](image/3-1.png)
 
-# pom.xml添加包
+# <a name="java-01" href="#" >pom.xml添加包</a>
 ```
 <javaxWebsocketApi.version>1.0</javaxWebsocketApi.version>
 
@@ -20,7 +20,7 @@
       <version>${javaxWebsocketApi.version}</version>
     </dependency>
 ```
-# 添加sockjs和修改js、html
+# <a name="java-02" href="#" >添加sockjs和修改js、html</a>
 [![](https://img.shields.io/badge/下载-sockjs.min.js-green.svg "下载 sockjs.min.js")](https://pan.baidu.com/s/13IPH-lSyGgKSQA1ZG4TviA)
 
 ### 修改html
@@ -126,7 +126,7 @@ new Vue({
     }
 })
 ```
-# 创建Websocket
+# <a name="java-03" href="#" >创建Websocket</a>
 ### WebsocketConfig
 ```
 package net.person.websocket;
@@ -255,5 +255,5 @@ public class HttpSessionConfigurator extends ServerEndpointConfig.Configurator  
 WebsocketConfig websocketConfig=new WebsocketConfig();
 websocketConfig.allSend(xxxxx);
 ```
-# 测试
+# <a name="java-04" href="#" >测试</a>
 ![](image/3-2.gif)

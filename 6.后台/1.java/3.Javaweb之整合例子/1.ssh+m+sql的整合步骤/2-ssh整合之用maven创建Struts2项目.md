@@ -1,14 +1,14 @@
 总操作流程：
-- 1、在pom.xml配置需要的架包
-- 2、在web.xml配置
-- 3、创建jsp文件和修改index.jsp文件
-- 4、创建struts.xml文件
-- 5、创建Java文件
+- 1、[在pom.xml配置需要的架包](#java-01)
+- 2、[在web.xml配置](#java-02)
+- 3、[创建jsp文件和修改index.jsp文件](#java-03)
+- 4、[创建struts.xml文件](#java-04)
+- 5、[创建Java文件](#java-05)
 
 [![](https://img.shields.io/badge/源码-maven--structs2-blue.svg "源码 maven-structs2")](https://github.com/lidekai/maven-structs2)
 
 ----------
-# 在pom.xml配置需要的架包
+# <a name="java-01" href="#" >在pom.xml配置需要的架包</a>
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -67,7 +67,7 @@
 </project>
 
 ```
-# 在web.xml配置
+# <a name="java-02" href="#" >在web.xml配置</a>
 ```
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
@@ -91,7 +91,7 @@
     </welcome-file-list>
 </web-app>
 ```
-# 创建jsp文件和修改index.jsp文件
+# <a name="java-03" href="#" >创建jsp文件和修改index.jsp文件</a>
 ![](image/2-1.png)
 ### 1、创建index.jsp
 ```
@@ -118,7 +118,7 @@
 </body>
 </html>
 ```
-# 创建struts.xml文件
+# <a name="java-04" href="#" >创建struts.xml文件</a>
 ![](image/2-2.png)\
 
 ```
@@ -138,7 +138,7 @@
     </package>
 </struts>
 ```
-# 创建Java文件
+# <a name="java-05" href="#" >创建Java文件</a>
 ![](image/2-3.png)
 
 ```

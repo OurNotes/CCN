@@ -2,13 +2,13 @@
 
 
 总操作流程：
-- 1、pom.xml引用包；
-- 2、创建文件；
-- 3、测试；
+- 1、[pom.xml引用包](#java-01)
+- 2、[创建文件](#java-02)
+- 3、[测试](#java-03)
 
 ***
 
-# pom.xml引用包
+# <a name="java-01" href="#" >pom.xml引用包</a>
 ```
    <dependency>
       <groupId>junit</groupId>
@@ -47,7 +47,7 @@
       <version>1.1.9</version>
     </dependency>
 ```
-# 创建文件
+# <a name="java-02" href="#" >创建文件</a>
 - CustomRealm
 ```
 public class CustomRealm extends AuthorizingRealm {
@@ -170,6 +170,7 @@ log4j.appender.logfile.File=target/spring.log
 log4j.appender.logfile.layout=org.apache.log4j.PatternLayout
 log4j.appender.logfile.layout.ConversionPattern=%d %p [%c] - %m%n
 ```
-# 测试
+
+# <a name="java-03" href="#" >测试</a>
 ![](image/1-2.png)
 

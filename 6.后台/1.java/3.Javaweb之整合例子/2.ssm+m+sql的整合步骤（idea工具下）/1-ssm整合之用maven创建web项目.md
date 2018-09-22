@@ -1,10 +1,10 @@
 操作总流程：
-- 1、创建Maven项目；
-- 2、配置Tomcat；
-- 3、创建Java文件；
+- 1、[创建Maven项目](#java-01)
+- 2、[配置Tomcat](#java-02)
+- 3、[创建Java文件](#java-03)
 
 ----------
-# 创建Maven项目
+# <a name="java-01" href="#" >创建Maven项目</a>
 ![](image/1-1.png)
 
 ![](image/1-2.png)
@@ -21,7 +21,7 @@ internal
 
 ![](image/1-6.png)
 
-# 配置Tomcat
+# <a name="java-02" href="#" >配置Tomcat</a>
 ![](image/1-7.png)
 
 ![](image/1-8.png)
@@ -46,7 +46,7 @@ internal
 
 ![](image/1-18.png)
 
-# 创建Java文件
+# <a name="java-03" href="#" >创建Java文件</a>
 ![](image/1-19.png)
 
 ![](image/1-20.png)
