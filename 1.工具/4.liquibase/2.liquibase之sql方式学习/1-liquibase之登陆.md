@@ -42,7 +42,7 @@ outputChangeLogFile=src/main/resources/liquibase/outputChangeLogFile/changelog_o
 ```
 # <a name="liquibase-03" href="#" >修改pom.xml</a>
 ### <a name="liquibase-03-01" href="#" >1、添加包</a>
-```
+```xml
 <properties>
     <junit.version>4.11</junit.version>
     <mysql.version>5.1.46</mysql.version>
