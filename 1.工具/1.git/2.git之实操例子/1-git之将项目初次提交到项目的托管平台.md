@@ -10,7 +10,7 @@
 
 # <a name="git-02" href="#" >在项目的文件夹里打开“Git Bash Here”</a>
 # <a name="git-03" href="#" >写命令提交代码</a>
-```
+```shell
 流程：初始化--》添加--》提交--》上传
 git init      #初始化--在项目的文件夹里右键点击“Git Bash Here”
 touch README.md   #添加一个文件。文件名叫：README.md;
