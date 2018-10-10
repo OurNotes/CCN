@@ -4,6 +4,6 @@
 
 # 操作
 
-`markdown-preview-plus`
+`linter`
 
 ![](image/10-2.png)
