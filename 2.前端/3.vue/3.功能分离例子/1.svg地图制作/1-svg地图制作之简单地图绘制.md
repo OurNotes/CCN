@@ -36,7 +36,7 @@
 
 # <a name="svg-02" href="#" >创建html，js，css制作出地图页面</a>
 ### <a name="svg-02-01" href="#" >1、html</a>
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -223,7 +223,7 @@ var map  = {
  	}
 ```
 #### <a name="svg-02-02-02" href="#" >2、map-service.js</a>
-```
+```js
 $(document).ready(function(){
 	/*数据回填*/
 	$(".province-GD").attr("d",map.province.path);
@@ -250,7 +250,7 @@ $(document).ready(function(){
 })
 ```
 ### <a name="svg-02-03" href="#" >3、css</a>
-```
+```css
 /**
  * 省份
  */

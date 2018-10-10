@@ -34,7 +34,7 @@
 </template>
 ```
 # <a name="vue.js-03" href="#" >修改router.vue文件</a>
-```
+```vue
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/page/index'

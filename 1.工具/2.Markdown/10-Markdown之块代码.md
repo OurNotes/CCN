@@ -9,6 +9,7 @@
 - 8、[xml专用块代码](#Markdown-08)
 - 9、[html专用块代码](#Markdown-09)
 - 10、[java专用块代码](#Markdown-10)
+- 11、[vue专用块代码](#Markdown-11)
 
 ***
 
@@ -193,3 +194,17 @@ public class UserController extends ActionSupport{
 - 语法：
 
 ![](image/10-10.png)
+
+# <a name="Markdown-11" href="#" >vue专用块代码</a>
+
+- 效果展现：
+
+```vue
+<template>
+  <div>content page</div>
+</template>
+```
+
+- 语法：
+
+![](image/10-11.png)
