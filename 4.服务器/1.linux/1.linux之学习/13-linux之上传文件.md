@@ -6,14 +6,14 @@
 ----------
 
 # <a name="Linux-01" href="#" >切换到root</a>
-```
+```shell
 su  #切换root，输入密码就可以进入
 ```
 - 成功标志：
 
 ![](image/13-1.png)
 # <a name="Linux-02" href="#" >给目录写权限</a>
-```
+```shell
 chmod  0777 目录名
 ```
 # <a name="Linux-03" href="#" >测试</a>

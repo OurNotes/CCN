@@ -12,30 +12,30 @@
 
 上传linux
 
-```
+```shell
 tar zxvf apache-tomcat-8.0.32.tar.gz #解压文件
 
 mv apache-tomcat-8.0.32 tomcat #修改名字
 ```
 # 配置
-```
+```shell
 vi /etc/profile
 ```
 
-```
+```shell
 #set tomcat environment
 CATALINA_BASE=/usr/local/tomcat
 PATH=$PATH:$CATALINA_BASE/bin
 export PATH CATALINA_BASE
 ```
 
-```
+```shell
 source /etc/profile #让修改生效
 
 catalina.sh version #查看版本
 ```
 # 测试
-```
+```shell
 /usr/local/tomcat/bin/startup.sh
 ```
 ![](image/1-1.png)

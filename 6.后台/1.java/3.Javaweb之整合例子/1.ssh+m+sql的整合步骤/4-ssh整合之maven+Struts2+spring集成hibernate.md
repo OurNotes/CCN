@@ -11,7 +11,7 @@
 ----------
 # <a name="java-01" href="#" >创建数据库</a>
 ![](image/4-1.png)
-```
+```sql
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -39,7 +39,7 @@ INSERT INTO `usertable` VALUES ('8', '八', '8');
 
 ```
 # <a name="java-02" href="#" >创建数据库文件(jdbc.properties)</a>
-```
+```properties
 #c3p0连接池的mysql
 c3p0.driverClass=com.mysql.jdbc.Driver
 c3p0.url=jdbc:mysql://localhost:3306/sshm?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC

@@ -5,15 +5,15 @@
 ----------
 
 # <a name="Nginx-01" href="#" >修改配置</a>
-```
+```shell
 vim /etc/sysconfig/iptables
 ```
 放在icmp-host-prohibited上面
-```
+```shell
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 ```
 
-```
+```shell
 service iptables restart #重启
 ```
 # <a name="Nginx-02" href="#" >测试</a>

@@ -5,15 +5,15 @@
 ----------
 
 # 修改配置
-```
+```shell
 vim /etc/sysconfig/iptables
 ```
 放在icmp-host-prohibited上面
-```
+```shell
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
 ```
 
-```
+```shell
 service iptables restart #重启
 ```
 # 测试

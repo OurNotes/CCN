@@ -16,7 +16,7 @@
 
 # <a name="Linux-02" href="#" >安装Oracle前的准备</a>
 ### 1、创建运行oracle数据库的系统用户和用户组
-```
+```shell
 su           #切换到root
 
 groupadd oinstall　　#创建用户组oinstall
@@ -24,7 +24,7 @@ groupadd oinstall　　#创建用户组oinstall
 groupadd dba　　#创建用户组dba
 ```
 ### 2、创建oracle数据库安装目录
-```
+```shell
 cd /.        #进入根目录
 
 mkdir -p /opt/oracle/install　　#oracle数据库安装目录
@@ -39,21 +39,21 @@ chown -R dk:oinstall /opt/oracle/configuration
 
 ```
 ### 3、修改OS系统标识（oracle默认不支持CentOS系统安装，但是centos其实就是redhat）
-```
+```shell
 cat /proc/version #查看CentOS系统版本
 
 vi /etc/redhat-release
 ```
 - 修改内容是(6是CentOS系统的版本，根据不同版本输入)
-```
+```shell
 redhat-6
 ```
 ### 4、安装oracle数据库所需要的软件包
-```
+```shell
 yum -y install binutils* compat-libcap1* compat-libstdc++* gcc* gcc-c++* glibc* glibc-devel* ksh* libaio* libaio-devel* libgcc* libstdc++* libstdc++-devel* libXi* libXtst* make* sysstat* elfutils* unixODBC*
 ```
 ### 5、关闭防火墙
-```
+```shell
 service iptables status  # 查看防火墙状态
 
 service iptables stop  # 停止防火墙
@@ -61,20 +61,20 @@ service iptables stop  # 停止防火墙
 chkconfig iptables off  # 永久关闭防火墙
 ```
 ### 6、关闭selinux（需重启生效）
-```
+```shell
 vi /etc/selinux/config
 ```
 - 修改内容是：
-```
+```shell
 SELINUX=disabled  # 此处修改为disabled
 ```
 ### 7、修改内核参数（加入斜体部分）
-```
+```shell
 vi /etc/sysctl.conf
 ```
 - 修改内容是：
 最后添加
-```
+```shell
 net.ipv4.icmp_echo_ignore_broadcasts = 1
 net.ipv4.conf.all.rp_filter = 1
 fs.file-max = 6815744 #设置最大打开文件数
@@ -89,15 +89,15 @@ net.core.wmem_default= 262144
 net.core.wmem_max= 1048576
 ```
 ### 8、使配置修改内核的参数生效
-```
+```shell
 sysctl -p
 ```
 ### 9、对oracle用户设置限制，提高软件运行性能（斜体为添加部分）
-```
+```shell
 vi /etc/security/limits.conf
 ```
 - 修改内容是：
-```
+```shell
 #@student - maxlogins 4
 
 oracle soft nproc 2047
@@ -108,12 +108,12 @@ oracle hard nofile 65536
 # End of file
 ```
 ### 10、配置用户的环境变量（斜体部分为添加代码）
-```
+```shell
 vi /home/dk/.bash_profile
 ```
 - 修改内容是：
 最后添加
-```
+```shell
 # oracle的环境变量
 export ORACLE_BASE=/opt/oracle/install #oracle数据库安装目录
 export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1 #oracle数据库路径
@@ -127,7 +127,7 @@ export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK #设置Oracle客户端字符集，必�
 
 ```
 ### 11、使用户的环境变量配置立即生效
-```
+```shell
 source /home/dk/.bash_profile
 
 reboot #重启系统
@@ -143,14 +143,14 @@ reboot #重启系统
 
 ![](image/9-5.png)
 
-```
+```shell
 cd /.
 cd /usr/local/src
 chmod  0777 /usr/local/src #给目录写权限
 ```
 ![](image/9-2.png)
 ### 2、安装
-```
+```shell
 su dk
 
 cd /usr/local/src
@@ -194,7 +194,7 @@ cd /usr/local/src/database/
 ![](image/9-14.png)
 
 # <a name="Linux-04" href="#" >测试</a>
-```
+```shell
 
 cd /usr/local/src
 

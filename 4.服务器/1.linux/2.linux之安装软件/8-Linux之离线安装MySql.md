@@ -9,7 +9,7 @@
 ----------
 
 # <a name="Linux-01" href="#" >删除系统自带的mysql</a>
-```
+```shell
 rpm -qa mysql #看是否安装过mysql
 
 rpm -qa | grep mysql | xargs rpm -e --nodeps 文件名 #卸载mysql
@@ -18,12 +18,12 @@ rpm -qa | grep mysql | xargs rpm -e --nodeps 文件名 #卸载mysql
 ### 1、下载
 [![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/repo/yum/)
 
-```
+```shell
 uname -r #查看系统版本
 ```
 ![](image/8-1.png)
 ### 2、上传
-```
+```shell
 su #切换到root，输入密码进入
 
 chmod  0777 /usr/local #给目录写入权限
@@ -33,7 +33,7 @@ chmod  0777 /usr/local #给目录写入权限
 ### 3、安装
 `我的版本是：CentOS 6`
 `安装顺序：common --> libs --> clients --> server`
-```
+```shell
 ls 
 
 #安装发行包
@@ -54,7 +54,7 @@ service mysqld status #检查MySQL服务器的状态
 
 ```
 # <a name="Linux-02" href="#" >修改mysql密码</a>
-```
+```shell
 grep 'temporary password' /var/log/mysqld.log # 获取临时密码
 
 mysql -u root -p # 使用临时密码登录

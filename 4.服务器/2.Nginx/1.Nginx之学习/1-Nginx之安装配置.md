@@ -12,12 +12,12 @@
 ----------
 
 # <a name="Nginx-01" href="#" >安装编译工具及库文件</a>
-```
+```shell
 yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
 ```
 # <a name="Nginx-02" href="#" >首先要安装 PCRE</a>
 `注意：安装到/usr/local目录下`
-```
+```shell
 #下载
 wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
 
@@ -32,7 +32,7 @@ make && make install
 pcre-config --version
 ```
 # <a name="Nginx-03" href="#" >安装 Nginx</a>
-```
+```shell
 #下载 Nginx
 wget http://nginx.org/download/nginx-1.6.2.tar.gz
 
@@ -54,17 +54,17 @@ make install
 ```
 # <a name="Nginx-04" href="#" >Nginx 配置</a>
 ### 1、创建 Nginx 运行使用的用户 www：
-```
+```shell
 /usr/sbin/groupadd www 
 
 /usr/sbin/useradd -g www www
 ```
 ### 2、配置nginx.conf
-```
+```shell
 vi /usr/local/webserver/nginx/conf/nginx.conf
 ```
 替代文件内容：
-```
+```shell
 user www www;
 worker_processes 2; #设置值和CPU核心数一致
 error_log /usr/local/webserver/nginx/logs/nginx_error.log crit; #日志位置和日志级别
@@ -141,7 +141,7 @@ http
 }
 ```
 # <a name="Nginx-05" href="#" >启动 Nginx</a>
-```
+```shell
 /usr/local/webserver/nginx/sbin/nginx
 ```
 # <a name="Nginx-06" href="#" >测试</a>

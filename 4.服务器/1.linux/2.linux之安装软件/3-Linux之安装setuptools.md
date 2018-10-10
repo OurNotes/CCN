@@ -4,7 +4,7 @@
 
 ----------
 # <a name="Linux-01" href="#" >下载安装</a>
-```
+```shell
 wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-1.4.2.tar.gz #下载
 
 tar -xvf setuptools-1.4.2.tar.gz #解压
@@ -23,6 +23,6 @@ rm -rf setuptools-1.4.2 #删除文件夹
 ```
 
 # <a name="Linux-02" href="#" >测试</a>
-```
+```shell
 easy_install --help
 ```

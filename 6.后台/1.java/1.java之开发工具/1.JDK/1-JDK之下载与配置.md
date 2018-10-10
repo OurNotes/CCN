@@ -20,6 +20,6 @@
 
 # <a name="java-03" href="#" >测试</a>
 在cmd输入
-```
+```shell
 java -version
 ```

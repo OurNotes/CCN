@@ -8,7 +8,7 @@
 ### 1、下载
 [![](https://img.shields.io/badge/rlwrap-0.43-green.svg "rlwrap 0.43")](https://pan.baidu.com/s/1vvpB1VV7MNh42Wj5XnDESA)
 
-```
+```shell
 cd /usr/local/src
 chmod  0777 /usr/local/src #给目录写权限
 ```
@@ -16,7 +16,7 @@ chmod  0777 /usr/local/src #给目录写权限
 
 ![](image/1-1.png)
 ### 2、安装
-```
+```shell
 # 安装readline
 yum install readline*
 
@@ -39,7 +39,7 @@ rm -rf rlwrap-0.43
 ```
 # <a name="Linux-02" href="#" >修改配置文件</a>
 ### 1、切换到oracle用户，编辑bash_profile文件
-```
+```shell
 su dk
 
 cd ~
@@ -47,17 +47,17 @@ cd ~
 vi .bash_profile
 ```
 - 添加内容:
-```
+```shell
 # rlwrap的环境变量
 export PATH=$PATH:/usr/local/rlwrap/bin
 alias sqlplus='rlwrap sqlplus'
 alias rman='rlwrap rman'
 ```
 ### 2、 是修改生效
-```
+```shell
 source .bash_profile
 ```
 ### 3、查看是否安装成功
-```
+```shell
 rlwrap -v
 ```

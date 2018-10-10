@@ -14,14 +14,14 @@
 
 `在原来的基础上添加`
 
-```
+```xml
   	<!-- struts2-spring-plugin -->
   	<struts2-spring-plugin.version>2.5.13</struts2-spring-plugin.version>
   	<!-- spring -->
   	<spring.version>4.3.1.RELEASE</spring.version>
 ```
 
-```
+```xml
 	<!-- ============================struts-spring=================================== -->
 	<dependency>
 	    <groupId>org.apache.struts</groupId>
@@ -57,7 +57,7 @@
 # <a name="java-02" href="#" >创建javabean类</a>
 
 ![](image/3-1.png)
-```
+```java
 package com.person.model;
 
 public class UserModel {
@@ -88,7 +88,7 @@ public class UserModel {
 # <a name="java-03" href="#" >修改UserControl类</a>
 ![](image/3-2.png)
 
-```
+```java
 package com.person.controller;
 import java.util.List;
 import java.util.Map;
@@ -134,7 +134,7 @@ public class UserController extends ActionSupport{
 # <a name="java-04" href="#" >创建applicationContext.xml文件</a>
 ![](image/3-3.png)
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -154,7 +154,7 @@ public class UserController extends ActionSupport{
 ```
 
 # <a name="java-05" href="#" >修改web.xml配置文件</a>
-```
+```xml
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
@@ -188,7 +188,7 @@ public class UserController extends ActionSupport{
 </web-app>
 ```
 # <a name="java-06" href="#" >修改show.jsp文件</a>
-```
+```html
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

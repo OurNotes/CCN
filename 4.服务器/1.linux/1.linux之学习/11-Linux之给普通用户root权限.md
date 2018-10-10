@@ -13,17 +13,17 @@ su
 ![](image/11-1.png)
 
 # <a name="Linux-02" href="#" >编辑修改配置文件</a>
-```
+```shell
 visudo 或者 vi /etc/sudoers
 ```
 修改内容：
 在“root  ALL=(ALL)   ALL”这一行下面，再加入：
-```
+```shell
 #Give dk a root authority
 dk    ALL=(ALL)       ALL
 ```
 # <a name="Linux-03" href="#" >切换到普通用户</a>
-```
+```shell
 su dk
 ```
 [![](https://img.shields.io/badge/参考文献-用户获得root权限-yellow.svg "参考文献 用户获得root权限")](http://blog.csdn.net/tropicofcancer9/article/details/53926920)
