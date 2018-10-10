@@ -41,7 +41,7 @@ insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('3','3','3'
 insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('4','4','4','4');
 ```
 # <a name="java-02" href="#" >创建数据库文件(jdbc.properties)</a>
-```
+```properties
 #dbcp连接池的mysql
 db.driverLocation=/Users/imooc/mysql-connector-java-5.1.6-bin.jar
 db.driverClassName=com.mysql.jdbc.Driver
@@ -59,7 +59,7 @@ db.defaultAutoCommit = true
 db.minEvictableIdleTimeMillis = 3600000
 ```
 # <a name="java-03" href="#" >修改pom.xml文件（原来的基础上添加）</a>
-```
+```xml
 版本设置处添加：
  
     <mybatiSpring.version>1.3.1</mybatiSpring.version><!--mybatis-spring-->
@@ -116,7 +116,7 @@ db.minEvictableIdleTimeMillis = 3600000
 ```
 # <a name="java-04" href="#" >修改spring、mybati的xml文件</a> 
 ### 1、spring-config.xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -129,7 +129,7 @@ db.minEvictableIdleTimeMillis = 3600000
 </beans>
 ```
 ### 2、spring-mvc.xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -176,7 +176,7 @@ db.minEvictableIdleTimeMillis = 3600000
 </beans>
 ```
 ### 3、spring-transaction.xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -197,7 +197,7 @@ db.minEvictableIdleTimeMillis = 3600000
 </beans>
 ```
 ### 4、spring-mybatis.xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -268,7 +268,7 @@ db.minEvictableIdleTimeMillis = 3600000
 </beans>
 ```
 ### 5、mybatis-config.xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
@@ -279,7 +279,7 @@ db.minEvictableIdleTimeMillis = 3600000
 </configuration>
 ```
 # <a name="java-05" href="#" >修改映射文件(TestMapper.xml)</a>
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.person.dao.TestDao">
@@ -299,7 +299,7 @@ db.minEvictableIdleTimeMillis = 3600000
 ![](image/3-3.png)
 # <a name="java-07" href="#" >修改model，dao，service，html文件</a>
 ### 1、model
-```
+```java
 package net.person.model;
 
 /**
@@ -347,7 +347,7 @@ public class TestModel {
 }
 ```
 ### 2、dao
-```
+```java
 package net.person.dao;
 
 /**
@@ -362,7 +362,7 @@ public interface TestDao {
 }
 ```
 ### 3、service
-```
+```java
 package net.person.service;
 
 import net.person.model.TestModel;
@@ -378,7 +378,7 @@ public interface TestService {
 
 ```
 ### 4、serviceImpl
-```
+```java
 package net.person.service.impl;
 
 import net.person.dao.TestDao;
@@ -407,7 +407,7 @@ public class TestServiceImpl implements TestService {
 }
 ```
 ### 5、Controller
-```
+```java
 package net.person.controller;
 
 import net.person.model.TestModel;
@@ -446,7 +446,7 @@ public class TestController {
 
 ```
 ### 6、index.html
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -461,7 +461,7 @@ public class TestController {
 </html>
 ```
 ### 7、test.html
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -10,7 +10,7 @@
 ![](image/3-1.png)
 
 # <a name="java-01" href="#" >pom.xml添加包</a>
-```
+```xml
 <javaxWebsocketApi.version>1.0</javaxWebsocketApi.version>
 
     <!--============================websocket============================-->
@@ -24,11 +24,11 @@
 [![](https://img.shields.io/badge/下载-sockjs.min.js-green.svg "下载 sockjs.min.js")](https://pan.baidu.com/s/13IPH-lSyGgKSQA1ZG4TviA)
 
 ### 修改html
-```
+```html
 <script src="/statics/js/common/sockjs.min.js"></script>
 ```
 ### 修改js
-```
+```js
 new Vue({
     el: '#esp8266',
     data: {
@@ -128,7 +128,7 @@ new Vue({
 ```
 # <a name="java-03" href="#" >创建Websocket</a>
 ### WebsocketConfig
-```
+```java
 package net.person.websocket;
 
 import net.person.service.TemHumDayService;
@@ -227,7 +227,7 @@ public class WebsocketConfig {
 
 ```
 ### HttpSessionConfigurator
-```
+```java
 package net.person.websocket;
 
 import javax.servlet.http.HttpSession;
@@ -251,7 +251,7 @@ public class HttpSessionConfigurator extends ServerEndpointConfig.Configurator  
 
 其它的类调用：
 
-```
+```java
 WebsocketConfig websocketConfig=new WebsocketConfig();
 websocketConfig.allSend(xxxxx);
 ```

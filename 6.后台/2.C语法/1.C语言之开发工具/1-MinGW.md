@@ -23,6 +23,6 @@ path添加：;%MinGW_HOME%\bin
 
 # 测试
 cmd输入命令
-```
+```shell
 gcc -v
 ```

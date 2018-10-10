@@ -16,7 +16,7 @@
 
 # <a name="java-02" href="#" >修改文件</a>
 ### 1、修改项目的jdbc.properties文件
-```
+```properties
 #本地数据库
 #db.url=jdbc:mysql://localhost:3306/ssm?characterEncoding=utf-8
 #db.username=root
@@ -28,7 +28,7 @@ db.username=dk
 db.password=DKLi123456!
 ```
 ### 2、修改linux的tomcat的配置文件
-```
+```shell
 cd /usr/local/tomcat/conf #进入配置文件的文件夹
 
 vi server.xml #编辑文件
@@ -37,13 +37,13 @@ vi server.xml #编辑文件
 
 `在<host></host>里添加内容`
 
-```
+```xml
 <Context path="/" docBase="项目名字.war" debug="0" privileged="true" reloadable="true"/>
 ```
 
 重启tomcat
 
-```
+```shell
 /usr/local/tomcat/bin/shutdown.sh
 
 /usr/local/tomcat/bin/startup.sh
@@ -59,7 +59,7 @@ vi server.xml #编辑文件
 ![](image/1-3.png)
 
 ### 2、上传项目
-```
+```shell
 chmod 0777 /usr/local/tomcat/webapps #给文件写入权限
 
 ```

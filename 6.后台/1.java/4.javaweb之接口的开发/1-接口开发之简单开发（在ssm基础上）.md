@@ -10,7 +10,7 @@
 ----------
 
 # <a name="java-01" href="#" >pom.xml添加相应依赖包</a>
-```
+```xml
  版本设置处添加：
     <jackson.version>2.9.2</jackson.version><!-- json -->
     <servletApi.version>2.5</servletApi.version><!--servletApi-->
@@ -45,7 +45,7 @@
 
 # <a name="java-02" href="#" >添加Json的实体类</a>
 ### 1、AbstractJsonObject
-```
+```java
 package net.person.model.json;
 
 import java.util.Date;
@@ -96,7 +96,7 @@ public class AbstractJsonObject {
 
 ```
 ### 2、ListObject
-```
+```java
 package net.person.model.json;
 
 import java.util.List;
@@ -122,7 +122,7 @@ public class ListObject extends AbstractJsonObject {
 
 ```
 ### 3、SingleObject
-```
+```java
 package net.person.model.json;
 
 /**
@@ -140,7 +140,7 @@ public class SingleObject extends AbstractJsonObject{
 }
 ```
 ### 4、StatusObject
-```
+```java
 package net.person.model.json;
 
 /**
@@ -174,7 +174,7 @@ public class StatusObject {
 ```
 # <a name="java-03" href="#" >添加json的工具类</a>
 ### 1、JackJsonUtils
-```
+```java
 package net.person.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -224,7 +224,7 @@ public class JackJsonUtils {
 
 ```
 ### 2、ResponseUtils
-```
+```java
 package net.person.utils;
 
 import javax.servlet.http.HttpServletResponse;
@@ -267,7 +267,7 @@ public class ResponseUtils {
 
 ```
 ### 3、StatusCode
-```
+```java
 package net.person.utils;
 
 /**
@@ -290,7 +290,7 @@ public class StatusCode {
 
 ```
 ### 4、StatusHouse
-```
+```java
 package net.person.utils;
 
 import net.person.model.json.StatusObject;
@@ -311,7 +311,7 @@ public class StatusHouse {
 ```
 # <a name="java-04" href="#" >修改service</a>
 ### 1、TestService
-```
+```java
 package net.person.service;
 
 
@@ -328,7 +328,7 @@ public interface TestService {
 
 ```
 ### 2、TestServiceImpl
-```
+```java
 package net.person.service.impl;
 
 import net.person.dao.TestDao;
@@ -369,7 +369,7 @@ public class TestServiceImpl implements TestService {
 }
 ```
 # <a name="java-05" href="#" >修改contor类</a>
-```
+```java
 package net.person.controller;
 
 import net.person.service.TestService;
