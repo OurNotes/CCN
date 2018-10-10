@@ -9,7 +9,7 @@
 
 ----------
 # <a name="java-01" href="#" >在pom.xml配置需要的架包</a>
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -68,7 +68,7 @@
 
 ```
 # <a name="java-02" href="#" >在web.xml配置</a>
-```
+```xml
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
@@ -94,7 +94,7 @@
 # <a name="java-03" href="#" >创建jsp文件和修改index.jsp文件</a>
 ![](image/2-1.png)
 ### 1、创建index.jsp
-```
+```html
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -108,7 +108,7 @@
 </html>
 ```
 ### 2、show.jsp
-```
+```html
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -121,7 +121,7 @@
 # <a name="java-04" href="#" >创建struts.xml文件</a>
 ![](image/2-2.png)\
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>  
 <!DOCTYPE struts PUBLIC  
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
@@ -141,7 +141,7 @@
 # <a name="java-05" href="#" >创建Java文件</a>
 ![](image/2-3.png)
 
-```
+```java
 package com.person.controller;
 
 import com.opensymphony.xwork2.ActionSupport;
