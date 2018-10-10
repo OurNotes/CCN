@@ -55,7 +55,7 @@ c3p0.acquireIncrement=2
 ```
 
 # <a name="java-03" href="#" >修改pom.xml文件</a>
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -199,7 +199,7 @@ c3p0.acquireIncrement=2
 </project>
 ```
 # <a name="java-04" href="#" >修改applicationContext.xml文件</a>
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -264,7 +264,7 @@ c3p0.acquireIncrement=2
 
 ```
 # <a name="java-05" href="#" >修改web.xml文件</a>
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>Archetype Created Web Application</display-name>
@@ -330,7 +330,7 @@ c3p0.acquireIncrement=2
 ```
 # <a name="java-06" href="#" >修改model，dao，service，jsp文件</a>
 ### 1、model
-```
+```java
 package com.person.model;
 
 import javax.persistence.Column;
@@ -386,7 +386,7 @@ public class UserModel {
 
 ```
 ### 2、dao
-```
+```java
 package com.person.dao.impl;
 
 import java.util.List;
@@ -421,7 +421,7 @@ public class UserDaoImpl implements UserDaoInte{
 
 ```
 ### 3、service
-```
+```java
 package com.person.service.impl;
 
 import java.util.List;
@@ -452,7 +452,7 @@ public class UserServiceImpl implements UserServiceInte{
 
 ```
 ### 4、jsp
-```
+```html
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

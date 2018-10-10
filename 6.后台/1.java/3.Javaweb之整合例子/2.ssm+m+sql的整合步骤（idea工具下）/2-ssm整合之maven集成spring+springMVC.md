@@ -19,7 +19,7 @@
 
 ![](image/2-2.png)
 # <a name="java-01" href="#" >在pom.xml配置需要的架包</a>
-```
+```xml
   <!--
       版本设置
 -->
@@ -146,7 +146,7 @@
 ```
 
 # <a name="java-02" href="#" >创建log4j.properties文件</a>
-```
+```properties
 #配置根Logger 后面是若干个Appender
 log4j.rootLogger=DEBUG,A1,R
 #log4j.rootLogger=INFO,A1,R
@@ -165,7 +165,7 @@ log4j.appender.R.layout=org.apache.log4j.PatternLayout
 log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] [%p] - %m%n
 ```
 # <a name="java-03" href="#" >创建spring-mvc.xml文件</a>
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -214,7 +214,7 @@ log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] 
 </beans>
 ```
 # <a name="java-04" href="#" >配置web.xml文件</a>
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://java.sun.com/xml/ns/javaee"
@@ -296,7 +296,7 @@ log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] 
 </web-app>
 ```
 # <a name="java-05" href="#" >创建TestController的Java文件</a>
-```
+```java
 package net.person.controller;
 
 import org.slf4j.Logger;
@@ -326,7 +326,7 @@ public class TestController {
 
 ```
 # <a name="java-06" href="#" >创建test.html文件</a>
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

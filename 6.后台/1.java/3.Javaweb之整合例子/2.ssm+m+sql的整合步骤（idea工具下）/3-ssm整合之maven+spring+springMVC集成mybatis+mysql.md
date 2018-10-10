@@ -20,7 +20,7 @@
 ![](image/3-2.png)
 
 # <a name="java-01" href="#" >创建数据库</a>
-```
+```sql
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`ssm` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
 USE `ssm`;

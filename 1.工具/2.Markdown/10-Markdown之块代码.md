@@ -10,6 +10,8 @@
 - 9、[html专用块代码](#Markdown-09)
 - 10、[java专用块代码](#Markdown-10)
 - 11、[vue专用块代码](#Markdown-11)
+- 12、[sql专用块代码](#Markdown-12)
+- 13、[properties专用块代码](#Markdown-13)
 
 ***
 
@@ -208,3 +210,59 @@ public class UserController extends ActionSupport{
 - 语法：
 
 ![](image/10-11.png)
+
+# <a name="Markdown-12" href="#" >sql专用块代码</a>
+
+- 效果展现：
+
+```sql
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`ssm` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `ssm`;
+
+DROP TABLE IF EXISTS `test`;
+
+CREATE TABLE `test` (
+  `testID` varchar(11) NOT NULL,
+  `testName` varchar(20) NOT NULL,
+  `testSex` varchar(20) NOT NULL,
+  `testAge` varchar(11) NOT NULL,
+  PRIMARY KEY (`testID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('1','1','1','1');
+insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('2','2','2','2');
+insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('3','3','3','3');
+insert  into `test`(`testID`,`testName`,`testSex`,`testAge`) values ('4','4','4','4');
+```
+
+- 语法：
+
+![](image/10-12.png)
+
+# <a name="Markdown-13" href="#" >properties专用块代码</a>
+
+- 效果展现：
+
+```properties
+#配置根Logger 后面是若干个Appender
+log4j.rootLogger=DEBUG,A1,R
+#log4j.rootLogger=INFO,A1,R
+
+# ConsoleAppender 输出
+log4j.appender.A1=org.apache.log4j.ConsoleAppender
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+log4j.appender.A1.layout.ConversionPattern=%-d{yyyy-MM-dd HH:mm:ss,SSS} [%c]-[%p] %m%n
+
+# File 输出 一天一个文件,输出路径可以定制,一般在根路径下
+log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.R.File=log.txt
+log4j.appender.R.MaxFileSize=500KB
+log4j.appender.R.MaxBackupIndex=10
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] [%p] - %m%n
+```
+
+- 语法：
+
+![](image/10-13.png)

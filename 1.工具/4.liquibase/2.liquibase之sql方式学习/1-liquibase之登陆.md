@@ -31,7 +31,7 @@
 
 ### <a name="liquibase-02-02" href="#" >2、创建文件</a>
 - jdbc.properties
-```
+```properties
 # 数据库据连接
 driver=com.mysql.jdbc.Driver
 url=jdbc:mysql://192.168.57.131:3306/test?useUnicode=true
