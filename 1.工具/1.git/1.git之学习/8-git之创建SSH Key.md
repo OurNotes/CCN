@@ -6,7 +6,7 @@
 
 # <a name="git-01" href="#" >命令创建SSH Key</a>
 - 语法：
-```
+```shell
 ssh-keygen -t rsa -C "github注册的邮箱"
 ```
 

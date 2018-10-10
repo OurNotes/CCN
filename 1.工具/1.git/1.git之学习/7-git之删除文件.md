@@ -6,11 +6,11 @@
 
 # <a name="git-01" href="#" >删除工作区文件（本地）</a>
 - 语法：
-```
+```shell
 rm 文件
 ```
 # <a name="git-02" href="#" >删除版本库文件</a>
 - 语法：
-```
+```shell
 git rm 文件
 ```

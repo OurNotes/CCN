@@ -8,7 +8,7 @@
 # <a name="git-01" href="#" >显示从最近到最远的提交日志</a>
 - 语法：
 
-```
+```shell
 git log 选择
 ```
 
@@ -19,13 +19,13 @@ git log 选择
 # <a name="git-02" href="#" >回退到上一个版本</a>
 - 语法：
 
-```
+```shell
 git reset --hard HEAD^
 ```
 # <a name="git-03" href="#" >指定回到某个版本</a>
 - 语法：
 
-```
+```shell
 git reset --hard (commit id)
 ```
 
@@ -36,7 +36,7 @@ commit id:
 # <a name="git-04" href="#" >查看每一次命令</a>
 - 语法：
 
-```
+```shell
 git reflog
 ```
 

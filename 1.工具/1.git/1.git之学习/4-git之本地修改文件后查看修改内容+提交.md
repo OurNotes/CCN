@@ -17,13 +17,13 @@
 ![](image/4-1.png)
 
 - 改前：
-```
+```shell
 Git is a version control system.
 Git is free software.
 ```
 
 - 改后：
-```
+```shell
 Git is a distributed version control system.
 Git is free software.
 ```
@@ -34,7 +34,7 @@ Git is free software.
 ![](image/4-2.png)
 
 - 语法：
-```
+```shell
 git status
 ```
 
@@ -44,14 +44,14 @@ git status
 ![](image/4-3.png)
 
 - 语法：
-```
+```shell
 git diff readme.txt
 ```
 
 # <a name="git-04" href="#" >git add命令提交修改文件</a>
 
 - 语法：
-```
+```shell
 git add readme.txt
 ```
 
@@ -61,7 +61,7 @@ git add readme.txt
 ![](image/4-4.png)
 
 - 语法：
-```
+```shell
 git status
 ```
 
@@ -71,7 +71,7 @@ git status
 ![](image/4-5.png)
 
 - 语法：
-```
+```shell
 git commit -m "add distributed"
 ```
 
@@ -81,6 +81,6 @@ git commit -m "add distributed"
 ![](image/4-6.png)
 
 - 语法：
-```
+```shell
 git status
 ```
