@@ -28,18 +28,18 @@
 ![](image/1-2.png)
 
 # <a name="webpack-02" href="#" >初始化(cmd进入文件夹初始化)</a>
-```
+```shell
 cnpm init
 ```
 # <a name="webpack-03" href="#" >创建三个文件</a>
-```
+```shell
 index.html --放在public文件夹中;
 Greeter.js-- 放在app文件夹中;
 main.js-- 放在app文件夹中;
 webpack.config.js--放在根目录文件夹中
 ```
 ### <a name="webpack-03-01" href="#" >1、index.html代码</a>
-```
+```html
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -55,17 +55,17 @@ webpack.config.js--放在根目录文件夹中
 </html>
 ```
 ### <a name="webpack-03-02" href="#" >2、Greeter.js代码</a>
-```
+```js
 // Greeter.js
 module.exports = "It works from Greeter.js.";
 ```
 ### <a name="webpack-03-03" href="#" >3、main.js代码</a>
-```
+```js
 //main.js
 document.write(require("./Greeter.js"));
 ```
 ### <a name="webpack-03-04" href="#" >4、webpack.config.js代码</a>
-```
+```js
 module.exports = {
   entry:  __dirname + "/app/main.js",//已多次提及的唯一入口文件
   output: {
@@ -75,7 +75,7 @@ module.exports = {
 }
 ```
 # <a name="webpack-04" href="#" >打包</a>
-```
+```shell
 webpack
 ```
 # <a name="webpack-05" href="#" >测试</a>

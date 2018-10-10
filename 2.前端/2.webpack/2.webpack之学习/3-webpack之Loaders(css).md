@@ -8,11 +8,11 @@
 ----------
 
 # <a name="webpack-01" href="#" >下载安装处理样式表工具(在项目里添加)</a>
-```
+```shell
 cnpm install --save-dev css-loader style-loader
 ```
 # <a name="webpack-02" href="#" >在app文件夹添加css文件</a>
-```
+```css
 /**
  * main.css
  */
@@ -21,7 +21,7 @@ body{
 }
 ```
 # <a name="webpack-03" href="#" >修改main.js文件</a>
-```
+```js
 //main.js
 require("./main.css");
 const greeter = require('./Greeter.js');

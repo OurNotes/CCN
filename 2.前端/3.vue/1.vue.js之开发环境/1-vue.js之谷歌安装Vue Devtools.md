@@ -14,7 +14,7 @@
 ![](image/1.png)
 
 # <a name="vue.js-02" href="#" >下载依赖，编译源程序</a>
-```
+```shell
 cd C:\Users\DK_Li\Desktop\vue-devtools  #进入刚才下载的文件的文件夹里
 
 cnpm install #下载依赖
@@ -30,6 +30,6 @@ cnpm run build #编译源程序
 # <a name="vue.js-05" href="#" >调整项目的webpack.config.js</a>
 ![](image/4.png)
 
-```
+```shell
 development
 ```

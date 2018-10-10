@@ -11,18 +11,18 @@
 ![](image/2-1.png)
 
 # <a name="webpack-01" href="#" >下载安装Loaders</a>
-```
+```shell
 cnpm install -g --save-dev json-loader
 ```
 # <a name="webpack-02" href="#" >在app文件夹创建config.json文件</a>
-```
+```json
 {
     "greetText": "Hi there and greetings from Json!"
 }
 ```
 
 # <a name="webpack-03" href="#" >修改Greeter.js文件</a>
-```
+```js
 // Greeter.js
 var config = require('./config.json');
 
@@ -33,7 +33,7 @@ module.exports = function() {
 ```
 
 # <a name="webpack-04" href="#" >修改main.js文件</a>
-```
+```js
 //main.js
 const greeter = require('./Greeter.js');
 document.write(greeter());

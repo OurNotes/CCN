@@ -13,17 +13,17 @@
 # <a name="node.js-02" href="#" >配置node.js环境</a>
 在path添加node.js的路径：D:\nodejs
 # <a name="node.js-03" href="#" >在doc下测试node.js是否成功</a>
-```
+```shell
 node --version
 ```
 # <a name="node.js-04" href="#" >安装淘宝 NPM 镜像</a>
-```
+```shell
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 `更新命令：npm install -g npm`
 
 # <a name="node.js-05" href="#" >使用 cnpm 安装 webpack</a>
-```
+```shell
 cnpm install webpack -g
 ```
 `更新命令：cnpm install -g cnpm`

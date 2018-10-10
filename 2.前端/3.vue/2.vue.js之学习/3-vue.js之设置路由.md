@@ -21,14 +21,14 @@
 
 - index.vue
 
-```
+```vue
 <template>
   <div>index page</div>
 </template>
 ```
 - content.vue
 
-```
+```vue
 <template>
   <div>content page</div>
 </template>

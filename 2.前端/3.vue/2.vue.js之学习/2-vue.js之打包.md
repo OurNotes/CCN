@@ -10,7 +10,7 @@
 ![](image/2-1.png)
 
 # <a name="vue.js-02" href="#" >2、打包</a>
-```
+```shell
 cnpm run build
 ```
 # <a name="vue.js-03" href="#" >3、修改inde.html文件</a>
