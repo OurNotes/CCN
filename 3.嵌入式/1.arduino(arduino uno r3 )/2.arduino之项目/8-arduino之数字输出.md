@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/8-1.png)
 # <a name="arduino-02" href="#" >写入程序</a>
-```
+```c
 int startPin = 2 ;
 int endPin = 7 ;
 int index = 0 ;

@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/9-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 int led = 8;
 void setup()
 {

@@ -19,7 +19,7 @@
 - 创建HARDWARE文件夹，且其下也创建LED文件夹
 - 在LED文件夹下创建led.c和led.h文件
 - led.c
-```
+```c
 #include "led.h"
 #include "stm32f4xx.h"
 
@@ -46,7 +46,7 @@ void LED_Init(void)
 
 ```
 - led.h
-```
+```c
 #ifndef  __LED_H
 
 #define __LED_H

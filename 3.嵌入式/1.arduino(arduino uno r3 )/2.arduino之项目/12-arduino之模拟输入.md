@@ -9,7 +9,7 @@
 
 ![](image/12-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 int analogPin = A0;
 int val = 0 ;
 void setup()

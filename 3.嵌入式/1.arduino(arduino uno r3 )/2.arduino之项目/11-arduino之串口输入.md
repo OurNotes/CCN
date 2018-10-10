@@ -4,7 +4,7 @@
 
 ----------
 # <a name="arduino-01" href="#" >写程序</a>
-```
+```c
 int val;
 void setup()
 {

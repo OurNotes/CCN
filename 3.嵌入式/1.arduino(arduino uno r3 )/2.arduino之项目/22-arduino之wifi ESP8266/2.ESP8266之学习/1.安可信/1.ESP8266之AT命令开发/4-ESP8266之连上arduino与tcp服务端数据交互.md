@@ -18,7 +18,7 @@
 ### <a name="ESP8266-01-02" href="#" >写入程序</a>
 `注意：上传代码的时候断开RX和TX的连接，完成后接回`
 
-```
+```c
 #include <SoftwareSerial.h>
 SoftwareSerial getData(0, 1);//esp8266-01的TX对应开发板的RX，esp8266-01的RX对应开发板的TX
 

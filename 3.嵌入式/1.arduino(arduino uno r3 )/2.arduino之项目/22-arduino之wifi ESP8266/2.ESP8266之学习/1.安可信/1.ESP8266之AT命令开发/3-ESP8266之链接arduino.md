@@ -8,7 +8,7 @@
 
 ![](image/3-1.png)
 # <a name="ESP8266-02" href="#" >写入程序</a>
-```
+```c
 #include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(0,1); // RX, TX 配置0、1为软串口

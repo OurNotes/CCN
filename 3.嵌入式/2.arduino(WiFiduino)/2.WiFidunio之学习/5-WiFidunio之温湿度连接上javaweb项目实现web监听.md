@@ -7,7 +7,7 @@
 # <a name="WiFiduino-01" href="#" >各器件链接</a>
 ![](image/5-1.png)
 # <a name="WiFiduino-02" href="#" >烧写程序</a>
-```
+```c
 /**
    BasicHTTPClient.ino
 

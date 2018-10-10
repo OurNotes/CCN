@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/14-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 void setup() {
   // put your setup code here, to run once:
 Serial.begin(9600);

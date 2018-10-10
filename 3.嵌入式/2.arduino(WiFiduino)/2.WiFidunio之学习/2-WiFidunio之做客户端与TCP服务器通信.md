@@ -4,7 +4,7 @@
 
 ***
 # <a name="WiFiduino-01" href="#" >烧写程序</a>
-```
+```c
 #include <ESP8266WiFi.h>
 WiFiClient client;
 const char *ssid     = "WE-178";//这里是我的wifi，你使用时修改为你要连接的wifi ssid

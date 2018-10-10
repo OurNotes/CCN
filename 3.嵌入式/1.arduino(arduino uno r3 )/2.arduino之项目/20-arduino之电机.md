@@ -9,7 +9,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/20-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 int motorPin = 9;
 
 void setup() {

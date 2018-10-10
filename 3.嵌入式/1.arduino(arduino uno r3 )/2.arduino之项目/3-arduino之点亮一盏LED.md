@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/3-1.png)
 # <a name="arduino-02" href="#" >写入程序</a>
-```
+```c
 int led = 13; // 定义针脚号，数字类型为整型
 /**
  * 对Arduino电路板或相关状态进行初始化方法

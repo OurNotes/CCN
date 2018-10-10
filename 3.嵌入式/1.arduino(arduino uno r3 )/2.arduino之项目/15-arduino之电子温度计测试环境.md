@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/15-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 int LM35 = A0;
 void setup() {
   // put your setup code here, to run once:

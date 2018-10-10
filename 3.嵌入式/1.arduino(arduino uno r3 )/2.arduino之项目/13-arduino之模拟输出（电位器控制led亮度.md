@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/13-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 void setup()
 {
   pinMode(10,OUTPUT);          //数字口要选择带#号的具有pwm功能的输出口

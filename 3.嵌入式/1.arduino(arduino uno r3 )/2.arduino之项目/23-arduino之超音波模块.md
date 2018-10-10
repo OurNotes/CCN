@@ -7,7 +7,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/23-1.png)
 # <a name="arduino-02" href="#" >写入程序</a>
-```
+```c
 /*
 [url=http://www.openjumper.com/]www.openjumper.com[/url]
 日期:2013.5.18

@@ -10,7 +10,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/21-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 #include <Stepper.h>
 #define STEPS 100// 这里设置步进电机旋转一圈是多少步
 Stepper stepper(STEPS, 8, 9, 10, 11);

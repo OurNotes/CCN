@@ -31,7 +31,7 @@
 
 ![](image/18-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 #include<LiquidCrystal.h>
 LiquidCrystal lcd(13,12,2,3,4,5);
 void setup(){

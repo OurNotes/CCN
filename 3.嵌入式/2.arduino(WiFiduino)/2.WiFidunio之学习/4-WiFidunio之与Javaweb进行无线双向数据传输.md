@@ -19,7 +19,7 @@
 [![](https://img.shields.io/badge/源码-esp8266--javaweb-blue.svg "源码 esp8266_javaweb")](https://github.com/lidekai/esp8266_javaweb.git)
 
 
-```
+```java
 @Controller
 @RequestMapping("/esp8266")
 public class ESP8266Controller {

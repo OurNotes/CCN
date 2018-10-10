@@ -10,7 +10,7 @@
 # <a name="arduino-02" href="#" >写入程序</a>
 先上传代码，再给led接上220v电
 
-```
+```c
 #define relay 3 //定义控制光耦继电器为PIN 8  
   
 void setup() {  

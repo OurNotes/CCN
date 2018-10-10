@@ -10,7 +10,7 @@
 # <a name="arduino-01" href="#" >各器件链接</a>
 ![](image/6-1.png)
 # <a name="arduino-02" href="#" >写入程序</a>
-```
+```c
 int led = 11; // 定义针脚号，数字类型为整型
 int brightness = 0;// 定义LED神灯当前亮度值为整数值0
 int fadeAmount = 5;// 定义LED神灯亮度变化的幅度为整数值5

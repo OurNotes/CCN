@@ -5,7 +5,7 @@
 
 ----------
 # <a name="arduino-01" href="#" >编写代码</a>
-```
+```c
 void setup() {
   Serial.begin(9600); //初始化串口，波特率为9600
 }

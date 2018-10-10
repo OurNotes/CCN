@@ -8,7 +8,7 @@
 
 ![](image/17-1.png)
 # <a name="arduino-02" href="#" >写程序</a>
-```
+```c
 byte DIGITAL_DISPLAY[10][8] = { //设置0-9数字所对应数组
 
 { 1,0,0,0,0,1,0,0 }, // = 0

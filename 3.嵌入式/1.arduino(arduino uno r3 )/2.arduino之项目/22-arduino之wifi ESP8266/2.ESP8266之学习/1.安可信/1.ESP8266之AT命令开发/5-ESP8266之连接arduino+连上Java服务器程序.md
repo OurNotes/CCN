@@ -15,7 +15,7 @@
 ![](image/3-1.png)
 # <a name="ESP8266-02" href="#" >用Java写服务器程序</a>
 ### <a name="ESP8266-02-01" href="#" >1、Server</a>
-```
+```java
 package test;
 
 import java.io.BufferedReader;
@@ -63,7 +63,7 @@ public class Server {
 
 ```
 ### <a name="ESP8266-02-02" href="#" >2、ServerThread</a>
-```
+```java
 package test;
 
 import java.io.BufferedReader;
@@ -146,7 +146,7 @@ public class ServerThread extends Thread {
 ![](image/5-1.gif)
 
 # <a name="ESP8266-03" href="#" >arduino写程序</a>
-```
+```c
 #include <SoftwareSerial.h>
 SoftwareSerial softSerial(1, 0);//RX=1 TX=2
 
