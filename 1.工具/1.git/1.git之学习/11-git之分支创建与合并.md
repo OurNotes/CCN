@@ -11,7 +11,7 @@
 
 # <a name="git-01" href="#" >创建分支</a>
 - 语法：
-```git
+```
 git checkout -b dev
 ```
 # <a name="git-02" href="#" >查看分支情况</a>
