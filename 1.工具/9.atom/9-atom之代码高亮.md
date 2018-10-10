@@ -4,6 +4,6 @@
 
 # 操作
 
-`markdown-preview-plus`
+`quick-highlight`
 
 ![](image/9-2.png)
