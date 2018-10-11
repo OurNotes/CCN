@@ -22,7 +22,7 @@
 
 - 操作
 
-> 1、安装插件：language-markdown
-> 2、选择主题
+> [1、安装插件：language-markdown]
+> [2、选择主题]
 
 ![](image/8-3.png)
