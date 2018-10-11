@@ -17,7 +17,7 @@
 
 # <a name="atom-01" href="#" >提交项目</a>
 
-`按快捷键：Ctrl+Shift+P，输入gpaac`
+`按快捷键：Ctrl+Shift+P，输入gpaacp`
 
 ![](image/13-2.png)
 
