@@ -13,7 +13,7 @@
 
 >1、安装插件：Markdown-preview
 >2、按快捷键：Ctrl+Shift+M显示和隐藏
->
+>3、
 
 # <a name="atom-02" href="#" >语法高亮</a>
 
