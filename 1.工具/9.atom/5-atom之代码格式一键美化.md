@@ -4,6 +4,6 @@
 
 # 操作
 
-`minimap`
+> 安装插件：minimap
 
 ![](image/5-2.png)

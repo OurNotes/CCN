@@ -4,6 +4,6 @@
 
 # 操作
 
-`linter`
+> 安装插件：linter
 
 ![](image/10-2.png)

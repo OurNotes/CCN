@@ -12,7 +12,7 @@
 
 # <a name="atom-02" href="#" >克隆下来项目</a>
 
-`按快捷键：Ctrl+Shift+P，输入gc`
+> 按快捷键：Ctrl+Shift+P，输入gc
 
 > 注意：建議還是使用git克隆項目，大項目用atom會很慢
 

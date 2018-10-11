@@ -4,6 +4,6 @@
 
 # 操作
 
-`atom-terminal-panel `
+> 安装插件：atom-terminal-panel
 
 ![](image/7-2.png)

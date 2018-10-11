@@ -4,6 +4,6 @@
 
 # 操作
 
-`quick-highlight`
+> 安装插件：quick-highlight
 
 ![](image/9-2.png)

@@ -4,6 +4,6 @@
 
 # 操作
 
-`activate-power-mode`
+> 安装插件：activate-power-mode
 
 ![](image/6-2.png)

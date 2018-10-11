@@ -4,8 +4,7 @@
 
 # 操作
 
-`
-file-icons
-`
+> 安装插件：file-icons
+
 
 ![](image/4-2.png)
