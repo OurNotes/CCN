@@ -14,6 +14,8 @@
 
 `按快捷键：Ctrl+Shift+P，输入gc`
 
+> 注意：建議還是使用git克隆項目，大項目用atom會很慢
+
 ![](image/12-2.png)
 
 ![](image/12-3.png)
