@@ -1,5 +1,23 @@
+本页目录：
+- 1、默认效果
+- 2、黑色+自定义颜色效果
+
+***
+
+# 默认效果
+
 - 效果展现：
 
+[![forthebadge](http://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
+
+- 语法：
+```
+[![forthebadge](http://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
+```
+
+# 黑色+自定义颜色效果
+
+- 效果展现：
 [![](https://img.shields.io/badge/JDK-1.8.0_91-green.svg "JDK 1.8.0_91")](https://pan.baidu.com/s/1zGjYRJ-6E3LIYHrhH0XGeQ)
 
 - 语法：
