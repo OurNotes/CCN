@@ -33,5 +33,3 @@ putty的使用教程：
 
 设置ip地址教程
 [![](https://img.shields.io/badge/参考文献-设置ip地址-yellow.svg "参考文献 设置ip地址")](http://www.linuxidc.com/Linux/2015-01/111265.htm)
-
-设置ssh的教程：
