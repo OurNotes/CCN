@@ -1,5 +1,5 @@
 总操作流程：
-- 1、下载ios
+- 1、下载iso
 - 2、安装
 - 3、看效果
 
@@ -7,7 +7,7 @@
 
 # 下载ios
 
-[![](https://img.shields.io/badge/官网-kail--linux的ios-red.svg "官网 kail-linux")](https://www.kali.org/downloads/)
+[![](https://img.shields.io/badge/官网-kail--linux的iso-red.svg "官网 kail-linux的iso")](https://www.kali.org/downloads/)
 
 ![](image/1-1.png)
 
