@@ -5,7 +5,7 @@
 
 ***
 
-# 下载ios
+# 下载iso
 
 [![](https://img.shields.io/badge/官网-kail--linux的iso-red.svg "官网 kail-linux的iso")](https://www.kali.org/downloads/)
 
