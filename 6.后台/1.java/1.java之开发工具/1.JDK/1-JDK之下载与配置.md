@@ -5,7 +5,7 @@
 
 ----------
 # <a name="java-01" href="#" >下载</a>
-[![](https://img.shields.io/badge/JDK-11.0.1-green.svg "JDK 11.0.1")](https://pan.baidu.com/s/1kwzu0YBNNkPla7U9mHYGpQ)
+[![](https://img.shields.io/badge/JDK-1.8.0_191-green.svg "JDK 1.8.0_191")](https://pan.baidu.com/s/1cK2mrhYYNE_Drv5NjzOBEw)
 
 
 `注：安装时jdk和jre安装路径要分开，如图：`
