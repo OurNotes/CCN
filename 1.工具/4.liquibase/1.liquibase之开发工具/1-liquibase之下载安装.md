@@ -24,7 +24,8 @@ path后添加：
 ;%LIQUIBASE_HOME%
 ```
 ### <a name="liquibase-02-02" href="#" >2、添加包</a>
-在liquibase的lib文件夹下添加slf4j-api-xxxx.jar包
+[![](https://img.shields.io/badge/slf4j--api-1.7.21-green.svg "slf4j-api 1.7.21")](https://pan.baidu.com/s/1WN1FRtCRuchqYxKeI-6ktw)
+
 
 # <a name="liquibase-03" href="#" >测试</a>
 ```
