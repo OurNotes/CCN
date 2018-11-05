@@ -5,13 +5,13 @@
 
 ***
 
-# 下载iso
+# <a name="kail-linux-01" href="#" >下载iso</a>
 
 [![](https://img.shields.io/badge/官网-kali--linux的iso-red.svg "官网 kail-linux的iso")](https://www.kali.org/downloads/)
 
 ![](image/1-1.png)
 
-# 安装
+# <a name="kail-linux-02" href="#" >安装</a>
 
 > 1、虚拟机的设置
 
@@ -45,7 +45,7 @@
 
 ![](image/1-15.png)
 
-# 看效果
+# <a name="kail-linux-03" href="#" >看效果</a>
 
 ```
 用户名：root

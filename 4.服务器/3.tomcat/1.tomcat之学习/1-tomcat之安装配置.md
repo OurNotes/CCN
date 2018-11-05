@@ -1,11 +1,11 @@
 总操作流程：
-- 1.下载安装；
-- 2.配置；
-- 3.测试；
+- 1.[下载安装](#tomcat-01)
+- 2.[配置](#tomcat-02)
+- 3.[测试](#tomcat-03)
 
 ----------
 
-# 下载安装
+# <a name="tomcat-01" href="#" >下载安装</a>
 
 [![](https://img.shields.io/badge/apache--tomcat-8.0.3-green.svg "apache-tomcat 8.0.3")](https://pan.baidu.com/s/1wtiv5dr0oeW56QCFuk9evQ)
 
@@ -17,7 +17,7 @@ tar zxvf apache-tomcat-8.0.32.tar.gz #解压文件
 
 mv apache-tomcat-8.0.32 tomcat #修改名字
 ```
-# 配置
+# <a name="tomcat-02" href="#" >配置</a>
 ```shell
 vi /etc/profile
 ```
@@ -34,7 +34,7 @@ source /etc/profile #让修改生效
 
 catalina.sh version #查看版本
 ```
-# 测试
+# <a name="tomcat-03" href="#" >测试</a>
 ```shell
 /usr/local/tomcat/bin/startup.sh
 ```
