@@ -1,13 +1,13 @@
 总操作流程：
-- 1、下载iso
-- 2、安装
-- 3、看效果
+- 1、[下载iso](#kail-linux-01)
+- 2、[安装](#kail-linux-02)
+- 3、[看效果](#kail-linux-03)
 
 ***
 
 # 下载iso
 
-[![](https://img.shields.io/badge/官网-kail--linux的iso-red.svg "官网 kail-linux的iso")](https://www.kali.org/downloads/)
+[![](https://img.shields.io/badge/官网-kali--linux的iso-red.svg "官网 kail-linux的iso")](https://www.kali.org/downloads/)
 
 ![](image/1-1.png)
 

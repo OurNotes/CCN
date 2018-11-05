@@ -1,11 +1,11 @@
 总操作流程：
-- 1、下载系统
-- 2、刻录系统到u盘（下载刻录工具）
-- 3、安装系统
+- 1、[下载系统](#linux-01)
+- 2、[刻录系统到u盘（下载刻录工具）](#linux-02)
+- 3、[安装系统](#linux-03)
 
 ----------
 
-# 电脑安装linux
+# <a name="Linux-01" href="#" >电脑安装linux</a>
 [![](https://img.shields.io/badge/参考文献-下载原版Linux-yellow.svg "参考文献 下载原版Linux")](http://jingyan.baidu.com/article/6dad5075cd4e6ca123e36e31.html)
 [![](https://img.shields.io/badge/参考文献-Linux系统写入到U盘-yellow.svg "参考文献 Linux系统写入到U盘")](http://www.xitongzhijia.net/xtjc/20140721/24235.html)
 [![](https://img.shields.io/badge/软碟通-UltraISO-green.svg "软碟通 UltraISO")](https://pan.baidu.com/s/1j7yMyQ5vtVECE3FIa90-vA)
