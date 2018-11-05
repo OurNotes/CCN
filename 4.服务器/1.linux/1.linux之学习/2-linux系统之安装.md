@@ -22,6 +22,7 @@
 
 ----------
 - 下载安装虚拟机教程
+
 [![](https://img.shields.io/badge/官网-虚拟机-red.svg "官网 虚拟机")](http://www.vmware.com/products/workstation/)
 
 ![](image/2-1.png)
