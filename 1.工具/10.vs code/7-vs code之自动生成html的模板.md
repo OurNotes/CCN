@@ -4,6 +4,6 @@
 
 # 操作
 
-> 下載安裝插件：html boilerplate
+> 下載安裝插件：HTML Boilerplate
 
 ![](image/7-2.png)
