@@ -121,7 +121,7 @@ int main(void) {
 
 `STM32F40_41xxx`
 
-![](image/8-2.png)
+![](image/8-2.png)P
 
 # <a name="STM-M4-03" href="#" >看效果</a>
 
@@ -131,4 +131,5 @@ int main(void) {
 
 - 看效果
 
-`一直不停地按：KEY_UP键，闪的红灯就不再闪`
+`DS0 亮一下之后熄灭，紧接着 DS1 开始不停
+的闪烁`
