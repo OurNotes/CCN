@@ -91,4 +91,7 @@ dns-nameservers 192.168.1.4 192.168.1.5         # 设置dns服务器
 
 - 使配置
 
+```shell
+reboot #重启
+```
 
