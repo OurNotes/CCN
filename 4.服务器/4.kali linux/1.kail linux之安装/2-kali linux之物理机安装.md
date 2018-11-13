@@ -5,7 +5,10 @@
 
 ***
 
+
 # 下载安装刻录软件
+
+>本实验用这软件刻录可以安装，用别的不行
 
 [![](https://img.shields.io/badge/官网-kali--linux的iso-red.svg "官网 kail-linux的iso")](https://sourceforge.net/projects/win32diskimager/files/latest/download)
 
