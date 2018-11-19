@@ -1,27 +1,98 @@
 总操作流程：
-- 1、[下载系统](#linux-01)
-- 2、[刻录系统到u盘（下载刻录工具）](#linux-02)
-- 3、[安装系统](#linux-03)
-
-----------
-
-# <a name="Linux-01" href="#" >电脑安装linux</a>
-[![](https://img.shields.io/badge/参考文献-下载原版Linux-yellow.svg "参考文献 下载原版Linux")](http://jingyan.baidu.com/article/6dad5075cd4e6ca123e36e31.html)
-[![](https://img.shields.io/badge/参考文献-Linux系统写入到U盘-yellow.svg "参考文献 Linux系统写入到U盘")](http://www.xitongzhijia.net/xtjc/20140721/24235.html)
-[![](https://img.shields.io/badge/软碟通-UltraISO-green.svg "软碟通 UltraISO")](https://pan.baidu.com/s/1j7yMyQ5vtVECE3FIa90-vA)
-[![](https://img.shields.io/badge/参考文献-安装Linux系统-yellow.svg "参考文献 安装Linux系统")](http://www.osyunwei.com/archives/2307.html)
+- 1、[物理主机安装](#linux-01)
+    - 1.1、[下载系统](#linux-01-01)
+    - 1.2、[刻录系统到u盘](#linux-01-02)
+    - 1.3、[安装系统](#linux-01-03)
+    - 1.4、[配置ip地址](#linux-01-04)
+- 2、[虚拟机安装](#linux-02)
+    - 2.1、[下载安装虚拟机教程](#linux-02-01)
+    - 2.2、[在虚拟机上安装linux系统的教程](#linux-02-02)
 
 
-----------
+***
 
-# <a name="Linux-02" href="#" >虚拟机安装linux</a>
-总操作流程：
-### 1、下载安装虚拟机；
-### 2、下载linux系统；
-### 3、将linux系统安装到虚拟机上；
+# <a name="Linux-01" href="#" >物理主机安装</a>
 
-----------
-- 下载安装虚拟机教程
+### <a name="Linux-01-01" href="#" >下载系统 (centos6)</a>
+
+[![](https://img.shields.io/badge/官网-centos-yellow.svg "官网 centos")](https://www.centos.org/)
+
+![](image/2-1.png)
+
+![](image/2-2.png)
+
+![](image/2-3.png)
+
+![](image/2-4.png)
+
+![](image/2-5.png)
+
+
+### <a name="Linux-01-02" href="#" >刻录系统到u盘</a>
+
+[![](https://img.shields.io/badge/官网-Win32DiskImager-red.svg "官网 Win32DiskImager")](https://sourceforge.net/projects/win32diskimager/files/latest/download)
+
+
+![](image/2-6.png)
+
+### <a name="Linux-01-03" href="#" >安装系统</a>
+
+![](image/2-7.png)
+
+![](image/2-8.png)
+
+![](image/2-9.png)
+
+![](image/2-10.png)
+
+![](image/2-11.png)
+
+![](image/2-12.png)
+
+![](image/2-13.png)
+
+> 选择自定义分区
+
+- 第一个分区
+```
+文件系统类型：选择swap
+
+允许的驱动器：只勾选sda前面的复选框
+
+大小：1024(一般为内存大小的2倍)
+
+其它大小选项：固定大小
+```
+
+- 第二个分区
+```
+挂载点： /
+
+文件系统类型：ext4
+
+允许的驱动器：只勾选sda前面的复选框
+
+大小：默认
+
+其它大小选项：使用全部可用空间
+```
+
+### <a name="Linux-04" href="#" >配置ip地址</a>
+
+![](image/2-14.png)
+
+![](image/2-15.png)
+
+![](image/2-16.png)
+
+![](image/2-17.png)
+
+![](image/2-18.png)
+
+![](image/2-19.png)
+
+# <a name="Linux-02" href="#" >虚拟机安装</a>
+### <a name="Linux-02-01" href="#" >下载安装虚拟机教程</a>
 
 [![](https://img.shields.io/badge/官网-虚拟机-red.svg "官网 虚拟机")](http://www.vmware.com/products/workstation/)
 
@@ -30,7 +101,7 @@
 百度找秘钥
 
 
-- 在虚拟机上安装linux系统的教程
+### <a name="Linux-02-02" href="#" >在虚拟机上安装linux系统的教程</a>
 
 [![](https://img.shields.io/badge/参考文献-虚拟机上安装linux系统-yellow.svg "参考文献 虚拟机上安装linux系统")](http://jingyan.baidu.com/article/a948d651484fba0a2dcd2e15.html)
 
