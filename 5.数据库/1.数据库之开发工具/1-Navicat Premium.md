@@ -27,8 +27,8 @@ Keygen.exe RegPrivateKey.pem #生成Navicat 12的注册码
 ![](image/1-1.png)
 
 
-
 >要是系統報msvcr120.dll丢失
+
 ![](image/1-2.png)
 
 
