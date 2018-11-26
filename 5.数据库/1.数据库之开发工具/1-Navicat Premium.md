@@ -24,12 +24,12 @@ Patch.exe "D:\Navicat Premium 12\navicat.exe" #生成私钥文件
 
 Keygen.exe RegPrivateKey.pem #生成Navicat 12的注册码
 ```
-
 ![](image/1-1.png)
+
 
 
 >要是系統報msvcr120.dll丢失
-![](image/1-1.png)
+![](image/1-2.png)
 
 
 [![](https://img.shields.io/badge/解決方案-msvcr120-green.svg "解決方案 msvcr120")](https://pan.baidu.com/s/1GGMZ2j1a-18F3VgddxJlWQ)
