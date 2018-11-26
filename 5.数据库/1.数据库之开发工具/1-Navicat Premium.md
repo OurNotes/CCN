@@ -13,6 +13,7 @@
 [![](https://img.shields.io/badge/navicat12023_premium_cs-x64-green.svg "navicat12023_premium_cs x64")](https://pan.baidu.com/s/1FMB65oARRSCcOtakx0lRQQ)
 [![](https://img.shields.io/badge/Navicat_Premium_12-破解补丁-green.svg "navicat12023_premium_cs 破解补丁")](https://pan.baidu.com/s/151_6s4z-_DjZRoq-FTDcMA)
 
+
 # <a name="navicat-01" href="#" >2、破解</a>
 dos命令进入界面
 
@@ -25,3 +26,11 @@ Keygen.exe RegPrivateKey.pem #生成Navicat 12的注册码
 ```
 
 ![](image/1-1.png)
+
+
+>要是系統報msvcr120.dll丢失
+![](image/1-1.png)
+
+
+[![](https://img.shields.io/badge/解決方案-msvcr120-green.svg "解決方案 msvcr120")](https://pan.baidu.com/s/1GGMZ2j1a-18F3VgddxJlWQ)
+
