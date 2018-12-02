@@ -80,18 +80,37 @@ vi /etc/network/interfaces
 auto eth0
 allow hotplup eth0 
 iface eth0 inet static                          # 设定静态
-address 192.168.1.10                            # 设置ip地址
+address 192.168.1.0                            # 设置ip地址
 netmask 255.255.255.0                           # 设置子网掩码
-network 192.168.1.1                             # 设置网关
-broadcast 192.168.1.2                           # 设置网络地址
-gateway 192.168.1.3                             # 设置广播地址
-dns-nameservers 192.168.1.4 192.168.1.5         # 设置dns服务器
+gateway 192.168.1.2                             # 设置网关
+network 192.168.1.3                             # 设置网段
+broadcast 192.168.1.4                           # 设置子网广播地址
+dns-nameservers 192.168.1.5 192.168.1.6         # 设置dns服务器
 
+```
+
+> 2、手动添加dnf服务器
+
+```shell
+vi /etc/resolv.conf
+```
+
+```shell
+nameserver 8.8.8.8
+nameserver 114.114.114.114
 ```
 
 - 使配置
 
 ```shell
-reboot #重启
+ service network restart #重启网卡
 ```
+
+>3、设置虚拟机配置
+
+![](image/1-2.png)
+
+![](image/1-3.png)
+
+![](image/1-4.png)
 
