@@ -35,7 +35,7 @@ e
     #myid1{color:blue}
 </style>
 
-```js  {.line-numbers}
+```js{.line-numbers}
 function add(x, y) {
   return x + y
 }
