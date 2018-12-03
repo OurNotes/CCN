@@ -2,7 +2,7 @@
 
 ![](image/1.jpeg)
 
-[![](https://img.shields.io/badge/参考文献-Markdown指南-yellow.svg "参考文献 Markdown指南")](http://note.youdao.com/iyoudao/?p=2411&vendor=unsilent14)
+[![](https://img.shields.io/badge/参考文献-编写 Markdown-yellow.svg "参考文献 编写 Markdown")](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/presentation?id=presentation-front-matter)
 
 
 # 学习思路
