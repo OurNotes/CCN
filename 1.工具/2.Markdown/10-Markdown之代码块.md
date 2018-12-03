@@ -1,7 +1,7 @@
 # 本页目录
 - 1、[普通代码块](#Markdown-01)
 - 2、[语法高亮代码块](#Markdown-02)
-- 3、添加id或者class代码块
+
 
 ***
 
@@ -29,14 +29,3 @@ e
 - 语法：
 
 ![](image/10-2.png)
-
-# 添加id或者class代码块
-<style type="text/css">
-    #myid1{color:blue}
-</style>
-
-```js{.line-numbers}
-function add(x, y) {
-  return x + y
-}
-```
