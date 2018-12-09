@@ -1,11 +1,11 @@
 总操作流程：
-- 1、下载安装
-- 2、配置
-- 3、测试
+- 1、[下载安装](#sqlService-01)
+- 2、[配置](#sqlService-02)
+- 3、[测试](#sqlService-03)
 
 ***
 
-# 下载安装
+# <a name="sqlService-01" href="#" >下载安装</a>
 
 > 1、下载
 
@@ -61,11 +61,11 @@
 
 ![](image/1-24.png)
 
-# 配置
+# <a name="sqlService-02" href="#" >配置</a>
 
 ![](image/1-25.png)
 
-# 测试
+# <a name="sqlService-03" href="#" >测试</a>
 
 ![](image/1-26.png)
 
