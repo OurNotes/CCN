@@ -59,6 +59,16 @@
 
 ![](image/1-19.png)
 
+可以添加
+```
+    (SID_DESC =
+      (GLOBAL_DBNAME = ORCL)
+      (ORACLE_HOME = C:\Software\Oracle\product\11.2.0\dbhome_1)  
+      (SID_NAME = ORCL)
+      (ENVS = "EXTPROC_DLLS=ONLY:C:\Software\Oracle\product\11.2.0\dbhome_1\bin\oraclr11.dll")
+    )
+```
+
 > 重置监听程序
 
 ![](image/1-20.png)
