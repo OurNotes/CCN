@@ -1,8 +1,8 @@
 总操作流程：
 - 1、创建用户
 - 2、创建数据库
-- 3、设置监听
-- 4、导入数据库
+- 3、连接数据库
+- 4、导入表
 
 ***
 
@@ -22,7 +22,7 @@ alter user SSM account unlock;
 ![](image/2-1.png)
 
 
-# 创建服务名
+# 创建数据库
 
 ![](image/2-2.png)
 
@@ -32,46 +32,15 @@ alter user SSM account unlock;
 
 ![](image/2-5.png)
 
-# 配置监听
-
-> 1、修改配置文件
-
-- listener.ora
-
-```
-   (SID_DESC =
-      (GLOBAL_DBNAME = SSM)
-      (ORACLE_HOME = C:\Software\Oracle\product\11.2.0\dbhome_1)  
-      (SID_NAME = SSM)
-      (ENVS = "EXTPROC_DLLS=ONLY:C:\Software\Oracle\product\11.2.0\dbhome_1\bin\oraclr11.dll")
-    )   
-```
-
-```
-(ADDRESS = (PROTOCOL = TCP)(HOST = 10.10.2.4)(PORT = 1522))
-```
+# 连接数据库
 
 ![](image/2-6.png)
 
-- tnsnames.ora
-
-```
-SSM =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.10.2.4)(PORT = 1522))
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = SSM)
-    )
-  )
-```
-
-```
-  (ADDRESS = (PROTOCOL = TCP)(HOST = 10.10.2.4)(PORT = 1522))
-```
-
 ![](image/2-7.png)
 
-> 2、界面设置
 
+# 导入表
 
+![](image/2-8.png)
+
+![](image/2-9.png)
