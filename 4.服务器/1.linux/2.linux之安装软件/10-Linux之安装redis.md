@@ -68,9 +68,19 @@ ps aux | grep redis
 ```
 
 > 关闭
+
+
 ```
-kill -9 8088
+kill -9 8088 #第一种方式
+
+
+# 第二种方式
+cd /usr/local/redis/
+
+./bin/redis-cli shutdown
 ```
+
+
 
 - 3、另外一种方式启动
 
