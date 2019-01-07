@@ -1,0 +1,49 @@
+操作总流程：
+- 1、创建数据库
+- 2、创建登陆帐户
+- 3、创建数据库用户
+- 4、赋予权限
+
+***
+
+# 创建登陆帐户
+```
+create DATABASE SSM;
+```
+
+# 创建登陆帐户
+
+>登陆帐户名为：“SSM”，登陆密码：“DKLi123456”，默认连接到的数据库：“SSM”
+
+```
+create login SSM with password='DKLi123456', default_database=SSM
+```
+
+# 创建数据库用户
+
+> 1、创建 schema
+```
+create schema SSM
+```
+
+> 为登陆账户创建数据库用户（create user）,在mydb数据库中的security中的user下可以找到新创建的dba
+
+```
+create user SSM for login SSM with default_schema=SSM
+```
+
+# 通过加入数据库角色，赋予数据库用户“dba”权限
+
+> 1、给数据库用户赋予角色
+
+```
+exec sp_addrolemember 'db_owner', 'SSM'
+```
+
+> 2、授予角色SSM对SSM表的所有权限
+
+```
+GRANT UPDATE,DELETE,INSERT,SELECT,CREATE PROCEDURE,EXECUTE,REFERENCES TO SSM
+```
+
+
