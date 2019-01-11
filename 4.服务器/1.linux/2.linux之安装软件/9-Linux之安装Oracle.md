@@ -29,13 +29,13 @@ cd /.        #进入根目录
 
 mkdir -p /opt/oracle/install　　#oracle数据库安装目录
 
-mkdir -p /opt/oracle/configuration　　#oracle数据库配置文件目录
+mkdir -p /opt/oracle/oraInventory　#oracle数据库配置文件目录
 
 cd /opt/oracle
 
 chown -R dk:oinstall /opt/oracle/install　　#设置目录所有者为oinstall用户组的dk用户
 
-chown -R dk:oinstall /opt/oracle/configuration
+chown -R dk:oinstall /opt/oracle/oraInventory
 
 ```
 ### 3、修改OS系统标识（oracle默认不支持CentOS系统安装，但是centos其实就是redhat）
