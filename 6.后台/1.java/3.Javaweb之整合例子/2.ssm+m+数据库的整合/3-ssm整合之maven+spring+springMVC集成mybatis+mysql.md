@@ -7,7 +7,7 @@
 - 6、[修改web.xml文件](#java-06)
 - 7、[修改model，dao，service，html文件](#java-07)
 
-[![](https://img.shields.io/badge/源码-idea--maven--spring--springMVC--mybatis--mysql-blue.svg "源码 idea-maven-spring-springMVC-mybatis-mysql")](https://github.com/lidekai/idea-maven-spring-springMVC-mybatis-mysql.git)
+[![](https://img.shields.io/badge/源码-maven--spring--springMVC--mybatis--mysql-blue.svg "源码 maven-spring-springMVC-mybatis-mysql")](https://github.com/lidekai/idea-maven-spring-springMVC-mybatis-mysql.git)
 
 
 ----------
