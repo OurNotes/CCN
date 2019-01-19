@@ -1,9 +1,8 @@
 操作总流程：
 - 1、[下载安装node.js](#node.js-01)
 - 2、[配置node.js环境](#node.js-02)
-- 4、[安装淘宝 NPM 镜像](#node.js-03)
-- 5、[配置安装淘宝 NPM 镜像环境](#node.js-04)
-- 6、[使用 cnpm 安装 webpack](#node.js-05)
+- 3、[安装淘宝 NPM 镜像](#node.js-03)
+- 4、[使用 cnpm 安装](#node.js-04)
 
 
 ----------
@@ -46,14 +45,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm --version
 ```
 
-# <a name="node.js-04" href="#" >配置安装淘宝 NPM 镜像环境</a>
-
-> 将Nodejs安装路径添加到Path路径后面
-
-在path添加cnpm的路径：C:\Software\nodejs\node_global
-
-
-# <a name="node.js-05" href="#" >使用 cnpm 安装 webpack</a>
+# <a name="node.js-04" href="#" >使用 cnpm 安装 webpack</a>
 ```shell
 cnpm install webpack -g
 ```
