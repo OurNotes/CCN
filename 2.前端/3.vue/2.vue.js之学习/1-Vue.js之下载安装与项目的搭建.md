@@ -16,8 +16,10 @@ cnpm install --global vue-cli -g # 全局安装 vue-cli
 
 vue init webpack 项目名 # 创建一个基于 webpack 模板的新项目
 
-剩下的默认就行
 ```
+> 注意：如果不想有规范的js代码，Use ESLint to lint your code? (Y/n) 这一步选no
+
+
 # <a name="vue.js-03" href="#" >安装并运行</a>
 ```shell
 cd 项目名
