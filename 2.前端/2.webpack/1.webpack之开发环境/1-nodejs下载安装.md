@@ -26,7 +26,13 @@ npm config set prefix "D:\nodejs\node_global"
 
 npm config set cache "D:\nodejs\node_cache"
 ```
+>配置path
+```
+NODE_PATH:D:\Program Files\nodejs\node_global\node_modules
 
+在path添加：;%NODE_PATH%
+
+```
 
 # <a name="node.js-03" href="#" >安装淘宝 NPM 镜像</a>
 ```shell
