@@ -31,13 +31,12 @@
 ```shell
 cnpm init
 ```
-# <a name="webpack-03" href="#" >创建五个文件</a>
+# <a name="webpack-03" href="#" >创建四个文件</a>
 ```shell
 index.html--放在根目录文件夹中
 Greeter.js-- 放在app文件夹中;
 main.js-- 放在app文件夹中;
 webpack.config.js--放在根目录文件夹中
-bundle.js --放在public文件夹中;
 ```
 ### <a name="webpack-03-01" href="#" >1、index.html代码</a>
 ```html
