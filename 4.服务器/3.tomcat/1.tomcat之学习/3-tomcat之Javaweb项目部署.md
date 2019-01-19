@@ -15,6 +15,8 @@ centos要安装jdk，tomcat
 
 [![](https://img.shields.io/badge/tomcat-centos下安装教程-yellow.svg "tomcat centos下安装教程")](https://github.com/OurNotes/CCN/blob/master/4.%E6%9C%8D%E5%8A%A1%E5%99%A8/3.tomcat/1.tomcat%E4%B9%8B%E5%AD%A6%E4%B9%A0/1-tomcat%E4%B9%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.md)
 
+注意：maven无法下载oracle驱动包的，将oracle包手动加到lib文件夹下
+
 # 上传项目
 
 > 1、导出项目
