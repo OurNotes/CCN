@@ -29,6 +29,11 @@ export default {
   name: 'App'
 }
 </script>
+
+<style>
+
+</style>
+
 ```
 
 > 3、删除vue项目文件
@@ -42,11 +47,50 @@ export default {
 
 ![](image/3-2.png)
 
-> 2、写代码
+> 2、创建Table.vue
 ```
 <template>
-  <div>content page</div>
+  <div>{{test}}</div>
 </template>
+<script>
+export default {
+  name: 'Table',
+  data () {
+    return {
+      test: '1111111111111111'
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
+```
+
+> 3、修改HelloWorld.vue
+```
+<template>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
+
 ```
 
 # 修改路由
