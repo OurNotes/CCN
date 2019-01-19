@@ -18,19 +18,19 @@ node --version
 # <a name="node.js-02" href="#" >配置node.js环境</a>
 
 > 将Nodejs安装路径添加到Path路径后面
-在path添加node.js的路径：D:\nodejs
+在path添加node.js的路径：C:\Software\nodejs
 
 >cmd中键入两行命令
 ```
-npm config set prefix "D:\nodejs\node_global"
+npm config set prefix "C:\Software\nodejs\node_global"
 
-npm config set cache "D:\nodejs\node_cache"
+npm config set cache "C:\Software\nodejs\node_cache"
 ```
 >配置path
 ```
-NODE_PATH:D:\Program Files\nodejs\node_global\node_modules
+NODE_PATH:C:\Software\nodejs\node_global\node_modules
 
-在path添加：;%NODE_PATH%;D:\Program Files\nodejs\node_global
+在path添加：;%NODE_PATH%;C:\Software\nodejs\node_global
 
 ```
 
@@ -50,16 +50,8 @@ cnpm --version
 
 > 将Nodejs安装路径添加到Path路径后面
 
-在path添加cnpm的路径：D:\nodejs\node_global
+在path添加cnpm的路径：C:\Software\nodejs\node_global
 
-> 修改配置文件：C:\Users（用户）\你的用户名\.npmrc
-
-```
-prefix=D:\nodejs\node_modules
-cache=D:\nodejs\\node_cache
-registry =http://registry.cnpmjs.org
-
-```
 
 # <a name="node.js-05" href="#" >使用 cnpm 安装 webpack</a>
 ```shell
