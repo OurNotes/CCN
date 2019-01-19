@@ -30,7 +30,7 @@ npm config set cache "D:\nodejs\node_cache"
 ```
 NODE_PATH:D:\Program Files\nodejs\node_global\node_modules
 
-在path添加：;%NODE_PATH%
+在path添加：;%NODE_PATH%;D:\Program Files\nodejs\node_global
 
 ```
 
