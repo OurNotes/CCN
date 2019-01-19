@@ -13,11 +13,9 @@ cd /usr/local/java #进入文件夹
 ```
 
 # <a name="Linux-02" href="#" >下载解压</a>
-```shell
-wget http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz?AuthParam=1501507734_d383060f75863f03e420e46809663ad4 #下载
+[![](https://img.shields.io/badge/jdk-1.8.0_144-blue.svg "源代码 1.8.0_144")](https://pan.baidu.com/s/1hY4AuGNuZjrCDdZx7ZmmKg)
 
- mv jdk-8u144-linux-x64.tar.gz?AuthParam=1501507734_d383060f75863f03e420e46809663ad4 jdk-8u144-linux-x64.tar.gz #改名字
- 
+```
  tar -zxvf jdk-8u144-linux-x64.tar.gz #解压
 ```
 
