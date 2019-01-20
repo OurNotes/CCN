@@ -27,6 +27,23 @@
 
  ![](image/6-2.png)
 
+ ```
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+ ```
+
+ ```
+ Vue.use(ElementUI)
+ ```
+
  # 看效果
 
- 写入代码看效果
+> 1、写入组件代码
+
+> 2、运行项目
+```
+cnpm run dev
+```
+
+> 3、浏览器进入：http://localhost:8080看效果
+
