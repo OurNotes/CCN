@@ -1,12 +1,12 @@
 总操作流程：
-- 1、删除内容和文件
-- 2、创建文件
-- 3、修改路由
-- 4、看效果
+- 1、[删除内容和文件](#vue.js-01)
+- 2、[创建文件](#vue.js-02)
+- 3、[修改路由](#vue.js-03)
+- 4、[看效果](#vue.js-04)
 
 ***
 
-# 删除内容和文件
+# <a name="vue.js-01" href="#" >删除内容和文件</a>
 
 > 1、创建vue项目
 
@@ -41,7 +41,7 @@ export default {
 ![](image/3-1.png)
 
 
-# 创建文件
+# <a name="vue.js-02" href="#" >创建文件</a>
 
 > 1、创建新的vue文件
 
@@ -93,7 +93,7 @@ export default {
 
 ```
 
-# 修改路由
+# <a name="vue.js-03" href="#" >修改路由</a>
 
 ![](image/3-3.png)
 
@@ -121,7 +121,7 @@ export default new Router({
 })
 ```
 
-# 看效果
+# <a name="vue.js-04" href="#" >看效果</a>
 
 ```
 http://localhost:8080/#/Table

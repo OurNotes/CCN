@@ -1,13 +1,13 @@
 总操作流程：
-- 1、下载安装
-- 2、引用使用
-- 3、看效果
+- 1、[下载安装](#vue.js-01)
+- 2、[引用使用](#vue.js-02)
+- 3、[看效果](#vue.js-03)
 
 ***
 
 - 注意：该教程结合vue-axios使用
 
-# 下载安装
+# <a name="vue.js-01" href="#" >下载安装</a>
 
 >1、开启的服务器，要退出
 
@@ -27,7 +27,7 @@ cnpm install vue-axios --save
 ![](image/7-1.png)
 
 
-# 引用使用
+# <a name="vue.js-02" href="#" >引用使用</a>
 
  >1、在main.js中引用，在App上导入
 
@@ -80,7 +80,6 @@ import VueAxios from 'vue-axios'
 </script>
 ```
 
-
-# 看效果
+# <a name="vue.js-03" href="#" >看效果</a>
 
 ![](image/7-4.png)

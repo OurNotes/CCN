@@ -1,9 +1,11 @@
 总操作流程：
-- 1、下载安装饿了么组件
-- 2、项目中引用
-- 3、看效果
+- 1、[下载安装饿了么组件](#vue.js-01)
+- 2、[项目中引用](#vue.js-02)
+- 3、[看效果](#vue.js-03)
+
+***
  
- # 下载安装饿了么组件
+ # <a name="vue.js-01" href="#" >下载安装饿了么组件</a>
 > 1、创建vue项目后，开启的服务器，要退出
 
 ```
@@ -21,7 +23,7 @@
 ![](image/6-1.png)
 
 
- # 项目中引用
+ # <a name="vue.js-02" href="#" >项目中引用</a>
 
  >在main.js中引用，在App上导入
 
@@ -36,7 +38,7 @@ import 'element-ui/lib/theme-chalk/index.css';
  Vue.use(ElementUI)
  ```
 
- # 看效果
+ # <a name="vue.js-03" href="#" >看效果</a>
 
 > 1、写入组件代码
 
