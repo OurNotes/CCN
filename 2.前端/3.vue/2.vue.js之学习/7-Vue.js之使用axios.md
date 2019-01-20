@@ -42,7 +42,7 @@ import VueAxios from 'vue-axios'
 
 ![](image/7-2.png)
 
- - 2、组件中使用
+ - 2、组件中使用（这是访问本地json的）
 
 ![](image/7-3.png)
 
@@ -78,6 +78,22 @@ import VueAxios from 'vue-axios'
   
   }
 </script>
+```
+>json格式(例子)
+
+```
+{
+    "code":"OK",
+    "msg":"成功",
+    "time":"2019-01-02",
+    "offset":0,
+    "page":1,
+    "limit":10,
+    "total":84,
+    "rows": [
+        
+    ]
+}
 ```
 
 # <a name="vue.js-03" href="#" >看效果</a>
