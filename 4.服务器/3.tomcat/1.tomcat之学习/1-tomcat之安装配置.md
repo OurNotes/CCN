@@ -38,4 +38,9 @@ catalina.sh version #查看版本
 ```shell
 /usr/local/tomcat/bin/startup.sh
 ```
+
+>其他命令
+```shell
+/usr/local/tomcat/bin/shutdown.sh
+```
 ![](image/1-1.png)
