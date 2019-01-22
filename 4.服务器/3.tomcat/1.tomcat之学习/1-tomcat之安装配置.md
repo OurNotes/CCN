@@ -13,6 +13,8 @@
 上传linux
 
 ```shell
+cd /usr/local
+
 tar zxvf apache-tomcat-8.0.32.tar.gz #解压文件
 
 mv apache-tomcat-8.0.32 tomcat #修改名字
