@@ -7,11 +7,144 @@
 
 # 下载安装
 
-> 1、下载
+```shell
+yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5-devel libidn libidn-devel openssl openssl-devel nss_ldap openldap openldap-devel openldap-clients openldap-servers libxslt-devel libevent-devel ntp libtool-ltdl bison libtool vim-enhanced 
+```
 
-> 2、上传解压
+> 1、安装PCRE库
 
+[![](https://img.shields.io/badge/pcre-8.36-green.svg "pcre 8.36")](https://pan.baidu.com/s/1JHv_Hl-8SPWbpghayqgZyw)
+
+```shell
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf pcre-*
+
+cd pcre-8.35
+
+./configure
+
+make && make install
+```
+
+> 2、安装zlib库
+
+[![](https://img.shields.io/badge/zlib-1.2.8-green.svg "zlib 1.2.8")](https://pan.baidu.com/s/1fifNwLYSFjMmfoC2bPjuvg)
+
+```shell
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf zlib-*
+
+cd zlib-1.2.8
+
+./configure
+
+make && make install
+```
+
+> 3、安装ssl
+
+[![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1eyAJrMkJAR1kHalLc3iO_A)
+
+```shell
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf openssl-*
+
+cd openssl-1.0.1j
+
+./config
+
+make && make install
+```
+
+> 4、安装nginx
+
+[![](https://img.shields.io/badge/nginx-1.15.8-green.svg "nginx 1.15.8")](https://pan.baidu.com/s/127WhEf1xIMF3hsrzYs9KXg)
+
+```shell
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf nginx-*
+
+cd nginx-1.15.8
+
+./configure --prefix=/usr/local/nginx --with-pcre=/usr/local/pcre-8.35 --with-zlib=/usr/local/zlib-1.2.8
+
+make && make install
+
+/usr/local/nginx/sbin/nginx -v
+```
 
 # 配置
 
+> 1、资源配置
+
+```
+mkdir -p /usr/local/nginx/source/html/dist
+
+vim /usr/local/nginx/conf/nginx.conf
+
+
+```
+
+![](image/1-1.png)
+
+```
+/usr/local/nginx/source/html/dist;
+```
+
+> 2、防火墙配置
+
+```shell
+vim /etc/sysconfig/iptables
+```
+
+放在icmp-host-prohibited上面
+
+```shell
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+```
+
+```shell
+service iptables restart #重启
+```
+
 # 测试
+
+> 1、上传项目到指定路径
+
+> 2、开启服务器
+
+```
+cd ~
+
+cd /usr/local/nginx/sbin
+
+./nginx
+```
+
+- 其他命令
+```
+cd ~
+
+cd /usr/local/nginx/sbin
+
+./nginx -s stop #停止
+
+ pkill nginx # 强制关闭
+
+```
+
+> 3、看效果
+
+通过ip地址+端口查看
