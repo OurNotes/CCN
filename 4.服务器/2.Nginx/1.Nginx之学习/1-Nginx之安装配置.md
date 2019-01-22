@@ -90,6 +90,8 @@ make && make install
 > 1、资源配置
 
 ```
+cd ~ 
+
 mkdir -p /usr/local/nginx/source/html/dist
 
 vim /usr/local/nginx/conf/nginx.conf

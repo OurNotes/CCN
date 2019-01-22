@@ -38,11 +38,22 @@ catalina.sh version #查看版本
 ```
 # <a name="tomcat-03" href="#" >测试</a>
 ```shell
-/usr/local/tomcat/bin/startup.sh
+cd ~
+
+cd /usr/local/tomcat/bin
+
+./startup.sh
+
 ```
 
 >其他命令
 ```shell
-/usr/local/tomcat/bin/shutdown.sh
+cd ~
+
+cd /usr/local/tomcat/bin
+
+./shutdown.sh #关闭
+
+ ps -ef|grep java  # 查询状态
 ```
 ![](image/1-1.png)
