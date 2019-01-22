@@ -19,7 +19,7 @@
 
 >nginx-1.15.8\conf\nginx.conf
 
-![](image/12-3.png)
+![](image/11-3.png)
 
 # <a name="vue.js-03" href="#" >vue项目打包部署</a>
 
