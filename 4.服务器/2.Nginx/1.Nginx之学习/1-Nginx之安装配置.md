@@ -101,10 +101,19 @@ vim /usr/local/nginx/conf/nginx.conf
 
 ```
 
-![](image/1-1.png)
-
 ```
-/usr/local/nginx/source/html/dist;
+    server {
+        listen       81;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+            root   /usr/local/nginx/source/html/dist;
+            index  index.html;
+        }
 ```
 
 > 2、防火墙配置
@@ -116,7 +125,7 @@ vim /etc/sysconfig/iptables
 放在icmp-host-prohibited上面
 
 ```shell
--A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 81 -j ACCEPT
 ```
 
 ```shell
