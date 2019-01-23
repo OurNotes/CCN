@@ -76,7 +76,9 @@ cd /usr/local
 
 tar -zxvf nginx-*
 
-cd nginx-1.15.8
+mv nginx-1.15.8 nginx
+
+cd nginx
 
 ./configure --prefix=/usr/local/nginx --with-pcre=/usr/local/pcre-8.35 --with-zlib=/usr/local/zlib-1.2.8
 
