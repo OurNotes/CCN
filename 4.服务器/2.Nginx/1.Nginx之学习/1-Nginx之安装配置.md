@@ -140,6 +140,23 @@ vim /etc/sysconfig/iptables
 service iptables restart #重启
 ```
 
+>3、创建配置日记文件并且授读写执行权
+```
+mkdir -p /usr/local/nginx/logs/error.log
+mkdir -p /usr/local/nginx/logs/access.log
+chown 777 /usr/local/nginx/logs
+
+cd ~
+cd /usr/local/nginx/logs
+
+touch access.log
+touch access.log
+
+chown 777 access.log
+chown 777 access.log
+
+```
+
 # 测试
 
 > 1、上传项目到指定路径
