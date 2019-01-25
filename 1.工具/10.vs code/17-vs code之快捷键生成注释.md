@@ -12,4 +12,4 @@
 
 > 3、查看快捷键。按快捷键：Ctrl+Shift+P，输入：fileheader
 
-> 4、将光标移到要注释的地方，按快捷键。ctrl+alt+i
+> 4、将光标移到要注释的地方，按快捷键。ctrl+alt+
