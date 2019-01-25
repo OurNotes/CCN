@@ -31,12 +31,12 @@ cnpm install vue-axios --save
 
  >1、在main.js中引用，在App上导入
 
- ```
+ ```js
 import axios from 'axios'
 import VueAxios from 'vue-axios'
  ```
 
- ```
+ ```js
  Vue.use(VueAxios,axios)
  ```
 
@@ -46,7 +46,7 @@ import VueAxios from 'vue-axios'
 
 ![](image/7-3.png)
 
-```
+```js
 <script>
   export default {
   
@@ -81,7 +81,7 @@ import VueAxios from 'vue-axios'
 ```
 >json格式(例子)
 
-```
+```json
 {
     "code":"OK",
     "msg":"成功",

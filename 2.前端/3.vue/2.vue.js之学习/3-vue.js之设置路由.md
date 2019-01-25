@@ -17,7 +17,7 @@
 > 2、删除App.vue文件的内容
 
 - 改后效果
-```
+```html
 <template>
   <div id="app">
     <router-view/>
@@ -48,7 +48,7 @@ export default {
 ![](image/3-2.png)
 
 > 2、创建Table.vue
-```
+```html
 <template>
   <div>{{test}}</div>
 </template>
@@ -69,7 +69,7 @@ export default {
 ```
 
 > 3、修改HelloWorld.vue
-```
+```html
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -97,7 +97,7 @@ export default {
 
 ![](image/3-3.png)
 
-```
+```js
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'

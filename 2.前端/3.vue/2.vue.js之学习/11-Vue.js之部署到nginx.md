@@ -28,7 +28,7 @@
 # <a name="vue.js-04" href="#" >看效果</a>
 
 > cmd进入nginx目录运行命令
-```
+```shell
 start nginx #启动
 ```
 
@@ -36,7 +36,7 @@ start nginx #启动
 
 
 > 其他命令
-```
+```shell
 nginx -s quit #停止命令
 nginx -s reload #重启命令
 ```

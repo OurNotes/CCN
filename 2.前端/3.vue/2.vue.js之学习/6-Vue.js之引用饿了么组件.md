@@ -29,12 +29,12 @@
 
  ![](image/6-2.png)
 
- ```
+ ```js
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
  ```
 
- ```
+ ```js
  Vue.use(ElementUI)
  ```
 
@@ -43,7 +43,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 > 1、写入组件代码
 
 > 2、运行项目
-```
+```shell
 cnpm run dev
 ```
 
