@@ -7,7 +7,7 @@
 
 # <a name="redis-01" href="#" >下载安装</a>
 
-[![](https://img.shields.io/badge/官网--Redis-red.svg "官网 Redis")](https://github.com/MicrosoftArchive/redis/releases)
+[![](https://img.shields.io/badge/官网-Redis-red.svg "官网 Redis")](https://github.com/MicrosoftArchive/redis/releases)
 
 # <a name="redis-02" href="#" >配置</a>
 

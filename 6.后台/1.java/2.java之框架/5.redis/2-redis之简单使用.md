@@ -9,7 +9,7 @@
 # <a name="redis-01" href="#" >存数据</a>
 
 ```
-./bin/redis-cli  #使用客户端登陆
+redis-cli  #使用客户端登陆
 
 set name hello
 ```
