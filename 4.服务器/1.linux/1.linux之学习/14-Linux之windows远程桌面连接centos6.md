@@ -15,7 +15,7 @@ rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.r
 yum install epel-release-6-8.noarch.rpm
 
 # 安装源的 key
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
 
 # 安装 xrdp 和 vnc-server。
 yum install xrdp vnc-server
