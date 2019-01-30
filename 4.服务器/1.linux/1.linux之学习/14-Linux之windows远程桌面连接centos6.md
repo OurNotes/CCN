@@ -12,6 +12,7 @@ su root   # 使用管理员用户进行安装
 
 # 安装 Fedora 的源，方便后面使用 yum 命令来安装所需软件包
 rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum install epel-release-6-8.noarch.rpm
 
 # 安装源的 key
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
