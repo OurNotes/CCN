@@ -20,3 +20,8 @@
 ![](image/1-2.png)
 ### 2、在浏览器输入http://localhost:8080/
 ![](image/1-3.png)
+
+- 如果提示错误：Unable to open the service 'Tomcat7'。cmd进入bin文件夹下运行命令。
+```
+service.bat install
+```
