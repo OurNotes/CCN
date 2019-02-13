@@ -10,6 +10,8 @@
 mkdir /usr/local/java #创建目录
 
 cd /usr/local/java #进入文件夹
+
+chown 777 java
 ```
 
 # <a name="Linux-02" href="#" >下载解压</a>
@@ -17,14 +19,18 @@ cd /usr/local/java #进入文件夹
 
 ```
  tar -zxvf jdk-8u144-linux-x64.tar.gz #解压
+ 
+ mv jdk-1.8.0_144 jdk
+ 
+ chown 777 jdk
 ```
 
 # <a name="Linux-03" href="#" >设置环境变量</a>
 vi /etc/profile
 ```shell
 #set java environment
-JAVA_HOME=/usr/local/java/jdk1.8.0_144
-JRE_HOME=/usr/local/java/jdk1.8.0_144/jre
+JAVA_HOME=/usr/local/java/jdk
+JRE_HOME=/usr/local/java/jdk/jre
 CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
 PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 export JAVA_HOME JRE_HOME CLASS_PATH PATH
