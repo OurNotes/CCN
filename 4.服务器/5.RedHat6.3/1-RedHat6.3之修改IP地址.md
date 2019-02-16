@@ -27,6 +27,15 @@ UUID="93e3d29a-8302-4861-b562-07f166b00481"
 
 ```
 service network restart
+
+route add default  gw 10.10.2.3
+
+vim /etc/resolv.conf
+```
+
+```
+nameserver 202.106.0.20
+nameserver 202.106.196.115
 ```
 
 # 测试
