@@ -1,20 +1,29 @@
 操作总流程：
-- 1、[创建目录](#Linux-01)
+- 1、[卸载自带jdk](#Linux-01)
 - 2、[下载解压](#Linux-02)
 - 3、[设置环境变量](#Linux-03)
 - 4、[检查](#Linux-04)
 
 ----------
-# <a name="Linux-01" href="#" >创建目录</a>
-```shell
+# <a name="Linux-01" href="#" >卸载自带jdk</a>
+```
+rpm -qa |grep java
+
+rpm -e --nodeps  xxxxxxxxx
+```
+
+# <a name="Linux-02" href="#" >下载解压</a>
+
+- 1、创建目录
+```
 mkdir /usr/local/java #创建目录
 
 cd /usr/local/java #进入文件夹
 
 chown 777 java
 ```
+- 2、配置
 
-# <a name="Linux-02" href="#" >下载解压</a>
 [![](https://img.shields.io/badge/jdk-1.8.0_144-green.svg "源代码 1.8.0_144")](https://pan.baidu.com/s/1hY4AuGNuZjrCDdZx7ZmmKg)
 
 ```
