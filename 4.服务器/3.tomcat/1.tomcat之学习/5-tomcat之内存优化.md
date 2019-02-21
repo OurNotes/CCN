@@ -16,7 +16,7 @@ JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K"
 ```
 # 看效果
 
-```
+```shell
 ps -ef|grep tomcat  #查询编号
 
 jmap -heap xxxx
