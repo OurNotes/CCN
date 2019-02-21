@@ -14,6 +14,11 @@ vim /usr/local/tomcat/bin/catalina.sh
 # OS specific support.  $var _must_ be set to either true or false.
 JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K"
 ```
+
+```
+
+chown 777 /usr/local/tomcat/bin/catalina.sh
+```
 # 看效果
 
 ```shell

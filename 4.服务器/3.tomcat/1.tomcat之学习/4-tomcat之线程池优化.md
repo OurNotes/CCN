@@ -31,3 +31,21 @@ vim /etc/security/limits.conf
                redirectPort="8443" />
 ```
 
+>其他配置
+```xml
+<Connector port="8089"
+               protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               maxConnections="2000"
+               maxThreads="500"
+               acceptCount="500"
+               minSpareThreads="100"
+               compression="true"
+               compressionMinSize="2048"
+               redirectPort="8443" />
+```
+
+```
+chown 777 /usr/local/tomcat/conf/sever.xml
+```
+
