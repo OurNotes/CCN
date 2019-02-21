@@ -102,3 +102,4 @@ chkconfig vncserver on
 # 测试
 
 > 用windows远程桌面远程linux
+upda
