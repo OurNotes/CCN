@@ -47,11 +47,7 @@ vim /usr/local/tomcat/bin/catalina.sh
 ```
 
 ```shell
-JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K -XX:PermSize=512m -XX:MaxPermSize=1024m"
-export TOMCAT_HOME=/usr/local/tomcat
-export CATALINA_HOME=/usr/local/tomcat
-export JRE_HOME=/usr/local/java/jdk
-export JAVA_HOME=/usr/local/java/jdk
+JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K"
 ```
 
 # <a name="tomcat-03" href="#" >测试</a>
