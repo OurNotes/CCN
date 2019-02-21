@@ -32,11 +32,11 @@ rpm -ivh yum-*     #安装
 
 ```
 # <a name="Linux-03" href="#" >配置</a>
-### 1、vi  /etc/yum/pluginconf.d/fastestmirror.conf
+### 1、vim  /etc/yum/pluginconf.d/fastestmirror.conf
 ```shell
 enabled=0  //把1改为0 
 ```
-### 2、vi /etc/yum.conf
+### 2、vim /etc/yum.conf
 ```shell
 plugins=1                 #将plugins的值修改为0
 ```
