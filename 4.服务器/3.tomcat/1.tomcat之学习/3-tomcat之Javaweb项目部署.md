@@ -31,16 +31,14 @@ centos要安装jdk，tomcat
 
 > 2、上传项目
 
-- 删除/usr/local/tomcat/webapps/ROOT文件夹下的所有内容
+- 将项目解压出来，放到ssm文件夹下
 
-- 上传项目到/usr/local/tomcat/webapps/ROOT文件夹下
+- 上传项目到/usr/local/tomcat/webapps文件夹下
 
-![](image/3-3.png)
+> 3、修改server.xml配置
 
-> 3、解压项目
-
-```
-jar -xvf ssm.war
+```xml
+<Context path="/" docBase="ssm" reloadable="true"/>  
 ```
 
 # 看效果

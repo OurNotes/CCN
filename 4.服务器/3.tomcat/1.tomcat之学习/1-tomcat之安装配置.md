@@ -38,20 +38,6 @@ source /etc/profile #让修改生效
 
 catalina.sh version #查看版本
 ```
->2、修改配置文件
-
-![](image/1-1.png)
-
-``` shell
-vim /usr/local/tomcat/bin/catalina.sh
-```
-
-```shell
-JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K"
-export JAVA_HOME=/usr/local/java/jdk
-export JRE_HOME=/usr/local/java/jdk/jre
-export TOMCAT_HOME=/usr/local/tomcat
-```
 
 # <a name="tomcat-03" href="#" >测试</a>
 ```shell
@@ -73,4 +59,4 @@ cd /usr/local/tomcat/bin
 
  ps -ef|grep java  # 查询状态
 ```
-![](image/1-2.png)
+![](image/1-1.png)
