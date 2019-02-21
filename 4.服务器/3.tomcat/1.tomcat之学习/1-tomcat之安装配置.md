@@ -28,9 +28,9 @@ vi /etc/profile
 
 ```shell
 #set tomcat environment
-CATALINA_HOME=/usr/local/tomcat
-PATH=$PATH:$CATALINA_HOME/bin:$CATALINA_HOME/lib
-export PATH CATALINA_HOME
+TOMCAT_HOME=/usr/local/tomcat
+PATH=$PATH:$TOMCAT_HOME/bin:$TOMCAT_HOME/lib
+export PATH TOMCAT_HOME
 ```
 
 ```shell
@@ -48,10 +48,9 @@ vim /usr/local/tomcat/bin/catalina.sh
 
 ```shell
 JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K"
-export TOMCAT_HOME=/usr/local/tomcat
-export CATALINA_HOME=/usr/local/tomcat
-export JRE_HOME=/usr/local/java/jdk
 export JAVA_HOME=/usr/local/java/jdk
+export JRE_HOME=/usr/local/java/jdk/jre
+export TOMCAT_HOME=/usr/local/tomcat
 ```
 
 # <a name="tomcat-03" href="#" >测试</a>
