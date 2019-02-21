@@ -18,11 +18,13 @@ rpm -e --nodeps java-1.7.0-openjdk-1.7.0.181-2.6.14.10.el6.x86_64
 
 - 1、创建目录
 ```
-mkdir /usr/local/java #创建目录
+mkdir /usr/local/java
 
-cd /usr/local/java #进入文件夹
+cd /usr/local
 
 chown 777 java
+
+cd java
 ```
 - 2、配置
 

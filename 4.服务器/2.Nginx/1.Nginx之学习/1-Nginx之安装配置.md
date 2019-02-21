@@ -52,17 +52,27 @@ make && make install
 [![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1eyAJrMkJAR1kHalLc3iO_A)
 
 ```shell
+rpm -qa |grep openssl
+
+rpm -e --nodeps openssl-1.0.1e-57.el6.x86_64
+
+rpm -e --nodeps openssl-devel-1.0.1e-57.el6.x86_64
+
 cd ~ 
 
 cd /usr/local
 
 tar -zxvf openssl-*
 
-cd openssl-1.0.1j
+cd openssl-1.0.2
 
-./config
+./config --prefix=/usr/local/openssl -fPIC
 
 make && make install
+
+ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
+
+openssl version
 ```
 
 > 4、安装nginx
@@ -80,7 +90,7 @@ mv nginx-1.15.8 nginx
 
 cd nginx
 
-./configure --prefix=/usr/local/nginx --with-pcre=/usr/local/pcre-8.35 --with-zlib=/usr/local/zlib-1.2.8
+./configure --with-pcre=/usr/local/pcre-8.35 --with-zlib=/usr/local/zlib-1.2.8
 
 make && make install
 

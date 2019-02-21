@@ -15,9 +15,10 @@
 ```shell
 cd /usr/local
 
-tar zxvf apache-tomcat-8.0.32.tar.gz #解压文件
+tar zxvf apache-tomcat-8.5.38.tar.gz
 
-mv apache-tomcat-8.0.32 tomcat #修改名字
+mv apache-tomcat-8.5.38 tomcat
+
 ```
 # <a name="tomcat-02" href="#" >配置</a>
 
