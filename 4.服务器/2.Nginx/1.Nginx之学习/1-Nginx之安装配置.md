@@ -75,6 +75,21 @@ ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
 openssl version
 ```
 
+```shell
+vi /etc/profile
+```
+
+```shell
+#set openssl environment
+OPENSSL_HOME=/usr/local/tomcat
+PATH=$PATH:$OPENSSL_HOME/bin/openssl
+export PATH OPENSSL_HOME
+```
+
+```
+source /etc/profile 
+```
+
 > 4、安装nginx
 
 [![](https://img.shields.io/badge/nginx-1.15.8-green.svg "nginx 1.15.8")](https://pan.baidu.com/s/127WhEf1xIMF3hsrzYs9KXg)

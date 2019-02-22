@@ -79,10 +79,33 @@ tar zxvf tomcat-native.tar.gz
 cd tomcat-native-1.2.21-src
 cd native
 
-./configure --with-apr=/usr/local/apr  --with-apriconv=/usr/local/apr-iconv  --with-util=/usr/local/apr-util
+./configure --with-apr=/usr/local/apr
 
 make && make install
 
 ```
 
 # tomcat的配置
+
+> 1、修改catalina.sh
+
+```shell
+# OS specific support.  $var _must_ be set to either true or false.
+JAVA_OPTS="-server -Xms512m -Xmx1024m -Xss1024K -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=512m -XX:MaxNewSize=32m"
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/apr/lib export LD_LIBRARY_PATH
+```
+
+> 2、修改server.xml
+
+```xml
+<Connector port="8089"
+               protocol="org.apache.coyote.http11.Http11AprProtocol"
+               connectionTimeout="20000"
+               maxConnections="2000"
+               maxThreads="500"
+               acceptCount="500"
+               minSpareThreads="100"
+               compression="true"
+               compressionMinSize="2048"
+               redirectPort="8443" />
+```

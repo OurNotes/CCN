@@ -12,7 +12,7 @@ vim /usr/local/tomcat/bin/catalina.sh
 
 ```shell
 # OS specific support.  $var _must_ be set to either true or false.
-JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K"
+JAVA_OPTS="-server -Xms512m -Xmx1024m -Xss1024K -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=512m -XX:MaxNewSize=32m"
 ```
 
 ```
