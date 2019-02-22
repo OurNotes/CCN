@@ -16,7 +16,7 @@
 ### 2，新建变量名：CATALINA_HOME，变量值：C:\tomcat
 ### 3，打开PATH，在尾部添加变量值：;%CATALINA_HOME%\lib;%CATALINA_HOME%\bin
 # <a name="java-03" href="#" >测试</a>
-catalina.sh version 
+catalina version
 
 - 如果提示错误：Unable to open the service 'Tomcat7'。cmd进入bin文件夹下运行命令。
 ```
