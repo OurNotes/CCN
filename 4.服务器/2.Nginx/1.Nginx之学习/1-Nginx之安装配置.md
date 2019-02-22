@@ -66,11 +66,9 @@ tar -zxvf openssl-*
 
 cd openssl-1.0.2
 
-./config --prefix=/usr/local/openssl -fPIC
+./config --prefix=/usr/bin/openssl -fPIC
 
 make && make install
-
-ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
 
 openssl version
 ```
