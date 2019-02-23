@@ -46,6 +46,6 @@ vim /etc/security/limits.conf
 ```
 
 ```
-chown 777 /usr/local/tomcat/conf/sever.xml
+chown 777 /usr/local/tomcat/conf/server.xml
 ```
 

@@ -24,9 +24,13 @@ tar -zxvf pcre-*
 
 cd pcre-8.35
 
-./configure
+./configure --prefix=/usr/local/pcre
 
 make && make install
+
+cd ..
+
+rm -rf pcre-8.35
 ```
 
 > 2、安装zlib库
@@ -42,14 +46,18 @@ tar -zxvf zlib-*
 
 cd zlib-1.2.8
 
-./configure
+./configure --prefix=/usr/local/zlib
 
 make && make install
+
+cd ..
+
+rm -rf zlib-1.2.8
 ```
 
-> 3、安装ssl
+> 3、安装openssl
 
-[![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1eyAJrMkJAR1kHalLc3iO_A)
+[![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1byGEoY7wTBfVchWT69djeA)
 
 ```shell
 rpm -qa |grep openssl
@@ -64,28 +72,35 @@ cd /usr/local
 
 tar -zxvf openssl-*
 
-cd openssl-1.0.2
+cd openssl-1.1.1
 
-./config --prefix=/usr/bin/openssl -fPIC
+./config --prefix=/usr/local/openssl -fPIC
 
 make && make install
 
+cd ..
+
+rm -rf openssl-1.1.1
+
+cd ~
+
+mv /usr/bin/openssl /usr/bin/openssl.bak
+
+mv /usr/include/openssl /usr/include/openssl.bak
+
+ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
+ 
+ln -s /usr/local/openssl/include/openssl /usr/include/openssl
+
+ln -s /usr/local/openssl/lib/libssl.so.1.1 /usr/lib64/libssl.so.1.1
+
+ln -s /usr/local/openssl/lib/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
+
+echo “/usr/local/openssl/lib” >> /etc/ld.so.conf
+ 
+ldconfig -v
+
 openssl version
-```
-
-```shell
-vi /etc/profile
-```
-
-```shell
-#set openssl environment
-OPENSSL_HOME=/usr/local/tomcat
-PATH=$PATH:$OPENSSL_HOME/bin/openssl
-export PATH OPENSSL_HOME
-```
-
-```
-source /etc/profile 
 ```
 
 > 4、安装nginx

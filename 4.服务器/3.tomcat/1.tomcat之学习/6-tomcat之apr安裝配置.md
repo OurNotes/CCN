@@ -7,6 +7,11 @@
 ***
 # 下载安装
 
+
+```shell
+yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5-devel libidn libidn-devel openssl openssl-devel nss_ldap openldap openldap-devel openldap-clients openldap-servers libxslt-devel libevent-devel ntp libtool-ltdl bison libtool vim-enhanced 
+```
+
 [![](https://img.shields.io/badge/官网-apr-green.svg "官网 apr")](http://apache.spd.co.il/apr/https://pan.baidu.com/s/1DY1I_ivM9HpQgyZ0YyErog)
 
 
@@ -27,7 +32,7 @@ mv apr-1.6.5 apr
 
 cd apr
 
-./configure
+./configure --prefix=/usr/local/apr
 
 make && make install
 
@@ -46,7 +51,7 @@ mv apr-iconv-1.2.2 apr-iconv
 
 cd apr-iconv
 
-./configure --with-apr=/usr/local/apr
+./configure --prefix=/usr/local/apr-iconv --with-apr=/usr/local/apr
 
 make && make install
 ```
@@ -64,9 +69,102 @@ mv apr-util-1.6.1 apr-util
 
 cd apr-util
 
-./configure --with-apr=/usr/local/apr  --with-apriconv=/usr/local/apr-iconv
+./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr  --with-apriconv=/usr/local/apr-iconv
 
 make && make install
+```
+
+
+> 4、安装PCRE库
+
+[![](https://img.shields.io/badge/pcre-8.36-green.svg "pcre 8.36")](https://pan.baidu.com/s/1JHv_Hl-8SPWbpghayqgZyw)
+
+```shell
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf pcre-*
+
+cd pcre-8.35
+
+./configure --prefix=/usr/local/pcre
+
+make && make install
+
+cd ..
+
+rm -rf pcre-8.35
+```
+
+> 5、安装zlib库
+
+[![](https://img.shields.io/badge/zlib-1.2.8-green.svg "zlib 1.2.8")](https://pan.baidu.com/s/1fifNwLYSFjMmfoC2bPjuvg)
+
+```shell
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf zlib-*
+
+cd zlib-1.2.8
+
+./configure --prefix=/usr/local/zlib
+
+make && make install
+
+cd ..
+
+rm -rf zlib-1.2.8
+```
+
+> 6、安装openssl
+
+[![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1byGEoY7wTBfVchWT69djeA)
+
+```shell
+rpm -qa |grep openssl
+
+rpm -e --nodeps openssl-1.0.1e-57.el6.x86_64
+
+rpm -e --nodeps openssl-devel-1.0.1e-57.el6.x86_64
+
+cd ~ 
+
+cd /usr/local
+
+tar -zxvf openssl-*
+
+cd openssl-1.1.1
+
+./config --prefix=/usr/local/openssl -fPIC
+
+make && make install
+
+cd ..
+
+rm -rf openssl-1.1.1
+
+cd ~
+
+mv /usr/bin/openssl /usr/bin/openssl.bak
+
+mv /usr/include/openssl /usr/include/openssl.bak
+
+ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
+ 
+ln -s /usr/local/openssl/include/openssl /usr/include/openssl
+
+ln -s /usr/local/openssl/lib/libssl.so.1.1 /usr/lib64/libssl.so.1.1
+
+ln -s /usr/local/openssl/lib/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
+
+echo “/usr/local/openssl/lib” >> /etc/ld.so.conf
+ 
+ldconfig -v
+
+openssl version
 ```
 
 # tomcat的native的安装
