@@ -24,7 +24,7 @@ mv apache-tomcat-8.5.38 tomcat
 
 >1、配置变量环境
 ```shell
-vi /etc/profile
+vim /etc/profile
 ```
 
 ```shell

@@ -39,7 +39,7 @@ cd java
 ```
 
 # <a name="Linux-03" href="#" >设置环境变量</a>
-vi /etc/profile
+vim /etc/profile
 ```shell
 #set java environment
 JAVA_HOME=/usr/local/java/jdk
