@@ -21,6 +21,10 @@ vim /etc/security/limits.conf
 
 # 修改tomcat的sever.xml文件
 
+```
+vim /usr/local/tomcat/conf/server.xml
+```
+
 ```xml
 <Connector port="8089"
                protocol="HTTP/1.1"

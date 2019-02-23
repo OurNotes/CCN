@@ -188,12 +188,20 @@ make && make install
 > 1、修改catalina.sh
 
 ```shell
+vim /usr/local/tomcat/bin/catalina.sh
+```
+
+```shell
 # OS specific support.  $var _must_ be set to either true or false.
 JAVA_OPTS="-server -Xms512m -Xmx1024m -Xss1024K -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=512m -XX:MaxNewSize=32m"
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/apr/lib export LD_LIBRARY_PATH
 ```
 
 > 2、修改server.xml
+
+```
+vim /usr/local/tomcat/conf/server.xml
+```
 
 ```xml
 <Connector port="8089"
