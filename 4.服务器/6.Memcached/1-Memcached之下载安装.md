@@ -57,3 +57,7 @@ rm -rf memcached-1.5.12
 
 # 测试
 
+```
+/usr/local/memcached/bin/memcached -h 
+```
+
