@@ -60,12 +60,6 @@ rm -rf zlib-1.2.8
 [![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1byGEoY7wTBfVchWT69djeA)
 
 ```shell
-rpm -qa |grep openssl
-
-rpm -e --nodeps openssl-1.0.1e-57.el6.x86_64
-
-rpm -e --nodeps openssl-devel-1.0.1e-57.el6.x86_64
-
 cd ~ 
 
 cd /usr/local
