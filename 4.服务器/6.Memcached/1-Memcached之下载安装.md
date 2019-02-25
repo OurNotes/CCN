@@ -24,15 +24,13 @@ cd /usr/local
 
 tar -zxvf libevent-*
 
-cd libevent-2.1.8-stable
+mv libevent-2.1.8-stable libevent
+
+cd libevent
 
 ./configure --prefix=/usr/local/libevent
 
 make && make install
-
-cd ..
-
-rm -rf libevent-2.1.8-stable
 
 ```
 > 3、安装memcached

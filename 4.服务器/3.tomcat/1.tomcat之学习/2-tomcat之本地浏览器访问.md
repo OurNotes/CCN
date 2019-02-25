@@ -10,7 +10,7 @@ vim /etc/sysconfig/iptables
 ```
 放在icmp-host-prohibited上面
 ```shell
--A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 8089 -j ACCEPT
 ```
 
 ```shell

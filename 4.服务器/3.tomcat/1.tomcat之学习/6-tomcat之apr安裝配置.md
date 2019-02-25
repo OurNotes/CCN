@@ -18,7 +18,7 @@ yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel fr
 ```
 yum install -y expat expat-devel
 ```
-
+ 
 > 1、安装apr
 
 ```

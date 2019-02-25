@@ -16,5 +16,7 @@ yum install -y talnet
 
 ```
 ps -ef|grep memcached
+
+talnet 192.168.81.131 2222
 ```
 
