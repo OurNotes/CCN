@@ -18,15 +18,17 @@
 > 2、安装libevent
 
 ```
+mkdir /usr/local/libevent
+
+chown 777 libevent
+
 cd ~ 
 
 cd /usr/local
 
 tar -zxvf libevent-*
 
-mv libevent-2.1.8-stable libevent
-
-cd libevent
+cd libevent-2.1.8-stable
 
 ./configure --prefix=/usr/local/libevent
 
