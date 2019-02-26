@@ -31,7 +31,7 @@ cd java
 [![](https://img.shields.io/badge/jdk-1.8.0_144-green.svg "源代码 1.8.0_144")](https://pan.baidu.com/s/1hY4AuGNuZjrCDdZx7ZmmKg)
 
 ```
- tar -zxvf jdk-8u144-linux-x64.tar.gz #解压
+ tar -zxvf jdk-8u144-linux-x64.tar.gz
  
  mv jdk-1.8.0_144 jdk
  
