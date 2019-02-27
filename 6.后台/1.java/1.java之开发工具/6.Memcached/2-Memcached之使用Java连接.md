@@ -27,7 +27,7 @@
         <dependency>
             <groupId>com.googlecode.xmemcached</groupId>
             <artifactId>xmemcached</artifactId>
-            <version>2.4.0</version>
+            <version>2.4.6</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
