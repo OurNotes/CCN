@@ -1,10 +1,10 @@
 总操作流程：
-- 1、修改下载源链接
-- 2、更新升级
+- 1、[修改下载源链接](#kail-linux-01)
+- 2、[更新升级](#kail-linux-02)
 
 ***
 
-# 修改下载源链接
+# <a name="kail-linux-01" href="#" >修改下载源链接</a>
 
 ```
 vim /etc/apt/sources.list
@@ -15,7 +15,7 @@ vim /etc/apt/sources.list
 deb http://http.kali.org/kali kali-rolling main non-free contrib
 ```
 
-# 更新升级
+# <a name="kail-linux-02" href="#" >更新升级</a>
 
 ```
 apt-get update

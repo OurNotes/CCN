@@ -1,10 +1,10 @@
 总操作流程：
-- 1、下载导入
-- 2、配置
+- 1、[下载导入](#java-01)
+- 2、[配置](#java-02)
 
 ****
 
-# 下载导入
+# <a name="java-01" href="#" >下载导入</a>
 
 [![](https://img.shields.io/badge/官网-tomcat-red.svg "官网 tomcat")](http://tomcat.apache.org/download-native.cgi)
 
@@ -12,7 +12,7 @@
 
 >将tcnative-1.dll文件复制到jdk的bin目录下
 
-# 配置
+# <a name="java-02" href="#" >配置</a>
 
 >配置server.xml
 ```

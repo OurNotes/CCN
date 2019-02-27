@@ -1,10 +1,10 @@
 总操作流程:
-- 1、配置tomcat的catalina.sh文件
-- 2、看效果
+- 1、[配置tomcat的catalina.sh文件](#tomcat-01)
+- 2、[看效果](#tomcat-02)
 
 ***
 
-# 配置tomcat的catalina.sh文件
+# <a name="tomcat-01" href="#" >配置tomcat的catalina.sh文件</a>
 
 ```shell
 vim /usr/local/tomcat/bin/catalina.sh
@@ -19,7 +19,7 @@ JAVA_OPTS="-server -Xms512m -Xmx1024m -Xss1024K -XX:MetaspaceSize=512m -XX:MaxMe
 
 chown 777 /usr/local/tomcat/bin/catalina.sh
 ```
-# 看效果
+# <a name="tomcat-02" href="#" >看效果</a>
 
 ```shell
 ps -ef|grep tomcat  #查询编号

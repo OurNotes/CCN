@@ -1,11 +1,11 @@
 总操作流程：
-- 1、下载包
-- 2、安装
-- 3、测试
+- 1、[下载包](#RedHat6.3-01)
+- 2、[安装](#RedHat6.3-02)
+- 3、[测试](#RedHat6.3-03)
 
 ***
 
-# 下载包
+# <a name="RedHat6.3-01" href="#" >下载包</a>
 
 - 163
 
@@ -17,7 +17,7 @@
 [![](https://img.shields.io/badge/百度云-包-red.svg "百度云 包")](https://pan.baidu.com/s/12jZRpgjPEGVTj7U6IceFSw)
 
 
-# 安装
+# <a name="RedHat6.3-02" href="#" >安装</a>
 
 >1、安装
 
@@ -86,7 +86,7 @@ yum clean all
 yum makecache
 ```
 
-# 测试
+# <a name="RedHat6.3-03" href="#" >测试</a>
 ```
 yum install update
 ```

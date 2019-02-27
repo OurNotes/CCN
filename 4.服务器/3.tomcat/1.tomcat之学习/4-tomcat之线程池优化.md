@@ -1,10 +1,10 @@
 总操作流程
-- 1、修改服务器允许最大约束
-- 2、修改tomcat的sever.xml文件
+- 1、[修改服务器允许最大约束](#tomcat-01)
+- 2、[修改tomcat的sever.xml文件](#tomcat-02)
 
 ***
 
-# 修改服务器允许最大约束
+# <a name="tomcat-01" href="#" >修改服务器允许最大约束</a>
 
 ```
 ulimit -a #查询服务器允许最大约束
@@ -19,7 +19,7 @@ vim /etc/security/limits.conf
 *               hard    rss             65535
 ```
 
-# 修改tomcat的sever.xml文件
+# <a name="tomcat-02" href="#" >修改tomcat的sever.xml文件</a>
 
 ```
 vim /usr/local/tomcat/conf/server.xml

@@ -1,23 +1,23 @@
 总操作流程：
-- 1、自动获得ip地址
-- 2、建立临时的ip配置
-  - 2.1、指定ip地址
-  - 2.2、指定网关
-  - 2.3、其他网段添加静态路由
-- 3、固定的ip配置
-- 4、图形方式建立
+- 1、[自动获得ip地址](#kail-linux-01)
+- 2、[建立临时的ip配置](#kail-linux-02)
+  - 2.[1、指定ip地址](#kail-linux-02-01)
+  - 2.[2、指定网关](#kail-linux-02-02)
+  - 2.[3、其他网段添加静态路由](#kail-linux-02-03)
+- 3、[固定的ip配置](#kail-linux-03)
+- 4、[图形方式建立](#kail-linux-04)
 
 ***
 
-# 自动获得ip地址
+# <a name="kail-linux-012" href="#" >自动获得ip地址</a>
 
 ```shell
 dhclient eth0
 ```
 
-# 建立临时的ip配置
+# <a name="kail-linux-02" href="#" >建立临时的ip配置</a>
 
-### 1、指定ip地址
+### <a name="kail-linux-02-01" href="#" >1、指定ip地址</a>
 
 ```shell
 ifconfig eth0 192.168.1.10/24  # 指定ip地址
@@ -26,7 +26,7 @@ ifconfig etho # 查询ip
 
 ```
 
-### 2、指定网关（联网的）
+### <a name="kail-linux-02-02" href="#" >2、指定网关（联网的）</a>
 ```shell
 route add default gw 192.168.1.10 # 指定网关
 
@@ -34,7 +34,7 @@ netstat -nr # 查询是否生效
 ```
 
 
-### 3、添加静态路由（上网）
+### <a name="kail-linux-02-03" href="#" >3、添加静态路由（上网）</a>
 
 - 应用场景
 
@@ -64,7 +64,7 @@ nameserver 8.8.8.8
 nameserver 114.114.114.114
 ```
 
-#  固定的ip配置
+#  <a name="kail-linux-04" href="#" >固定的ip配置</a>
 
 > 1、修改网卡的配置文件
 
@@ -115,7 +115,7 @@ nameserver 114.114.114.114
 
 ![](image/1-4.png)
 
-# 图形方式建立
+# <a name="kail-linux-05" href="#" >图形方式建立</a>
 
 ![](image/1-5.png)
 

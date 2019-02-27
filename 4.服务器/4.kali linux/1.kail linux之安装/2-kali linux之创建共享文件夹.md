@@ -1,11 +1,11 @@
 本页目录：
-- 1、下载安装VMware tool
-- 2、设置
-- 3、看效果
+- 1、[下载安装VMware tool](#kail-linux-01)
+- 2、[设置](#kail-linux-02)
+- 3、[看效果](#kail-linux-03)
 
 ***
 
-# 下载安装VMware tool
+# <a name="kail-linux-01" href="#" >下载安装VMware tool</a>
 
 ![](image/2-1.png)
 
@@ -17,7 +17,7 @@
 
 >注意：一路都默认，都enter
 
-# 设置
+# <a name="kail-linux-02" href="#" >设置</a>
 
 >1、在win创建一个文件夹：shared
 
@@ -28,6 +28,6 @@
 ![](image/2-4.png)
 
 
-# 看效果
+# <a name="kail-linux-03" href="#" >看效果</a>
 
 ![](image/2-5.png)

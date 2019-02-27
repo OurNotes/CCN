@@ -1,11 +1,11 @@
 总操作流程：
-- 1、Javaweb运行环境确认
-- 2、上传项目
-- 3、看效果
+- 1、[Javaweb运行环境确认](#tomcat-01)
+- 2、[上传项目](#tomcat-02)
+- 3、[看效果](#tomcat-03)
 
 ***
 
-# Javaweb运行环境确认
+# <a name="tomcat-01" href="#" >Javaweb运行环境确认</a>
 
 > 本Javaweb是ssm+oracle+maven
 
@@ -17,7 +17,7 @@ centos要安装jdk，tomcat
 
 注意：maven无法下载oracle驱动包的，将oracle包手动加到lib文件夹下
 
-# 上传项目
+# <a name="tomcat-02" href="#" >上传项目</a>
 
 > 1、导出项目
 
@@ -41,7 +41,7 @@ centos要安装jdk，tomcat
 <Context path="/" docBase="ssm" reloadable="true"/>  
 ```
 
-# 看效果
+# <a name="tomcat-03" href="#" >看效果</a>
 
 ```
 http://ip地址:tomcat端口

@@ -1,10 +1,10 @@
 操作总目录：
-- 1、修改配置文件
-- 2、测试
+- 1、[修改配置文件](#RedHat6.3-01)
+- 2、[测试](#RedHat6.3-02)
 
 ***
 
-# 修改配置文件
+# <a name="RedHat6.3-01" href="#" >修改配置文件</a>
 
 ```
 vim /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -38,6 +38,6 @@ nameserver 202.106.0.20
 nameserver 202.106.196.115
 ```
 
-# 测试
+# <a name="RedHat6.3-02" href="#" >测试</a>
 
 >ssh连接测试
