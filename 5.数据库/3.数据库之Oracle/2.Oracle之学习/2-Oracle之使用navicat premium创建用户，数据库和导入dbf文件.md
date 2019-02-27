@@ -13,7 +13,6 @@ create user SSM identified by "DKLi123456";
 
 grant  connect,resource,dba,create session,create any table,select any dictionary to SSM;
 
-
 alter user SSM account unlock;
 ```
 
