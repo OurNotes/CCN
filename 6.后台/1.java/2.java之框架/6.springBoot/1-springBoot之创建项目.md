@@ -122,6 +122,7 @@ public class UserService {
     public boolean save(User user) {
         boolean success=false;
         Integer id=idCenerator.incrementAndGet();
+        user.setId(id);
         return  repository.put(id,user)==null;
     }
 }
