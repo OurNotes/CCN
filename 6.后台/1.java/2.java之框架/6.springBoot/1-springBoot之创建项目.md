@@ -19,6 +19,10 @@
 
 # 写程序
 
+- 项目目录结构
+
+![](image/1-0.png)
+
 > 1、创建model
 ```java
 public class User {

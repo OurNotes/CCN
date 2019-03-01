@@ -6,6 +6,10 @@
 
 #写程序
 
+- 项目目录结构
+
+![](image/2-1.png)
+
 - 在springBoot之创建项目基础上修改
 
 > 创建RouterFunctionConfiguration代码
