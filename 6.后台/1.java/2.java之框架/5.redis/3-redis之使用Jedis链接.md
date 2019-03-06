@@ -1,14 +1,14 @@
 总操作流程：
-- 1、创建Java项目
-- 2、导入Jedis驱动包
-- 3、写Jedis链接redis代码
-- 4、测试
+- 1、[创建Java项目](redis-01)
+- 2、[导入Jedis驱动包](redis-02)
+- 3、[写Jedis链接redis代码](redis-03)
+- 4、[测试](redis-04)
 
 ***
 
 > 注意：本教程使用idea开发工具操作
 
-# 创建Java项目
+# <a name="redis-01" href="#" >创建Java项目</a>
 
 >1、创建项目
 
@@ -53,13 +53,13 @@ public class JedisTest {
 
 ![](image/3-9.png)
 
-# 导入Jedis驱动包
+# <a name="redis-02" href="#" >导入Jedis驱动包</a>
 
 [![](https://img.shields.io/badge/Jedis-2.9.0-green.svg "Jedis 2.9.0")](https://pan.baidu.com/s/1qfDtD5M3Zinuq5RHP2clAw)
 
 ![](image/3-10.png)
 
-# 写Jedis链接redis代码
+# <a name="redis-03" href="#" >写Jedis链接redis代码</a>
 
 ```java
 package com.person.jedis;

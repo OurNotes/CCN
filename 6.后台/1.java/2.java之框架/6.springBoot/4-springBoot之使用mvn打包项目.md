@@ -1,10 +1,10 @@
 总操作流程：
-- 1、打包成jar文件
-- 2、打包成war文件
+- 1、[打包成jar文件](springBoot-01)
+- 2、[打包成war文件](springBoot-02)
 
 ***
 
-# 打包成jar文件
+# <a name="springBoot-01" href="#" >打包成jar文件</a>
 
 - 1、删除的pom.xml的：
 
@@ -55,7 +55,7 @@ java -jar D:\test\web\target\web-0.0.1-SNAPSHOT.jar
 
 使用postman测试接口
 
-# 打包成war文件
+# <a name="springBoot-02" href="#" >打包成war文件</a>
 
 - 1、在web模块的src/main下创建文件夹和文件
 

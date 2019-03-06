@@ -1,27 +1,24 @@
 总操作流程：
-- 1、[下载导入](springBoot-01)
+- 1、[创建项目](springBoot-01)
 - 2、[写程序](springBoot-02)
 - 3、[测试](springBoot-03)
 
 ***
 
-# <a name="springBoot-01" href="#" >下载导入</a>
+# <a name="springBoot-01" href="#" >创建项目</a>
 
-> 1、下载
+![](image/5-1.png)
 
-[![](https://img.shields.io/badge/官网-spring-green.svg "官网 spring")](https://start.spring.io/)
+![](image/5-2.png)
 
-![](image/1-1.png)
+![](image/5-3.png)
 
-> 2、导入
+![](image/5-4.png)
 
-- 解压后，使用idea导入maven项目的方式导入
+![](image/5-5.png)
+
 
 # <a name="springBoot-02" href="#" >写程序</a>
-
-- 项目目录结构
-
-![](image/1-0.png)
 
 > 1、创建model
 ```java
@@ -131,6 +128,39 @@ public class UserService {
     }
 }
 
+```
+
+> 4、创建RouterFunctionConfiguration代码
+```java
+import net.person.test.model.User;
+import net.person.test.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.reactive.function.server.RequestPredicates;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.RouterFunctions;
+import org.springframework.web.reactive.function.server.ServerResponse;
+import reactor.core.publisher.Flux;
+import java.util.Collection;
+
+/**
+ * Created by admin on 2019/3/1.
+ */
+@Configuration
+public class RouterFunctionConfiguration {
+    @Bean
+    @Autowired
+    public RouterFunction<ServerResponse> personFindAll(UserService userService){
+        return  RouterFunctions.route(RequestPredicates.GET("/person/find/all"),
+                request->{
+                            Collection<User> users=userService.findAll();
+                            Flux<User> userFlux=Flux.fromIterable(users);
+                            return ServerResponse.ok().body(userFlux,User.class);
+                        }
+                );
+    }
+}
 ```
 
 # <a name="springBoot-03" href="#" >测试</a>
