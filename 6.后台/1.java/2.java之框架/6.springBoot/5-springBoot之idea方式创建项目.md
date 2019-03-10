@@ -126,6 +126,10 @@ public class UserService {
         user.setId(id);
         return  repository.put(id,user)==null;
     }
+    
+    public Collection<User> findAll(){
+        return repository.values();
+    }
 }
 
 ```
