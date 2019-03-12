@@ -12,6 +12,8 @@
 
 ![](image/3-1.png)
 
+- 创建模块时，Create from archetype的复选框要选择
+
 ![](image/3-2.png)
 
 ![](image/3-3.png)
