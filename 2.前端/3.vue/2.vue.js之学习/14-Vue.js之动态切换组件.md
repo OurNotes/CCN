@@ -14,7 +14,7 @@
       <button @click="toggleTabs(first);">{{first}}</button>
       <button @click="toggleTabs(second);">{{second}}</button>
       <button @click="toggleTabs(third);">{{third}}</button>
-      <component :is="currentView" keep-alive></component>
+      <component :is="currentView"></component>
   </div>
 
 </template>
