@@ -8,7 +8,8 @@
 # 下载安装
 
 ```js
-cnpm install --save file-saver xlsx 
+cnpm install --save xlsx 
+cnpm install --save file-saver 
 ```
 
 # 写代码
