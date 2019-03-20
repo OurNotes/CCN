@@ -7,6 +7,8 @@
 
 # <a name="springBoot-01" href="#" >创建项目</a>
 
+>1、创建
+
 ![](image/5-1.png)
 
 ![](image/5-2.png)
@@ -16,6 +18,10 @@
 ![](image/5-4.png)
 
 ![](image/5-5.png)
+
+>2、删除
+
+![](image/5-6.png)
 
 
 # <a name="springBoot-02" href="#" >写程序</a>
