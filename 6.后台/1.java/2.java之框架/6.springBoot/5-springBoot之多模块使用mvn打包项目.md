@@ -43,7 +43,7 @@ cd D:\test
 
 D:
 
-mvn -Dmaven.test.skip -U clean package
+mvn -Dmaven.test.skip -U clean install package 
 
 ```
 
@@ -75,7 +75,7 @@ cd D:\test
 
 D:
 
-mvn -Dmaven.test.skip -U clean package
+mvn -Dmaven.test.skip -U clean install package
 ```
 
 - 4、测试

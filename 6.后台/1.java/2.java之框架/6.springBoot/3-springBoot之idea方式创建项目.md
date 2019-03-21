@@ -1,7 +1,8 @@
 总操作流程：
 - 1、[创建项目](springBoot-01)
 - 2、[写程序](springBoot-02)
-- 3、[测试](springBoot-03)
+- 3、[配置编译环境](springBoot-03)
+- 4、[测试](springBoot-04)
 
 ***
 
@@ -172,8 +173,38 @@ public class RouterFunctionConfiguration {
     }
 }
 ```
+# <a name="springBoot-03" href="#" >配置编译环境</a>
 
-# <a name="springBoot-03" href="#" >测试</a>
+> 修改application的Java文件
+
+- 类继承
+
+```java
+public class xxx extends SpringBootServletInitializer
+```
+
+- 重构函数
+
+```java
+protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(xxx.class);
+	}
+```
+
+
+
+> application的配置方式
+
+![](image/3-10.png)
+
+> tomcat的配置方式
+
+![](image/3-11.png)
+
+![](image/3-12.png)
+
+
+# <a name="springBoot-04" href="#" >测试</a>
 
 运行springboot
 

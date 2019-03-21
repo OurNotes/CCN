@@ -1,7 +1,7 @@
 总操作流程：
 - 1、[创建多模块](springBoot-01)
 - 2、[迁移代码](springBoot-02)
-- 3、[配置pom.xml](springBoot-03)
+- 3、[配置](springBoot-03)
 - 4、[测试](springBoot-04)
 
 ***
@@ -29,7 +29,9 @@
 ![](image/3-6.png)
 
 
-# <a name="springBoot-02" href="#" >配置pom.xml</a>
+# <a name="springBoot-02" href="#" >配置</a>
+
+- 配置pom.xml
 
 >根据各模块依赖的不同，修改各模块的pom.xml
 
@@ -37,6 +39,9 @@
 
 ![](image/3-8.png)
 
+- 配置编译
+  
+![](image/3-9.png)
 
 # <a name="springBoot-03" href="#" >测试</a>
 
