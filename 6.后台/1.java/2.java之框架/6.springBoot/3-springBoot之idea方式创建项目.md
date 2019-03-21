@@ -208,7 +208,7 @@ protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 
 运行springboot
 
-[![](https://img.shields.io/badge/官网-Postman-green.svg "官网 Postman")](https://www.getpostman.com/)P
+[![](https://img.shields.io/badge/官网-Postman-green.svg "官网 Postman")](https://www.getpostman.com/)
 
 ![](image/1-3.png)
 
