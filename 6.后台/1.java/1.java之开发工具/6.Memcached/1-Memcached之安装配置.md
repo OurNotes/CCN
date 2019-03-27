@@ -13,22 +13,22 @@
 
 > 2、安装memcached
 
-[![](https://img.shields.io/badge/memcached-1.4.5-green.svg "memcached 1.4.5")](https://pan.baidu.com/s/1O1RVKJHe8jH5k8m0uGDMng)
+http://static.runoob.com/download/memcached-win64-1.4.4-14.zip
 
 
 
 # <a name="memcached-02" href="#" >配置</a>
 
-- 解压后，cmd管理员进入，命令：schtasks /create /sc onstart /tn memcached /tr "'C:\Software\memcached-amd64\memcached.exe' -m 512 -p 2222"
+- 解压后，cmd管理员进入，命令：C:\Software\memcached\memcached.exe -d install
 
-- 删除命令:schtasks /delete /tn memcached
+- 删除命令:C:\Software\memcached\memcached.exe -d uninstall
+
+- 开启命令：C:\Software\memcached\memcached.exe -d start
+
+- 关闭命令：C:\Software\memcached\memcached.exe -d start
 
 # <a name="memcached-03" href="#" >测试</a>
 
 ```
-cd C:\Software\memcached-amd64\
-
-start memcached
-
 telnet 127.0.0.1 11211
 ```
