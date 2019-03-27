@@ -26,5 +26,9 @@
 # <a name="memcached-03" href="#" >测试</a>
 
 ```
-telnet 10.10.2.4 2222
+cd C:\Software\memcached-amd64\
+
+start memcached
+
+telnet 127.0.0.1 11211
 ```
