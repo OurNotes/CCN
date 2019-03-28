@@ -157,29 +157,6 @@ cd apr-util
 make && make install
 ```
 
-
-> 7、安装PCRE库
-
-[![](https://img.shields.io/badge/pcre-8.36-green.svg "pcre 8.36")](https://pan.baidu.com/s/1JHv_Hl-8SPWbpghayqgZyw)
-
-```shell
-cd ~ 
-
-cd /usr/local
-
-tar -zxvf pcre-*
-
-cd pcre-8.35
-
-./configure --prefix=/usr/local/pcre
-
-make && make install
-
-cd ..
-
-rm -rf pcre-8.35
-```
-
 # <a name="tomcat-02" href="#" >tomcat的native的安装</a>
 
 ```
