@@ -24,13 +24,11 @@ tar -zxvf pcre-*
 
 cd pcre-8.35
 
-./configure --prefix=/usr/local/pcre
+./configure --prefix=/usr/local/pcre-8.35
 
 make && make install
 
 cd ..
-
-rm -rf pcre-8.35
 ```
 
 > 2、安装zlib库
@@ -46,13 +44,12 @@ tar -zxvf zlib-*
 
 cd zlib-1.2.8
 
-./configure --prefix=/usr/local/zlib
+./configure --prefix=/usr/local/zlib-1.2.8
 
 make && make install
 
 cd ..
 
-rm -rf zlib-1.2.8
 ```
 
 > 3、安装openssl
