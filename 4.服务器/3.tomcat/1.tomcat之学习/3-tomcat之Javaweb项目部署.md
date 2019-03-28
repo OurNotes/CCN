@@ -33,6 +33,10 @@ centos要安装jdk，tomcat
 
 - 将项目解压出来，放到ssm文件夹下
 
+```
+jar -xvf ssm.war
+```
+
 - 上传项目到/usr/local/tomcat/webapps文件夹下
 
 > 3、修改server.xml配置
