@@ -29,7 +29,7 @@ rpm -ivh yum-*
 
 >2、切换源
 ```
-cd /etc/yum.repos.d/ 
+cd /etc/yum.repos.d
 mv redhat.repo redhat.repo.bak 
 mv rhel-source.repo rhel-source.repo.bak 
 vi /etc/yum.repos.d/CentOS-Base.repo 
