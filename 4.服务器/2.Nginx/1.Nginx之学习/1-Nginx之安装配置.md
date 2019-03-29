@@ -105,13 +105,15 @@ cd /usr/local
 
 tar -zxvf nginx-*
 
-cd nginx-1.15.8
+mv nginx-1.15.8 nginx
+
+cd nginx
 
 ./configure --with-pcre=/usr/local/pcre-8.35 --with-zlib=/usr/local/zlib-1.2.8
 
 make && make install
 
-/usr/local/nginx-1.15.8/sbin/nginx -v
+/usr/local/nginx/sbin/nginx -v
 ```
 
 # <a name="Nginx-02" href="#" >配置</a>
@@ -121,9 +123,9 @@ make && make install
 ```
 cd ~ 
 
-mkdir -p /usr/local/nginx-1.15.8/source/html/dist
+mkdir -p /usr/local/nginx/source/html/dist
 
-vim /usr/local/nginx-1.15.8/conf/nginx.conf
+vim /usr/local/nginx/conf/nginx.conf
 
 
 ```
@@ -169,11 +171,11 @@ service iptables restart #重启
 
 >3、创建配置日记文件并且授读写执行权
 ```
-mkdir -p /usr/local/nginx-1.15.8/logs
-chown 777 /usr/local/nginx-1.15.8/logs
+mkdir -p /usr/local/nginx/logs
+chown 777 /usr/local/nginx/logs
 
 cd ~
-cd /usr/local/nginx-1.15.8/logs
+cd /usr/local/nginx/logs
 
 touch error.log
 touch access.log
@@ -192,7 +194,7 @@ chown 777 access.log
 ```
 cd ~
 
-cd /usr/local/nginx-1.15.8/sbin
+cd /usr/local/nginx/sbin
 
 ./nginx
 ```
@@ -201,7 +203,7 @@ cd /usr/local/nginx-1.15.8/sbin
 ```
 cd ~
 
-cd /usr/local/nginx-1.15.8/sbin
+cd /usr/local/nginx/sbin
 
 ./nginx -s stop #停止
 
