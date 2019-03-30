@@ -1,10 +1,10 @@
 总操作流程：
-- 1、创建Java
-- 2、测试
+- 1、[创建Java](#memcached-01)
+- 2、[测试](#memcached-02)
 
 ***
 
-# 创建Java
+# <a name="memcached-01" href="#" >创建Java</a>
 
 >1、创建model
 ```java
@@ -112,7 +112,7 @@ public class ConnectonMemcached {
 }
 ```
 
-# 测试
+# <a name="memcached-02" href="#" >测试</a>
 
 > 创建测试类
 ```java
