@@ -1,0 +1,231 @@
+总操作流程：
+- 1、修改配置
+- 2、写代码
+- 3、测试
+
+***
+
+> 该教程建立在springBoot之集成ssm基础上
+
+# 修改配置
+
+>在总的pom.xml添加
+
+```xml
+		<dependency>
+			<groupId>com.googlecode.xmemcached</groupId>
+			<artifactId>xmemcached</artifactId>
+			<version>2.4.6</version>
+		</dependency>
+```
+
+>在application模块的pom.xml添加
+```xml
+        <dependency>
+            <artifactId>entity</artifactId>
+            <groupId>net.person</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>utils</artifactId>
+            <groupId>net.person</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+```
+
+>在application.properties添加
+```c
+#memcached
+memcached.servers=127.0.0.1:8888
+memcached.poolSize=10
+memcached.sanitizeKeys=false
+memcached.openCache=true
+```
+
+# 写代码
+
+>1、在utils中添加memcached模块
+
+- XMemcachedConfig
+```java
+@Configuration
+public class XMemcachedConfig {
+
+
+    private XMemcachedProperties xMemcachedProperties;
+
+    @Autowired
+    public void setxMemcachedProperties(XMemcachedProperties xMemcachedProperties) {
+        this.xMemcachedProperties = xMemcachedProperties;
+    }
+
+    @Bean
+    public MemcachedClientBuilder getXMBuilder(){
+        MemcachedClientBuilder memcachedClientBuilder = null;
+        try{
+            String servers = xMemcachedProperties.getServers();
+            System.out.println("servers="+servers);
+            memcachedClientBuilder = new XMemcachedClientBuilder(servers);
+            // 开启/关闭failure模式
+            memcachedClientBuilder.setFailureMode(false);
+            memcachedClientBuilder.setSanitizeKeys(xMemcachedProperties.isSanitizeKeys());
+            memcachedClientBuilder.setConnectionPoolSize(xMemcachedProperties.getPoolSize());
+            memcachedClientBuilder.setCommandFactory(new BinaryCommandFactory());
+            memcachedClientBuilder.setOpTimeout(3000);
+            memcachedClientBuilder.setSessionLocator(new KetamaMemcachedSessionLocator());
+
+            // 诸多XMemcached配置
+            return memcachedClientBuilder;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Bean
+    public MemcachedClient getXMClient(MemcachedClientBuilder memcachedClientBuilder){
+        MemcachedClient memcachedClient = null;
+        try{
+            memcachedClient = memcachedClientBuilder.build();
+            return memcachedClient;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+}
+
+```
+
+- XMemcachedProperties
+
+```java
+@Component
+@ConfigurationProperties(prefix = "memcached")
+public class XMemcachedProperties {
+    private String servers;
+    private int poolSize;
+    private boolean sanitizeKeys;
+    private boolean openCache;
+
+    public boolean isOpenCache() {
+        return openCache;
+    }
+
+    public void setOpenCache(boolean openCache) {
+        this.openCache = openCache;
+    }
+
+    public String getServers() {
+        return servers;
+    }
+
+    public void setServers(String servers) {
+        this.servers = servers;
+    }
+
+    public int getPoolSize() {
+        return poolSize;
+    }
+
+    public void setPoolSize(int poolSize) {
+        this.poolSize = poolSize;
+    }
+
+    public boolean isSanitizeKeys() {
+        return sanitizeKeys;
+    }
+
+    public void setSanitizeKeys(boolean sanitizeKeys) {
+        this.sanitizeKeys = sanitizeKeys;
+    }
+}
+```
+
+> 在service模块添加memcached模块
+
+- MemcachedService
+
+```java
+public interface MemcachedService {
+
+    /**
+     * 将数据添加到Memcached
+     * @param key
+     * @param value
+     */
+    public void addMemcached(String key, String value);
+
+    /**
+     * 通过key获取Memcached的内容
+     * @param key
+     * @return
+     */
+    public String getMemcached(String key);
+
+}
+
+```
+
+- MemcachedServiceImpl
+
+```java
+@Service
+public class MemcachedServiceImpl implements MemcachedService{
+
+    private MemcachedClient memcachedClient;
+
+    @Autowired
+    public void setMemcachedClient(MemcachedClient memcachedClient) {
+        this.memcachedClient = memcachedClient;
+    }
+
+    @Override
+    public void addMemcached(String key, String value) {
+        try {
+            memcachedClient.set(key, 0, value);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public String getMemcached(String key) {
+        try {
+            return memcachedClient.get(key);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return "";
+    }
+}
+
+```
+
+# 测试
+
+- 修改TestServiceImpl
+
+>调用接口
+
+```java
+private MemcachedService memcachedService;
+
+    @Autowired
+    public void setMemcachedService(MemcachedService memcachedService) {
+        this.memcachedService = memcachedService;
+    }
+
+```
+
+>存数据
+
+```java
+        String keyMemcached="testMemcached";
+        memcachedService.addMemcached(keyMemcached,responseText);
+        System.out.println("===============================");
+        System.out.println(memcachedService.getMemcached(keyMemcached));
+        System.out.println("===============================");
+        ResponseUtils.renderJson(response, memcachedService.getMemcached(keyMemcached));
+```
