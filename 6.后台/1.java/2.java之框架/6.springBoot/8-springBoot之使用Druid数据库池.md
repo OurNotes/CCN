@@ -40,10 +40,10 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 >2、修改application.properties
 ```js
 # Druid
-spring.druid.datasource.driverClassName= com.microsoft.sqlserver.jdbc.SQLServerDriver
-spring.druid.datasource.url= jdbc:sqlserver://10.10.2.4:1433;DatabaseName=SBSSM
-spring.druid.datasource.username= sa
-spring.druid.datasource.password= 123456
+spring.datasource.driverClassName= oracle.jdbc.driver.OracleDriver
+spring.datasource.url= jdbc:oracle:thin:@10.10.2.4:1521:ORCL
+spring.datasource.username= system
+spring.datasource.password= 123456
 
 spring.druid.initialSize= 5
 spring.druid.minIdle= 5
@@ -85,16 +85,16 @@ spring.druid.connectionProperties= 'druid.stat.mergeSql=true;druid.stat.slowSqlM
 ```java
 @Configuration
 public class DruidConfig {
-    @Value("${spring.druid.datasource.url}")
+    @Value("${spring.datasource.url}")
     private String url;
 
-    @Value("${spring.druid.datasource.username}")
+    @Value("${spring.datasource.username}")
     private String username;
 
-    @Value("${spring.druid.datasource.password}")
+    @Value("${spring.datasource.password}")
     private String password;
 
-    @Value("${spring.druid.datasource.driverClassName}")
+    @Value("${spring.datasource.driverClassName}")
     private String driverClassName;
 
     @Value("${spring.druid.initialSize}")
