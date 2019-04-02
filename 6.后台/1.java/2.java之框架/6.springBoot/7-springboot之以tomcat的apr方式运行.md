@@ -1,154 +1,54 @@
 总操作流程：
-- 1、创建tomcat的配置类
-- 2、修改properties文件
-- 3、测试
+- 1、[创建tomcat的配置类](springBoot-01)
+- 2、[修改properties文件](springBoot-02)
+- 3、[测试](springBoot-03)
 
 ***
 > 注意springboot是2。以上版本
 
-# 创建tomcat的配置类
+# <a name="springBoot-01" href="#" >创建tomcat的配置类</a>
 
-> 1、TomcatProperties
-
-```java
-@Configuration
-@ConfigurationProperties(prefix="tomcat.apr")
-@PropertySource(value="classpath:application.properties")
-public class TomcatProperties {
-    private String acceptorThreadCount;
-    private String minSpareThreads;
-    private String maxSpareThreads;
-    private String maxThreads;
-    private String maxConnections;
-    private String connectionTimeout;
-    private String protocol;
-    private String redirectPort;
-    private String compression;
-    private String address;
-    private String maxFileSize;
-    private String maxRequestSize;
-
-    public TomcatProperties() {
-    }
-
-    public TomcatProperties(String acceptorThreadCount, String minSpareThreads, String maxSpareThreads, String maxThreads, String maxConnections, String connectionTimeout, String protocol, String redirectPort, String compression, String address, String maxFileSize, String maxRequestSize) {
-        this.acceptorThreadCount = acceptorThreadCount;
-        this.minSpareThreads = minSpareThreads;
-        this.maxSpareThreads = maxSpareThreads;
-        this.maxThreads = maxThreads;
-        this.maxConnections = maxConnections;
-        this.connectionTimeout = connectionTimeout;
-        this.protocol = protocol;
-        this.redirectPort = redirectPort;
-        this.compression = compression;
-        this.address = address;
-        this.maxFileSize = maxFileSize;
-        this.maxRequestSize = maxRequestSize;
-    }
-
-    public String getAcceptorThreadCount() {
-        return acceptorThreadCount;
-    }
-
-    public void setAcceptorThreadCount(String acceptorThreadCount) {
-        this.acceptorThreadCount = acceptorThreadCount;
-    }
-
-    public String getMinSpareThreads() {
-        return minSpareThreads;
-    }
-
-    public void setMinSpareThreads(String minSpareThreads) {
-        this.minSpareThreads = minSpareThreads;
-    }
-
-    public String getMaxSpareThreads() {
-        return maxSpareThreads;
-    }
-
-    public void setMaxSpareThreads(String maxSpareThreads) {
-        this.maxSpareThreads = maxSpareThreads;
-    }
-
-    public String getMaxThreads() {
-        return maxThreads;
-    }
-
-    public void setMaxThreads(String maxThreads) {
-        this.maxThreads = maxThreads;
-    }
-
-    public String getMaxConnections() {
-        return maxConnections;
-    }
-
-    public void setMaxConnections(String maxConnections) {
-        this.maxConnections = maxConnections;
-    }
-
-    public String getConnectionTimeout() {
-        return connectionTimeout;
-    }
-
-    public void setConnectionTimeout(String connectionTimeout) {
-        this.connectionTimeout = connectionTimeout;
-    }
-
-    public String getProtocol() {
-        return protocol;
-    }
-
-    public void setProtocol(String protocol) {
-        this.protocol = protocol;
-    }
-
-    public String getRedirectPort() {
-        return redirectPort;
-    }
-
-    public void setRedirectPort(String redirectPort) {
-        this.redirectPort = redirectPort;
-    }
-
-    public String getCompression() {
-        return compression;
-    }
-
-    public void setCompression(String compression) {
-        this.compression = compression;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getMaxFileSize() {
-        return maxFileSize;
-    }
-
-    public void setMaxFileSize(String maxFileSize) {
-        this.maxFileSize = maxFileSize;
-    }
-
-    public String getMaxRequestSize() {
-        return maxRequestSize;
-    }
-
-    public void setMaxRequestSize(String maxRequestSize) {
-        this.maxRequestSize = maxRequestSize;
-    }
-}
-
-```
-
-> 2、TomcatConfig
+> TomcatConfig
 ```java
 @Configuration
 public class TomcatConfig {
+
+    @Value("${tomcat.apr.protocol}")
+    private String protocol;
+
+    @Value("${tomcat.apr.acceptorThreadCount}")
+    private String acceptorThreadCount;
+
+    @Value("${tomcat.apr.minSpareThreads}")
+    private String minSpareThreads;
+
+    @Value("${tomcat.apr.maxSpareThreads}")
+    private String maxSpareThreads;
+
+    @Value("${tomcat.apr.maxThreads}")
+    private String maxThreads;
+
+    @Value("${tomcat.apr.maxConnections}")
+    private String maxConnections;
+
+    @Value("${tomcat.apr.connectionTimeout}")
+    private String connectionTimeout;
+
+    @Value("${tomcat.apr.redirectPort}")
+    private String redirectPort;
+
+    @Value("${tomcat.apr.compression}")
+    private String compression;
+
+    @Value("${tomcat.apr.address}")
+    private String address;
+
+    @Value("${tomcat.apr.maxFileSize}")
+    private String maxFileSize;
+
+    @Value("${tomcat.apr.maxRequestSize}")
+    private String maxRequestSize;
+
     @Bean
     public ServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
@@ -167,25 +67,24 @@ public class TomcatConfig {
     }
 
     private Connector redirectConnector() {
-        TomcatProperties tomcat=new TomcatProperties();
-        Connector connector = new Connector(tomcat.getProtocol());
-        connector.setAttribute("acceptorThreadCount",tomcat.getAcceptorThreadCount());
-        connector.setAttribute("minSpareThreads",tomcat.getMinSpareThreads());
-        connector.setAttribute("maxSpareThreads",tomcat.getMaxSpareThreads());
-        connector.setAttribute("maxThreads",tomcat.getMaxThreads());
-        connector.setAttribute("maxConnections",tomcat.getMaxConnections());
-        connector.setAttribute("connectionTimeout",tomcat.getConnectionTimeout());
-        connector.setAttribute("redirectPort",tomcat.getRedirectPort());
-        connector.setAttribute("compression",tomcat.getCompression());
-        connector.setAttribute("addresss",tomcat.getAddress());
-        connector.setAttribute("maxFileSize",tomcat.getMaxFileSize());
-        connector.setAttribute("maxRequestSize",tomcat.getMaxRequestSize());
+        Connector connector = new Connector(protocol);
+        connector.setAttribute("acceptorThreadCount",acceptorThreadCount);
+        connector.setAttribute("minSpareThreads",minSpareThreads);
+        connector.setAttribute("maxSpareThreads",maxSpareThreads);
+        connector.setAttribute("maxThreads",maxThreads);
+        connector.setAttribute("maxConnections",maxConnections);
+        connector.setAttribute("connectionTimeout",connectionTimeout);
+        connector.setAttribute("redirectPort",redirectPort);
+        connector.setAttribute("compression",compression);
+        connector.setAttribute("address",address);
+        connector.setAttribute("maxFileSize",maxFileSize);
+        connector.setAttribute("maxRequestSize",maxRequestSize);
         return connector;
     }
 }
 ```
 
-# 修改properties文件
+# <a name="springBoot-02" href="#" >修改properties文件</a>
 
 ```c
 # tomcat
@@ -200,10 +99,10 @@ tomcat.apr.redirectPort=443
 tomcat.apr.compression=on
 tomcat.apr.maxFileSize=300MB
 tomcat.apr.maxRequestSize=500MB
-tomcat.apr.addresss=0.0.0.0
+tomcat.apr.address=0.0.0.0
 ```
 
-# 测试
+# <a name="springBoot-03" href="#" >测试</a>
 
 ```
 运行测试

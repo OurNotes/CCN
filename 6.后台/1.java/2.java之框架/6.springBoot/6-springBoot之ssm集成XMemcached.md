@@ -1,13 +1,13 @@
 总操作流程：
-- 1、修改配置
-- 2、写代码
-- 3、测试
+- 1、[修改配置](springBoot-01)
+- 2、[写代码](springBoot-02)
+- 3、[测试](springBoot-03)
 
 ***
 
 > 该教程建立在springBoot之集成ssm基础上
 
-# 修改配置
+# <a name="springBoot-01" href="#" >修改配置</a>
 
 >在总的pom.xml添加
 
@@ -42,7 +42,7 @@ memcached.sanitizeKeys=false
 memcached.openCache=true
 ```
 
-# 写代码
+# <a name="springBoot-02" href="#" >写代码</a>
 
 >1、在utils中添加memcached模块
 
@@ -203,7 +203,7 @@ public class MemcachedServiceImpl implements MemcachedService{
 
 ```
 
-# 测试
+# <a name="springBoot-03" href="#" >测试</a>
 
 - 修改TestServiceImpl
 
