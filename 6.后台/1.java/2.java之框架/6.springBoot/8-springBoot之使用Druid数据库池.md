@@ -1,0 +1,210 @@
+总操作流程：
+- 1、修改properties文件
+- 2、创建pom.xml
+- 3、创建配置Java文件
+- 4、测试
+
+***
+
+# 修改properties文件
+
+>1、创建log4j.properties
+
+```js
+### 设置###
+log4j.rootLogger = debug,stdout,D,E
+
+### 输出信息到控制抬 ###
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target = System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern = [%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n
+
+### 输出DEBUG 级别以上的日志到=E://logs/error.log ###
+log4j.appender.D = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.D.File = E://logs/log.log
+log4j.appender.D.Append = true
+log4j.appender.D.Threshold = DEBUG 
+log4j.appender.D.layout = org.apache.log4j.PatternLayout
+log4j.appender.D.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]  %m%n
+
+### 输出ERROR 级别以上的日志到=E://logs/error.log ###
+log4j.appender.E = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.E.File =E://logs/error.log 
+log4j.appender.E.Append = true
+log4j.appender.E.Threshold = ERROR 
+log4j.appender.E.layout = org.apache.log4j.PatternLayout
+log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]  %m%n
+```
+
+>2、修改application.properties
+```js
+# Druid
+spring.druid.datasource.driverClassName= com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.druid.datasource.url= jdbc:sqlserver://10.10.2.4:1433;DatabaseName=SBSSM
+spring.druid.datasource.username= sa
+spring.druid.datasource.password= 123456
+
+spring.druid.initialSize= 5
+spring.druid.minIdle= 5
+spring.druid.maxActive= 20
+spring.druid.maxWait= 60000
+spring.druid.timeBetweenEvictionRunsMillis= 60000
+spring.druid.minEvictableIdleTimeMillis= 300000
+spring.druid.validationQuery= SELECT 1 FROM DUAL
+spring.druid.testWhileIdle= true
+spring.druid.testOnBorrow= false
+spring.druid.testOnReturn= false
+spring.druid.poolPreparedStatements= false
+spring.druid.maxPoolPreparedStatementPerConnectionSize= 20
+spring.druid.filters= stat,wall,log4j
+spring.druid.connectionProperties= 'druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000'
+
+```
+
+# 创建pom.xml
+
+```xml
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.1.15</version>
+		</dependency>
+```
+
+# 创建配置Java文件
+
+> DruidConfig
+
+```java
+@Configuration
+public class DruidConfig {
+    @Value("${spring.druid.datasource.url}")
+    private String url;
+
+    @Value("${spring.druid.datasource.username}")
+    private String username;
+
+    @Value("${spring.druid.datasource.password}")
+    private String password;
+
+    @Value("${spring.druid.datasource.driverClassName}")
+    private String driverClassName;
+
+    @Value("${spring.druid.initialSize}")
+    private int initialSize;
+
+    @Value("${spring.druid.minIdle}")
+    private int minIdle;
+
+    @Value("${spring.druid.maxActive}")
+    private int maxActive;
+
+    @Value("${spring.druid.maxWait}")
+    private int maxWait;
+
+    @Value("${spring.druid.timeBetweenEvictionRunsMillis}")
+    private int timeBetweenEvictionRunsMillis;
+
+    @Value("${spring.druid.minEvictableIdleTimeMillis}")
+    private int minEvictableIdleTimeMillis;
+
+    @Value("${spring.druid.validationQuery}")
+    private String validationQuery;
+
+    @Value("${spring.druid.testWhileIdle}")
+    private boolean testWhileIdle;
+
+    @Value("${spring.druid.testOnBorrow}")
+    private boolean testOnBorrow;
+
+    @Value("${spring.druid.testOnReturn}")
+    private boolean testOnReturn;
+
+    @Value("${spring.druid.poolPreparedStatements}")
+    private boolean poolPreparedStatements;
+
+    @Value("${spring.druid.maxPoolPreparedStatementPerConnectionSize}")
+    private int maxPoolPreparedStatementPerConnectionSize;
+
+    @Value("${spring.druid.filters}")
+    private String filters;
+
+    @Value("{spring.druid.connectionProperties}")
+    private String connectionProperties;
+
+    @Bean
+    @Primary
+    public DataSource dataSource() {
+        DruidDataSource datasource = new DruidDataSource();
+
+        datasource.setUrl(url);
+        datasource.setUsername(username);
+        datasource.setPassword(password);   //这里可以做加密处理
+        datasource.setDriverClassName(driverClassName);
+
+        //configuration
+        datasource.setInitialSize(initialSize);
+        datasource.setMinIdle(minIdle);
+        datasource.setMaxActive(maxActive);
+        datasource.setMaxWait(maxWait);
+        datasource.setTimeBetweenEvictionRunsMillis(timeBetweenEvictionRunsMillis);
+        datasource.setMinEvictableIdleTimeMillis(minEvictableIdleTimeMillis);
+        datasource.setValidationQuery(validationQuery);
+        datasource.setTestWhileIdle(testWhileIdle);
+        datasource.setTestOnBorrow(testOnBorrow);
+        datasource.setTestOnReturn(testOnReturn);
+        datasource.setPoolPreparedStatements(poolPreparedStatements);
+        datasource.setMaxPoolPreparedStatementPerConnectionSize(maxPoolPreparedStatementPerConnectionSize);
+        try {
+            datasource.setFilters(filters);
+        } catch (SQLException e) {
+
+        }
+        datasource.setConnectionProperties(connectionProperties);
+
+        return datasource;
+    }
+
+    @Bean
+    public ServletRegistrationBean statViewServlet(){
+        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(),"/druid/*");
+        servletRegistrationBean.addInitParameter("allow","127.0.0.1");  //设置ip白名单
+        servletRegistrationBean.addInitParameter("deny","192.168.0.19");//设置ip黑名单，优先级高于白名单
+        //设置控制台管理用户
+        servletRegistrationBean.addInitParameter("loginUsername","root");
+        servletRegistrationBean.addInitParameter("loginPassword","root");
+        //是否可以重置数据
+        servletRegistrationBean.addInitParameter("resetEnable","false");
+        return servletRegistrationBean;
+    }
+
+    @Bean
+    public FilterRegistrationBean statFilter(){
+        //创建过滤器
+        FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new WebStatFilter());
+        //设置过滤器过滤路径
+        filterRegistrationBean.addUrlPatterns("/*");
+        //忽略过滤的形式
+        filterRegistrationBean.addInitParameter("exclusions","*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
+        return filterRegistrationBean;
+    }
+
+}
+
+```
+
+# 测试
+
+> http://localhost:8080/druid/login.html
+
+```
+账号：root
+密码：root
+```
