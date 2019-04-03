@@ -1,12 +1,12 @@
 总操作流程：
-- 1、修改properties文件
-- 2、创建pom.xml
-- 3、创建配置Java文件
-- 4、测试
+- 1、[修改properties文件](springBoot-01)
+- 2、[创建pom.xml](springBoot-02)
+- 3、[创建配置Java文件](springBoot-03)
+- 4、[测试](springBoot-04)
 
 ***
 
-# 修改properties文件
+# <a name="springBoot-01" href="#" >修改properties文件</a>
 
 >1、创建log4j.properties
 
@@ -62,7 +62,7 @@ spring.druid.connectionProperties= 'druid.stat.mergeSql=true;druid.stat.slowSqlM
 
 ```
 
-# 创建pom.xml
+# <a name="springBoot-02" href="#" >创建pom.xml</a>
 
 ```xml
 		<dependency>
@@ -78,7 +78,7 @@ spring.druid.connectionProperties= 'druid.stat.mergeSql=true;druid.stat.slowSqlM
 		</dependency>
 ```
 
-# 创建配置Java文件
+# <a name="springBoot-03" href="#" >创建配置Java文件</a>
 
 > DruidConfig
 
@@ -200,7 +200,7 @@ public class DruidConfig {
 
 ```
 
-# 测试
+# <a name="springBoot-04" href="#" >测试</a>
 
 > http://localhost:8080/druid/login.html
 
