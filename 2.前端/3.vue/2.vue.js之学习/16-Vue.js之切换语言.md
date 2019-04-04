@@ -1,16 +1,16 @@
 总操作流程：
-- 1、安装插件
-- 2、写代码
-- 3、测试
+- 1、[安装插件](#vue.js-01)
+- 2、[写代码](#vue.js-02)
+- 3、[测试](#vue.js-03)
 
 ***
 
-# 安装插件
+# <a name="vue.js-01" href="#" >安装插件</a>
 ```
 cnpm install vue-i18n --save-dev
 ```
 
-# 写代码
+# <a name="vue.js-02" href="#" >写代码</a>
 
 >目录结构
 
@@ -94,6 +94,6 @@ methods: {
 ```
 
 
-# 测试
+# <a name="vue.js-03" href="#" >测试</a>
 
 ![](image/16-2.gif)

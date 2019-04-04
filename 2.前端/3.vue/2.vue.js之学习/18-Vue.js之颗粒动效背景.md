@@ -1,17 +1,17 @@
 总操作流程：
-- 1、下载安装
-- 2、写代码
-- 3、看效果
+- 1、[下载安装](#vue.js-01)
+- 2、[写代码](#vue.js-02)
+- 3、[看效果](#vue.js-03)
 
 ***
 
-# 下载安装
+# <a name="vue.js-01" href="#" >下载安装</a>
 
 ```js
 cnpm install vue-particles --save-dev
 ```
 
-# 写代码
+# <a name="vue.js-02" href="#" >写代码</a>
 
 > 1、main.js添加
 ```js
@@ -42,6 +42,6 @@ Vue.use(VueParticles)
   }
 ```
 
-# 看效果
+# <a name="vue.js-03" href="#" >看效果</a>
 
 运行看效果

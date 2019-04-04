@@ -1,18 +1,18 @@
 总操作流程：
-- 1、下载安装
-- 2、写代码
-- 3、测试
+- 1、[下载安装](#vue.js-01)
+- 2、[写代码](#vue.js-02)
+- 3、[测试](#vue.js-03)
 
 ***
 
-# 下载安装
+# <a name="vue.js-01" href="#" >下载安装</a>
 
 ```js
 cnpm install --save xlsx 
 cnpm install --save file-saver 
 ```
 
-# 写代码
+# <a name="vue.js-02" href="#" >写代码</a>
 
 >1、在有要导出table的组件中引用
 
@@ -51,7 +51,7 @@ exportExcel(val) { //导出Excel
       }
 ```
 
-# 测试
+# <a name="vue.js-03" href="#" >测试</a>
 
 运行测试
 

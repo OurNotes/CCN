@@ -1,17 +1,17 @@
 总操作流程：
-- 1、安装
-- 2、修改代码
-- 3、看效果
+- 1、[安装](#vue.js-01)
+- 2、[修改代码](#vue.js-02)
+- 3、[看效果](#vue.js-03)
 
 *** 
 
-# 安装
+# <a name="vue.js-01" href="#" >安装</a>
 
 ```
 cnpm install vue-wechat-title --save
 ```
 
-# 修改代码
+# <a name="vue.js-02" href="#" >修改代码</a>
 
 >1、main.js
 ```js
@@ -36,6 +36,6 @@ meta: {
 <router-view v-wechat-title='$route.meta.title'/>
 ```
 
-# 看效果
+# <a name="vue.js-03" href="#" >看效果</a>
 
 运行看效果

@@ -1,11 +1,11 @@
 总操作流程:
-- 1、下载图标包
-- 2、写代码
-- 3、看效果
+- 1、[下载图标包](#vue.js-01)
+- 2、[写代码](#vue.js-02)
+- 3、[看效果](#vue.js-03)
 
 ***
 
-# 下载图标包
+# <a name="vue.js-01" href="#" >下载图标包</a>
 
 [![](https://img.shields.io/badge/官网-阿里巴巴矢量图标-red.svg "官网 阿里巴巴矢量图标")](https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1124336)
 
@@ -17,7 +17,7 @@
 
 ![](image/17-4.png)
 
-# 写代码
+# <a name="vue.js-02" href="#" >写代码</a>
 
 > 1、导入文件
 
@@ -34,6 +34,6 @@
 
 ![](image/17-5.png)
 
-# 看效果
+# <a name="vue.js-03" href="#" >看效果</a>
 
 ![](image/17-6.png)

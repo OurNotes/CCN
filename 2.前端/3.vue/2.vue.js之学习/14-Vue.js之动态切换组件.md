@@ -1,10 +1,10 @@
 总操作流程：
-- 1、写程序
-- 2、测试
+- 1、[写程序](#vue.js-01)
+- 2、[测试](#vue.js-02)
 
 ***
 
-# 写程序
+# <a name="vue.js-01" href="#" >写程序</a>
 
 > 1、test.vue
 
@@ -99,6 +99,6 @@ export default {
 </style>
 ```
 
-# 测试
+# <a name="vue.js-02" href="#" >测试</a>
 
 ![](image/14-1.gif)
