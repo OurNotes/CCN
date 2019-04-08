@@ -5,7 +5,8 @@
 
 ***
 
-[![](https://img.shields.io/badge/官网-particles-red.svg "官网 particles")](https://vue-particles.netlify.com/)
+[![](https://img.shields.io/badge/官网-particles-red.svg "官网 particles")](https://vue-particles.netlify.com)
+
 
 # <a name="vue.js-01" href="#" >下载安装</a>
 
