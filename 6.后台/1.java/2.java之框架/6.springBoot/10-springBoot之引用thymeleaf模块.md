@@ -1,15 +1,15 @@
 总操作流程：
-- 1、修改pom.xml
-- 2、修改application.properties
-- 3、写代码
-- 3、测试
+- 1、[修改pom.xml](springBoot-01)
+- 2、[修改application.properties](springBoot-02)
+- 3、[写代码](springBoot-03)
+- 3、[测试](springBoot-04)
 
 ***
 - 项目目录结构
 
 ![](image/10-1.png)
 
-# 修改pom.xml
+# <a name="springBoot-01" href="#" >修改pom.xml</a>
 ```xml
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,7 +26,7 @@
 		</dependency>
 ```
 
-# 修改application.properties
+# <a name="springBoot-02" href="#" >修改application.properties</a>
 
 ```js
 #thymeleaf
@@ -39,7 +39,7 @@ spring.resources.chain.strategy.content.enabled=true
 spring.resources.chain.strategy.content.paths=/**
 ```
 
-# 写代码
+# <a name="springBoot-03" href="#" >写代码</a>
 
 > index.html
 
@@ -93,6 +93,6 @@ public class UserController {
 }
 
 ```
-# 测试
+# <a name="springBoot-04" href="#" >测试</a>
 
 运行使用浏览器测试

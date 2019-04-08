@@ -65,12 +65,17 @@ spring.druid.connectionProperties= 'druid.stat.mergeSql=true;druid.stat.slowSqlM
 # <a name="springBoot-02" href="#" >创建pom.xml</a>
 
 ```xml
+		<!-- log的驱动包 -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
+        
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
