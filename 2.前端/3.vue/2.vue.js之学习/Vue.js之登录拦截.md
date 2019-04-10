@@ -68,7 +68,7 @@ if (this.login) {
                 name: this.form.userid,
                 pwd: this.form.userpassword,
             }
-              this.sessionStorage.setItem("user",JSON.stringify(userObj))
+              sessionStorage.setItem("user",JSON.stringify(userObj))
               this.$router.push('/home');
 ```
 
