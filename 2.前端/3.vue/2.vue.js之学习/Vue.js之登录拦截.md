@@ -41,23 +41,32 @@ export default new Router({
 })
 ```
 
->在main.js最后添加
+>在main.js最后添加(要在vue实列前设置)
 ```
 router.beforeEach((to, from, next) => {
-  console.log("拦截");
-  if (to.matched.some(res => res.meta.requireAuth)) { // 验证是否需要登陆
-    if (sessionStorage.getItem('user')) { 
+  if (to.matched.some(record => record.meta.requireAuth)) {
+    if (sessionStorage.getItem('user') != null) {
       next();
     } else {
       next({
         path: '/',
-        query: {redirect: to.fullPath}
-        });
+        redirect: to.fullPath
+      });
     }
   } else {
     next();
   }
 });
+
+new Vue({
+  el: '#app',
+  router,
+  i18n,
+  components: {
+    App
+  },
+  template: '<App/>'
+})
 ```
 
 >在主组中的方法引用
