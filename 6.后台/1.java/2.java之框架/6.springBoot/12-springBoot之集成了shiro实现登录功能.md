@@ -1,0 +1,98 @@
+总操作流程：
+- 1、修改ShiroConfig文件
+- 2、修改UserRealm文件
+- 3、添加mvc文件
+- 4、测试
+
+***
+
+ # 修改ShiroConfig文件
+
+```java
+    @Bean
+    public ShiroFilterFactoryBean getShiroFilterFactoryBean(@Qualifier("securityManager")DefaultWebSecurityManager securityManager){
+        ShiroFilterFactoryBean shiroFilterFactoryBean=new ShiroFilterFactoryBean();
+        shiroFilterFactoryBean.setSecurityManager(securityManager);
+        Map<String,String> filterMap=new LinkedHashMap<String,String>();
+        //指定不用拦截的跳转连接
+        filterMap.put("/login/*","anon");
+        //指定拦截的跳转连接
+        /*filterMap.put("/user/toAdd","authc");
+        filterMap.put("/user/toUpdate","authc");
+        filterMap.put("/user/*","authc");*/
+
+        //指定登录的页面的路径
+        /*shiroFilterFactoryBean.setLoginUrl("/login/toLogin");*/
+        shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
+        return shiroFilterFactoryBean;
+    }
+
+```
+ # 修改UserRealm文件
+ 
+ ```java
+     @Override
+    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+        UsernamePasswordToken token=(UsernamePasswordToken)authenticationToken;
+        int checkUserName = loginDao.checkUserName(token.getUsername());
+        if (checkUserName==0){
+            return null;
+        }
+        String userPassword=loginDao.getUserPassword(token.getUsername());
+        return new SimpleAuthenticationInfo("",userPassword,"");
+    }
+ ```
+
+ # 添加mvc文件
+
+ > 1、Controller
+ ```java
+ @CrossOrigin
+    @PostMapping(path ="/toLogin",produces ={ "application/json;charset=UTF-8" })
+    public String toLogin(HttpServletResponse response, @RequestBody String jsonString) throws Exception {
+        loginService.toLogin(response,jsonString);
+        return "index";
+
+    }
+ ```
+
+ >2、Server
+ ```java
+ @Override
+    public void toLogin(HttpServletResponse response, String jsonString) {
+        ToLogin toLogin= JSON.parseObject(jsonString,ToLogin.class);
+        Subject subject= SecurityUtils.getSubject();
+        UsernamePasswordToken token=new UsernamePasswordToken(toLogin.getUserId(),toLogin.getUserPassword());
+        AbstractJsonObject abstractJsonObject=new AbstractJsonObject();
+        try {
+            subject.login(token);
+            abstractJsonObject.setStatusObject(StatusHouse.LOGIN_STATUS_YES);
+            ResponseUtils.returnJson(response, JSON.toJSONString(abstractJsonObject));
+        } catch (UnknownAccountException e) {
+            abstractJsonObject.setStatusObject(StatusHouse.USERID_STATUS_NO);
+            ResponseUtils.returnJson(response, JSON.toJSONString(abstractJsonObject));
+        }catch (IncorrectCredentialsException e) {
+            abstractJsonObject.setStatusObject(StatusHouse.USERPASSWORD_STATUS_NO);
+            ResponseUtils.returnJson(response, JSON.toJSONString(abstractJsonObject));
+        }
+
+    }
+ ```
+
+ > 3、dao
+ ```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.person.dao.sqlserver.login.LoginDao" >
+    <select id="checkUserName" resultType="int" parameterType="String">
+       SELECT COUNT(*) FROM "dbo"."USER" WHERE "USER"."USER_ID"=#{userid}
+    </select>
+    <select id="getUserPassword" resultType="String" parameterType="String">
+       SELECT "USER"."USER_PASSWORD" FROM "dbo"."USER" WHERE "USER"."USER_ID"=#{userId}
+    </select>
+</mapper>
+ ```
+
+ # 测试
+
+ 运行测试
