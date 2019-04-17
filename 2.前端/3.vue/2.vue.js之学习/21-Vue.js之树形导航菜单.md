@@ -14,166 +14,87 @@
 
 ```sql
 
+-- ----------------------------
+-- Table structure for MENU
+-- ----------------------------
 IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID(N'[dbo].[MENU]') AND type IN ('U'))
 	DROP TABLE [dbo].[MENU]
 GO
 
 CREATE TABLE [dbo].[MENU] (
-  [menuID] varchar(100) COLLATE Chinese_PRC_CI_AS  NOT NULL,
-  [menuParent] varchar(100) COLLATE Chinese_PRC_CI_AS  NULL,
-  [menuName] varchar(255) COLLATE Chinese_PRC_CI_AS  NULL,
+  [menuID] bigint  NOT NULL,
+  [menuParent] bigint  NOT NULL,
+  [menuName] varchar(255) COLLATE Chinese_PRC_CI_AS  NOT NULL,
   [menuUrl] varchar(255) COLLATE Chinese_PRC_CI_AS  NULL,
-  [menuIcon] varchar(100) COLLATE Chinese_PRC_CI_AS  NULL,
+  [menuIcon] varchar(255) COLLATE Chinese_PRC_CI_AS  NULL,
   [menuIs] int  NULL,
+  [menuCode] varchar(255) COLLATE Chinese_PRC_CI_AS  NULL,
   [createTime] datetime  NULL,
   [updateTime] datetime  NULL,
-  [lastLoginTime] datetime  NULL,
-  [menuCode] nvarchar(100) COLLATE Chinese_PRC_CI_AS  NULL
+  [lastLoginTime] datetime  NULL
 )
 GO
 
 ALTER TABLE [dbo].[MENU] SET (LOCK_ESCALATION = TABLE)
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'菜单主键',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuID'
+
+-- ----------------------------
+-- Records of MENU
+-- ----------------------------
+INSERT INTO [dbo].[MENU]  VALUES (N'1', N'0', N'系统管理', N'', N'iconfont icon-xitongshezhi', N'1', N'', N'2019-04-17 15:41:11.000', N'2019-04-17 15:41:14.000', N'2019-04-17 15:41:16.000')
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'父节点',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuParent'
+INSERT INTO [dbo].[MENU]  VALUES (N'2', N'1', N'用户管理', N'@/components/use/UserContainers', N'iconfont icon-yonghuguanli', N'0', N'UserContainers', N'2019-04-17 15:41:49.000', N'2019-04-17 15:41:51.000', N'2019-04-17 15:41:54.000')
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'菜单名',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuName'
+INSERT INTO [dbo].[MENU]  VALUES (N'3', N'1', N'权限管理', N'@/components/permissions/PermissionsContainers', N'iconfont icon-quanxianguanli', N'0', N'PermissionsContainers', N'2019-04-17 15:42:26.000', N'2019-04-17 15:42:29.000', N'2019-04-17 15:42:31.000')
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'菜单地址',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuUrl'
+INSERT INTO [dbo].[MENU]  VALUES (N'4', N'1', N'菜单管理', N'@/components/menu/MenuContainers', N'iconfont icon-caidanguanli_', N'0', N'MenuContainers', N'2019-04-17 15:43:02.000', N'2019-04-17 15:43:04.000', N'2019-04-17 15:43:06.000')
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'图标',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuIcon'
+INSERT INTO [dbo].[MENU]  VALUES (N'5', N'0', N'业务管理', N'', N'iconfont icon-xitongyewuguanli', N'1', N'', N'2019-04-17 15:56:53.000', N'2019-04-17 15:56:55.000', N'2019-04-17 15:56:57.000')
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'是否菜单 1:菜单 0:模块',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuIs'
+INSERT INTO [dbo].[MENU]  VALUES (N'6', N'5', N'制作管理', N'', N'iconfont icon-xiangmushenbao', N'1', N'', N'2019-04-17 15:57:17.000', N'2019-04-17 15:57:19.000', N'2019-04-17 15:57:21.000')
 GO
 
-EXEC sp_addextendedproperty
-'MS_Description', N'创建时间',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'createTime'
-GO
-
-EXEC sp_addextendedproperty
-'MS_Description', N'更新时间',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'updateTime'
-GO
-
-EXEC sp_addextendedproperty
-'MS_Description', N'最后登录时间',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'lastLoginTime'
-GO
-
-EXEC sp_addextendedproperty
-'MS_Description', N'模块代号',
-'SCHEMA', N'dbo',
-'TABLE', N'MENU',
-'COLUMN', N'menuCode'
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'1', N'0', N'系统管理', NULL, N'iconfont icon-xitongshezhi', N'1', N'2019-04-17 11:07:36.000', N'2019-04-17 11:07:39.000', N'2019-04-17 11:07:42.000', N'')
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'2', N'1', N'用户管理', N'@/components/use/UserContainers', N'iconfont icon-yonghuguanli', N'0', N'2019-04-17 11:09:01.000', N'2019-04-17 11:09:03.000', N'2019-04-17 11:09:06.000', N'UserContainers')
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'3', N'1', N'权限管理', N'@/components/permissions/PermissionsContainers', N'iconfont icon-quanxianguanli', N'0', N'2019-04-17 11:11:00.000', N'2019-04-17 11:11:02.000', N'2019-04-17 11:11:04.000', N'PermissionsContainers')
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'4', N'1', N'菜单管理', N'@/components/menu/MenuContainers', N'iconfont icon-caidanguanli_', N'0', N'2019-04-17 11:12:33.000', N'2019-04-17 11:12:31.000', N'2019-04-17 11:12:28.000', N'MenuContainers')
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'5', N'0', N'整合性系统', NULL, N'iconfont icon-mokuaiguanli', N'1', N'2019-04-17 11:13:57.000', N'2019-04-17 11:14:00.000', N'2019-04-17 11:14:02.000', NULL)
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'6', N'5', N'生产制作管理', NULL, NULL, N'1', N'2019-04-17 11:15:00.000', N'2019-04-17 11:15:03.000', N'2019-04-17 11:15:06.000', N'')
-GO
-
-INSERT INTO [dbo].[MENU]  VALUES (N'7', N'6', N'生产进度', NULL, NULL, N'0', N'2019-04-17 11:16:08.000', N'2019-04-17 11:16:12.000', N'2019-04-17 11:16:14.000', NULL)
+INSERT INTO [dbo].[MENU]  VALUES (N'7', N'6', N'生产进度', N'@/components/menu/MenuContainers1', N'iconfont icon-icon-p_mrpjinduzhuizong', N'0', N'MenuContainers1', N'2019-04-17 15:58:07.000', N'2019-04-17 15:58:10.000', N'2019-04-17 15:58:12.000')
 GO
 
 
-ALTER TABLE [dbo].[MENU] ADD CONSTRAINT [PK__MENU__6C4729791920BF5C] PRIMARY KEY CLUSTERED ([menuID])
+-- ----------------------------
+-- Primary Key structure for table MENU
+-- ----------------------------
+ALTER TABLE [dbo].[MENU] ADD CONSTRAINT [PK__MENU__3B407E942F10007B] PRIMARY KEY CLUSTERED ([menuID])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
 
+
 ```
 
-> 2、vue的主容器
+> 2、vue引用
 
 ```html
-<template>
-  <div class="hello">
-    <!--左侧菜单组件-->
-    <el-row class="tac">
-      <el-col :span="12">
-        <el-menu class="el-menu-vertical-demo" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b"
-          unique-opened default-active="2">
-          <menuu :menu="menu"></menuu>
-        </el-menu>
-      </el-col>
-    </el-row>
-  </div>
-</template>
+ <menuu :menu="menu"></menuu>
+```
 
-<script>
-  import menuu from './treeMenu/threeMenu'
-  export default {
-    name: 'HelloWorld',
-    data() {
-      return {
-        menu: [],
-        defaultProps: {
-          children: 'children',
-          label: 'menuName'
-        }
+```js
+import menuu from '@/components/home/threeMenu'
 
-      }
-    },
-    components: {
-      menuu
-    },
-    created: function () {
-      this.getJson();
-    },
-    methods: {
-      getJson() {//获取后台json数据
-        const that=this;
+```
+
+```js
+components: {
+      menuu,
+    }
+```
+
+```js
+getJson() { //获取后台json数据
+        const that = this;
         this.axios({
             method: "get",
             headers: {
@@ -183,78 +104,21 @@ GO
 
           })
           .then((response) => {
-
-            that.menu=that.toTreeData(response.data.rows)
-          
+            let dataJson = that.treeData(response.data.rows, 'menuID', 'menuParent', 'children');
+            console.log(dataJson);
+            that.menu = dataJson;
           }).catch((response) => {
             console.log(response);
           })
       },
-      toTreeData(data) {//行级json的数据改成树形结构
-        let attr = { 
-          menuId: 'menuId',
-          menuParent: 'menuParent',
-          menuName: 'menuName',
-          menuUrl: 'menuUrl',
-          menuIcon: 'menuIcon',
-          menuCode: 'menuCode',
-          rootId: 0
-        };
-        let tree = [];
-        let resData = data;
-        for (let i = 0; i < resData.length; i++) {
-          if (resData[i].menuParent === attr.rootId) {
-            let obj = {
-              menuId: resData[i][attr.menuId],
-              menuName: resData[i][attr.menuName],
-              menuUrl: resData[i][attr.menuUrl],
-              menuIcon: resData[i][attr.menuIcon],
-              menuCode: resData[i][attr.menuCode],
-              children: []
-            };
-            tree.push(obj);
-            resData.splice(i, 1);
-            i--;
-          }
-        }
-        var run = function (treeArrs) {
-          if (resData.length > 0) {
-            for (let i = 0; i < treeArrs.length; i++) {
-              for (let j = 0; j < resData.length; j++) {
-                if (treeArrs[i].menuId === resData[j][attr.menuParent]) {
-                  let obj = {
-                    menuId: resData[j][attr.menuId],
-                    menuName: resData[j][attr.menuName],
-                    menuUrl: resData[j][attr.menuUrl],
-                    menuIcon: resData[j][attr.menuIcon],
-                    menuCode: resData[j][attr.menuCode],
-                    children: []
-                  };
-                  treeArrs[i].children.push(obj);
-                  resData.splice(j, 1);
-                  j--;
-                }
-              }
-              run(treeArrs[i].children);
-            }
-          }
-        };
-        run(tree);
-        return tree;
+      treeData(source, id, parentId, children) {
+        let cloneData = JSON.parse(JSON.stringify(source))
+        return cloneData.filter(father => {
+          let branchArr = cloneData.filter(child => father[id] == child[parentId]);
+          branchArr.length > 0 ? father[children] = branchArr : ''
+          return father[parentId] == 0
+        })
       }
-    },
-    mounted: function () {
-      // this.handleNodeClick();
-    }
-  }
-
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
-
 ```
 
 
@@ -262,38 +126,35 @@ GO
 
 ```html
 <template>
-  <div>
-      <!-- 循环数据；数据menuList通过props传递 -->
-      <template v-for="list in menu" >  
-        <el-submenu v-if="list.children.length!=0" :index="String(list.menuId)"  > 
-          <template slot="title" >
-            <i class="el-icon-menu"></i>
-            {{ list.menuName}}
-          </template>
-          <!-- 当有子集数据再次使用这个模板，:menuList通过props传递 -->
-          <Menu :menu="list.children" v-if="list.children.length!=0"></Menu> 
-        </el-submenu>
-        <el-menu-item v-else :index="String(list.menuId)">
-            <i class="el-icon-location"></i>
-         <span>{{list.menuName}}</span>
-        </el-menu-item>
-      </template>
-    </div>
+  <el-menu class="el-menu-vertical-demo" default-active="1" unique-opened>
+    <template v-for="list in menu">
+      <el-submenu v-if="list.children" :index="String(list.menuID)" :key="list.menuID">
+        <template slot="title">
+          <i :class="list.menuIcon"></i>
+          <span>{{list.menuName}}</span>
+        </template>
+        <el-menu-item-group>
+          <Menu :menu="list.children" v-if="list.children"></Menu>
+        </el-menu-item-group>
+      </el-submenu>
+      <el-menu-item v-else :index="String(list.menuID)" :key="list.menuID">
+        <i :class="list.menuIcon"></i><span>{{list.menuName}}</span>
+      </el-menu-item>
+    </template>
+  </el-menu>
 </template>
 
 <script>
   export default {
-    name: 'Menu', 
+    name: 'Menu',
     props: {
-      menu:null
+      menu: null
     },
     data() {
       return {}
     },
-    methods: {
-    }
+    methods: {}
   }
-
 </script>
 
 <style>
