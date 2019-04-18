@@ -78,7 +78,7 @@ GO
 > 2、vue引用
 
 ```html
- <menuu :menu="menu"></menuu>
+<ThreeMenu :menu="menu" @three="three"></ThreeMenu>
 ```
 
 ```js
@@ -89,7 +89,14 @@ import menuu from '@/components/home/threeMenu'
 ```js
 components: {
       menuu,
+    },
+    methods: {
+three(val) { //左边点击切换内容
+        console.log(val);
+      },
     }
+
+    
 ```
 
 ```js
@@ -126,7 +133,7 @@ getJson() { //获取后台json数据
 
 ```html
 <template>
-  <el-menu class="el-menu-vertical-demo" default-active="1" unique-opened>
+  <el-menu class="el-menu-vertical-demo" default-active="1" unique-opened @select="handleSelect">
     <template v-for="list in menu">
       <el-submenu v-if="list.children" :index="String(list.menuID)" :key="list.menuID">
         <template slot="title">
@@ -134,10 +141,10 @@ getJson() { //获取后台json数据
           <span>{{list.menuName}}</span>
         </template>
         <el-menu-item-group>
-          <Menu :menu="list.children" v-if="list.children"></Menu>
+          <Menu :menu="list.children" v-if="list.children" @three="(menuCode)=>$emit('three',menuCode)"></Menu>
         </el-menu-item-group>
       </el-submenu>
-      <el-menu-item v-else :index="String(list.menuID)" :key="list.menuID">
+      <el-menu-item v-else :index="String(list.menuCode)" :key="list.menuID">
         <i :class="list.menuIcon"></i><span>{{list.menuName}}</span>
       </el-menu-item>
     </template>
@@ -151,9 +158,23 @@ getJson() { //获取后台json数据
       menu: null
     },
     data() {
-      return {}
+      return {
+        menucode: ''
+      }
     },
-    methods: {}
+    watch: {
+      menucode: function (newVal, oldVal) {
+        if (newVal != oldVal) {
+          this.$emit('three', this.menucode);
+        }
+      }
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        this.menucode = key;
+      }
+
+    }
   }
 </script>
 
