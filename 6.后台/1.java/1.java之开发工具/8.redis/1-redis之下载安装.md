@@ -45,6 +45,14 @@ redis-server --service-install redis.windows.conf --loglevel verbose
 
 ![](image/1-1.png)
 
+```
+cmd命令启动
+
+redis-server --service-start #启动
+
+redis-server --service-stop  #停止
+```
+
 - 2、客户端连接（一个cmd窗口）
 
 ```
