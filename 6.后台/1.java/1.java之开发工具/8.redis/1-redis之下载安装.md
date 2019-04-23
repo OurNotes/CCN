@@ -11,7 +11,7 @@
 
 # 2、配置
 
->修改redis.windows.conf
+>1、修改redis.windows.conf
 ```c
 daemonize yes
 
@@ -20,22 +20,34 @@ port 6666
 timeout 300
 ```
 
+>2、配置环境变量
+
+```
+path后添加：;C:\Software\redis
+```
+
+>3、注册redis服务
+
+- 管理员身份运行cmd
+
+```
+C:\Software\redis
+
+redis-server --service-install redis.windows.conf --loglevel verbose
+ 
+```
+
 # 3、测试
 
 >cmd中运行
 
-- 1、启动服务（一个cmd窗口，不能关）
-```
-cd C:\Software\redis
+- 1、启动服务
 
-redis-server.exe redis.windows.conf
-```
+![](image/1-1.png)
 
 - 2、客户端连接（一个cmd窗口）
 
 ```
-cd C:\Software\redis
-
 redis-cli.exe -h 127.0.0.1 -p 6666
 
 set myKey abc
