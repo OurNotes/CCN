@@ -186,9 +186,10 @@ public class xxx extends SpringBootServletInitializer
 - 重构函数
 
 ```java
-protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(xxx.class);
-	}
+@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(WebApplication.class);
+    }
 ```
 
 
