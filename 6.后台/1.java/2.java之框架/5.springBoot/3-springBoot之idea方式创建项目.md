@@ -180,6 +180,7 @@ public class RouterFunctionConfiguration {
 - 类继承
 
 ```java
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class xxx extends SpringBootServletInitializer
 ```
 
