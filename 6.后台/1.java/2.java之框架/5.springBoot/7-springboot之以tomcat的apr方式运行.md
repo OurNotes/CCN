@@ -8,6 +8,15 @@
 
 # <a name="springBoot-01" href="#" >创建tomcat的配置类</a>
 
+>去掉总的pom.xml
+```xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+```
+
 > TomcatConfig
 ```java
 @Configuration
