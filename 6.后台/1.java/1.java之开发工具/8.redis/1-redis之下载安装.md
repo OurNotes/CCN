@@ -62,3 +62,9 @@ set myKey abc
 
 get myKey
 ```
+
+>也可以使用软件链接测试
+
+[![](https://img.shields.io/badge/百度云-RedisDesktopManager-green.svg "百度云 RedisDesktopManager")](https://pan.baidu.com/s/1b1lGG7umXfaB4dxk8sVpBQ)
+
+提取码：4pmw
