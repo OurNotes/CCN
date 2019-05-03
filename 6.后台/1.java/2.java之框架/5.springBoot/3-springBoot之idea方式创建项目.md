@@ -16,8 +16,6 @@
 
 ![](image/5-3.png)
 
-![](image/5-4.png)
-
 ![](image/5-5.png)
 
 >2、删除
