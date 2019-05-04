@@ -7,7 +7,7 @@
 
 >注意：要用tomcat运行
 
->还有配合redis的集群配置使用
+>还有配合redis的集群配置使用[![](https://img.shields.io/badge/参考文献-redis之集群配置-yellow.svg "参考文献 redis之集群配置")](https://github.com/OurNotes/CCN/blob/master/6.%E5%90%8E%E5%8F%B0/1.java/1.java%E4%B9%8B%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/8.redis/2-redis%E4%B9%8B%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE.md)
 
 ***
 
