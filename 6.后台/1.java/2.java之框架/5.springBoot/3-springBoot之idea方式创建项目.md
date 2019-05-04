@@ -178,7 +178,7 @@ public class RouterFunctionConfiguration {
 - 类继承
 
 ```java
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages ={"net.person.test.*"})
 public class xxx extends SpringBootServletInitializer
 ```
 
