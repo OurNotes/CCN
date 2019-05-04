@@ -37,6 +37,8 @@ redis-server --service-install redis.windows.conf --loglevel verbose
  
 ```
 
+>删除注册redis服务：sc delete Redis
+
 # 3、测试
 
 >cmd中运行
