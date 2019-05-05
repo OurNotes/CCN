@@ -65,37 +65,37 @@ cluster-node-timeout 15000
 > 3、cmd都进入每个文件夹,都输入命令。
 
 ```
-C:\Software\redis\redis1
+cd C:\Software\redis\redis1
 
 gem install redis
 ```
 
 ```
-C:\Software\redis\redis2
+cd C:\Software\redis\redis2
 
 gem install redis
 ```
 
 ```
-C:\Software\redis\redis3
+cd C:\Software\redis\redis3
 
 gem install redis
 ```
 
 ```
-C:\Software\redis\redis4
+cd C:\Software\redis\redis4
 
 gem install redis
 ```
 
 ```
-C:\Software\redis\redis5
+cd C:\Software\redis\redis5
 
 gem install redis
 ```
 
 ```
-C:\Software\redis\redis6
+cd C:\Software\redis\redis6
 
 gem install redis
 ```
@@ -103,42 +103,42 @@ gem install redis
 > 4、给每个redis注册服务
 
 ```
-C:\Software\redis\redis1
+cd C:\Software\redis\redis1
 
 redis-server --service-install redis.windows.conf --service-name redis1 --port 6666 --loglevel verbose
 
 ```
 
 ```
-C:\Software\redis\redis2
+cd C:\Software\redis\redis2
 
 redis-server --service-install redis.windows.conf --service-name redis2 --port 6667 --loglevel verbose
 
 ```
 
 ```
-C:\Software\redis\redis3
+cd C:\Software\redis\redis3
 
 redis-server --service-install redis.windows.conf --service-name redis3 --port 6668 --loglevel verbose
 
 ```
 
 ```
-C:\Software\redis\redis4
+cd C:\Software\redis\redis4
 
 redis-server --service-install redis.windows.conf --service-name redis4 --port 6669 --loglevel verbose
 
 ```
 
 ```
-C:\Software\redis\redis5
+cd C:\Software\redis\redis5
 
 redis-server --service-install redis.windows.conf --service-name redis5 --port 6670 --loglevel verbose
 
 ```
 
 ```
-C:\Software\redis\redis6
+cd C:\Software\redis\redis6
 
 redis-server --service-install redis.windows.conf --service-name redis6 --port 6671 --loglevel verbose
 
@@ -147,7 +147,7 @@ redis-server --service-install redis.windows.conf --service-name redis6 --port 6
 > 5、安装集群脚本
 
 ```
-C:\Software\redis
+cd C:\Software\redis
 
 ruby redis-trib.rb create --replicas 1 127.0.0.1:6666 127.0.0.1:6667 127.0.0.1:6668 127.0.0.1:6669 127.0.0.1:6670 127.0.0.1:6671
 
