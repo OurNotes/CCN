@@ -37,7 +37,7 @@
 
 ![](image/2-2.png)
 
-- 3、解压rubygems运行其下的exe文件
+- 3、解压rubygems运行其下的setup.rb文件
 
 - 4、将redis-trib.rb文件放到redis的文件夹下
 
