@@ -88,7 +88,7 @@ public class OracleConfig {
     public SqlSessionFactory sqlSessionFactory(@Qualifier("masterDataSource") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/*Mapper.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mybatis/*Mapper.xml"));
         return bean.getObject();
     }
 
@@ -119,7 +119,7 @@ public class SqlServerConfig {
     public SqlSessionFactory sqlSessionFactory(@Qualifier("slaveDataSource") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/*Mapper.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mybatis/*Mapper.xml"));
         return bean.getObject();
     }
 
@@ -152,7 +152,7 @@ spring.datasource.sqlserver.connectionProperties= 'druid.stat.mergeSql=true;drui
 
 
 #mybatis
-mybatis.mapper-locations=classpath:mybatis/*Mapper.xml
+mybatis.mapper-locations=classpath*:mybatis/*Mapper.xml
 ```
 
 - 三、*Mapper.xml
