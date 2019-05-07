@@ -96,6 +96,35 @@ import VueAxios from 'vue-axios'
 }
 ```
 
+>访问后台的
+
+```js
+const that = this;
+        this.axios({
+            method: "post",
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            transformRequest: [function (data) {
+              data = JSON.stringify(data)
+              return data
+            }],
+            url: 'http://localhost:8089/user/getUserPage',
+            data: {
+              //start: that.start,
+              //end: that.end
+            }
+          })
+          .then((response) => {
+            //let userJson = JSON.parse(JSON.stringify(response.data.rows));
+            //that.userTableData = userJson;
+            //that.total = response.data.total;
+
+          }).catch((response) => {
+            console.log(response);
+          });
+```
+
 # <a name="vue.js-03" href="#" >看效果</a>
 
 ![](image/7-4.png)
