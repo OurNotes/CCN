@@ -83,7 +83,21 @@ import XLSX from 'xlsx';
 import FileSaver from 'file-saver'
 ```
 
->2、写方法
+>2、引用js，整个文件夹放到src下
+[![](https://img.shields.io/badge/百度云-插件-green.svg "百度云 插件")](https://pan.baidu.com/s/151Gnqi7mRl6qlwUWxYZtVg)
+
+密钥：j41u
+
+>3、修改build\webpack.base.conf.js配置文件
+
+![](image/15-1.png)
+
+```
+'vendor': path.resolve(__dirname, '../src/vendor'),
+```
+
+> 4、写方法
+
 ```js
   formatJson(filterVal, jsonData) {
         return jsonData.map(v => filterVal.map(j => v[j]))
@@ -102,7 +116,7 @@ import FileSaver from 'file-saver'
       },
 ```
 
-> 3、引用
+> 4、引用
 
 ```js
 this.export2Excel()
