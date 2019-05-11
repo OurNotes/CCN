@@ -39,13 +39,13 @@
         </dependency>
 ```
 
->JedisClusterConfig
+>RedisConfig
 
 ```java
 @Configuration
 @ConditionalOnClass({JedisCluster.class})
 @EnableConfigurationProperties(RedisProperties.class)
-public class JedisClusterConfig {
+public class RedisConfig {
     @Autowired
     private RedisProperties redisProperties;
 
