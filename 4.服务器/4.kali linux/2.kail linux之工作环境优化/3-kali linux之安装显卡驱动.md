@@ -25,7 +25,7 @@ reboot
 
 [![](https://img.shields.io/badge/官网-NVIDIA-red.svg "官网 NVIDIA")](https://www.nvidia.cn/Download/index.aspx?lang=cn)
 
-![](image/3-1)
+![](image/3-1.png)
 
 - 安装
 
