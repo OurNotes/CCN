@@ -22,7 +22,7 @@ mkdir /usr/local/java
 
 cd /usr/local
 
-chown 777 java
+chmod 0777 java
 
 cd java
 ```
@@ -35,7 +35,7 @@ cd java
  
  mv jdk-1.8.0_144 jdk
  
- chown 777 jdk
+ chmod 0777 jdk
 ```
 
 # <a name="Linux-03" href="#" >设置环境变量</a>
