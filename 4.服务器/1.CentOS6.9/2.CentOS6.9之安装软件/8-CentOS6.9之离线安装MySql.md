@@ -16,7 +16,7 @@ rpm -qa | grep mysql | xargs rpm -e --nodeps 文件名 #卸载mysql
 ```
 # <a name="Linux-02" href="#" >下载安装mysql(CentOS 6)</a>
 ### 1、下载
-[![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/repo/yum/)
+[![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/mysql/5.5.html)
 
 ```shell
 uname -r #查看系统版本
