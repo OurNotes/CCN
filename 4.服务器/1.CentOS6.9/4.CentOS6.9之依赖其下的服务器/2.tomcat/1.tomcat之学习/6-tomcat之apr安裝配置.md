@@ -16,6 +16,9 @@ yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel fr
 [![](https://img.shields.io/badge/pcre-8.36-green.svg "pcre 8.36")](https://pan.baidu.com/s/1JHv_Hl-8SPWbpghayqgZyw)
 
 ```shell
+
+rpm -qa pcre
+
 cd ~ 
 
 cd /usr/local
@@ -36,6 +39,7 @@ cd ..
 [![](https://img.shields.io/badge/zlib-1.2.8-green.svg "zlib 1.2.8")](https://pan.baidu.com/s/1fifNwLYSFjMmfoC2bPjuvg)
 
 ```shell
+rpm -qa zlib
 cd ~ 
 
 cd /usr/local
@@ -57,6 +61,8 @@ cd ..
 [![](https://img.shields.io/badge/openssl-1.0.1-green.svg "openssl 1.0.1")](https://pan.baidu.com/s/1byGEoY7wTBfVchWT69djeA)
 
 ```shell
+rpm -qa openssl
+
 cd ~ 
 
 cd /usr/local
