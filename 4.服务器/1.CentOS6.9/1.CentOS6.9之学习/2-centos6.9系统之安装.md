@@ -4,6 +4,9 @@
     - 1.2、[刻录系统到u盘](#linux-01-02)
     - 1.3、[安装系统](#linux-01-03)
     - 1.4、[配置ip地址](#linux-01-04)
+
+
+
 - 2、[虚拟机安装](#linux-02)
     - 2.1、[下载安装虚拟机教程](#linux-02-01)
     - 2.2、[在虚拟机上安装linux系统的教程](#linux-02-02)
@@ -30,10 +33,41 @@
 
 ### <a name="Linux-01-02" href="#" >刻录系统到u盘</a>
 
+方式一：
+> 使用Win32DiskImager软件刻录
 [![](https://img.shields.io/badge/官网-Win32DiskImager-red.svg "官网 Win32DiskImager")](https://sourceforge.net/projects/win32diskimager/files/latest/download)
 
-
 ![](image/2-6.png)
+
+方式二：
+>使用UltraISO软件刻录
+[![](https://img.shields.io/badge/百度云-UltraISO-green.svg "百度云 UltraISO")](https://pan.baidu.com/s/1G7f3E1swUIWuKSeuPC6TDg)
+
+密钥：keox
+
+- 1、以管理员身份运行软件
+- 2、打开文件
+
+![](image/2-20.png)
+
+- 3、刻录
+
+![](image/2-21.png)
+
+![](image/2-22.png)
+
+- 4、修改配置文件
+
+修改syslinux/syslinux.cfg ,注解掉default vesamenu.c32，替换成
+
+```c
+default linux timeout 600 label linux kernel vmlinuz append initrd=initrd.img
+```
+
+替换配置文件syslinux/vesamenu.c32
+[![](https://img.shields.io/badge/百度云-vesamenu.c32-green.svg "百度云 vesamenu.c32")](https://pan.baidu.com/s/1mjGn5V7-xH7YHuyJ4u_zrw)
+
+密钥：yfun
 
 ### <a name="Linux-01-03" href="#" >安装系统</a>
 
