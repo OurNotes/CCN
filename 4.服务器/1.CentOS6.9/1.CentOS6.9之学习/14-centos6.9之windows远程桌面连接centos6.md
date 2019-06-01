@@ -1,12 +1,12 @@
 本页目录：
-- 1、下载安装源
-- 2、配置文件
-- 3、设置防火墙
-- 4、测试
+- 1、[下载安装源](#Linux-01)
+- 2、[配置文件](#Linux-02)
+- 3、[设置防火墙](#Linux-03)
+- 4、[测试](#Linux-04)
 
 ***
 
-# 下载安装源
+# <a name="Linux-01" href="#" >下载安装源</a>
 ```shell
 su root   # 使用管理员用户进行安装
 
@@ -21,7 +21,7 @@ yum install xrdp vnc-server
 
 ```
 
-# 配置文件
+# <a name="Linux-02" href="#" >配置文件</a>
 >1、配置vncservers 
 ```shell
 vim /etc/sysconfig/vncservers
@@ -72,7 +72,7 @@ service xrdp stop
 service xrdp start
 ```
 
-# 设置防火墙
+# <a name="Linux-03" href="#" >设置防火墙</a>
 
 ```shell
 vim /etc/sysconfig/iptables
@@ -99,6 +99,6 @@ chkconfig vncserver on
 
 ```
 
-# 测试
+# <a name="Linux-04" href="#" >测试</a>
 
 > 用windows远程桌面远程linux
