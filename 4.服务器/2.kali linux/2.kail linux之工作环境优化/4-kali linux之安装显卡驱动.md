@@ -25,7 +25,7 @@ reboot
 
 [![](https://img.shields.io/badge/官网-NVIDIA-red.svg "官网 NVIDIA")](https://www.nvidia.cn/Download/index.aspx?lang=cn)
 
-![](image/3-1.png)
+![](image/4-1.png)
 
 - 安装
 
@@ -40,9 +40,9 @@ sh ./软件名.run
 
 ```
 
-![](image/3-2.png)
+![](image/4-2.png)
 
-![](image/3-3.png)
+![](image/4-3.png)
 
 - 编译nvidia驱动至内核
 
@@ -54,9 +54,9 @@ ls #查看内核名
 
 ```
 
-![](image/3-4.png)
+![](image/4-4.png)
 
-![](image/3-5.png)
+![](image/4-5.png)
 
 
 - 安装配置
