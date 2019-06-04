@@ -31,6 +31,19 @@ deb-src http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
 #重庆大学
 deb http://http.kali.org/kali kali-rolling main non-free contrib
 deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+
+# 163源
+deb http://mirrors.163.com/debian/ squeeze main non-free contrib
+deb http://mirrors.163.com/debian/ squeeze-updates main non-free contrib
+deb http://mirrors.163.com/debian/ squeeze-lts main non-free contrib
+deb-src http://mirrors.163.com/debian/ squeeze main non-free contrib
+deb-src http://mirrors.163.com/debian/ squeeze-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ squeeze-lts main non-free contrib
+deb http://mirrors.163.com/debian-security/ squeeze/updates main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ squeeze/updates main non-free contrib
+deb http://mirrors.163.com/debian-backports/ squeeze-backports main contrib non-free
+deb-src http://mirrors.163.com/debian-backports/ squeeze-backports main contrib non-free
+
 ```
 
 # <a name="kail-linux-02" href="#" >更新升级</a>
