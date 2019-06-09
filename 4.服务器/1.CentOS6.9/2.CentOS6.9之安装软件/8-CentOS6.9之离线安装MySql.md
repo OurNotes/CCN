@@ -15,13 +15,22 @@ rpm -qa mysql #看是否安装过mysql
 rpm -qa | grep mysql | xargs rpm -e --nodeps 文件名 #卸载mysql
 ```
 # <a name="Linux-02" href="#" >下载安装mysql(CentOS 6)</a>
-### 1、下载
-[![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/mysql/5.5.html)
+
+### 1、下载community-release
+[![](https://img.shields.io/badge/官网-community--release-red.svg "官网 community-release")](https://dev.mysql.com/downloads/repo/yum/)
 
 ```shell
 uname -r #查看系统版本
 ```
 ![](image/8-1.png)
+
+### 1、下载mysql客户服务端RPM
+[![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://dev.mysql.com/downloads/mysql/)
+
+![](image/8-0.png)
+
+
+
 ### 2、上传
 ```shell
 su #切换到root，输入密码进入
@@ -37,16 +46,16 @@ chmod  0777 /usr/local #给目录写入权限
 ls 
 
 #安装发行包
-yum localinstall mysql80-community-release-el6-1.noarch.rpm
+yum localinstall mysql80-community-release*
 
 #检查MySQL Yum存储库是否已成功添加
 yum repolist enabled | grep "mysql.*-community.*" 
 
 #安装MySQL
-yum install mysql-community-common
-yum install mysql-community-libs
-yum install mysql-community-client
-yum install mysql-community-server
+yum install mysql-community-common*
+yum install mysql-community-libs*
+yum install mysql-community-client*
+yum install mysql-community-server*
 
 service mysqld start #启动MySQL服务器
 
