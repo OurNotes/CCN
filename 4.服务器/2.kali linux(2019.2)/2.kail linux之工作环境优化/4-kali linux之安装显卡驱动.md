@@ -48,7 +48,7 @@ sh ./软件名.run
 
 ```
 
-/lib/modules/
+cd /lib/modules/
 
 ls #查看内核名
 

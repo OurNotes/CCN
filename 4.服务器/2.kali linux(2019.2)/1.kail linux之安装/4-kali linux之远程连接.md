@@ -1,10 +1,10 @@
 总操作流程：
-- 1、配置
-- 2、测试
+- 1、[修改SSH服务默认配置](#kail-linux-01)
+- 2、[测试](#kail-linux-02)
 
 ***
 
-# 配置
+# <a name="kail-linux-01" href="#" >修改SSH服务默认配置</a>
 
 > 1、ssh的配置
 
@@ -33,6 +33,8 @@ PasswordAuthentication yes
 service ssh restart
 ```
 
-# 测试
+# <a name="kail-linux-02" href="#" >测试</a>
 
-ssh远端连接测试
+使用Xshell5远程连接
+
+
