@@ -77,8 +77,8 @@ deb http://mirror.nus.edu.sg/kali/kali-security kali/updates main contrib non-fr
 deb-src http://mirror.nus.edu.sg/kali/kali-security kali/updates main contrib non-free
 
 #Kali-Security
-#deb http://security.kali.org/ kali/updates main contrib non-free
-#deb-src http://security.kali.org/ kali/updates main contrib non-free
+deb http://security.kali.org/ kali/updates main contrib non-free
+deb-src http://security.kali.org/ kali/updates main contrib non-free
 
 
 ```
