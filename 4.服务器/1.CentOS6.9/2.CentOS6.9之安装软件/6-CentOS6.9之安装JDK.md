@@ -23,8 +23,6 @@ mkdir /usr/local/java
 cd /usr/local
 
 chmod 0777 java
-
-cd java
 ```
 - 2、配置
 
@@ -36,6 +34,10 @@ cd java
  mv jdk1.8.0_191 jdk
  
  chmod 0777 jdk
+
+cp -Rf jdk java
+
+rm -rf jdk* 
 ```
 
 # <a name="Linux-03" href="#" >设置环境变量</a>
