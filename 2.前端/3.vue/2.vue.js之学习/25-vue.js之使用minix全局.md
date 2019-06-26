@@ -1,10 +1,43 @@
 总操作流程：
-- 1、[写程序](#vue.js-01)
-- 2、[测试](#vue.js-02)
+- 1、创建minix.js
+- 2、创建测试代码
+- 3、测试
 
 ***
 
-# <a name="vue.js-01" href="#" >写程序</a>
+# 创建minix.js
+
+> 1、创建src\minix\minix.js
+```js
+import first from '@/components/first';
+import second from '@/components/second';
+import third from '@/components/third';
+// src/mixins/index.js
+let mixin = {
+
+    data() {
+        return {};
+    },
+    components: {
+        first,
+        second,
+        third
+    },
+    methods: {
+
+    }
+};
+export default mixin;
+```
+>2、配置
+
+```js
+import mixin from './minix/minix.js'
+
+Vue.mixin(mixin)
+```
+
+# 创建测试代码
 
 > 1、修改路由
 ```js
@@ -38,9 +71,8 @@ export default new Router({
 </template>
 
 <script>
-import first from '@/components/first';
-import second from '@/components/second';
-import third from '@/components/third';
+
+import mixin from '@/minix/minix';
 export default {
         data () {
              return {
@@ -50,11 +82,7 @@ export default {
               currentView: 'first',
              };
          },
-         components: { 
-             first,
-             second,
-             third
-         },
+         mixins: [mixin],
          methods: {
              toggleTabs (tabText) {
                  this.currentView = tabText;
@@ -117,6 +145,4 @@ export default {
 </style>
 ```
 
-# <a name="vue.js-02" href="#" >测试</a>
-
-![](image/14-1.gif)
+# 测试
