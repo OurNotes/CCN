@@ -29,7 +29,7 @@ let mixin = {
 };
 export default mixin;
 ```
->2、配置
+>2、配置main.js
 
 ```js
 import mixin from './minix/minix.js'
