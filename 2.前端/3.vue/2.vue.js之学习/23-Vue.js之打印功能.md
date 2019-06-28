@@ -12,13 +12,13 @@
 
 # <a name="vue.js-02" href="#" >配置</a>
 
-> 1、将下载好的文件夹放到src文件夹下
+> 1、将下载好的文件夹放到static\print文件夹下
 
 > 2、写程序
 
 - main.js写
 ```js
-import Print from '@/plugs/print'
+import Print from '../static/print/print.js'
 Vue.use(Print)
 ```
 

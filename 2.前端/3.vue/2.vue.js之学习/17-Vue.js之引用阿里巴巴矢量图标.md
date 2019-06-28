@@ -21,9 +21,9 @@
 
 > 1、导入文件
 
-- 将下载好的文件放到：assets\iconfont下
+- 将下载好的文件放到：static\icon下
 
-- 在main.js引用：import './assets/iconfont/iconfont.css'
+- 在main.js引用：import '../static/icon/iconfont.css'
 
 
 > 2、写代码

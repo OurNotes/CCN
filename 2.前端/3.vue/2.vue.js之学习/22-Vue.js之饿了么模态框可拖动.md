@@ -11,7 +11,7 @@
 
 # <a name="vue.js-01" href="#" >写js</a>
 
->directives.js
+>dialog_ectives.js
 
 ```js
 import Vue from 'vue';
@@ -101,7 +101,7 @@ Vue.directive('dialogDrag', { //属性名称dialogDrag，前面加v- 使用
 >main.js引用
 
 ```js
-import '../static/common/directives.js'
+import '../static/dialog/dialog_ectives.js'
 ```
 
 >模态框组件中引用

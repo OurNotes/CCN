@@ -32,9 +32,9 @@ export default mixin;
 >2、配置main.js
 
 ```js
-import mixin from './minix/minix.js'
+import GlobalImport from '../static/minix/GlobalImport.js'
 
-Vue.mixin(mixin)
+Vue.mixin(GlobalImport)
 ```
 
 # 创建测试代码
@@ -72,7 +72,7 @@ export default new Router({
 
 <script>
 
-import mixin from '@/minix/minix';
+import GlobalImport from '../../../static/minix/GlobalImport';
 export default {
         data () {
              return {
@@ -82,7 +82,7 @@ export default {
               currentView: 'first',
              };
          },
-         mixins: [mixin],
+         mixins: [GlobalImport],
          methods: {
              toggleTabs (tabText) {
                  this.currentView = tabText;
