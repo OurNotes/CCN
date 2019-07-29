@@ -63,6 +63,30 @@ void LED_Init(void);//初始化
 
 ```
 
+- main.c
+```c
+#include "sys.h"
+#include "delay.h"
+#include "usart.h"
+#include "led.h"
+int main(void)
+{
+delay_init(168); //初始化延时函数
+LED_Init(); //初始化 LED 端口
+/**下面是通过直接操作库函数的方式实现 IO 控制**/
+	while(1)
+	{
+		GPIO_ResetBits(GPIOF,GPIO_Pin_9); //LED0 对应引脚 GPIOF.9 拉低，亮 等同 LED0=0;
+		GPIO_SetBits(GPIOF,GPIO_Pin_10); //LED1 对应引脚 GPIOF.10 拉高，灭 等同 LED1=1;
+		delay_ms(500); //延时 500ms
+		GPIO_SetBits(GPIOF,GPIO_Pin_9); //LED0对应引脚 GPIOF.0拉高，灭 等同 LED0=1;
+		GPIO_ResetBits(GPIOF,GPIO_Pin_10); //LED1 对应引脚 GPIOF.10 拉低，亮 等同 LED1=0;
+		delay_ms(500); //延时 500ms
+	}
+}
+
+```
+
 ### <a name="STM-M4-02-02" href="#" >2、配置环境</a>
 - 导入文件
 
