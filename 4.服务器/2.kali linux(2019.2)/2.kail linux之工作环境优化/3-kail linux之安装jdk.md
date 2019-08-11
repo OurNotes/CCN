@@ -46,6 +46,10 @@ PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 export JAVA_HOME JRE_HOME CLASS_PATH PATH
 ```
 
+```shell
+source /etc/profile #让修改生效
+```
+
 > 3、通知系统java的位置
 
 ```shell
@@ -62,9 +66,7 @@ sudo update-alternatives --set javac /usr/local/java/jdk/bin/javac
 sudo update-alternatives --set javaws /usr/local/java/jdk/bin/javaws
 ```
 
-```shell
-source /etc/profile #让修改生效
-```
+
 
 # 测试
 
