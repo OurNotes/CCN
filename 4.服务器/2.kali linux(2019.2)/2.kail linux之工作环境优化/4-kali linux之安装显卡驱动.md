@@ -65,6 +65,8 @@ ls #查看内核名
 sudo dkms autoinstall -k  4.19.0-kali5-amd64  -m nvidia-430 -v 430.14
 
 reboot
+
+sudo systemctl start graphical.target
 ```
 
 # 测试
