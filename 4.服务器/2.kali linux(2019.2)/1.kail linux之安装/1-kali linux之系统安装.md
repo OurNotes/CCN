@@ -41,6 +41,10 @@
 
 ![](image/1-13.png)
 
+- 删除自动分配的/var 、/tmp、/home、从新分配。/tmp分配1gb 、/var分配分配和/差不多内存
+
+![](image/1-13-0.png)
+
 ![](image/1-13-1.png)
 
 ![](image/1-14.png)
