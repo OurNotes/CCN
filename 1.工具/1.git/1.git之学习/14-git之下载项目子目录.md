@@ -23,7 +23,6 @@ git pull origin master
     - 下载的子目录：protoc-gen-go
     - 下载的子目录：ptypes
     - 下载的子目录：jsonpb
-
 ```
 git init
 git config core.sparsecheckout true
