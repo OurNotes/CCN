@@ -1,17 +1,17 @@
 总操作流程：
-- 1、下载
-- 2、配置
-- 3、测试
+- 1、[下载](#kail-linux-01)
+- 2、[配置](#kail-linux-02)
+- 3、[测试](#kail-linux-03)
 
 *** 
 
-# 下载
+#  <a name="kail-linux-01" href="#" >下载</a>
 
 [![](https://img.shields.io/badge/百度云-jdk-green.svg "百度云 jdk")](https://pan.baidu.com/s/14RvLo-ZZX1ocE0AcSdIvVA)
 
 密钥：ttyv
 
-# 配置
+#  <a name="kail-linux-02" href="#" >配置</a>
 
 > 1、解压
 
@@ -68,7 +68,7 @@ sudo update-alternatives --set javaws /usr/local/java/jdk/bin/javaws
 
 
 
-# 测试
+#  <a name="kail-linux-03" href="#" >测试</a>
 
 ```shell
 java -version
