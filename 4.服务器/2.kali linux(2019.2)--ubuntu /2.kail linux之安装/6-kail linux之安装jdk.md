@@ -27,6 +27,10 @@ tar -zxvf jdk-8u191-linux-x64.tar.gz
 
 mv jdk1.8.0_191 jdk
 
+cp -Rf jdk java
+
+rm -rf jdk
+
 chmod 0777 /usr/local/java/jdk
 
 ```
