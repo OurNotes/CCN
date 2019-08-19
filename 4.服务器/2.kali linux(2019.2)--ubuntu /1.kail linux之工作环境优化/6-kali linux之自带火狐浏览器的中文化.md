@@ -8,7 +8,7 @@
 # 下载安装
 
 ```js
- apt-get install iceweasel-l10n-zh-cn
+ apt -y install firefox-esr-l10n-zh-cn 
 ```
 
 # 配置
