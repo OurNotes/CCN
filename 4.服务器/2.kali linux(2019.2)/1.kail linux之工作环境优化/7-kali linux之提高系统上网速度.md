@@ -80,7 +80,7 @@ prepend domain-name-servers 127.0.0.1;
 
 [![](https://img.shields.io/badge/参考文献-csdn-yellow.svg "参考文献 csdn")](https://blog.csdn.net/u012236241/article/details/89285203)
 
-> 1、
+> 1、关闭802,11n
 
 ```shell
 iwconfig
@@ -103,7 +103,7 @@ echo "options iwlwifi 11n_disable=1" >> /etc/modprobe.d/iwlwifi.conf
     echo "net.ipv6.conf.lo.disable_ipv6 = 1" >> /etc/sysctl.conf
 ```
 
-- 开启bbr
+> 3、开启bbr
 
 ```shell
 apt install --install-recommends linux-generic-hwe-16.04
