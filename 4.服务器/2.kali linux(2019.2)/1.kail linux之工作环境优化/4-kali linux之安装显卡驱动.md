@@ -19,56 +19,6 @@ update-grub
 reboot
 ```
 
->2、下载安装NVIDIA
-
-- 下载
-
-[![](https://img.shields.io/badge/官网-NVIDIA-red.svg "官网 NVIDIA")](https://www.nvidia.cn/Download/index.aspx?lang=cn)
-
-![](image/4-1.png)
-
-- 安装
-
-```c
-systemctl stop gdm.service
-
-cd /usr/local #上传下载后的文件到这
-
-chmod a+x 软件名.run
-
-sh ./软件名.run
-
-```
-
-![](image/4-2.png)
-
-![](image/4-3.png)
-
-- 编译nvidia驱动至内核
-
-```
-
-cd /lib/modules/
-
-ls #查看内核名
-
-```
-
-![](image/4-4.png)
-
-![](image/4-5.png)
-
-
-- 安装配置
-
-```c
-sudo dkms autoinstall -k  4.19.0-kali5-amd64  -m nvidia-430 -v 430.14
-
-reboot
-
-sudo systemctl start graphical.target
-```
-
 # 测试
 
 - 要在本机上运行，在远程软件上运行不会显示的
