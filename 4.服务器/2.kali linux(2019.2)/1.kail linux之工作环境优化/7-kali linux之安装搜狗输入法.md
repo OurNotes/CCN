@@ -37,8 +37,17 @@ reboot
 #  <a name="kail-linux-03" href="#" >配置</a>
 
 
-![](image/5-1.png)
+![](image/7-1.png)
 
-![](image/5-2.png)
+![](image/7-2.png)
 
-![](image/5-3.png)
+![](image/7-3.png)
+
+> 报错：解决搜狗输入法异常！请删除.config/SogouPY 并重启
+
+```
+sogou-qimpanel
+apt --fix-broken install
+apt-get install zypper
+sudo zypper in libQtWebKit4
+```

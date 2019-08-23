@@ -16,6 +16,7 @@ vim /etc/hosts
 ```
 
 ```js
+#github提升下载速度
 192.30.253.112 github.com
 151.101.44.249 github.global.ssl.fastly.net
 ```

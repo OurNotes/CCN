@@ -1,10 +1,10 @@
 总操作流程：
-- 1、编辑有线的
-- 2、编辑无线的
+- 1、[编辑有线的](#kail-linux-01)
+- 2、[编辑无线的](#kail-linux-02)
 
 -----------
 
-# 编辑有线的
+# <a name="kail-linux-01" href="#" >编辑有线的</a>
 
 > 1、编辑tcp_ecn
 ```shell
@@ -19,19 +19,7 @@ vim /etc/modprobe.d/blacklist-libnfc.conf
 blacklist ipv6
 ```
 
-
-
-> 3、编辑dnsmasq.conf
-```
-sudo apt-get install dnsmasq
-gedit /etc/dnsmasq.conf
-```
-- 加入
-```shell
-resolv-file=/etc/resolv.dnsmasq.conf
-```
-
-> 4、编辑resolv.conf
+> 3、编辑resolv.conf
 ```
 sudo cp /etc/resolv.conf /etc/resolv.dnsmasq.conf
 vim /etc/resolv.conf
@@ -47,13 +35,19 @@ nameserver 127.0.0.1
 ```shell
 sudo /etc/init.d/dnsmasq restart
 ```
-> 5、该dhclient.conf
+> 4、该dhclient.conf
 
 ```
 gedit /etc/dhcp/dhclient.conf
 ```
 
->6、改provider
+- 加入
+
+```shell
+prepend domain-name-servers 127.0.0.1;
+```
+
+>5、改provider
 
 ```shell
 gedit /etc/ppp/peers/provider
@@ -70,13 +64,8 @@ gedit /etc/ppp/peers/provider
 sudo /etc/init.d/avahi-daemon stop 
 ```
 
-- 加入
 
-```shell
-prepend domain-name-servers 127.0.0.1;
-```
-
-# 编辑无线的
+# <a name="kail-linux-02" href="#" >编辑无线的</a>
 
 [![](https://img.shields.io/badge/参考文献-csdn-yellow.svg "参考文献 csdn")](https://blog.csdn.net/u012236241/article/details/89285203)
 
