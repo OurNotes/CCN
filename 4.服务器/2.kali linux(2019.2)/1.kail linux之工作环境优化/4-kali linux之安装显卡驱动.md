@@ -10,7 +10,7 @@
 ```
 apt-get install aptitude
 aptitude install nvidia-kernel-dkms
-apt-get install mesa-utils apt-file
+apt-get install mesa-utils  apt-file
 apt-get install -y linux-headers-$(uname -r)
 apt-get install nvidia-kernel-dkms
 apt-get dist-upgrade
@@ -30,3 +30,5 @@ glxinfo | grep direct
 ```
 direct rendering: Yes
 ```
+
+- 或者使用：glxinfo | grep NVIDIA
