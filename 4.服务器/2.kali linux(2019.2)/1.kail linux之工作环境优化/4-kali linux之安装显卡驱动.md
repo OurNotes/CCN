@@ -65,7 +65,7 @@ wget https://gist.githubusercontent.com/jamesmacwhite/580c798531ff12289c8635d70a
 
 cp /usr/share/gdm/greeter/autostart/optimus.desktop /etc/xdg/autostart/optimus.desktop
 
-vim /etc/X11xorg.conf
+vim /etc/X11/xorg.conf
 ```
 
 - 将查询到的01:00.0改成01:00:0到BusID值上
