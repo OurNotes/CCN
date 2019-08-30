@@ -1,8 +1,7 @@
-变量名：GO111MODULE
-变量值：on
+总操作流程：
+- 1、清空go的工作文件夹内容
+- 2、配置
+- 3、创建文件
+- 4、测试
 
-
-变量名：GOPROXY
-变量值：https://mirrors.aliyun.com/goproxy/
-
-path :  ;%GOPROXY%;%GO111MODULE%
+***
