@@ -26,7 +26,7 @@ groupadd dba
 ```shell
 cd /.  
 mkdir -p /opt/oracle/install
-mkdir -p /opt/oracle/oraInventory　
+mkdir -p /opt/oracle/oraInventory
 cd /opt/oracle
 chmod 777 *
 
@@ -140,7 +140,7 @@ reboot #重启系统
 
 ```
 inventory_loc=/opt/oracle/oraInventory
-inst_group=/opt/oracle/install
+inst_group=oinstall
 ```
 
 ```shell
