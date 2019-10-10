@@ -18,28 +18,28 @@ alter user SSM account unlock;
 
 - 测试
 
-![](image/2-1.png)
+![](image/3-1.png)
 
 
 # 创建数据库
 
-![](image/2-2.png)
+![](image/3-2.png)
 
-![](image/2-3.png)
+![](image/3-3.png)
 
-![](image/2-4.png)
+![](image/3-4.png)
 
-![](image/2-5.png)
+![](image/3-5.png)
 
 # 连接数据库
 
-![](image/2-6.png)
+![](image/3-6.png)
 
-![](image/2-7.png)
+![](image/3-7.png)
 
 
 # 导入表
 
-![](image/2-8.png)
+![](image/3-8.png)
 
-![](image/2-9.png)
+![](image/3-9.png)

@@ -7,14 +7,14 @@
 
 # 填写常规
 
-![](image/1-1.png)
+![](image/2-1.png)
 
 # 填写高级
 
 >使用sys用户名时候登录的设置
 
-![](image/1-2.png)
+![](image/2-2.png)
 
 # 选数据库
 
-![](image/1-3.png)
+![](image/2-3.png)

@@ -12,7 +12,7 @@
 
 # <a name="Linux-01" href="#" >安装的硬件要求</a>
 
-![](image/9-1.png)
+![](image/1-1.png)
 
 # <a name="Linux-02" href="#" >安装Oracle前的准备</a>
 ### 1、创建运行oracle数据库的系统用户和用户组
@@ -135,11 +135,11 @@ reboot #重启系统
 ### 1、下载
 [![](https://img.shields.io/badge/官网-下载-red.svg "官网 下载")](https://www.oracle.com/downloads/index.html#database)
 
-![](image/9-3.png)
+![](image/1-3.png)
 
-![](image/9-4.png)
+![](image/1-4.png)
 
-![](image/9-5.png)
+![](image/1-5.png)
 
 ### 2、安装
 ```shell
@@ -165,23 +165,23 @@ cd /usr/local/database/
 ```
 
 - Oracle图形界面选项展现关键步骤其他的默认
-![](image/9-6.png)
+![](image/1-6.png)
 
-![](image/9-7.png)
+![](image/1-7.png)
 
-![](image/9-8.png)
+![](image/1-8.png)
 
-![](image/9-9.png)
+![](image/1-9.png)
 
-![](image/9-10.png)
+![](image/1-10.png)
 
-![](image/9-11.png)
+![](image/1-11.png)
 
-![](image/9-12.png)
+![](image/1-12.png)
 
-![](image/9-13.png)
+![](image/1-13.png)
 
-![](image/9-14.png)
+![](image/1-14.png)
 
 # <a name="Linux-04" href="#" >测试</a>
 ```shell

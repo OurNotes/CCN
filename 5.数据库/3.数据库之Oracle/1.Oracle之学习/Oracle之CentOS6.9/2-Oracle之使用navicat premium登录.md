@@ -10,7 +10,7 @@
 ```
 lsnrctl status #查看监听器的状态
 ```
-![](image/3-1.png)
+![](image/2-1.png)
 
 # 设置防火墙
 
@@ -38,10 +38,10 @@ service  iptables restart
 ```
 netmgr
 ```
-![](image/3-2.png)
+![](image/2-2.png)
 
 # 测试
 
-![](image/3-3.png)
+![](image/2-3.png)
 
-![](image/3-4.png)
+![](image/2-4.png)
