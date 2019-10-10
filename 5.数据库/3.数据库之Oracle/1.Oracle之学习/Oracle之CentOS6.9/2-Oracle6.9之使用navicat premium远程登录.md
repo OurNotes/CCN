@@ -6,13 +6,13 @@
 
 ***
 
-# 获取Oracle的端口号
+# <a name="Oracle-01" href="#" >获取Oracle的端口号</a>
 ```
 lsnrctl status #查看监听器的状态
 ```
 ![](image/2-1.png)
 
-# 设置防火墙
+# <a name="Oracle-02" href="#" >设置防火墙</a>
 
 ```
 su
@@ -33,14 +33,14 @@ service  iptables restart
 ```
 
 
-# 给数据库实例外连接设置
+# <a name="Oracle-03" href="#" >给数据库实例外连接设置</a>
 
 ```
 netmgr
 ```
 ![](image/2-2.png)
 
-# 测试
+# <a name="Oracle-04" href="#" >测试</a>
 
 ![](image/2-3.png)
 
