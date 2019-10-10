@@ -18,31 +18,24 @@
 ### 1、创建运行oracle数据库的系统用户和用户组
 ```shell
 su           #切换到root
-
-groupadd oinstall　　#创建用户组oinstall
-
-groupadd dba　　#创建用户组dba
+groupadd oinstall　
+groupadd dba　
 ```
 ### 2、创建oracle数据库安装目录
 ```shell
-cd /.        #进入根目录
-
-mkdir -p /opt/oracle/install　　#oracle数据库安装目录
-
-mkdir -p /opt/oracle/oraInventory　#oracle数据库配置文件目录
-
+cd /.   
+mkdir -p /opt/oracle/install
+mkdir -p /opt/oracle/oraInventory
 cd /opt/oracle
-
-chown -R dk:oinstall /opt/oracle/install　　#设置目录所有者为oinstall用户组的dk用户
-
-chown -R dk:oinstall /opt/oracle/oraInventory
+chown -R admin:oinstall /opt/oracle/install
+chown -R admin:oinstall /opt/oracle/oraInventory
 
 ```
 ### 3、修改OS系统标识（oracle默认不支持CentOS系统安装，但是centos其实就是redhat）
 ```shell
 cat /proc/version #查看CentOS系统版本
 
-vi /etc/redhat-release
+vim /etc/redhat-release
 ```
 - 修改内容是(6是CentOS系统的版本，根据不同版本输入)
 ```shell
@@ -54,13 +47,12 @@ yum -y install binutils* compat-libcap1* compat-libstdc++* gcc* gcc-c++* glibc* 
 ```
 ### 5、关闭防火墙
 ```shell
-service iptables status  # 查看防火墙状态
-
-service iptables stop  # 停止防火墙
+service iptables status
+service iptables stop
 ```
 ### 6、关闭selinux（需重启生效）
 ```shell
-vi /etc/selinux/config
+vim /etc/selinux/config
 ```
 - 修改内容是：
 ```shell
@@ -68,7 +60,7 @@ SELINUX=disabled  # 此处修改为disabled
 ```
 ### 7、修改内核参数（加入斜体部分）
 ```shell
-vi /etc/sysctl.conf
+vim /etc/sysctl.conf
 ```
 - 修改内容是：
 最后添加
@@ -92,7 +84,7 @@ sysctl -p
 ```
 ### 9、对oracle用户设置限制，提高软件运行性能（斜体为添加部分）
 ```shell
-vi /etc/security/limits.conf
+vim /etc/security/limits.conf
 ```
 - 修改内容是：
 ```shell
@@ -107,7 +99,7 @@ oracle hard nofile 65536
 ```
 ### 10、配置用户的环境变量（斜体部分为添加代码）
 ```shell
-vi /home/dk/.bash_profile
+vim /home/admin/.bash_profile
 ```
 - 修改内容是：
 最后添加
@@ -126,7 +118,7 @@ export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK #设置Oracle客户端字符集，必�
 ```
 ### 11、使用户的环境变量配置立即生效
 ```shell
-source /home/dk/.bash_profile
+source /home/admin/.bash_profile
 
 reboot #重启系统
 ```
@@ -143,7 +135,7 @@ reboot #重启系统
 
 ### 2、安装
 ```shell
-su dk
+su admin
 
 #解压软件包
 
@@ -155,13 +147,13 @@ rm -rf linux.x64_11gR2_database_2of2.zip
 
 su root
 
-chown -R dk:oinstall /usr/local/database/
+chown -R admin:oinstall /usr/local/database/
 
-su dk
+su admin
 
 cd /usr/local/database/
 
-./runInstaller # 这步要是还不出现安装界面，到虚拟机的dk账号登陆进行安装
+./runInstaller # 这步要是还不出现安装界面，到虚拟机的admin账号登陆进行安装
 ```
 
 - Oracle图形界面选项展现关键步骤其他的默认

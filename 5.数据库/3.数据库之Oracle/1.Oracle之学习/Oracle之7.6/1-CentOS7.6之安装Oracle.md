@@ -24,11 +24,12 @@ groupadd dba
 ```
 ### 2、创建oracle数据库安装目录
 ```shell
-cd /.  
+cd /.   
 mkdir -p /opt/oracle/install
 mkdir -p /opt/oracle/oraInventory
 cd /opt/oracle
-chmod 777 *
+chown -R admin:oinstall /opt/oracle/install
+chown -R admin:oinstall /opt/oracle/oraInventory
 
 ```
 ### 3、修改OS系统标识（oracle默认不支持CentOS系统安装，但是centos其实就是redhat）
