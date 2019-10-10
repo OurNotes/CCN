@@ -22,10 +22,29 @@ firewall-cmd --reload
 
 # 给数据库实例外连接设置
 
+> 开启允许远程
 ```
 netmgr
 ```
 ![](image/2-2.png)
+
+> 改配置
+
+```shell
+vim /opt/oracle/install/product/11.2.0/db_1/network/admin/listener.ora
+```
+
+```shell
+(ADDRESS = (PROTOCOL = TCP)(HOST =admin)(PORT = 1521)) 
+改为：
+(ADDRESS = (PROTOCOL = TCP)(HOST =虚拟机分配的ip)(PORT = 1521))
+```
+
+> 开启监听
+
+```shell
+lsnrctl start
+```
 
 # 测试
 
