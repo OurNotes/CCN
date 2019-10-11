@@ -135,17 +135,14 @@ reboot #重启系统
 
 ### 2、安装
 ```shell
-su admin
 
 #解压软件包
-
+cd /usr/local/
 unzip linux.x64_11gR2_database_1of2.zip
 unzip linux.x64_11gR2_database_2of2.zip
 
 rm -rf linux.x64_11gR2_database_1of2.zip
 rm -rf linux.x64_11gR2_database_2of2.zip
-
-su root
 
 chown -R admin:oinstall /usr/local/database/
 
