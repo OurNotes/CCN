@@ -4,7 +4,7 @@
 
 > 1、下载安装插件：open-in-browser
 
-> 2、查看快捷键。按快捷键：Ctrl+Shift+P，输入：open browser
+> 2、查看快捷键。按快捷键：<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>，输入：open browser
  
 > 3、设置默认打开浏览器,设置>扩展>json>在setting.json中编辑
 
