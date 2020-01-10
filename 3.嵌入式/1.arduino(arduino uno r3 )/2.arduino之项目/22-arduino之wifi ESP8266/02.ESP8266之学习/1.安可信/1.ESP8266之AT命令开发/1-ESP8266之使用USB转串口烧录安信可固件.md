@@ -23,13 +23,16 @@
 # <a name="ESP8266-04" href="#" >烧录</a>
 ![](image/1-4.png)
 # <a name="ESP8266-05" href="#" >测试</a>
+
+> 串口助手调试
+
 ![](image/1-5.png)
 
 > 连接WiFi后，可以获取其ip，浏览器输入ip修改账号密码等操作
 
-![](image/1-6.png)
-
 ![](image/1-7.png)
+
+![](image/1-8.png)
 
 测试工具测试
 [![](https://img.shields.io/badge/aithinker_serial_tool-1.2.3.7-green.svg "aithinker_serial_tool 1.2.3.7")](https://pan.baidu.com/s/1apXbkZIP9RVZ1bAYHOBgTA)
