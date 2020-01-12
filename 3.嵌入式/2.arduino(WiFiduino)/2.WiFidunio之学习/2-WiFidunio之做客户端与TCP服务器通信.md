@@ -11,7 +11,6 @@ const char *ssid     = "WE-178";//这里是我的wifi，你使用时修改为你
 const char *password = "AbCe@163.com~*~";//你要连接的wifi密码
 const char *host = "192.168.0.103";//酱菜创客服务器IP
 const int httpPort =8080;//端口号
-String line ="";
 void setup() {
   Serial.begin(115200);
   delay(10);
