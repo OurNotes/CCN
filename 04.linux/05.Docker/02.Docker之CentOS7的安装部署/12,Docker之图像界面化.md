@@ -34,6 +34,6 @@ firewall-cmd --reload
 
 > 首次登录设置密码
 
-![](image/14-1.png)
+![](image/12-1.png)
 
 - 镜像加速添加：选择Registries->点击Add registry->Custom registry 之后在name这里填aliyun表示这是阿里云的镜像站，url填你刚才复制下来的地址最后点击Add registry就好
