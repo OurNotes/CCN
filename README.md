@@ -11,7 +11,7 @@
 
 # <a name="index-01" href="#" >github使用Octotree的效果</a>
 
-![](image/1-1.png)
+![](./image/1-1.png)
 
 # <a name="index-02" href="#" >谷歌浏览器装Octotree的教程</a>
 ### <a name="index-01-01" href="#" >Octotree的安装</a>
